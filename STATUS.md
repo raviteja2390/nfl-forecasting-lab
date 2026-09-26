@@ -18,7 +18,7 @@ Unique games are shared across models; do not count each model forecast as an in
 
 - player-form-v1: awaiting-fixed-review; paired log-loss improvement None; prospective interval None at 97.5%. Evidence as of 2026-09-26T15:52:45.369217Z.
 - player-availability-v1: awaiting-fixed-review; paired log-loss improvement None; prospective interval None at 97.5%. Evidence as of 2026-09-26T15:52:45.369217Z.
-- Opponent-adjusted-v1: offline; shadow issuance blocked pending protocol review. Log loss mixed across 2023/2024/2025. Exploratory unadjusted 95% interval [-0.002601, 0.003320] includes zero.
+- Opponent-adjusted-v1: offline; protocol approved; shadow issuance disabled pending tested integration. Log loss mixed across 2023/2024/2025. Exploratory unadjusted 95% interval [-0.002601, 0.003320] includes zero.
 - Its Bonferroni sensitivity interval (99.0%, family size 5): [-0.003394, 0.004356]; includes zero.
 - Margin-ridge-v1: SHELVED; log loss worse in all three cohorts; bootstrap not computed. Tie overprediction quantified. No shadow/live use.
 
@@ -31,7 +31,7 @@ Historical promotion is prohibited even if a corrected interval excludes zero. F
 ## Open actions
 
 - Accumulate prospective games; wait for the registered review rather than optimizing against interim outcomes.
-- User review of docs/protocols/OPPONENT_PROSPECTIVE_DRAFT.md before any opponent shadow issuer is built.
+- Implement and verify the approved opponent protocol (docs/protocols/OPPONENT_PROSPECTIVE_V1.md); registered cohort starts October 1, 2026. Issuance remains technically disabled.
 - User to rotate the previously exposed Odds API key and check actual GitHub billing. No new key should be posted in chat.
 - Odds/closing-line tracking remains a separate integration task.
 - Ensembling team-only and player-form probabilities: deferred until enough prospective evidence exists; future blend weights and evaluation must be preregistered as a new candidate.
