@@ -52,3 +52,13 @@ Log loss is worse than the reference in ALL three cohorts. Consistent direction 
 Lead with log loss. Explicitly describe direction across 2023/2024/2025 as consistent or mixed. Accuracy is secondary. Do not equate consistency with significance or forecasting scores with profit. Persisted in `MODEL_REVIEW_POLICY.md`.
 
 Verification notes: the initial Linux run passed the timing/DST tests but exposed exact floating-point equality assertions in the two offline experiment replay tests (differences around 1e-16 from platform math libraries). Those assertions now allow an absolute probability tolerance of 1e-14. No model, inference code, forecast or fitted artifact changed. This is numerical rounding, not timestamp or eligibility drift. The initial checkpoint attempt also correctly rejected a tracked `.env.example` template; the safe-path rule now permits that credential-free template while continuing to reject real `.env` files. Its incomplete dated directory is retained and never reused.
+
+## Verified completion evidence
+
+- New checkpoint: https://github.com/raviteja2390/nfl-forecasting-lab/releases/tag/2026-09-26T161118Z-checkpoint
+- Local folder: `../.nfl-backups/2026-09-26T161118Z-checkpoint/`.
+- Archive: 22,529,441 bytes; SHA-256 `2cd4372a25332842a4c783ba947fe59d9f9079a87091cd7867d3219cee2c0a0c`. GitHub's server-reported digest matches.
+- All 437 files restored and verified in `/private/tmp/nfl-review-restored`; source code commit `c1bd269d2cadb324a2b09fce7f61c9207df1c57d`, including the cloud branch state captured for this checkpoint. The backup is point-in-time; this command does not introduce recurring snapshots.
+- Cloud verification: https://github.com/raviteja2390/nfl-forecasting-lab/actions/runs/36254548323 — all 101 tests passed on Ubuntu/Python 3.12. The local suite also passed 101 tests before the platform-specific assertion correction; the seven new safeguard tests passed again after the checkpoint correction.
+- Heuristic secret scans: 366 reachable historical Git blobs and all 437 checkpoint files; no matching secret patterns. Repository secrets listing was empty. Neither scan establishes a universal absence of credentials, and no claim is made that the previously pasted chat key was private.
+- Candidate SHA-256: `8d9a3f5c8917d28d380d917eee6fc8a27d5325a7321836c7f66976a69929dff2`; reference SHA-256: `c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0`. The draft protocol still requires user review and a separately committed activation record before issuance.
