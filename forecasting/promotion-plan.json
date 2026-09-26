@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "registeredAt": "2026-09-26",
+  "cohortStart": "2026-09-27",
+  "cohortEnd": "2027-02-01",
+  "reviewAt": "2027-02-08T12:00:00Z",
+  "minimumGames": 200,
+  "minimumWeeks": 12,
+  "minimumCoverage": 0.95,
+  "minimumLogLossImprovement": 0.01,
+  "maximumBrierDeterioration": 0.005,
+  "bootstrapDraws": 20000,
+  "bootstrapSeed": 20260926,
+  "confidenceLevel": 0.975,
+  "reference": "outcome-logit-v1",
+  "challengers": [
+    "player-form-v1",
+    "player-availability-v1"
+  ],
+  "modelHashes": {
+    "outcome-logit-v1": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0",
+    "player-form-v1": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da",
+    "player-availability-v1": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
+  },
+  "protocolSha256": "bd794c3fe46541a212226fd861adbff6261ac02e55db7fd36f059f09f9da25a7"
+}
