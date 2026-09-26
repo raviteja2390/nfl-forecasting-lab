@@ -47,3 +47,27 @@ Official references, checked September 26, 2026:
 
 - https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#schedule
 - https://docs.github.com/en/billing/concepts/product-billing/github-actions
+
+## Measured monthly runner budget (September 26, 2026)
+
+Three successful cloud benchmarks measured job start-to-completion time:
+
+- Full collection: **31 seconds**, [run 36252843164](https://github.com/raviteja2390/nfl-forecasting-lab/actions/runs/36252843164).
+- Lightweight check with collection and dependency installation skipped: **11 seconds**, [run 36252936887](https://github.com/raviteja2390/nfl-forecasting-lab/actions/runs/36252936887).
+- Daily watchdog: **10 seconds**, [run 36252844874](https://github.com/raviteja2390/nfl-forecasting-lab/actions/runs/36252844874).
+
+Budget conservatively in whole minutes per job rather than treating these seconds as the billed invoice. The timing API initially reported zero billable time despite nonzero completed job runtimes; that is not evidence of free private runs. Each workflow has one job.
+
+Using actual game dates from the archived schedule observed at 2026-09-26T15:30:48.493114Z (SHA-256 `c0a65089a0110513fa88ecd48453682b1d847f851e9ad46479c9e943004f445e`), and enumerating UTC hours within Eastern calendar months:
+
+- 2026-10: 13 game dates; 330 collections, 414 lightweight checks, 31 watchdogs. One-minute-per-job budget: 775 minutes; two-minute collections plus 20% headroom: 1,326 minutes.
+- 2026-11: 16 game dates; 399 collections, 322 lightweight checks, 30 watchdogs. One-minute-per-job budget: 751 minutes; two-minute collections plus 20% headroom: 1,380 minutes.
+- 2026-12: 15 game dates; 376 collections, 368 lightweight checks, 31 watchdogs. One-minute-per-job budget: 775 minutes; two-minute collections plus 20% headroom: 1,382 minutes.
+
+November includes the extra hour on the November 1 daylight-saving transition. January is excluded because the archived postseason dates are incomplete. Future scheduling changes can change the collection/check mix.
+
+For October, the planning calculation is `(330 × 2 + 414 × 1 + 31 × 1) × 1.20 = 1,326 minutes`. A working allocation of **1,500 minutes/month** covers these three modeled months, leaving 500 minutes against GitHub Free's 2,000-minute account allowance if other projects do not consume it. The API did not disclose this account's plan or remaining allowance; those have not been verified. Keeping the repository private is reasonable on this evidence; public visibility is not necessary solely for the current schedule's expected minute usage.
+
+This is a small benchmark, not a monthly guarantee. The full collection ran on an off-day with tomorrow's forecasts already issued; it did not measure first-time forecast issuance or heavy settlement work. Archive growth, dependency downloads, failures, manual runs and other repositories may increase usage. With three-minute collections and the same headroom, October would use 1,722 minutes; with four-minute collections, 2,118 minutes. Review actual billing usage after a representative game week. Routine model retraining is not scheduled and is not included in this estimate. Data subscriptions and other services are separate.
+
+All 42 existing issued forecasts matched their original hashes in the cloud state. The repository remains private. The cloud collector and watchdog succeeded; the desktop collector is paused.
