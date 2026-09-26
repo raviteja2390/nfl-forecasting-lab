@@ -7,10 +7,12 @@ import json
 import feeds
 import live
 import snapshots
+import operations
+from recheck_results import dates_to_recheck, settle_and_audit
 from score_live import score_store, write_matchup_comparison
 
 
-def run_cycle(collect=True):
+def _run_cycle(collect=True):
     at = snapshots.now()
     local = snapshots.parse_time(at).astimezone(live.features.EASTERN)
     report = {"startedAt": at, "errors": [], "forecastRuns": [], "resultRuns": []}
@@ -52,27 +54,44 @@ def run_cycle(collect=True):
         except Exception as exc:
             report["errors"].append({"stage": "player-shadow", "error": str(exc)})
         report["comparisonReport"] = write_matchup_comparison(tomorrow)
-    # Refresh only previously issued game dates with unscored outcomes. The
-    # local date uses Eastern time, including night games that end after UTC midnight.
-    pending_dates = set()
-    for path in (live.LIVE / "forecasts/outcome-logit-v1").glob("*.json"):
-        forecast = json.loads(path.read_text())
-        if forecast["dateEastern"] > local.date().isoformat():
-            continue
-        if not any((live.LIVE / "results" / forecast["eventId"]).glob("*.json")):
-            pending_dates.add(forecast["dateEastern"])
-    for date in sorted(pending_dates):
+    # Pending games remain eligible without an age limit. Settled games are
+    # rechecked on their game date and the following six Eastern dates.
+    for date in dates_to_recheck(live.LIVE, local.date()):
         if collect:
             feeds.capture("scoreboard", date.replace("-", ""))
-        result = live.settle(date)
+        result = settle_and_audit(date)
         report["resultRuns"].append(result)
         if result["sourceDisagreements"]:
             report["errors"].append({"stage": "result-source-disagreement", "events": result["sourceDisagreements"]})
+        if result["previouslyFinalNowPending"]:
+            report["errors"].append({"stage": "previous-final-now-pending", "events": result["previouslyFinalNowPending"]})
     report["scores"] = score_store()
+    from promotion_report import write_report
+    promotion = write_report()
+    report["promotion"] = {"reviewAt": promotion["reviewAt"], "errors": promotion["errors"],
+                           "statuses": {key: value["status"] for key, value in promotion["comparisons"].items()}}
+    if promotion["errors"]:
+        report["errors"].append({"stage": "promotion-integrity", "errors": promotion["errors"]})
     report["finishedAt"] = snapshots.now()
     path = live.LIVE / "cycles" / (report["startedAt"].replace(":", "-") + ".json")
     snapshots.immutable_write(path, live.encode(report))
     return report
+
+
+def run_cycle(collect=True):
+    with operations.cycle_lock(live.LIVE):
+        # Offline verification must never make a missed live collection look healthy.
+        if not collect:
+            return _run_cycle(False)
+        started = snapshots.now()
+        operations.record_status(started, store=live.LIVE)
+        try:
+            report = _run_cycle(True)
+        except Exception as exc:
+            operations.record_status(started, error=exc, store=live.LIVE)
+            raise
+        operations.record_status(started, report=report, store=live.LIVE)
+        return report
 
 
 if __name__ == "__main__":

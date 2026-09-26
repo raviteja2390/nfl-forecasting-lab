@@ -1,0 +1,93 @@
+{
+  "startedAt": "2026-09-26T15:30:48.152072Z",
+  "errors": [],
+  "forecastRuns": [
+    {
+      "date": "2026-09-27",
+      "scheduled": 14,
+      "issued": 0,
+      "existing": 14,
+      "report": "/Users/ravitejayarlagadda/Documents/ChatGPT/Betting startegies/nfl-research-pilot/forecasting/live/reports/2026-09-27.md",
+      "modelVersion": "outcome-logit-v1"
+    },
+    {
+      "date": "2026-09-27",
+      "issued": 0,
+      "models": [
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    }
+  ],
+  "resultRuns": [],
+  "archive": {
+    "observations": 4,
+    "uniquePayloads": 2,
+    "firstObservedAt": "2026-09-26T13:53:49.013961Z",
+    "lastObservedAt": "2026-09-26T15:30:48.493114Z"
+  },
+  "schedule": {
+    "localDate": "2026-09-26",
+    "timeZone": "America/New_York",
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
+    "lastScheduledDateInFeed": "2027-01-10",
+    "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
+    "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
+    "observationId": "3b63bb0d56dc448f9ac14aad77bcd867",
+    "observedAt": "2026-09-26T15:30:48.493114Z"
+  },
+  "comparisonReport": "/Users/ravitejayarlagadda/Documents/ChatGPT/Betting startegies/nfl-research-pilot/forecasting/live/reports/2026-09-27-comparison.md",
+  "scores": {
+    "asOf": "2026-09-26T15:30:52.007324Z",
+    "models": {
+      "outcome-logit-v1": {
+        "issued": 14,
+        "pending": 14,
+        "disputed": 0,
+        "games": 0,
+        "brier": null,
+        "logLoss": null,
+        "accuracy": null,
+        "correct": 0,
+        "classified": 0,
+        "coverage": null
+      },
+      "player-availability-v1": {
+        "issued": 14,
+        "pending": 14,
+        "disputed": 0,
+        "games": 0,
+        "brier": null,
+        "logLoss": null,
+        "accuracy": null,
+        "correct": 0,
+        "classified": 0,
+        "coverage": null
+      },
+      "player-form-v1": {
+        "issued": 14,
+        "pending": 14,
+        "disputed": 0,
+        "games": 0,
+        "brier": null,
+        "logLoss": null,
+        "accuracy": null,
+        "correct": 0,
+        "classified": 0,
+        "coverage": null
+      }
+    },
+    "pairedComparisons": {}
+  },
+  "promotion": {
+    "reviewAt": "2027-02-08T12:00:00Z",
+    "errors": [],
+    "statuses": {
+      "player-form-v1": "awaiting-fixed-review",
+      "player-availability-v1": "awaiting-fixed-review"
+    }
+  },
+  "finishedAt": "2026-09-26T15:30:52.022228Z"
+}

@@ -6,12 +6,14 @@ from pathlib import Path
 import live
 import model
 import snapshots
+from recheck_results import unresolved_disputes
 
 
 def score_store(store=live.LIVE, as_of=None):
     at = as_of or snapshots.now()
     cutoff = snapshots.parse_time(at)
     groups, complete = {}, {}
+    disputed = unresolved_disputes(store, at)
     for path in sorted((store / "forecasts").glob("*/*.json")):
         row = json.loads(path.read_text())
         if row["mode"] != "prospective" or snapshots.parse_time(row["generatedAt"]) >= snapshots.parse_time(row["kickoffAt"]):
@@ -21,8 +23,12 @@ def score_store(store=live.LIVE, as_of=None):
         if snapshots.parse_time(row["generatedAt"]) > cutoff:
             continue
         version = row["modelVersion"]
-        bucket = groups.setdefault(version, {"issued": 0, "pending": 0, "scored": []})
+        bucket = groups.setdefault(version, {"issued": 0, "pending": 0, "disputed": 0, "scored": []})
         bucket["issued"] += 1
+        if row["eventId"] in disputed:
+            bucket["pending"] += 1
+            bucket["disputed"] += 1
+            continue
         results = [json.loads(p.read_text()) for p in (store / "results" / row["eventId"]).glob("*.json")]
         eligible = [r for r in results if snapshots.parse_time(r["finalizedAt"]) <= cutoff]
         if not eligible:
@@ -41,7 +47,7 @@ def score_store(store=live.LIVE, as_of=None):
         complete.setdefault(version, {})[row["eventId"]] = {"forecast": row, "score": score, "outcome": outcome}
     report = {"asOf": at, "models": {}, "pairedComparisons": {}}
     for version, group in groups.items():
-        report["models"][version] = {"issued": group["issued"], "pending": group["pending"], **model.aggregate(group["scored"])}
+        report["models"][version] = {"issued": group["issued"], "pending": group["pending"], "disputed": group["disputed"], **model.aggregate(group["scored"])}
     reference = complete.get("outcome-logit-v1", {})
     for version, values in complete.items():
         if version == "outcome-logit-v1":
@@ -59,6 +65,8 @@ def score_store(store=live.LIVE, as_of=None):
     (folder / "prospective-scores.json").write_bytes(live.encode(report))
     lines = ["# Prospective forecast tracking", "", f"As of {at}. Only forecasts saved before kickoff and independently confirmed final results are scored.", ""]
     for version, metrics in report["models"].items():
+        if metrics["disputed"]:
+            lines.append(f'- **{version}: {metrics["disputed"]} disputed games withheld from scores pending source agreement.**')
         if metrics["games"]:
             lines.append(f'- **{version}:** {metrics["games"]} scored, {metrics["pending"]} pending; accuracy {metrics["accuracy"]:.1%}, log loss {metrics["logLoss"]:.6f}.')
         else:
