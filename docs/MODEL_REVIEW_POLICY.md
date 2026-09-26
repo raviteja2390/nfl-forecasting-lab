@@ -6,3 +6,7 @@ Lead chat summaries and future reports with log loss as the primary metric. Alwa
 - player-form-v1 / player-availability-v1: existing registered prospective comparisons unchanged.
 - opponent-adjusted-v1: mixed historical log-loss direction; bootstrap includes zero. Read-only prospective feature pipeline prepared. Shadow issuance prohibited pending user review of `protocols/OPPONENT_PROSPECTIVE_DRAFT.md`, an activation record, and separately implemented issuer.
 - margin-ridge-v1: SHELVED. No live or shadow issuance, promotion, recalibration, or further modeling work on this version. Worse log loss in every tested cohort. Any future alternative probability mapping requires a newly registered, separately evaluated version and a new task authorization.
+
+## Required interpretation note for the February 2027 player-family review
+
+Include [player-availability-v1: missing-injury-data effect](models/PLAYER_AVAILABILITY_V1.md) in the February 8, 2027 manual review. When all availability inputs are zero, the frozen model has a learned, approximately constant away-directed log-odds shift relative to the form model, primarily associated with standardized missing-report effects. The probability shift is game-dependent, not a fixed percentage-point adjustment. Review its relationship to injury-data coverage and calibration without changing the registered full-cohort criteria or treating descriptive subgroups as new promotion tests.

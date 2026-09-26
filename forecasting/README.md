@@ -262,3 +262,7 @@ A pre-change, restore-verified backup of all forecasting files and the guide—i
 GitHub Actions now provides the off-Mac execution path in `.github/workflows/nfl-collector.yml`, with a separate daily watchdog. An hourly trigger at :17 checks whether data collection is due: hourly on actual game dates and daily otherwise. Runtime state persists with verified compression and checksums on the private `forecast-state` branch; readable current reports are available there. The desktop heartbeat is paused after cloud verification to prevent duplicate writers. `scheduled_run.py` remains a local fallback, not a second active collector.
 
 See `../docs/CLOUD_OPERATIONS.md` for schedules, alerting, restore instructions, estimated usage and limitations. GitHub schedules may be delayed/dropped, account runner allowances are shared, and the private state branch is not immutable storage. No new paid service or billing-plan change is required by this implementation.
+
+### Player-availability interpretation note
+
+The frozen `player-availability-v1` has a documented away-directed shift when both teams' injury evidence is unavailable and all availability inputs are zero. This is a learned missing-data effect, not extra smoothing or proof of useful injury information. See [the model note and February 2027 manual-review checklist](../docs/models/PLAYER_AVAILABILITY_V1.md). Original artifacts, forecasts and promotion criteria are unchanged.
