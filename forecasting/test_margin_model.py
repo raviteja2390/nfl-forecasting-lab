@@ -69,7 +69,8 @@ class MarginTests(unittest.TestCase):
         features={r['eventId']:r['features'] for split in ('validation','test') for r in map(json.loads,(ROOT/f'data/processed/v1/{split}.features.jsonl').read_text().splitlines())}
         for r in map(json.loads,(run/'predictions.jsonl').read_text().splitlines()):
             self.assertEqual(margin_model.predict_margin(artifact,features[r['eventId']]),r['predictedMargin'])
-            self.assertEqual(margin_model.predict_many(artifact,[features[r['eventId']]])[0],r['probabilities'])
+            actual=margin_model.predict_many(artifact,[features[r['eventId']]])[0]
+            for outcome in actual: self.assertAlmostEqual(actual[outcome],r['probabilities'][outcome],delta=1e-14)
         errors=list(map(json.loads,(run/'training-oof-errors.jsonl').read_text().splitlines()))
         self.assertEqual(artifact['sigma'],max(1,math.sqrt(sum(r['error']**2 for r in errors)/len(errors))))
         self.assertTrue(all(2017<=r['season']<=2022 for r in errors))

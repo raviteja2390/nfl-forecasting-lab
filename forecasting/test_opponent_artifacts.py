@@ -36,7 +36,8 @@ class SavedExperimentTests(unittest.TestCase):
         predictions=[json.loads(line) for line in (RUN/'predictions.jsonl').read_text().splitlines()]
         self.assertEqual(len(predictions),816)
         for row in predictions:
-            self.assertEqual(model.predict_many(artifact,[values[row['eventId']]])[0],row['probabilities'])
+            actual=model.predict_many(artifact,[values[row['eventId']]])[0]
+            for outcome in actual: self.assertAlmostEqual(actual[outcome],row['probabilities'][outcome],delta=1e-14)
         report=json.loads((RUN/'report.json').read_text())
         for summary in report['groups'].values():
             for bins in summary['classes'].values():

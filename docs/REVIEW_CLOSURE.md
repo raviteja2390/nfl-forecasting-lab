@@ -50,3 +50,5 @@ Log loss is worse than the reference in ALL three cohorts. Consistent direction 
 ## 6. Reporting convention
 
 Lead with log loss. Explicitly describe direction across 2023/2024/2025 as consistent or mixed. Accuracy is secondary. Do not equate consistency with significance or forecasting scores with profit. Persisted in `MODEL_REVIEW_POLICY.md`.
+
+Verification notes: the initial Linux run passed the timing/DST tests but exposed exact floating-point equality assertions in the two offline experiment replay tests (differences around 1e-16 from platform math libraries). Those assertions now allow an absolute probability tolerance of 1e-14. No model, inference code, forecast or fitted artifact changed. This is numerical rounding, not timestamp or eligibility drift. The initial checkpoint attempt also correctly rejected a tracked `.env.example` template; the safe-path rule now permits that credential-free template while continuing to reject real `.env` files. Its incomplete dated directory is retained and never reused.

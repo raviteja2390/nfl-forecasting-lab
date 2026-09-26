@@ -14,7 +14,7 @@ def safe(name):
     p=PurePosixPath(name)
     if p.is_absolute() or '..' in p.parts or str(p)!=name or not p.parts:
         raise ValueError('Unsafe checkpoint path')
-    if any(x in ('.git','.venv','__pycache__') or x.startswith('.env') for x in p.parts) or p.suffix in ('.key','.pem'):
+    if any(x in ('.git','.venv','__pycache__') or (x.startswith('.env') and x!='.env.example') for x in p.parts) or p.suffix in ('.key','.pem'):
         raise ValueError('Excluded private/runtime path')
     return name
 
