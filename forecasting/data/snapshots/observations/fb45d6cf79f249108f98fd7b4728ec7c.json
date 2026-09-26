@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "observationId": "fb45d6cf79f249108f98fd7b4728ec7c",
+  "sourceId": "nflverse-games",
+  "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+  "requestStartedAt": "2026-09-26T14:14:44.634315Z",
+  "observedAt": "2026-09-26T14:14:45.072257Z",
+  "storedAt": "2026-09-26T14:14:45.321861Z",
+  "providerPublishedAt": null,
+  "sha256": "55d99914587ae42aa36a280ff509fc427037b4cfcc8f228297f4754a6ec61252",
+  "bytes": 2180912,
+  "validation": {
+    "rows": 7548,
+    "firstSeason": 1999,
+    "lastSeason": 2026
+  },
+  "transport": {
+    "status": 200,
+    "finalUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+    "httpDate": "Sat, 26 Sep 2026 14:14:44 GMT",
+    "httpLastModified": null,
+    "etag": "\"f6b1b420f468ac58f4936af92d69249e4c46b3ef2e48f16f8a0bd6ac84e39315\""
+  },
+  "timingBasis": "local-full-response-receipt"
+}

@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "pipelineVersion": "game-features-v1",
+  "datasetKind": "retrospective-reconstruction",
+  "builtAt": "2026-09-26T13:46:01Z",
+  "source": {
+    "url": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+    "retrievedAt": "2026-09-26T13:43:00.128802+00:00",
+    "sha256": "55d99914587ae42aa36a280ff509fc427037b4cfcc8f228297f4754a6ec61252"
+  },
+  "builderSha256": "a0075435df6cd371bf9e301fad4b391b3f29d0049774b0ff457ae0fcf9f64111",
+  "featureNames": [
+    "homeField",
+    "homeRecentGames",
+    "homePointsForMean",
+    "homePointsAgainstMean",
+    "homeResultRate",
+    "homeDaysSincePriorGameCapped30",
+    "awayRecentGames",
+    "awayPointsForMean",
+    "awayPointsAgainstMean",
+    "awayResultRate",
+    "awayDaysSincePriorGameCapped30"
+  ],
+  "settings": {
+    "recentGames": 8,
+    "forecastLeadHours": 24,
+    "assumedResultAvailabilityLagHours": 48,
+    "sameWeekResultsExcluded": true,
+    "warmupSeason": 2014,
+    "restCapDays": 30,
+    "sourceTimeZone": "America/New_York",
+    "teamAliases": {
+      "LA": "LAR",
+      "STL": "LAR",
+      "SD": "LAC",
+      "OAK": "LV"
+    }
+  },
+  "warmupGames": 256,
+  "splits": {
+    "train": {
+      "rows": 2079,
+      "bySeason": {
+        "2015": 256,
+        "2016": 256,
+        "2017": 256,
+        "2018": 256,
+        "2019": 256,
+        "2020": 256,
+        "2021": 272,
+        "2022": 271
+      },
+      "rowsWithMissingFeatures": 0
+    },
+    "validation": {
+      "rows": 272,
+      "bySeason": {
+        "2023": 272
+      },
+      "rowsWithMissingFeatures": 0
+    },
+    "test": {
+      "rows": 544,
+      "bySeason": {
+        "2024": 272,
+        "2025": 272
+      },
+      "rowsWithMissingFeatures": 0
+    }
+  },
+  "files": {
+    "train.features.jsonl": {
+      "sha256": "bc4d5a82f6a2d2580d3fc62af5dfec4e1630e59db4638e7787a02e5d89978b79",
+      "bytes": 2165695
+    },
+    "train.labels.jsonl": {
+      "sha256": "2c60d6ac2f2e66d181cd7e1dd6b21c1d819366a6212065702588122ed4ca5bce",
+      "bytes": 164969
+    },
+    "validation.features.jsonl": {
+      "sha256": "5ad67d4ee91dd512219ea9dd4bc2dcbc2f3043e4a12479745711c6c3bd0aab61",
+      "bytes": 283196
+    },
+    "validation.labels.jsonl": {
+      "sha256": "1cfb12b8eb18ac4e49dba324018fedc6aeaabf763dd2b0dc0715cf8962b1087a",
+      "bytes": 21571
+    },
+    "test.features.jsonl": {
+      "sha256": "ba1ce2e0fd65ffa41596de415d93a9d42f4235db2824456b880e58eb797a748d",
+      "bytes": 566283
+    },
+    "test.labels.jsonl": {
+      "sha256": "e1978cca9a2610535014e73d5bda8452717e3dbd0d9f435c75465476073f877a",
+      "bytes": 43158
+    }
+  },
+  "limitations": [
+    "Latest corrected source snapshot; historical publication and finalization timestamps are unavailable.",
+    "48-hour result availability is a conservative modeling assumption, not observed provenance.",
+    "Schedule fields use the final source schedule; historical rescheduling announcements are not reconstructed.",
+    "History contains regular-season games only and carries over season boundaries.",
+    "Points and result rates are not opponent-adjusted. Injury, weather, and quarterback features are not included.",
+    "Use only the explicit features object as model input. Labels and evidence are stored for evaluation/audit.",
+    "Test rows may use earlier test-period results as chronological features, but training/tuning must not use test labels.",
+    "No normalization, imputation, or model fitting has been performed. Fit any preprocessing on training data only."
+  ]
+}

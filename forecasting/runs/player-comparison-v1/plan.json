@@ -1,0 +1,42 @@
+{
+  "version": "player-challenger-v1",
+  "declaredBeforeFitting": true,
+  "trainingSeasons": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "selectionSeason": 2023,
+  "exploratorySeasons": [
+    2024,
+    2025
+  ],
+  "finalTestUntouched": false,
+  "candidateC": [
+    0.01,
+    0.1,
+    1.0,
+    10.0
+  ],
+  "families": [
+    "player-form",
+    "player-form-and-available-injuries"
+  ],
+  "selection": "lowest 2023 log loss; exact ties choose smaller C",
+  "primaryMetric": "logLoss",
+  "secondaryMetrics": [
+    "accuracy",
+    "unscaledMulticlassBrier"
+  ],
+  "baseline": "unchanged outcome-logit-v1 on identical games",
+  "history": "prior eligible regular-season games only; no same-week result; 48-hour result lag",
+  "injuryHistoricalRule": "date_modified must be present and at or before the 24-hour pregame cutoff; otherwise status is unavailable, never presumed healthy",
+  "injuryLiveRule": "observed feed receipt must precede feature cutoff; use current game-week reports only",
+  "deploymentRule": "team-only model stays primary; selected player challenger is prospective shadow comparison; no promotion based on exposed 2024\u20132025 results",
+  "causalInterpretation": false
+}

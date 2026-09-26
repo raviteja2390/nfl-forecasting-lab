@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "modelVersion": "SYNTHETIC-DEMO-NOT-A-TRAINED-MODEL",
+  "trainingDataThrough": "2026-08-31T23:59:59Z",
+  "evaluationStartsAt": "2026-09-01T00:00:00Z",
+  "baseline": {
+    "name": "Illustrative constant baseline; not estimated from NFL data",
+    "probabilities": { "homeWin": 0.50, "awayWin": 0.49, "tie": 0.01 }
+  },
+  "forecasts": [
+    {
+      "eventId": "SYNTHETIC-GAME-1",
+      "kickoffAt": "2026-09-06T17:00:00Z",
+      "generatedAt": "2026-09-05T12:00:00Z",
+      "probabilities": { "homeWin": 0.65, "awayWin": 0.34, "tie": 0.01 },
+      "result": { "homeScore": 24, "awayScore": 17, "finalizedAt": "2026-09-06T21:00:00Z" }
+    },
+    {
+      "eventId": "SYNTHETIC-GAME-2",
+      "kickoffAt": "2026-09-13T17:00:00Z",
+      "generatedAt": "2026-09-12T12:00:00Z",
+      "probabilities": { "homeWin": 0.60, "awayWin": 0.38, "tie": 0.02 },
+      "result": { "homeScore": 13, "awayScore": 20, "finalizedAt": "2026-09-13T21:00:00Z" }
+    },
+    {
+      "eventId": "SYNTHETIC-GAME-3",
+      "kickoffAt": "2026-09-20T17:00:00Z",
+      "generatedAt": "2026-09-19T12:00:00Z",
+      "probabilities": { "homeWin": 0.49, "awayWin": 0.49, "tie": 0.02 },
+      "result": { "homeScore": 20, "awayScore": 20, "finalizedAt": "2026-09-20T21:00:00Z" }
+    },
+    {
+      "eventId": "SYNTHETIC-GAME-PENDING",
+      "kickoffAt": "2026-09-27T17:00:00Z",
+      "generatedAt": "2026-09-26T12:00:00Z",
+      "probabilities": { "homeWin": 0.55, "awayWin": 0.44, "tie": 0.01 },
+      "result": null
+    }
+  ]
+}

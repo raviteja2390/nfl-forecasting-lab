@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "name": "outcome-logit-v1-final-test",
+  "declaredAt": "2026-09-26T14:08:59Z",
+  "mode": "historical-simulation",
+  "modelVersion": "outcome-logit-v1",
+  "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0",
+  "processedManifestSha256": "f53202aaf89eebafe0d943d04946b351ab1caebf865d7bb53384c8b67d23ed71",
+  "testFiles": {
+    "test.features.jsonl": {
+      "sha256": "ba1ce2e0fd65ffa41596de415d93a9d42f4235db2824456b880e58eb797a748d",
+      "bytes": 566283
+    },
+    "test.labels.jsonl": {
+      "sha256": "e1978cca9a2610535014e73d5bda8452717e3dbd0d9f435c75465476073f877a",
+      "bytes": 43158
+    }
+  },
+  "testSeasons": [
+    2024,
+    2025
+  ],
+  "expectedGamesBySeason": {
+    "2024": 272,
+    "2025": 272
+  },
+  "referenceLagHours": 48,
+  "forecastLeadHours": 24,
+  "modelRefitting": false,
+  "recalibration": false,
+  "parameterSearch": false,
+  "baseline": "Unchanged empirical training frequencies saved with model",
+  "primaryMetric": "logLoss",
+  "secondaryMetrics": [
+    "unscaledMulticlassBrier",
+    "accuracy",
+    "coverage"
+  ],
+  "breakdowns": [
+    "overall",
+    "season",
+    "season-week"
+  ],
+  "bootstrap": {
+    "unit": "season-week",
+    "draws": 2000,
+    "seed": 20260926,
+    "confidenceLevel": 0.95
+  },
+  "calibration": "Ten fixed equal-width bins per class, descriptive only",
+  "predictionRule": "Save all probabilities before opening test.labels.jsonl",
+  "reuseRule": "These seasons are exposed after this run and cannot be an untouched final test for subsequent model selection."
+}

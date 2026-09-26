@@ -1,0 +1,1798 @@
+{
+  "schemaVersion": 1,
+  "mode": "historical-simulation",
+  "stage": "frozen-final-test",
+  "modelVersion": "outcome-logit-v1",
+  "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0",
+  "evaluatedAt": "2026-09-26T14:11:36Z",
+  "finalTestEvaluated": true,
+  "finalTestSeasons": [
+    2024,
+    2025
+  ],
+  "refitted": false,
+  "overall": {
+    "model": {
+      "games": 544,
+      "brier": 0.45008314142559036,
+      "logLoss": 0.651701407868869,
+      "accuracy": 0.625,
+      "correct": 340,
+      "classified": 544,
+      "coverage": 1.0
+    },
+    "baseline": {
+      "games": 544,
+      "brier": 0.49952769939047387,
+      "logLoss": 0.7038939943643272,
+      "accuracy": 0.5349264705882353,
+      "correct": 291,
+      "classified": 544,
+      "coverage": 1.0
+    },
+    "improvement": {
+      "brier": 0.049444557964883507,
+      "logLoss": 0.052192586495458215
+    },
+    "classCounts": {
+      "homeWin": 291,
+      "awayWin": 252,
+      "tie": 1
+    },
+    "uncertainty": {
+      "method": "paired whole-week percentile bootstrap",
+      "draws": 2000,
+      "seed": 20260926,
+      "weeks": 36,
+      "confidenceLevel": 0.95,
+      "improvementIntervals": {
+        "brier": [
+          0.022045608325080488,
+          0.07584782776055535
+        ],
+        "logLoss": [
+          0.022453337624290092,
+          0.08090927421779628
+        ]
+      },
+      "interpretation": "Conditional on this frozen model and corrected source snapshot. Resamples whole season-week blocks; does not account for training uncertainty, dependence across weeks, or unknown historical availability."
+    },
+    "calibrationBins": {
+      "homeWin": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "upperInclusive": false,
+          "count": 4,
+          "meanProbability": 0.18002988187802554,
+          "observedRate": 0.25
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "upperInclusive": false,
+          "count": 28,
+          "meanProbability": 0.2624213600034487,
+          "observedRate": 0.2857142857142857
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "upperInclusive": false,
+          "count": 70,
+          "meanProbability": 0.3555771578841002,
+          "observedRate": 0.35714285714285715
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "upperInclusive": false,
+          "count": 119,
+          "meanProbability": 0.455102658534832,
+          "observedRate": 0.42857142857142855
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "upperInclusive": false,
+          "count": 116,
+          "meanProbability": 0.5469868133714828,
+          "observedRate": 0.5086206896551724
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "upperInclusive": false,
+          "count": 105,
+          "meanProbability": 0.6453305285063349,
+          "observedRate": 0.6476190476190476
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "upperInclusive": false,
+          "count": 73,
+          "meanProbability": 0.7437128805144962,
+          "observedRate": 0.7534246575342466
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "upperInclusive": false,
+          "count": 29,
+          "meanProbability": 0.8275815998452707,
+          "observedRate": 0.8275862068965517
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "upperInclusive": true,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        }
+      ],
+      "awayWin": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "upperInclusive": false,
+          "count": 30,
+          "meanProbability": 0.170997583812491,
+          "observedRate": 0.16666666666666666
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "upperInclusive": false,
+          "count": 74,
+          "meanProbability": 0.2547077373665366,
+          "observedRate": 0.25675675675675674
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "upperInclusive": false,
+          "count": 110,
+          "meanProbability": 0.35465749367587124,
+          "observedRate": 0.35454545454545455
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "upperInclusive": false,
+          "count": 112,
+          "meanProbability": 0.45311522457020625,
+          "observedRate": 0.5
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "upperInclusive": false,
+          "count": 125,
+          "meanProbability": 0.5451572926034117,
+          "observedRate": 0.568
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "upperInclusive": false,
+          "count": 63,
+          "meanProbability": 0.6473138598569265,
+          "observedRate": 0.6349206349206349
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "upperInclusive": false,
+          "count": 27,
+          "meanProbability": 0.7367672191043005,
+          "observedRate": 0.7407407407407407
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "upperInclusive": false,
+          "count": 3,
+          "meanProbability": 0.8216541783648056,
+          "observedRate": 0.6666666666666666
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "upperInclusive": true,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        }
+      ],
+      "tie": [
+        {
+          "lower": 0.0,
+          "upper": 0.1,
+          "upperInclusive": false,
+          "count": 544,
+          "meanProbability": 0.0043395969200373434,
+          "observedRate": 0.001838235294117647
+        },
+        {
+          "lower": 0.1,
+          "upper": 0.2,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.2,
+          "upper": 0.3,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.3,
+          "upper": 0.4,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.4,
+          "upper": 0.5,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.5,
+          "upper": 0.6,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.6,
+          "upper": 0.7,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.7,
+          "upper": 0.8,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.8,
+          "upper": 0.9,
+          "upperInclusive": false,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        },
+        {
+          "lower": 0.9,
+          "upper": 1.0,
+          "upperInclusive": true,
+          "count": 0,
+          "meanProbability": null,
+          "observedRate": null
+        }
+      ]
+    }
+  },
+  "bySeason": {
+    "2024": {
+      "model": {
+        "games": 272,
+        "brier": 0.4526759357947932,
+        "logLoss": 0.649218537710387,
+        "accuracy": 0.6323529411764706,
+        "correct": 172,
+        "classified": 272,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 272,
+        "brier": 0.4982332422136646,
+        "logLoss": 0.6957037044266138,
+        "accuracy": 0.5330882352941176,
+        "correct": 145,
+        "classified": 272,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.0455573064188714,
+        "logLoss": 0.04648516671622682
+      },
+      "classCounts": {
+        "homeWin": 145,
+        "awayWin": 127,
+        "tie": 0
+      },
+      "uncertainty": {
+        "method": "paired whole-week percentile bootstrap",
+        "draws": 2000,
+        "seed": 20260926,
+        "weeks": 18,
+        "confidenceLevel": 0.95,
+        "improvementIntervals": {
+          "brier": [
+            0.0035362232542949694,
+            0.08787613938769051
+          ],
+          "logLoss": [
+            0.000478473112396735,
+            0.09328585031774787
+          ]
+        },
+        "interpretation": "Conditional on this frozen model and corrected source snapshot. Resamples whole season-week blocks; does not account for training uncertainty, dependence across weeks, or unknown historical availability."
+      },
+      "calibrationBins": {
+        "homeWin": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "upperInclusive": false,
+            "count": 2,
+            "meanProbability": 0.16972105298528248,
+            "observedRate": 0.5
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "upperInclusive": false,
+            "count": 8,
+            "meanProbability": 0.264310789186384,
+            "observedRate": 0.5
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "upperInclusive": false,
+            "count": 38,
+            "meanProbability": 0.35716045056928736,
+            "observedRate": 0.2631578947368421
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "upperInclusive": false,
+            "count": 63,
+            "meanProbability": 0.453697850731427,
+            "observedRate": 0.42857142857142855
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "upperInclusive": false,
+            "count": 53,
+            "meanProbability": 0.5486823907845176,
+            "observedRate": 0.4716981132075472
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "upperInclusive": false,
+            "count": 62,
+            "meanProbability": 0.6476172206171854,
+            "observedRate": 0.6774193548387096
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "upperInclusive": false,
+            "count": 31,
+            "meanProbability": 0.7485638747854256,
+            "observedRate": 0.8387096774193549
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "upperInclusive": false,
+            "count": 15,
+            "meanProbability": 0.8272265953888888,
+            "observedRate": 0.6666666666666666
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "upperInclusive": true,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          }
+        ],
+        "awayWin": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "upperInclusive": false,
+            "count": 16,
+            "meanProbability": 0.1721202422694536,
+            "observedRate": 0.3125
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "upperInclusive": false,
+            "count": 30,
+            "meanProbability": 0.24956202281527748,
+            "observedRate": 0.16666666666666666
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "upperInclusive": false,
+            "count": 65,
+            "meanProbability": 0.35049714204626786,
+            "observedRate": 0.3384615384615385
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "upperInclusive": false,
+            "count": 50,
+            "meanProbability": 0.44976056029591727,
+            "observedRate": 0.52
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "upperInclusive": false,
+            "count": 67,
+            "meanProbability": 0.5448299098868088,
+            "observedRate": 0.5970149253731343
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "upperInclusive": false,
+            "count": 34,
+            "meanProbability": 0.6425635046815465,
+            "observedRate": 0.7058823529411765
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "upperInclusive": false,
+            "count": 8,
+            "meanProbability": 0.7294827641121927,
+            "observedRate": 0.5
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "upperInclusive": false,
+            "count": 2,
+            "meanProbability": 0.8265578872973061,
+            "observedRate": 0.5
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "upperInclusive": true,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          }
+        ],
+        "tie": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "upperInclusive": false,
+            "count": 272,
+            "meanProbability": 0.004389075757887148,
+            "observedRate": 0.0
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "upperInclusive": true,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          }
+        ]
+      }
+    },
+    "2025": {
+      "model": {
+        "games": 272,
+        "brier": 0.44749034705638757,
+        "logLoss": 0.6541842780273502,
+        "accuracy": 0.6176470588235294,
+        "correct": 168,
+        "classified": 272,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 272,
+        "brier": 0.500822156567285,
+        "logLoss": 0.7120842843020275,
+        "accuracy": 0.5367647058823529,
+        "correct": 146,
+        "classified": 272,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.05333180951089744,
+        "logLoss": 0.057900006274677285
+      },
+      "classCounts": {
+        "homeWin": 146,
+        "awayWin": 125,
+        "tie": 1
+      },
+      "uncertainty": {
+        "method": "paired whole-week percentile bootstrap",
+        "draws": 2000,
+        "seed": 20260926,
+        "weeks": 18,
+        "confidenceLevel": 0.95,
+        "improvementIntervals": {
+          "brier": [
+            0.020684076132432727,
+            0.08108073165195984
+          ],
+          "logLoss": [
+            0.02312979824258192,
+            0.08759798672795804
+          ]
+        },
+        "interpretation": "Conditional on this frozen model and corrected source snapshot. Resamples whole season-week blocks; does not account for training uncertainty, dependence across weeks, or unknown historical availability."
+      },
+      "calibrationBins": {
+        "homeWin": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "upperInclusive": false,
+            "count": 2,
+            "meanProbability": 0.1903387107707686,
+            "observedRate": 0.0
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "upperInclusive": false,
+            "count": 20,
+            "meanProbability": 0.2616655883302746,
+            "observedRate": 0.2
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "upperInclusive": false,
+            "count": 32,
+            "meanProbability": 0.35369699782044056,
+            "observedRate": 0.46875
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "upperInclusive": false,
+            "count": 56,
+            "meanProbability": 0.45668306731366204,
+            "observedRate": 0.42857142857142855
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "upperInclusive": false,
+            "count": 63,
+            "meanProbability": 0.5455603752303585,
+            "observedRate": 0.5396825396825397
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "upperInclusive": false,
+            "count": 43,
+            "meanProbability": 0.6420334375558067,
+            "observedRate": 0.6046511627906976
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "upperInclusive": false,
+            "count": 42,
+            "meanProbability": 0.7401323847430962,
+            "observedRate": 0.6904761904761905
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "upperInclusive": false,
+            "count": 14,
+            "meanProbability": 0.8279619617628226,
+            "observedRate": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "upperInclusive": true,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          }
+        ],
+        "awayWin": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "upperInclusive": false,
+            "count": 14,
+            "meanProbability": 0.16971454557596233,
+            "observedRate": 0.0
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "upperInclusive": false,
+            "count": 44,
+            "meanProbability": 0.2582161791060314,
+            "observedRate": 0.3181818181818182
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "upperInclusive": false,
+            "count": 45,
+            "meanProbability": 0.3606668904741876,
+            "observedRate": 0.37777777777777777
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "upperInclusive": false,
+            "count": 62,
+            "meanProbability": 0.4558205989849554,
+            "observedRate": 0.4838709677419355
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "upperInclusive": false,
+            "count": 58,
+            "meanProbability": 0.5455354760863839,
+            "observedRate": 0.5344827586206896
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "upperInclusive": false,
+            "count": 29,
+            "meanProbability": 0.6528832417866821,
+            "observedRate": 0.5517241379310345
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "upperInclusive": false,
+            "count": 19,
+            "meanProbability": 0.7398343580483459,
+            "observedRate": 0.8421052631578947
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "upperInclusive": false,
+            "count": 1,
+            "meanProbability": 0.8118467604998048,
+            "observedRate": 1.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "upperInclusive": true,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          }
+        ],
+        "tie": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "upperInclusive": false,
+            "count": 272,
+            "meanProbability": 0.004290118082187551,
+            "observedRate": 0.003676470588235294
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "upperInclusive": false,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "upperInclusive": true,
+            "count": 0,
+            "meanProbability": null,
+            "observedRate": null
+          }
+        ]
+      }
+    }
+  },
+  "byWeek": {
+    "2024_01": {
+      "model": {
+        "games": 16,
+        "brier": 0.5074924768145221,
+        "logLoss": 0.7097787312524416,
+        "accuracy": 0.5,
+        "correct": 8,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.4691185660401631,
+        "logLoss": 0.6663745827017518,
+        "accuracy": 0.6875,
+        "correct": 11,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": -0.03837391077435903,
+        "logLoss": -0.04340414855068986
+      }
+    },
+    "2024_02": {
+      "model": {
+        "games": 16,
+        "brier": 0.6290962416769392,
+        "logLoss": 0.8347862411658431,
+        "accuracy": 0.3125,
+        "correct": 5,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.528041124962722,
+        "logLoss": 0.7257311385734969,
+        "accuracy": 0.375,
+        "correct": 6,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": -0.10105511671421719,
+        "logLoss": -0.10905510259234619
+      }
+    },
+    "2024_03": {
+      "model": {
+        "games": 16,
+        "brier": 0.635183949131156,
+        "logLoss": 0.8627361696151388,
+        "accuracy": 0.4375,
+        "correct": 7,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.5162566131782103,
+        "logLoss": 0.7138598273991479,
+        "accuracy": 0.4375,
+        "correct": 7,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": -0.11892733595294569,
+        "logLoss": -0.1488763422159909
+      }
+    },
+    "2024_04": {
+      "model": {
+        "games": 16,
+        "brier": 0.5205417779557497,
+        "logLoss": 0.7210111029516784,
+        "accuracy": 0.5625,
+        "correct": 9,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.4926875896091866,
+        "logLoss": 0.6901172050504498,
+        "accuracy": 0.5625,
+        "correct": 9,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": -0.027854188346563113,
+        "logLoss": -0.03089389790122854
+      }
+    },
+    "2024_05": {
+      "model": {
+        "games": 14,
+        "brier": 0.5894828113106626,
+        "logLoss": 0.7910735615141091,
+        "accuracy": 0.42857142857142855,
+        "correct": 6,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.4910040879256849,
+        "logLoss": 0.6884213034541142,
+        "accuracy": 0.5714285714285714,
+        "correct": 8,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": -0.0984787233849777,
+        "logLoss": -0.1026522580599949
+      }
+    },
+    "2024_06": {
+      "model": {
+        "games": 14,
+        "brier": 0.45548503943019103,
+        "logLoss": 0.6516315139997834,
+        "accuracy": 0.6428571428571429,
+        "correct": 9,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.5448761417977389,
+        "logLoss": 0.7426901545368526,
+        "accuracy": 0.2857142857142857,
+        "correct": 4,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.08939110236754788,
+        "logLoss": 0.09105864053706925
+      }
+    },
+    "2024_07": {
+      "model": {
+        "games": 15,
+        "brier": 0.3813135839469999,
+        "logLoss": 0.5715969875586412,
+        "accuracy": 0.7333333333333333,
+        "correct": 11,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 15,
+        "brier": 0.49818702844195883,
+        "logLoss": 0.6956571502651461,
+        "accuracy": 0.5333333333333333,
+        "correct": 8,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.11687344449495896,
+        "logLoss": 0.12406016270650488
+      }
+    },
+    "2024_08": {
+      "model": {
+        "games": 16,
+        "brier": 0.4433225341920807,
+        "logLoss": 0.6337406779837431,
+        "accuracy": 0.625,
+        "correct": 10,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.4809030778246749,
+        "logLoss": 0.6782458938761008,
+        "accuracy": 0.625,
+        "correct": 10,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.03758054363259422,
+        "logLoss": 0.044505215892357675
+      }
+    },
+    "2024_09": {
+      "model": {
+        "games": 15,
+        "brier": 0.37105610999599764,
+        "logLoss": 0.5596728591921681,
+        "accuracy": 0.8,
+        "correct": 12,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 15,
+        "brier": 0.4604765907315211,
+        "logLoss": 0.6576689545072292,
+        "accuracy": 0.7333333333333333,
+        "correct": 11,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.08942048073552344,
+        "logLoss": 0.09799609531506104
+      }
+    },
+    "2024_10": {
+      "model": {
+        "games": 14,
+        "brier": 0.4848653487963568,
+        "logLoss": 0.6853633660197638,
+        "accuracy": 0.6428571428571429,
+        "correct": 9,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.5179401148617119,
+        "logLoss": 0.7155557289954835,
+        "accuracy": 0.42857142857142855,
+        "correct": 6,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.03307476606535509,
+        "logLoss": 0.0301923629757197
+      }
+    },
+    "2024_11": {
+      "model": {
+        "games": 14,
+        "brier": 0.40863269199860686,
+        "logLoss": 0.6006162660261216,
+        "accuracy": 0.7857142857142857,
+        "correct": 11,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.4910040879256849,
+        "logLoss": 0.6884213034541142,
+        "accuracy": 0.5714285714285714,
+        "correct": 8,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.08237139592707804,
+        "logLoss": 0.08780503742799262
+      }
+    },
+    "2024_12": {
+      "model": {
+        "games": 13,
+        "brier": 0.5132507021058074,
+        "logLoss": 0.7259638916602393,
+        "accuracy": 0.6923076923076923,
+        "correct": 9,
+        "classified": 13,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 13,
+        "brier": 0.5407321376537347,
+        "logLoss": 0.7385156275304882,
+        "accuracy": 0.3076923076923077,
+        "correct": 4,
+        "classified": 13,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.02748143554792737,
+        "logLoss": 0.012551735870248826
+      }
+    },
+    "2024_13": {
+      "model": {
+        "games": 16,
+        "brier": 0.3046963530864268,
+        "logLoss": 0.4863432669883556,
+        "accuracy": 0.75,
+        "correct": 12,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.5044721013936985,
+        "logLoss": 0.7019885162247989,
+        "accuracy": 0.5,
+        "correct": 8,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.19977574830727168,
+        "logLoss": 0.21564524923644324
+      }
+    },
+    "2024_14": {
+      "model": {
+        "games": 13,
+        "brier": 0.33230006206128204,
+        "logLoss": 0.5134569377379395,
+        "accuracy": 0.7692307692307693,
+        "correct": 10,
+        "classified": 13,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 13,
+        "brier": 0.4682120651336621,
+        "logLoss": 0.6654614049191095,
+        "accuracy": 0.6923076923076923,
+        "correct": 9,
+        "classified": 13,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.13591200307238005,
+        "logLoss": 0.15200446718117
+      }
+    },
+    "2024_15": {
+      "model": {
+        "games": 16,
+        "brier": 0.3633294840762295,
+        "logLoss": 0.5518976686035251,
+        "accuracy": 0.75,
+        "correct": 12,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.5398256367472337,
+        "logLoss": 0.7376024497478458,
+        "accuracy": 0.3125,
+        "correct": 5,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.17649615267100421,
+        "logLoss": 0.18570478114432076
+      }
+    },
+    "2024_16": {
+      "model": {
+        "games": 16,
+        "brier": 0.3546043228321225,
+        "logLoss": 0.5373487314912395,
+        "accuracy": 0.6875,
+        "correct": 11,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.4455495424711395,
+        "logLoss": 0.6426319603530537,
+        "accuracy": 0.8125,
+        "correct": 13,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.09094521963901697,
+        "logLoss": 0.10528322886181418
+      }
+    },
+    "2024_17": {
+      "model": {
+        "games": 16,
+        "brier": 0.3620469979345281,
+        "logLoss": 0.5502647918438632,
+        "accuracy": 0.6875,
+        "correct": 11,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.4926875896091866,
+        "logLoss": 0.6901172050504498,
+        "accuracy": 0.5625,
+        "correct": 9,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.13064059167465852,
+        "logLoss": 0.1398524132065866
+      }
+    },
+    "2024_18": {
+      "model": {
+        "games": 16,
+        "brier": 0.4866625317605661,
+        "logLoss": 0.6936137348510398,
+        "accuracy": 0.625,
+        "correct": 10,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.4926875896091867,
+        "logLoss": 0.6901172050504498,
+        "accuracy": 0.5625,
+        "correct": 9,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.006025057848620563,
+        "logLoss": -0.003496529800590009
+      }
+    },
+    "2025_01": {
+      "model": {
+        "games": 16,
+        "brier": 0.41343593646356885,
+        "logLoss": 0.6065574331817082,
+        "accuracy": 0.5625,
+        "correct": 9,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.4926875896091866,
+        "logLoss": 0.6901172050504498,
+        "accuracy": 0.5625,
+        "correct": 9,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.07925165314561777,
+        "logLoss": 0.08355977186874164
+      }
+    },
+    "2025_02": {
+      "model": {
+        "games": 16,
+        "brier": 0.3989321450275367,
+        "logLoss": 0.5885678672318804,
+        "accuracy": 0.6875,
+        "correct": 11,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.5162566131782101,
+        "logLoss": 0.7138598273991479,
+        "accuracy": 0.4375,
+        "correct": 7,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.11732446815067343,
+        "logLoss": 0.1252919601672675
+      }
+    },
+    "2025_03": {
+      "model": {
+        "games": 16,
+        "brier": 0.42415035997730277,
+        "logLoss": 0.6183092348152704,
+        "accuracy": 0.625,
+        "correct": 10,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.4573340542556512,
+        "logLoss": 0.6545032715274027,
+        "accuracy": 0.75,
+        "correct": 12,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.03318369427834844,
+        "logLoss": 0.03619403671213228
+      }
+    },
+    "2025_04": {
+      "model": {
+        "games": 16,
+        "brier": 0.6190958170741353,
+        "logLoss": 1.044046004741086,
+        "accuracy": 0.375,
+        "correct": 6,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.5249146218362188,
+        "logLoss": 0.9567157517581394,
+        "accuracy": 0.6875,
+        "correct": 11,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": -0.09418119523791646,
+        "logLoss": -0.08733025298294661
+      }
+    },
+    "2025_05": {
+      "model": {
+        "games": 14,
+        "brier": 0.6505632880607053,
+        "logLoss": 0.8698594188862081,
+        "accuracy": 0.5,
+        "correct": 7,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.5448761417977389,
+        "logLoss": 0.7426901545368525,
+        "accuracy": 0.2857142857142857,
+        "correct": 4,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": -0.10568714626296638,
+        "logLoss": -0.1271692643493556
+      }
+    },
+    "2025_06": {
+      "model": {
+        "games": 15,
+        "brier": 0.46381139726960385,
+        "logLoss": 0.6604755327783128,
+        "accuracy": 0.6,
+        "correct": 9,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 15,
+        "brier": 0.4856168825384796,
+        "logLoss": 0.6829944183458404,
+        "accuracy": 0.6,
+        "correct": 9,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.02180548526887577,
+        "logLoss": 0.02251888556752757
+      }
+    },
+    "2025_07": {
+      "model": {
+        "games": 15,
+        "brier": 0.4079249512525763,
+        "logLoss": 0.601151110170886,
+        "accuracy": 0.7333333333333333,
+        "correct": 11,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 15,
+        "brier": 0.48561688253847957,
+        "logLoss": 0.6829944183458404,
+        "accuracy": 0.6,
+        "correct": 9,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.07769193128590329,
+        "logLoss": 0.08184330817495444
+      }
+    },
+    "2025_08": {
+      "model": {
+        "games": 13,
+        "brier": 0.3695090176721545,
+        "logLoss": 0.5526347753159824,
+        "accuracy": 0.8461538461538461,
+        "correct": 11,
+        "classified": 13,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 13,
+        "brier": 0.4827160796376766,
+        "logLoss": 0.6800722494413852,
+        "accuracy": 0.6153846153846154,
+        "correct": 8,
+        "classified": 13,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.1132070619655221,
+        "logLoss": 0.12743747412540285
+      }
+    },
+    "2025_09": {
+      "model": {
+        "games": 14,
+        "brier": 0.47796993954229283,
+        "logLoss": 0.6771324469901182,
+        "accuracy": 0.6428571428571429,
+        "correct": 9,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.5448761417977389,
+        "logLoss": 0.7426901545368526,
+        "accuracy": 0.2857142857142857,
+        "correct": 4,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.06690620225544608,
+        "logLoss": 0.0655577075467344
+      }
+    },
+    "2025_10": {
+      "model": {
+        "games": 14,
+        "brier": 0.4414019252684365,
+        "logLoss": 0.6364237820862392,
+        "accuracy": 0.7142857142857143,
+        "correct": 10,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.491004087925685,
+        "logLoss": 0.6884213034541142,
+        "accuracy": 0.5714285714285714,
+        "correct": 8,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.04960216265724848,
+        "logLoss": 0.051997521367875055
+      }
+    },
+    "2025_11": {
+      "model": {
+        "games": 15,
+        "brier": 0.37975775026148956,
+        "logLoss": 0.5704595168095089,
+        "accuracy": 0.7333333333333333,
+        "correct": 11,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 15,
+        "brier": 0.49818702844195883,
+        "logLoss": 0.6956571502651461,
+        "accuracy": 0.5333333333333333,
+        "correct": 8,
+        "classified": 15,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.11842927818046928,
+        "logLoss": 0.12519763345563717
+      }
+    },
+    "2025_12": {
+      "model": {
+        "games": 14,
+        "brier": 0.321649337572739,
+        "logLoss": 0.5068757335636755,
+        "accuracy": 0.7142857142857143,
+        "correct": 10,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.47753607445767143,
+        "logLoss": 0.6748540906834296,
+        "accuracy": 0.6428571428571429,
+        "correct": 9,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.15588673688493243,
+        "logLoss": 0.16797835711975406
+      }
+    },
+    "2025_13": {
+      "model": {
+        "games": 16,
+        "brier": 0.40870455187152355,
+        "logLoss": 0.5953905312594001,
+        "accuracy": 0.625,
+        "correct": 10,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.5044721013936985,
+        "logLoss": 0.7019885162247989,
+        "accuracy": 0.5,
+        "correct": 8,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.09576754952217492,
+        "logLoss": 0.10659798496539874
+      }
+    },
+    "2025_14": {
+      "model": {
+        "games": 14,
+        "brier": 0.47338771487149556,
+        "logLoss": 0.6685633843720843,
+        "accuracy": 0.5,
+        "correct": 7,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 14,
+        "brier": 0.5179401148617119,
+        "logLoss": 0.7155557289954835,
+        "accuracy": 0.42857142857142855,
+        "correct": 6,
+        "classified": 14,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.04455239999021632,
+        "logLoss": 0.046992344623399185
+      }
+    },
+    "2025_15": {
+      "model": {
+        "games": 16,
+        "brier": 0.4342238843390591,
+        "logLoss": 0.6235092259335973,
+        "accuracy": 0.5625,
+        "correct": 9,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.48090307782467484,
+        "logLoss": 0.6782458938761008,
+        "accuracy": 0.625,
+        "correct": 10,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.04667919348561572,
+        "logLoss": 0.054736667942503536
+      }
+    },
+    "2025_16": {
+      "model": {
+        "games": 16,
+        "brier": 0.4381340117005284,
+        "logLoss": 0.6275819068204557,
+        "accuracy": 0.6875,
+        "correct": 11,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.528041124962722,
+        "logLoss": 0.7257311385734969,
+        "accuracy": 0.375,
+        "correct": 6,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.08990711326219364,
+        "logLoss": 0.09814923175304124
+      }
+    },
+    "2025_17": {
+      "model": {
+        "games": 16,
+        "brier": 0.4658821891175359,
+        "logLoss": 0.66165934916441,
+        "accuracy": 0.5625,
+        "correct": 9,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.5280411249627219,
+        "logLoss": 0.7257311385734969,
+        "accuracy": 0.375,
+        "correct": 6,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": 0.062158935845186,
+        "logLoss": 0.06407178940908687
+      }
+    },
+    "2025_18": {
+      "model": {
+        "games": 16,
+        "brier": 0.4619245302678687,
+        "logLoss": 0.6499167234380824,
+        "accuracy": 0.5,
+        "correct": 8,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "baseline": {
+        "games": 16,
+        "brier": 0.45733405425565127,
+        "logLoss": 0.6545032715274027,
+        "accuracy": 0.75,
+        "correct": 12,
+        "classified": 16,
+        "coverage": 1.0
+      },
+      "improvement": {
+        "brier": -0.004590476012217459,
+        "logLoss": 0.0045865480893203525
+      }
+    }
+  },
+  "baselineProbabilities": {
+    "homeWin": 0.544973544973545,
+    "awayWin": 0.4506974506974507,
+    "tie": 0.004329004329004329
+  },
+  "holdoutStatus": "exposed; unavailable as an untouched test for future tuning",
+  "provenance": {
+    "planSha256": "7d6e4ee4d5989ae4204d95ff7a1fdb3a67cf5548ab036879d716f8fd613a68a4",
+    "processedManifestSha256": "f53202aaf89eebafe0d943d04946b351ab1caebf865d7bb53384c8b67d23ed71",
+    "testFiles": {
+      "test.features.jsonl": {
+        "sha256": "ba1ce2e0fd65ffa41596de415d93a9d42f4235db2824456b880e58eb797a748d",
+        "bytes": 566283
+      },
+      "test.labels.jsonl": {
+        "sha256": "e1978cca9a2610535014e73d5bda8452717e3dbd0d9f435c75465476073f877a",
+        "bytes": 43158
+      }
+    },
+    "sourceSha256": "55d99914587ae42aa36a280ff509fc427037b4cfcc8f228297f4754a6ec61252",
+    "processedBuilderSha256": "a0075435df6cd371bf9e301fad4b391b3f29d0049774b0ff457ae0fcf9f64111",
+    "trainingBuilderSha256": "13e051286efdd63fa90eb4418bdd02e1751a0cd8174435ecf7d0b49eebc8fe0b",
+    "developmentInputHashesMatch": true,
+    "inferenceSha256": "dd773d44ee0c36f0c5090a7cfecd982e82794a3ebd3476aca596a0e6e673be7f",
+    "evaluatorSha256": "a1a01081c3cf1330aa1d6386cf56442a8997b870fb6aadacde209e6f84d5ea39",
+    "predictionsSha256": "9eb03201c3e0bc8d45063642ea4704b55fbc61cb62d04424762add08072de214"
+  },
+  "runtime": {
+    "python": "3.9.6",
+    "trainingLibrariesRequired": false
+  }
+}

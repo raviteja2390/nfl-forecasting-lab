@@ -1,0 +1,18 @@
+__pycache__/
+.venv/
+*.py[cod]
+
+# Growing raw-response archives stay local; keep observation receipts in Git.
+/data/feeds/blobs/
+/data/snapshots/blobs/
+
+# Exploratory source payloads; their provenance files remain versioned.
+/data/player-probe/*.csv
+/data/player-probe/scoreboard.json
+
+# Local backups and credentials must never enter the repository.
+/backups/
+.env*
+!.env.example
+*.pem
+*.key

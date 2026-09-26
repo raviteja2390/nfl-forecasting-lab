@@ -1,0 +1,449 @@
+{
+  "schemaVersion": 1,
+  "kind": "multinomial-logistic-regression",
+  "featureNames": [
+    "homeField",
+    "homeRecentGames",
+    "homePointsForMean",
+    "homePointsAgainstMean",
+    "homeResultRate",
+    "homeDaysSincePriorGameCapped30",
+    "awayRecentGames",
+    "awayPointsForMean",
+    "awayPointsAgainstMean",
+    "awayResultRate",
+    "awayDaysSincePriorGameCapped30",
+    "homePriorQBEPAperDropbackShrunk",
+    "homePriorQBDropbacks",
+    "homePriorQBChanged",
+    "homePriorQBEPACoverage",
+    "homeTopReceiverTargetShare",
+    "homeTopReceiverEPAperTargetShrunk",
+    "homeTopReceiverEPACoverage",
+    "homeTopRusherCarryShare",
+    "homeTopRusherEPAperCarryShrunk",
+    "homeTopRusherEPACoverage",
+    "awayPriorQBEPAperDropbackShrunk",
+    "awayPriorQBDropbacks",
+    "awayPriorQBChanged",
+    "awayPriorQBEPACoverage",
+    "awayTopReceiverTargetShare",
+    "awayTopReceiverEPAperTargetShrunk",
+    "awayTopReceiverEPACoverage",
+    "awayTopRusherCarryShare",
+    "awayTopRusherEPAperCarryShrunk",
+    "awayTopRusherEPACoverage"
+  ],
+  "classes": [
+    "awayWin",
+    "homeWin",
+    "tie"
+  ],
+  "mean": [
+    0.9846079846079846,
+    8.0,
+    22.79954304954305,
+    22.962722462722464,
+    0.4955507455507456,
+    8.817700817700818,
+    8.0,
+    22.95827320827321,
+    22.802008177008176,
+    0.5041786916786917,
+    8.882154882154882,
+    0.0307389863805398,
+    125.66378066378067,
+    0.13035113035113036,
+    1.0,
+    0.24729851481348922,
+    0.14318600244398308,
+    1.0,
+    0.5257287345968132,
+    -0.04593240851225615,
+    1.0,
+    0.03529846531833141,
+    127.16835016835017,
+    0.12025012025012025,
+    1.0,
+    0.24656429134968644,
+    0.145674779192998,
+    1.0,
+    0.5236083226820114,
+    -0.044498512850011884,
+    1.0
+  ],
+  "scale": [
+    0.12310605693542448,
+    1.0,
+    4.807992149716443,
+    4.221679670514257,
+    0.22614789958125694,
+    5.790220338468744,
+    1.0,
+    4.85007637438156,
+    4.199899131319345,
+    0.22370133619259758,
+    5.7818331843527195,
+    0.09940084298067921,
+    41.84166990449034,
+    0.33668934222412344,
+    1.0,
+    0.04749937827667934,
+    0.17467232228879034,
+    1.0,
+    0.1358795915114313,
+    0.0912654828155117,
+    1.0,
+    0.09733618796721498,
+    41.31662533790346,
+    0.3252537914151851,
+    1.0,
+    0.046701104165266176,
+    0.17298475554015147,
+    1.0,
+    0.1383377928190595,
+    0.09370738738210757,
+    1.0
+  ],
+  "coefficients": [
+    [
+      0.00924425905654329,
+      0.0,
+      -0.039135877428747266,
+      0.07305136675893911,
+      -0.091539610177738,
+      -0.043191924121412,
+      0.0,
+      0.1289264980275528,
+      -0.010003676402514353,
+      0.06092278143633633,
+      -0.0028976995520426153,
+      -0.03249157294568321,
+      -0.04464147572171856,
+      0.025341160000801194,
+      0.0,
+      -0.029341413237335814,
+      -0.004940277364075681,
+      0.0,
+      -0.021729739467438686,
+      -0.012722397850271664,
+      0.0,
+      0.05113108608159591,
+      0.015515469881256542,
+      -0.04100979838331805,
+      0.0,
+      0.008076887054350088,
+      -0.0033376893927979582,
+      0.0,
+      -0.0002161762312758869,
+      0.018238820325440823,
+      0.0
+    ],
+    [
+      0.049727763910116365,
+      0.0,
+      0.08990141246698938,
+      -0.0769602538567959,
+      0.1174778679307494,
+      -0.02263011376152703,
+      0.0,
+      -0.12306909943048107,
+      0.05760376839394873,
+      -0.0823653585699046,
+      -0.07778454305857373,
+      0.054379958999370995,
+      0.023428534303128648,
+      -0.046160581408667155,
+      0.0,
+      0.030496574121598962,
+      -0.017126658799874024,
+      0.0,
+      -0.026517096122694626,
+      0.020504932864078097,
+      0.0,
+      -0.022332759459396407,
+      0.024503388469895995,
+      0.019578367193750515,
+      0.0,
+      -0.005034356614284247,
+      -0.03222416649980735,
+      0.0,
+      -0.028739362512991147,
+      -0.01487433549602895,
+      0.0
+    ],
+    [
+      -0.05897202296665953,
+      0.0,
+      -0.05076553503824216,
+      0.0039088870978569445,
+      -0.025938257753011302,
+      0.06582203788293906,
+      0.0,
+      -0.005857398597071889,
+      -0.04760009199143434,
+      0.021442577133568543,
+      0.0806822426106164,
+      -0.021888386053687623,
+      0.02121294141858965,
+      0.020819421407866016,
+      0.0,
+      -0.0011551608842630529,
+      0.02206693616394969,
+      0.0,
+      0.04824683559013353,
+      -0.0077825350138063095,
+      0.0,
+      -0.028798326622199517,
+      -0.04001885835115222,
+      0.021431431189567474,
+      0.0,
+      -0.0030425304400657025,
+      0.03556185589260536,
+      0.0,
+      0.028955538744267054,
+      -0.0033644848294122616,
+      0.0
+    ]
+  ],
+  "intercepts": [
+    1.475977139439639,
+    1.685403993735502,
+    -3.1613811331750994
+  ],
+  "parameters": {
+    "C": 0.01,
+    "solver": "lbfgs",
+    "regularization": "L2",
+    "tol": 1e-09
+  },
+  "iterations": [
+    41
+  ],
+  "modelVersion": "player-form-v1",
+  "family": "player-form",
+  "trainedAt": "2026-09-26T14:27:47.148016Z",
+  "trainingSeasons": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "selectionSeasons": [
+    2023
+  ],
+  "baselineProbabilities": {
+    "homeWin": 0.544973544973545,
+    "awayWin": 0.4506974506974507,
+    "tie": 0.004329004329004329
+  },
+  "role": "prospective-shadow-only",
+  "provenance": {
+    "planSha256": "11ca3feaa16e9123d49e27fedbbc4f4284702e8768f9d01e67dc6be840591f07",
+    "inputFiles": {
+      "train.features.jsonl": {
+        "sha256": "bc4d5a82f6a2d2580d3fc62af5dfec4e1630e59db4638e7787a02e5d89978b79",
+        "bytes": 2165695
+      },
+      "train.labels.jsonl": {
+        "sha256": "2c60d6ac2f2e66d181cd7e1dd6b21c1d819366a6212065702588122ed4ca5bce",
+        "bytes": 164969
+      },
+      "validation.features.jsonl": {
+        "sha256": "5ad67d4ee91dd512219ea9dd4bc2dcbc2f3043e4a12479745711c6c3bd0aab61",
+        "bytes": 283196
+      },
+      "validation.labels.jsonl": {
+        "sha256": "1cfb12b8eb18ac4e49dba324018fedc6aeaabf763dd2b0dc0715cf8962b1087a",
+        "bytes": 21571
+      },
+      "test.features.jsonl": {
+        "sha256": "ba1ce2e0fd65ffa41596de415d93a9d42f4235db2824456b880e58eb797a748d",
+        "bytes": 566283
+      },
+      "test.labels.jsonl": {
+        "sha256": "e1978cca9a2610535014e73d5bda8452717e3dbd0d9f435c75465476073f877a",
+        "bytes": 43158
+      }
+    },
+    "sourceReceipts": [
+      {
+        "kind": "stats",
+        "key": "2014",
+        "observedAt": "2026-09-26T14:17:31.447064Z",
+        "sha256": "a389b10d94eb8e6b9a153223d381aab821b0eff4cd73967835a21032192abc61",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2014.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2014",
+        "observedAt": "2026-09-26T14:16:55.764071Z",
+        "sha256": "e675fd5d86c3451d76e7c5d530095db1641347eb3f9796c9a30dd7a75e3ba634",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2014.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2015",
+        "observedAt": "2026-09-26T14:17:32.227456Z",
+        "sha256": "21052baa3b3291a92faf3e6827891295010dca8cc5cefd5a909984b9d7b64664",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2015.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2015",
+        "observedAt": "2026-09-26T14:16:55.989766Z",
+        "sha256": "fbca54ef42594cc52facc0d8c8dd74802b812771b9e33032e44ae8c7e21b0360",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2015.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2016",
+        "observedAt": "2026-09-26T14:17:31.304656Z",
+        "sha256": "eb0264c65d1ef593196afcd4ba24e9f2e9b7942923bf6f4bb4639684e2c4d470",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2016.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2016",
+        "observedAt": "2026-09-26T14:16:56.087373Z",
+        "sha256": "504e05968cb9c54ddc730fd9b6e7d1dd16a62db8029cc784d3d7bafcea7ff7cb",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2016.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2017",
+        "observedAt": "2026-09-26T14:17:32.650529Z",
+        "sha256": "592b0916065987b0b3afb0480162f03350d16b12250dc42b0f194e2ab1378563",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2017.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2017",
+        "observedAt": "2026-09-26T14:16:55.685593Z",
+        "sha256": "0d5139fbf41b0866517bd2bd5fd85bb20dbd4dd9bc36a706fed030a88731de6f",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2017.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2018",
+        "observedAt": "2026-09-26T14:17:36.343032Z",
+        "sha256": "c53021bcfc9f89d30edd6f1fe145a1d7d6ce469efeec75974fe9f0adac568642",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2018.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2018",
+        "observedAt": "2026-09-26T14:16:56.581560Z",
+        "sha256": "4724e1f37cc3076f564e997fbf269190e7dbe795a39315b903788e0a9c40065e",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2018.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2019",
+        "observedAt": "2026-09-26T14:17:36.402181Z",
+        "sha256": "a05558126b1209b80fe11a8f18938cb35816370bf9990975a87de49e9eed7376",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2019.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2019",
+        "observedAt": "2026-09-26T14:16:56.589197Z",
+        "sha256": "daddfe8e04ddc3a29bce14f362e774fbadfb274c807f1f0fde7b5bf32aaf6cdf",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2019.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2020",
+        "observedAt": "2026-09-26T14:17:40.674575Z",
+        "sha256": "05b992676faccc8940efbf6242cb76358069372d31d7c2e02c1a4acdcd3cbe18",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2020.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2020",
+        "observedAt": "2026-09-26T14:16:56.645601Z",
+        "sha256": "706cca82824214f6b73ba0c6e537d3ee39766a50c644b8974b9fc28d7518de90",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2020.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2021",
+        "observedAt": "2026-09-26T14:17:40.864875Z",
+        "sha256": "41915fb49238902ad1f129ebf0405b11a1e710454ae0fe8f7b3e4f9145875f48",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2021.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2021",
+        "observedAt": "2026-09-26T14:16:56.526292Z",
+        "sha256": "1049fb9ff0fe7cfcf3ba8bfe1f5a35d3aba985c461c8fb7bf5201735b6d34254",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2021.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2022",
+        "observedAt": "2026-09-26T14:17:43.725034Z",
+        "sha256": "ad426c3fe5bf1cc30c3f137fdfe96d054e19d400879ee4413129da49fa7b54be",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2022.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2022",
+        "observedAt": "2026-09-26T14:16:57.033621Z",
+        "sha256": "5f0d60324e597edd1a2ced8540b04e40b51dd440591dd1df11b8d96343387c9e",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2022.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2023",
+        "observedAt": "2026-09-26T14:17:43.808890Z",
+        "sha256": "f19cb71a5de0dce7fd09376026237c9ee9d5a93fe13815a2ea3ec2d37204cb17",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2023.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2023",
+        "observedAt": "2026-09-26T14:16:57.215891Z",
+        "sha256": "16b04e21da5aa3944cfa9c22cafcc84ed7e6d9866eaddf0344e9b8cbf2f63afe",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2023.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2024",
+        "observedAt": "2026-09-26T14:17:47.995392Z",
+        "sha256": "3ddc45a84f759aa348ce465ae001752c530575455717657cdfe1f8abfcdb4759",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2024.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2024",
+        "observedAt": "2026-09-26T14:16:57.304783Z",
+        "sha256": "498bce8e13cb64b2ab9bb0ad6cb81d0a63c2ddb24016c9fc90c2de2126fae449",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2024.csv"
+      },
+      {
+        "kind": "stats",
+        "key": "2025",
+        "observedAt": "2026-09-26T14:17:48.646201Z",
+        "sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2025.csv"
+      },
+      {
+        "kind": "injuries",
+        "key": "2025",
+        "observedAt": "2026-09-26T14:16:57.119722Z",
+        "sha256": "873ca1606dd575bd01152508a243ef6b3a0f8f97b90b707217e62ee8c7ceb735",
+        "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2025.csv"
+      }
+    ],
+    "codeSha256": {
+      "player_features.py": "aa126629473a5501dcaffebe3d3f2a34e70207fb8c4ba641001044d0dc8a03c8",
+      "compare_players.py": "a77f600996bcca2f1eb862ccce8db424940b0ccbf4b766592e886c6682471262",
+      "model.py": "dd773d44ee0c36f0c5090a7cfecd982e82794a3ebd3476aca596a0e6e673be7f"
+    }
+  }
+}

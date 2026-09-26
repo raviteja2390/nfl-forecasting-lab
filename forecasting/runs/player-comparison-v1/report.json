@@ -1,0 +1,375 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-26T14:27:57.556368Z",
+  "kind": "player-model-development-comparison",
+  "finalTestUntouched": false,
+  "plan": {
+    "version": "player-challenger-v1",
+    "declaredBeforeFitting": true,
+    "trainingSeasons": [
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022
+    ],
+    "selectionSeason": 2023,
+    "exploratorySeasons": [
+      2024,
+      2025
+    ],
+    "finalTestUntouched": false,
+    "candidateC": [
+      0.01,
+      0.1,
+      1.0,
+      10.0
+    ],
+    "families": [
+      "player-form",
+      "player-form-and-available-injuries"
+    ],
+    "selection": "lowest 2023 log loss; exact ties choose smaller C",
+    "primaryMetric": "logLoss",
+    "secondaryMetrics": [
+      "accuracy",
+      "unscaledMulticlassBrier"
+    ],
+    "baseline": "unchanged outcome-logit-v1 on identical games",
+    "history": "prior eligible regular-season games only; no same-week result; 48-hour result lag",
+    "injuryHistoricalRule": "date_modified must be present and at or before the 24-hour pregame cutoff; otherwise status is unavailable, never presumed healthy",
+    "injuryLiveRule": "observed feed receipt must precede feature cutoff; use current game-week reports only",
+    "deploymentRule": "team-only model stays primary; selected player challenger is prospective shadow comparison; no promotion based on exposed 2024\u20132025 results",
+    "causalInterpretation": false
+  },
+  "teamOnly": {
+    "validation": {
+      "games": 272,
+      "brier": 0.4642930668557298,
+      "logLoss": 0.661379497268108,
+      "accuracy": 0.5992647058823529,
+      "correct": 163,
+      "classified": 272,
+      "coverage": 1.0
+    },
+    "test": {
+      "games": 544,
+      "brier": 0.4500831414255902,
+      "logLoss": 0.6517014078688684,
+      "accuracy": 0.625,
+      "correct": 340,
+      "classified": 544,
+      "coverage": 1.0
+    }
+  },
+  "families": {
+    "player-form": {
+      "modelVersion": "player-form-v1",
+      "selectedC": 0.01,
+      "candidates": [
+        {
+          "C": 0.01,
+          "validation": {
+            "games": 272,
+            "brier": 0.47616793941618263,
+            "logLoss": 0.6743115239993316,
+            "accuracy": 0.6029411764705882,
+            "correct": 164,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        },
+        {
+          "C": 0.1,
+          "validation": {
+            "games": 272,
+            "brier": 0.47743283548409476,
+            "logLoss": 0.6766129490433301,
+            "accuracy": 0.6102941176470589,
+            "correct": 166,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        },
+        {
+          "C": 1.0,
+          "validation": {
+            "games": 272,
+            "brier": 0.47801040598392747,
+            "logLoss": 0.6782527747740906,
+            "accuracy": 0.6066176470588235,
+            "correct": 165,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        },
+        {
+          "C": 10.0,
+          "validation": {
+            "games": 272,
+            "brier": 0.47876399686991034,
+            "logLoss": 0.6800242684289487,
+            "accuracy": 0.6066176470588235,
+            "correct": 165,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        }
+      ],
+      "validation": {
+        "games": 272,
+        "brier": 0.47616793941618263,
+        "logLoss": 0.6743115239993316,
+        "accuracy": 0.6029411764705882,
+        "correct": 164,
+        "classified": 272,
+        "coverage": 1.0
+      },
+      "exploratory2024and2025": {
+        "games": 544,
+        "brier": 0.448048229653569,
+        "logLoss": 0.6497515905248284,
+        "accuracy": 0.6194852941176471,
+        "correct": 337,
+        "classified": 544,
+        "coverage": 1.0
+      },
+      "bySeason": {
+        "2024": {
+          "player": {
+            "games": 272,
+            "brier": 0.4444862445314617,
+            "logLoss": 0.6409041214282915,
+            "accuracy": 0.6323529411764706,
+            "correct": 172,
+            "classified": 272,
+            "coverage": 1.0
+          },
+          "teamOnly": {
+            "games": 272,
+            "brier": 0.45267593579479304,
+            "logLoss": 0.6492185377103868,
+            "accuracy": 0.6323529411764706,
+            "correct": 172,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        },
+        "2025": {
+          "player": {
+            "games": 272,
+            "brier": 0.4516102147756763,
+            "logLoss": 0.6585990596213656,
+            "accuracy": 0.6066176470588235,
+            "correct": 165,
+            "classified": 272,
+            "coverage": 1.0
+          },
+          "teamOnly": {
+            "games": 272,
+            "brier": 0.4474903470563874,
+            "logLoss": 0.65418427802735,
+            "accuracy": 0.6176470588235294,
+            "correct": 168,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        }
+      },
+      "validationChangeFromTeam": {
+        "accuracy": 0.003676470588235281,
+        "logLossImprovement": -0.012932026731223623
+      },
+      "exploratoryChangeFromTeam": {
+        "accuracy": -0.005514705882352922,
+        "logLossImprovement": 0.0019498173440399835
+      }
+    },
+    "player-form-and-available-injuries": {
+      "modelVersion": "player-availability-v1",
+      "selectedC": 0.01,
+      "candidates": [
+        {
+          "C": 0.01,
+          "validation": {
+            "games": 272,
+            "brier": 0.46636999171419014,
+            "logLoss": 0.6645024409157846,
+            "accuracy": 0.6029411764705882,
+            "correct": 164,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        },
+        {
+          "C": 0.1,
+          "validation": {
+            "games": 272,
+            "brier": 0.4669625948459518,
+            "logLoss": 0.6659930596015355,
+            "accuracy": 0.6029411764705882,
+            "correct": 164,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        },
+        {
+          "C": 1.0,
+          "validation": {
+            "games": 272,
+            "brier": 0.46855253880877284,
+            "logLoss": 0.6687403596577554,
+            "accuracy": 0.6029411764705882,
+            "correct": 164,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        },
+        {
+          "C": 10.0,
+          "validation": {
+            "games": 272,
+            "brier": 0.4744543185542823,
+            "logLoss": 0.67875853896236,
+            "accuracy": 0.5992647058823529,
+            "correct": 163,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        }
+      ],
+      "validation": {
+        "games": 272,
+        "brier": 0.46636999171419014,
+        "logLoss": 0.6645024409157846,
+        "accuracy": 0.6029411764705882,
+        "correct": 164,
+        "classified": 272,
+        "coverage": 1.0
+      },
+      "exploratory2024and2025": {
+        "games": 544,
+        "brier": 0.4575744737868761,
+        "logLoss": 0.6605911729823237,
+        "accuracy": 0.6139705882352942,
+        "correct": 334,
+        "classified": 544,
+        "coverage": 1.0
+      },
+      "bySeason": {
+        "2024": {
+          "player": {
+            "games": 272,
+            "brier": 0.4468498429815836,
+            "logLoss": 0.6436614778438028,
+            "accuracy": 0.6397058823529411,
+            "correct": 174,
+            "classified": 272,
+            "coverage": 1.0
+          },
+          "teamOnly": {
+            "games": 272,
+            "brier": 0.45267593579479304,
+            "logLoss": 0.6492185377103868,
+            "accuracy": 0.6323529411764706,
+            "correct": 172,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        },
+        "2025": {
+          "player": {
+            "games": 272,
+            "brier": 0.46829910459216856,
+            "logLoss": 0.6775208681208448,
+            "accuracy": 0.5882352941176471,
+            "correct": 160,
+            "classified": 272,
+            "coverage": 1.0
+          },
+          "teamOnly": {
+            "games": 272,
+            "brier": 0.4474903470563874,
+            "logLoss": 0.65418427802735,
+            "accuracy": 0.6176470588235294,
+            "correct": 168,
+            "classified": 272,
+            "coverage": 1.0
+          }
+        }
+      },
+      "validationChangeFromTeam": {
+        "accuracy": 0.003676470588235281,
+        "logLossImprovement": -0.0031229436476766237
+      },
+      "exploratoryChangeFromTeam": {
+        "accuracy": -0.011029411764705843,
+        "logLossImprovement": -0.008889765113455295
+      }
+    }
+  },
+  "preferredShadowBy2023LogLoss": "player-form-and-available-injuries",
+  "productionModel": "outcome-logit-v1",
+  "playerDataAudit": {
+    "2014": {
+      "injuryRows": 5078,
+      "injuryRowsWithUpdateTimestamp": 5078
+    },
+    "2015": {
+      "injuryRows": 5232,
+      "injuryRowsWithUpdateTimestamp": 5232
+    },
+    "2016": {
+      "injuryRows": 5115,
+      "injuryRowsWithUpdateTimestamp": 5115
+    },
+    "2017": {
+      "injuryRows": 5104,
+      "injuryRowsWithUpdateTimestamp": 5104
+    },
+    "2018": {
+      "injuryRows": 5133,
+      "injuryRowsWithUpdateTimestamp": 5133
+    },
+    "2019": {
+      "injuryRows": 5392,
+      "injuryRowsWithUpdateTimestamp": 5392
+    },
+    "2020": {
+      "injuryRows": 5661,
+      "injuryRowsWithUpdateTimestamp": 5661
+    },
+    "2021": {
+      "injuryRows": 5587,
+      "injuryRowsWithUpdateTimestamp": 5587
+    },
+    "2022": {
+      "injuryRows": 5682,
+      "injuryRowsWithUpdateTimestamp": 5682
+    },
+    "2023": {
+      "injuryRows": 5599,
+      "injuryRowsWithUpdateTimestamp": 5599
+    },
+    "2024": {
+      "injuryRows": 6215,
+      "injuryRowsWithUpdateTimestamp": 6215
+    },
+    "2025": {
+      "injuryRows": 6068,
+      "injuryRowsWithUpdateTimestamp": 0
+    }
+  },
+  "limitations": [
+    "2024\u20132025 was previously exposed; this is development evidence, not a new independent test.",
+    "2025 injury rows lack update timestamps and are unavailable in historical injury features.",
+    "Historical player stats use a 48-hour assumed availability delay and a corrected snapshot.",
+    "Historical injury date_modified is a reported update-time proxy, not a captured historical receipt.",
+    "Prior quarterback/leading receiver/rusher are inferred from earlier usage, not confirmed future starters.",
+    "This does not identify causal with/without player effects or estimate every player's individual value.",
+    "Player models remain shadow comparisons regardless of historical results."
+  ]
+}

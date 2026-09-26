@@ -1,0 +1,56 @@
+{
+  "files": {
+    "player-form-v1.json": {
+      "sha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da",
+      "bytes": 14424
+    },
+    "player-availability-v1.json": {
+      "sha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84",
+      "bytes": 18424
+    },
+    "player-form-v1.train.features.jsonl": {
+      "sha256": "d5445a598846ccb765c52ad0b61ed93356a35237a2493061180f0da7addd3478",
+      "bytes": 2339465
+    },
+    "player-form-v1.validation.features.jsonl": {
+      "sha256": "d5c3c14b5e61f131cc379d94cbbd332b6688ddccf85eea4b97f2b6a25bf0d9f7",
+      "bytes": 306185
+    },
+    "player-form-v1.test.features.jsonl": {
+      "sha256": "2b9ab4927dd681009edaa56ec437846de11cef5c25b47e193762c23e30c1c6ee",
+      "bytes": 612052
+    },
+    "player-availability-v1.train.features.jsonl": {
+      "sha256": "8bc6a70b620ba1d9e796169e303893e0555b525e0209ba85fbe7ed889285287b",
+      "bytes": 3877781
+    },
+    "player-availability-v1.validation.features.jsonl": {
+      "sha256": "d610224e6ad229e11d66b2c2fa6c34247769bd9cb2e13bc76ca385b2ea3e69c1",
+      "bytes": 507466
+    },
+    "player-availability-v1.test.features.jsonl": {
+      "sha256": "0fc1b82a64c369793645c3647989d811ae77f5897ca5441ba3c1b7f88487528e",
+      "bytes": 1001458
+    },
+    "plan.json": {
+      "sha256": "11ca3feaa16e9123d49e27fedbbc4f4284702e8768f9d01e67dc6be840591f07",
+      "bytes": 1233
+    },
+    "report.json": {
+      "sha256": "aeac8c9fce4d8f6cecfe7d065f106b7ae9a51a04256da7d4c17a53ca61e9eb8d",
+      "bytes": 10700
+    },
+    "REPORT.md": {
+      "sha256": "af540c415ef59c5177c808255a67fe86c5ac5cb92945d8c1bdb4da6dfe61e89e",
+      "bytes": 1931
+    },
+    "player-form-v1.predictions.jsonl": {
+      "sha256": "c571dfa4d0965e08035c290bbe52f7ac463650c4156890d8c217ac6ef2aaeda5",
+      "bytes": 185271
+    },
+    "player-availability-v1.predictions.jsonl": {
+      "sha256": "9bb831d25f9903b1654a8f72677e8ff5de0846280f3b306ea8627b1e074d2eee",
+      "bytes": 185330
+    }
+  }
+}

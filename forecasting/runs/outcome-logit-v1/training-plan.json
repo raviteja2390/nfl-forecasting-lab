@@ -1,0 +1,20 @@
+{
+  "version": "outcome-logit-v1",
+  "mode": "historical-simulation",
+  "trainingSeasons": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
+  "validationSeasons": [2023],
+  "reservedFinalTestSeasons": [2024, 2025],
+  "model": "multinomial logistic regression",
+  "scaling": "StandardScaler fitted on training rows only",
+  "regularization": "L2",
+  "candidateC": [0.01, 0.1, 1.0, 10.0],
+  "selection": "lowest 2023 log loss; exact ties choose smaller C",
+  "baseline": "empirical training outcome frequencies; no smoothing",
+  "classWeight": null,
+  "referenceLagHours": 48,
+  "timingScenariosHours": [24, 48, 72],
+  "timingComparison": "fixed reference model and same-C scenario refits; never select lag by performance",
+  "bootstrap": {"unit": "NFL week", "draws": 2000, "seed": 20260926},
+  "calibration": "ten fixed equal-width bins per class; descriptive only, no recalibration",
+  "finalTestEvaluation": false
+}

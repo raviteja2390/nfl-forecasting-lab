@@ -1,0 +1,441 @@
+{
+  "schemaVersion": 1,
+  "mode": "prospective",
+  "modelVersion": "player-form-v1",
+  "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da",
+  "eventId": "2026_03_CAR_CLE",
+  "dateEastern": "2026-09-27",
+  "generatedAt": "2026-09-26T14:29:28.555488Z",
+  "featureCutoffAt": "2026-09-26T14:21:56.144835Z",
+  "kickoffAt": "2026-09-27T17:00:00Z",
+  "leadHours": 26.508734586666666,
+  "trainingCompletedAt": "2026-09-26T14:27:47.148016Z",
+  "homeTeam": "CLE",
+  "awayTeam": "CAR",
+  "probabilities": {
+    "homeWin": 0.48439456137402737,
+    "awayWin": 0.5126880039671172,
+    "tie": 0.002917434658855408
+  },
+  "baselineProbabilities": {
+    "homeWin": 0.544973544973545,
+    "awayWin": 0.4506974506974507,
+    "tie": 0.004329004329004329
+  },
+  "featureRow": {
+    "eventId": "2026_03_CAR_CLE",
+    "season": 2026,
+    "week": 3,
+    "kickoffAt": "2026-09-27T17:00:00Z",
+    "featureCutoffAt": "2026-09-26T14:21:56Z",
+    "homeTeamId": "CLE",
+    "awayTeamId": "CAR",
+    "sourceHomeTeam": "CLE",
+    "sourceAwayTeam": "CAR",
+    "features": {
+      "homeField": 1,
+      "homeRecentGames": 8,
+      "homePointsForMean": 15.75,
+      "homePointsAgainstMean": 23.5,
+      "homeResultRate": 0.375,
+      "homeDaysSincePriorGameCapped30": 7,
+      "awayRecentGames": 8,
+      "awayPointsForMean": 21.875,
+      "awayPointsAgainstMean": 24.125,
+      "awayResultRate": 0.375,
+      "awayDaysSincePriorGameCapped30": 7
+    },
+    "evidence": {
+      "home": {
+        "resultGameIds": [
+          "2025_13_SF_CLE",
+          "2025_14_TEN_CLE",
+          "2025_15_CLE_CHI",
+          "2025_16_BUF_CLE",
+          "2025_17_PIT_CLE",
+          "2025_18_CLE_CIN",
+          "2026_01_CLE_JAX",
+          "2026_02_CLE_TB"
+        ],
+        "latestAssumedResultAvailability": "2026-09-22T17:00:00Z",
+        "priorGameForRest": "2026_02_CLE_TB"
+      },
+      "away": {
+        "resultGameIds": [
+          "2025_12_CAR_SF",
+          "2025_13_LA_CAR",
+          "2025_15_CAR_NO",
+          "2025_16_TB_CAR",
+          "2025_17_SEA_CAR",
+          "2025_18_CAR_TB",
+          "2026_01_CHI_CAR",
+          "2026_02_CAR_ATL"
+        ],
+        "latestAssumedResultAvailability": "2026-09-22T17:00:00Z",
+        "priorGameForRest": "2026_02_CAR_ATL"
+      }
+    }
+  },
+  "sourceObservation": {
+    "observationId": "fb45d6cf79f249108f98fd7b4728ec7c",
+    "observedAt": "2026-09-26T14:14:45.072257Z",
+    "sourceUrl": "https://raw.githubusercontent.com/nflverse/nfldata/master/data/games.csv",
+    "sha256": "55d99914587ae42aa36a280ff509fc427037b4cfcc8f228297f4754a6ec61252"
+  },
+  "scoreboardObservations": {
+    "20260104": {
+      "id": "b7b4d04f5a024ad9a15436e65be43fa8",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260104&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.095655Z",
+      "sha256": "deb13312bbb29b74247761a3d4ba6f7494c7b47a505eafe72340905822055e78"
+    },
+    "20251215": {
+      "id": "733f1d955e704019a088bf0a95fa586e",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251215&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.263106Z",
+      "sha256": "675b9df8b85b88a91d2ea3b1b73980a9478374ed847b6254f2047d8984f6265f"
+    },
+    "20260914": {
+      "id": "12e35740e02c4c2484e61360f4d1a953",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260914&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.376050Z",
+      "sha256": "b9e9c6614297d5d38d8633ba3368dee1fe7dbf86dde10117d440f8ec75fad9a0"
+    },
+    "20260917": {
+      "id": "f52b56c4092e44618444b6fe7f871c09",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260917&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.628664Z",
+      "sha256": "b4785e82f682ea4eac152c7a33b17fea170951d38db6b5da9a071e9c084e5508"
+    },
+    "20260920": {
+      "id": "8d5a37999bac4a3e80bd51268304ee60",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260920&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.707813Z",
+      "sha256": "7da9d9bf77da6958f79b2bd3313a70dd2f36637a75f8e4dfcc95e1976c4c2159"
+    },
+    "20251130": {
+      "id": "f0fc297b3a5341458fb61dcbf0451a02",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251130&limit=1000",
+      "observedAt": "2026-09-26T14:19:47.796299Z",
+      "sha256": "4b111ee884a971808a2cb7f5a8bdc71e623213dde5a16960f48204a76db03360"
+    },
+    "20260921": {
+      "id": "889971e00e0d47888e968c637876f5a7",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260921&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.677638Z",
+      "sha256": "bf7ddc3e61f0564d8b3d5f630fb02af19ab8d0756272453ac140256073525278"
+    },
+    "20260909": {
+      "id": "97a38efac07f4d079ed60dc6879044f7",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260909&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.282371Z",
+      "sha256": "393cdefe3b51452ffe40c336c4cf7cd0fba53c44f2e873977a8fbc28537fe0cf"
+    },
+    "20251211": {
+      "id": "2930929c3c7d4ebdbf354f104b6e9f95",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251211&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.177727Z",
+      "sha256": "2d65dece4b9b2e7791382fac3002f5b1c31b840d1cd5f5e30d127eff1febadeb"
+    },
+    "20251204": {
+      "id": "213840976947453881240f2a18415ce3",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251204&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.014781Z",
+      "sha256": "713bf1a8eab9056535892d9476fd653a719516d1c0d4b0171930d361ebc62122"
+    },
+    "20251123": {
+      "id": "c27346125b3e4ebf9f7425d5c05773dc",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251123&limit=1000",
+      "observedAt": "2026-09-26T14:19:47.842193Z",
+      "sha256": "29b9a167d7f9aa811e9518e88e61bebc84c5e0a94d88ced9af15dc6bbdd3fc3e"
+    },
+    "20251229": {
+      "id": "fa6a92a294404af1ad3f6235a1677164",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251229&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.873515Z",
+      "sha256": "29ac1af708eb879b9c8bc0da6853856ca38ae0b284566f7f44675b0e3810fb6e"
+    },
+    "20251222": {
+      "id": "381485a2db554861a5d150ddd178b61e",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251222&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.512217Z",
+      "sha256": "b289b91850167bd975e3c4c4d925f8e61513cf1b8758a727bf65ded2598dcf51"
+    },
+    "20251227": {
+      "id": "0f537d01b0d243c8b6cd4387ad29a70e",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251227&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.746156Z",
+      "sha256": "2f5cfce40e0d83b03b87ead0e64da07b6caa8fab5866f84980e903c281580f5e"
+    },
+    "20251225": {
+      "id": "7b638633ddf44534a5351f5468ec44f4",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251225&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.601982Z",
+      "sha256": "587c78705b7773b0553529d6709bd281bf90aed3d7cb0e3d1c3409eb9cb06bd7"
+    },
+    "20251221": {
+      "id": "c0e339259b05400a89298b4f735356ea",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251221&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.520182Z",
+      "sha256": "73a36c43c46d79124f1d09ed127545354196c1dd688d5fdc81f136fb78cc9f2a"
+    },
+    "20251207": {
+      "id": "57134ac501cc4a7eadb5b7752faf2099",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251207&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.090207Z",
+      "sha256": "a37057aebca8eaf05cf7d753d83c11e9459dd01db7a4028e8cc49cb9bd1a587e"
+    },
+    "20260927": {
+      "id": "d0198c6f7cbd40f9beaf45869a228566",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260927&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.711512Z",
+      "sha256": "a9f86fa876f2cdb846c001f088616e2d07a76a9e345cb8d84df8e028f36bd07d"
+    },
+    "20260913": {
+      "id": "4f397ed36c2d4146af9de33b766fd57a",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260913&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.353398Z",
+      "sha256": "db2cfcf5091a093fe5381c21d344e2106fae557064f08d3bada937d214a537cf"
+    },
+    "20251124": {
+      "id": "5a2ba0ce8b744ac48557ae69922124ea",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251124&limit=1000",
+      "observedAt": "2026-09-26T14:19:47.738346Z",
+      "sha256": "834f6b03bdc0851f0c88f98849031d0455d9d5533acf8f29d07b69d96eff6247"
+    },
+    "20251220": {
+      "id": "9ef179c3f7cf4665b44223e6918d43b8",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251220&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.359108Z",
+      "sha256": "47339e8d78212fa25ff15427438eaf682377c873a6fae9f032c4f37eec77eb59"
+    },
+    "20260910": {
+      "id": "e64f702b01c14c4c850c1e154080f711",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260910&limit=1000",
+      "observedAt": "2026-09-26T14:19:49.330089Z",
+      "sha256": "b8ca693ee9c72cf5acd609bebad841c91e3ed88595c823be75d1b51042a72733"
+    },
+    "20251214": {
+      "id": "80b6f5a53e254b7f8c1e822615eca497",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251214&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.195133Z",
+      "sha256": "068ab473aca0786a134193fa5e7ac49798dd0f3bdd287eaf9d02a4a3a0df7ab4"
+    },
+    "20260103": {
+      "id": "734e65ecd6aa4fb799c4140e7a863dcb",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20260103&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.829487Z",
+      "sha256": "4e2a9d952814e0696153678391cfe1af4ffe99686eb56ba5359caead9ae2e27b"
+    },
+    "20251127": {
+      "id": "936a596f9a9d47e6ab278dab70483abd",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251127&limit=1000",
+      "observedAt": "2026-09-26T14:19:47.782291Z",
+      "sha256": "769d7bf822e060a07655fd755d5e3c2ce57c7a0c3bd658c47309aa60dd97ab1e"
+    },
+    "20251228": {
+      "id": "08250ab76fd54f8bbb348b8a0d64684b",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251228&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.824362Z",
+      "sha256": "7ae45dc070cb8c7854a1086a16e997409784d38c45ebfb7da1b077ae97563f5e"
+    },
+    "20251218": {
+      "id": "e2b04d4d76f04845bd7b82649e29d8c8",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251218&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.287621Z",
+      "sha256": "d153706bd203e9ad81a7d950eebcfb1652321d063b5d1be501999523281cf073"
+    },
+    "20251208": {
+      "id": "f56f932ebd454072bfe3c961831bdd07",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251208&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.055332Z",
+      "sha256": "37775884076e18ce3e12c1dd37761594951ae4087afc2591d7aee45c7c694b8e"
+    },
+    "20251201": {
+      "id": "7cd5d5efbf3c4b2ebda7356f0059a11f",
+      "sourceUrl": "https://site.api.espn.com/apis/site/v2/sports/football/nfl/scoreboard?dates=20251201&limit=1000",
+      "observedAt": "2026-09-26T14:19:48.004212Z",
+      "sha256": "f7f0a22bface276016f63744c032d8c1518f0707ae9b6577651b5d077bf1057b"
+    }
+  },
+  "limitations": [
+    "Player model is a shadow challenger, not established as more accurate prospectively.",
+    "Same feature cutoff as the team forecast; later reports are excluded.",
+    "Earlier usage does not confirm the upcoming starters or identify causal player effects."
+  ],
+  "role": "shadow-comparison",
+  "pairedTeamForecastGeneratedAt": "2026-09-26T14:21:58.384004Z",
+  "playerFeatureValues": {
+    "homeField": 1,
+    "homeRecentGames": 8,
+    "homePointsForMean": 15.75,
+    "homePointsAgainstMean": 23.5,
+    "homeResultRate": 0.375,
+    "homeDaysSincePriorGameCapped30": 7,
+    "awayRecentGames": 8,
+    "awayPointsForMean": 21.875,
+    "awayPointsAgainstMean": 24.125,
+    "awayResultRate": 0.375,
+    "awayDaysSincePriorGameCapped30": 7,
+    "homePriorQBEPAperDropbackShrunk": 0.03027476794171044,
+    "homePriorQBDropbacks": 59.0,
+    "homePriorQBChanged": 0,
+    "homePriorQBEPACoverage": 1.0,
+    "homeTopReceiverTargetShare": 0.1875,
+    "homeTopReceiverEPAperTargetShrunk": -0.22821483806555368,
+    "homeTopReceiverEPACoverage": 1.0,
+    "homeTopRusherCarryShare": 0.2553191489361702,
+    "homeTopRusherEPAperCarryShrunk": -0.22548185263484793,
+    "homeTopRusherEPACoverage": 1.0,
+    "awayPriorQBEPAperDropbackShrunk": 0.050126318523437026,
+    "awayPriorQBDropbacks": 138.0,
+    "awayPriorQBChanged": 0,
+    "awayPriorQBEPACoverage": 1.0,
+    "awayTopReceiverTargetShare": 0.23931623931623933,
+    "awayTopReceiverEPAperTargetShrunk": -0.1101728035666302,
+    "awayTopReceiverEPACoverage": 1.0,
+    "awayTopRusherCarryShare": 0.36904761904761907,
+    "awayTopRusherEPAperCarryShrunk": -0.07633538955404302,
+    "awayTopRusherEPACoverage": 1.0
+  },
+  "playerEvidence": {
+    "home": {
+      "team": "CLE",
+      "priorGameIds": [
+        "2025_17_PIT_CLE",
+        "2025_18_CLE_CIN",
+        "2026_01_CLE_JAX",
+        "2026_02_CLE_TB"
+      ],
+      "priorQB": {
+        "id": "00-0033537",
+        "name": "Deshaun Watson",
+        "position": "QB"
+      },
+      "topReceiver": {
+        "id": "00-0036407",
+        "name": "Jerry Jeudy",
+        "position": "WR"
+      },
+      "topRusher": {
+        "id": "00-0040784",
+        "name": "Quinshon Judkins",
+        "position": "RB"
+      },
+      "injuryTimingBasis": "observed-receipt",
+      "knownInjuryStatuses": [
+        {
+          "id": "00-0036282",
+          "name": "Grant Delpit",
+          "position": "S",
+          "status": "Questionable"
+        },
+        {
+          "id": "00-0036953",
+          "name": "Teven Jenkins",
+          "position": "G",
+          "status": "Out"
+        },
+        {
+          "id": "00-0036974",
+          "name": "Tyson Campbell",
+          "position": "CB",
+          "status": "Questionable"
+        }
+      ],
+      "limitations": [
+        "Prior quarterback is inferred from earlier attempts, not a confirmed upcoming starter.",
+        "No eligible injury rows means unavailable evidence, not a healthy roster.",
+        "Usage shares and grouped absence counts are predictive features, not causal player values."
+      ]
+    },
+    "away": {
+      "team": "CAR",
+      "priorGameIds": [
+        "2025_17_SEA_CAR",
+        "2025_18_CAR_TB",
+        "2026_01_CHI_CAR",
+        "2026_02_CAR_ATL"
+      ],
+      "priorQB": {
+        "id": "00-0039150",
+        "name": "Bryce Young",
+        "position": "QB"
+      },
+      "topReceiver": {
+        "id": "00-0040124",
+        "name": "Tetairoa McMillan",
+        "position": "WR"
+      },
+      "topRusher": {
+        "id": "00-0036555",
+        "name": "Chuba Hubbard",
+        "position": "RB"
+      },
+      "injuryTimingBasis": "observed-receipt",
+      "knownInjuryStatuses": [
+        {
+          "id": "00-0035669",
+          "name": "Nick Scott",
+          "position": "S",
+          "status": "Out"
+        },
+        {
+          "id": "00-0037244",
+          "name": "Devin Lloyd",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "id": "00-0038493",
+          "name": "Claudin Cherelus",
+          "position": "LB",
+          "status": "Out"
+        },
+        {
+          "id": "00-0039342",
+          "name": "Xavier Legette",
+          "position": "WR",
+          "status": "Questionable"
+        },
+        {
+          "id": "00-0039491",
+          "name": "Jalen Coker",
+          "position": "WR",
+          "status": "Questionable"
+        }
+      ],
+      "limitations": [
+        "Prior quarterback is inferred from earlier attempts, not a confirmed upcoming starter.",
+        "No eligible injury rows means unavailable evidence, not a healthy roster.",
+        "Usage shares and grouped absence counts are predictive features, not causal player values."
+      ]
+    }
+  },
+  "playerSourceObservations": [
+    {
+      "kind": "stats",
+      "key": "2025",
+      "observedAt": "2026-09-26T14:17:48.646201Z",
+      "sha256": "e5e0615b3d96a3eaebfaee91e55afb4a4e7fe0caf057454177bcd7d6ad4bcfc2"
+    },
+    {
+      "kind": "injuries",
+      "key": "2025",
+      "observedAt": "2026-09-26T14:16:57.119722Z",
+      "sha256": "873ca1606dd575bd01152508a243ef6b3a0f8f97b90b707217e62ee8c7ceb735"
+    },
+    {
+      "kind": "stats",
+      "key": "2026",
+      "observedAt": "2026-09-26T14:17:47.839897Z",
+      "sha256": "315cfb8d5abbd44c6a36c43e3e8ad78c96351193c8e2fe717fcff8413df43b2b"
+    },
+    {
+      "kind": "injuries",
+      "key": "2026",
+      "observedAt": "2026-09-26T14:16:57.517673Z",
+      "sha256": "b001ab1d480f98279c397bf77759918bf9f0ad88d21ed7dcd1809e61bb6c3664"
+    }
+  ]
+}

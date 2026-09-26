@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "49e6d8238dd64177a3ec325693a399da",
+  "kind": "injuries",
+  "key": "2019",
+  "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/injuries/injuries_2019.csv",
+  "requestStartedAt": "2026-09-26T14:16:56.185901Z",
+  "observedAt": "2026-09-26T14:16:56.589197Z",
+  "storedAt": "2026-09-26T14:16:56.745617Z",
+  "sha256": "daddfe8e04ddc3a29bce14f362e774fbadfb274c807f1f0fde7b5bf32aaf6cdf",
+  "bytes": 700757,
+  "validation": {
+    "rows": 5392,
+    "columns": [
+      "season",
+      "game_type",
+      "team",
+      "week",
+      "gsis_id",
+      "position",
+      "full_name",
+      "first_name",
+      "last_name",
+      "report_primary_injury",
+      "report_secondary_injury",
+      "report_status",
+      "practice_primary_injury",
+      "practice_secondary_injury",
+      "practice_status",
+      "date_modified"
+    ]
+  },
+  "providerPublishedAt": null,
+  "timingBasis": "local-full-response-receipt"
+}
