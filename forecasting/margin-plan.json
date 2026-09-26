@@ -1,0 +1,17 @@
+{
+  "modelVersion": "margin-ridge-v1",
+  "declaredBeforeFitting": true,
+  "trainingSeasons": [2015,2016,2017,2018,2019,2020,2021,2022],
+  "selectionSeason": 2023,
+  "exploratorySeasons": [2024,2025],
+  "features": "Unchanged baseline team features, exact same games and cutoff rules",
+  "target": "homeScore minus awayScore",
+  "candidateAlpha": [0.1,1.0,10.0,100.0],
+  "selection": "Lowest 2023 three-class log loss; exact ties choose larger alpha",
+  "scaling": "StandardScaler fitted only within each training fold; final fit uses 2015-2022",
+  "errorDistribution": "Zero-mean Gaussian; sigma is RMS of expanding-season out-of-fold errors on 2017-2022, each fitted only on earlier seasons. One sigma per alpha, minimum 1 point. No validation/test residuals used.",
+  "probabilities": "Discretize latent Gaussian margin into integer bins with half-point boundaries. Home win >=1, tie=0, away win <=-1. For a supplied home handicap, cover means margin+handicap>0; push means equality.",
+  "finalTestUntouched": false,
+  "role": "Offline experiment only; separate prospective registration required before live shadow issuance",
+  "limitations": ["Gaussian errors ignore football key-number spikes, skew and changing variance", "Tie and push probabilities may be poorly calibrated", "Historical source availability still assumes a 48-hour lag", "2024-2025 results are exposed and exploratory", "No sportsbook odds, CLV, or profitability evaluation"]
+}
