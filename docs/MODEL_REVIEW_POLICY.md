@@ -4,7 +4,7 @@ Lead chat summaries and future reports with log loss as the primary metric. Alwa
 
 - outcome-logit-v1: unchanged primary.
 - player-form-v1 / player-availability-v1: existing registered prospective comparisons unchanged.
-- opponent-adjusted-v1: mixed historical log-loss direction; bootstrap includes zero. Read-only prospective feature pipeline prepared. Shadow issuance prohibited pending user review of `protocols/OPPONENT_PROSPECTIVE_DRAFT.md`, an activation record, and separately implemented issuer.
+- opponent-adjusted-v1: mixed historical log-loss direction; bootstrap includes zero. Read-only prospective feature pipeline prepared. Protocol approved September 26, 2026: `protocols/OPPONENT_PROSPECTIVE_V1.md`. Approval and fixed identities recorded in `forecasting/opponent-activation-v1.json`; shadow issuance remains disabled pending tested issuer/evaluator integration.
 - margin-ridge-v1: SHELVED. No live or shadow issuance, promotion, recalibration, or further modeling work on this version. Worse log loss in every tested cohort. Any future alternative probability mapping requires a newly registered, separately evaluated version and a new task authorization.
 
 ## Required interpretation note for the February 2027 player-family review

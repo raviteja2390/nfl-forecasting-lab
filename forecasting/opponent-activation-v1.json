@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "protocolVersion": "opponent-prospective-v1",
+  "status": "protocol-approved-pending-technical-activation",
+  "approvalRecordedAt": "2026-09-26T17:05:39Z",
+  "approvalBasis": "User: Formally approving the opponent-adjusted protocol",
+  "timestampBasis": "UTC clock read immediately after approval was received; not an independently attested message timestamp",
+  "cohortStart": "2026-10-01",
+  "cohortEnd": "2027-02-01",
+  "season": 2026,
+  "gameType": "REG",
+  "timeZone": "America/New_York",
+  "reviewAt": "2027-02-08T12:00:00Z",
+  "reference": "outcome-logit-v1",
+  "challenger": "opponent-adjusted-v1",
+  "referenceRemainsFixedRegardlessOfOperationalPrimary": true,
+  "modelHashes": {
+    "outcome-logit-v1": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0",
+    "opponent-adjusted-v1": "8d9a3f5c8917d28d380d917eee6fc8a27d5325a7321836c7f66976a69929dff2"
+  },
+  "protocolPath": "docs/protocols/OPPONENT_PROSPECTIVE_V1.md",
+  "protocolSha256": "05fdc71d8eea16958c6d3c8c963dc17e8f7c02cf2d5bd40ccce62cb72794ca02",
+  "approvedDraftSha256": "d63441a1221ec74f9472b82ff3dba5782adbce2580856d46e69ffc441a574a2a",
+  "featureCodeSha256": {
+    "opponent_live_features.py": "64d7d38c70909356e05d074e6682127e069b9ab14b43fdd9ce474c6641e10237",
+    "opponent_features.py": "d008c6007fa411048b71c312468c4fd0cbced1b91e122eeff95b0db10157c0a3",
+    "build_features.py": "13e051286efdd63fa90eb4418bdd02e1751a0cd8174435ecf7d0b49eebc8fe0b",
+    "live.py": "455d17a1a00ed0b6448449572ff9609b2e34c247671f1939cf22ff2e4542e7fe",
+    "feeds.py": "3b818eedee790aa8cb5321b70e57b088641bc588a9bf69d3646b252e86f7119a",
+    "snapshots.py": "1470e98634f7957bd3f0ad90ba5668bdb5df2389901663875687490aff42e532",
+    "model.py": "dd773d44ee0c36f0c5090a7cfecd982e82794a3ebd3476aca596a0e6e673be7f"
+  },
+  "minimumGames": 200,
+  "minimumWeeks": 12,
+  "minimumCoverage": 0.95,
+  "minimumLogLossImprovement": 0.01,
+  "maximumBrierDeterioration": 0.005,
+  "bootstrapDraws": 20000,
+  "bootstrapSeed": 20260926,
+  "confidenceLevel": 0.95,
+  "minimumLeadHours": 24,
+  "issuanceEnabled": false,
+  "automaticPromotion": false,
+  "activationPrerequisites": [
+    "Committed activation record before first forecast",
+    "Issuer and separate prospective evaluator tested against all protocol gates",
+    "Collect nested scoreboard evidence before the shared reference cutoff",
+    "Preserve reference coverage denominator and report missing candidate evidence"
+  ],
+  "prohibition": "No backfilling, no in-place model changes, no substitution of reference version, no changes to existing player-family protocol"
+}

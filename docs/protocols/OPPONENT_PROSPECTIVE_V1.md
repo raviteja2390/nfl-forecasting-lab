@@ -1,8 +1,6 @@
-> Approved September 26, 2026. This draft is retained for history; use [approved version 1](OPPONENT_PROSPECTIVE_V1.md). Technical issuance is not yet enabled.
+# Opponent-adjusted prospective protocol — approved version 1
 
-# Opponent-adjusted prospective protocol — DRAFT, awaiting user review
-
-Status: NOT APPROVED. No shadow forecast issuer exists for this candidate. Neither cloud nor local cycle may issue opponent-adjusted forecasts until the user reviews this protocol and explicitly authorizes issuance. Feature preparation and replay tests are permitted. This draft is written before any issuer code.
+Status: APPROVED by the user in this project conversation; approval recorded at 2026-09-26T17:05:39Z. This protocol governs implementation of the opponent-adjusted shadow comparison. Technical activation remains disabled until the issuer and evaluation integration are implemented and verified against this protocol. No forecasts were issued at approval. The evaluation terms below are unchanged from the approved draft.
 
 Candidate: frozen opponent-adjusted-v1; reference: frozen outcome-logit-v1. Their artifact manifest hashes are recorded in the accompanying audit report. No in-place refitting, calibration changes or feature changes are permitted.
 
