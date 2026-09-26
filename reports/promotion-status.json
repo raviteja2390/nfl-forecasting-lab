@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-09-26T15:30:52.016321Z",
+  "evidenceCutoffAt": "2026-09-26T15:30:52.016321+00:00",
+  "reviewAt": "2027-02-08T12:00:00Z",
+  "protocolSha256": "bd794c3fe46541a212226fd861adbff6261ac02e55db7fd36f059f09f9da25a7",
+  "errors": [],
+  "issued": {
+    "outcome-logit-v1": 14,
+    "player-availability-v1": 14,
+    "player-form-v1": 14
+  },
+  "comparisons": {
+    "player-form-v1": {
+      "sameGames": 0,
+      "weeks": 0,
+      "referenceFinalized": 0,
+      "coverage": 0,
+      "excludedReferenceEvents": [],
+      "reference": {
+        "games": 0,
+        "brier": null,
+        "logLoss": null,
+        "accuracy": null,
+        "correct": 0,
+        "classified": 0,
+        "coverage": null
+      },
+      "challenger": {
+        "games": 0,
+        "brier": null,
+        "logLoss": null,
+        "accuracy": null,
+        "correct": 0,
+        "classified": 0,
+        "coverage": null
+      },
+      "logLossImprovement": null,
+      "interval": null,
+      "confidenceLevel": 0.975,
+      "gates": {
+        "minimumGames": false,
+        "minimumWeeks": false,
+        "minimumCoverage": false,
+        "minimumImprovement": false,
+        "confidenceInterval": false,
+        "brierGuard": false,
+        "integrity": true
+      },
+      "status": "awaiting-fixed-review"
+    },
+    "player-availability-v1": {
+      "sameGames": 0,
+      "weeks": 0,
+      "referenceFinalized": 0,
+      "coverage": 0,
+      "excludedReferenceEvents": [],
+      "reference": {
+        "games": 0,
+        "brier": null,
+        "logLoss": null,
+        "accuracy": null,
+        "correct": 0,
+        "classified": 0,
+        "coverage": null
+      },
+      "challenger": {
+        "games": 0,
+        "brier": null,
+        "logLoss": null,
+        "accuracy": null,
+        "correct": 0,
+        "classified": 0,
+        "coverage": null
+      },
+      "logLossImprovement": null,
+      "interval": null,
+      "confidenceLevel": 0.975,
+      "gates": {
+        "minimumGames": false,
+        "minimumWeeks": false,
+        "minimumCoverage": false,
+        "minimumImprovement": false,
+        "confidenceInterval": false,
+        "brierGuard": false,
+        "integrity": true
+      },
+      "status": "awaiting-fixed-review"
+    }
+  },
+  "calibration": {},
+  "automaticPromotion": false,
+  "interpretation": "Interim comparisons are descriptive; no profitability conclusion. Formal decisions use the fixed review cutoff."
+}
