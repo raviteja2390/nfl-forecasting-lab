@@ -13,7 +13,7 @@ def write_status(store=live.LIVE,output=None):
     lines=['# NFL research status','',f'Generated {at}. Log loss is the primary metric. No demonstrated profitability.','',
            '**Primary:** outcome-logit-v1. Repository is public. Cloud collection runs on GitHub Actions.',
            '', '**Live status:** [latest cloud-generated page](https://github.com/raviteja2390/nfl-forecasting-lab/blob/forecast-state/reports/STATUS.md). The main-branch page is a dated snapshot.','',
-           '## Prospective evidence','']
+           '[This week’s three-model comparison](https://github.com/raviteja2390/nfl-forecasting-lab/blob/forecast-state/reports/weekly-comparison.md)','', '## Prospective evidence','']
     for version in ('outcome-logit-v1','player-form-v1','player-availability-v1'):
         m=scores['models'].get(version,{})
         loss=m.get('logLoss')
