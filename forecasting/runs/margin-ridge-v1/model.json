@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "kind": "ridge-gaussian-margin",
+  "featureNames": [
+    "homeField",
+    "homeRecentGames",
+    "homePointsForMean",
+    "homePointsAgainstMean",
+    "homeResultRate",
+    "homeDaysSincePriorGameCapped30",
+    "awayRecentGames",
+    "awayPointsForMean",
+    "awayPointsAgainstMean",
+    "awayResultRate",
+    "awayDaysSincePriorGameCapped30"
+  ],
+  "mean": [
+    0.9846079846079846,
+    8.0,
+    22.79954304954305,
+    22.962722462722464,
+    0.4955507455507456,
+    8.817700817700818,
+    8.0,
+    22.95827320827321,
+    22.802008177008176,
+    0.5041786916786917,
+    8.882154882154882
+  ],
+  "scale": [
+    0.12310605693542448,
+    1.0,
+    4.807992149716443,
+    4.221679670514257,
+    0.22614789958125694,
+    5.790220338468744,
+    1.0,
+    4.85007637438156,
+    4.199899131319345,
+    0.22370133619259758,
+    5.7818331843527195
+  ],
+  "coefficients": [
+    0.19769508912269526,
+    -3.7612922545237605e-13,
+    1.7324930783174848,
+    -1.4869042996583919,
+    1.3737064358401654,
+    0.25536381444728384,
+    -1.2130953600836219e-14,
+    -2.939001924593602,
+    1.319298105583386,
+    -0.23752819838335237,
+    -0.7524389268243226
+  ],
+  "intercept": 1.5569985569985567,
+  "alpha": 0.1,
+  "sigma": 13.442255470623039,
+  "errorEstimation": {
+    "method": "expanding-season out-of-fold RMSE, zero-mean Gaussian",
+    "folds": [
+      {
+        "evaluationSeason": 2017,
+        "trainingSeasons": [
+          2015,
+          2016
+        ],
+        "trainingGames": 512,
+        "evaluationGames": 256
+      },
+      {
+        "evaluationSeason": 2018,
+        "trainingSeasons": [
+          2015,
+          2016,
+          2017
+        ],
+        "trainingGames": 768,
+        "evaluationGames": 256
+      },
+      {
+        "evaluationSeason": 2019,
+        "trainingSeasons": [
+          2015,
+          2016,
+          2017,
+          2018
+        ],
+        "trainingGames": 1024,
+        "evaluationGames": 256
+      },
+      {
+        "evaluationSeason": 2020,
+        "trainingSeasons": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019
+        ],
+        "trainingGames": 1280,
+        "evaluationGames": 256
+      },
+      {
+        "evaluationSeason": 2021,
+        "trainingSeasons": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020
+        ],
+        "trainingGames": 1536,
+        "evaluationGames": 272
+      },
+      {
+        "evaluationSeason": 2022,
+        "trainingSeasons": [
+          2015,
+          2016,
+          2017,
+          2018,
+          2019,
+          2020,
+          2021
+        ],
+        "trainingGames": 1808,
+        "evaluationGames": 271
+      }
+    ],
+    "games": 1567
+  },
+  "modelVersion": "margin-ridge-v1",
+  "trainedAt": "2026-09-26T16:01:26.781798Z",
+  "role": "offline-research-candidate",
+  "trainingSeasons": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "selectionSeasons": [
+    2023
+  ],
+  "provenance": {
+    "planSha256": "1235717e864b86e5f7db44c70563b68307d1bc73a9a3ffa525757f8e4d400c51",
+    "inputFiles": {
+      "train.features.jsonl": {
+        "sha256": "bc4d5a82f6a2d2580d3fc62af5dfec4e1630e59db4638e7787a02e5d89978b79",
+        "bytes": 2165695
+      },
+      "train.labels.jsonl": {
+        "sha256": "2c60d6ac2f2e66d181cd7e1dd6b21c1d819366a6212065702588122ed4ca5bce",
+        "bytes": 164969
+      },
+      "validation.features.jsonl": {
+        "sha256": "5ad67d4ee91dd512219ea9dd4bc2dcbc2f3043e4a12479745711c6c3bd0aab61",
+        "bytes": 283196
+      },
+      "validation.labels.jsonl": {
+        "sha256": "1cfb12b8eb18ac4e49dba324018fedc6aeaabf763dd2b0dc0715cf8962b1087a",
+        "bytes": 21571
+      },
+      "test.features.jsonl": {
+        "sha256": "ba1ce2e0fd65ffa41596de415d93a9d42f4235db2824456b880e58eb797a748d",
+        "bytes": 566283
+      },
+      "test.labels.jsonl": {
+        "sha256": "e1978cca9a2610535014e73d5bda8452717e3dbd0d9f435c75465476073f877a",
+        "bytes": 43158
+      }
+    },
+    "baselineSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0",
+    "codeSha256": {
+      "margin_model.py": "39022ff502c63ea673382acc98fc18caddc67039485b667b73aabdf24bf482f0",
+      "compare_margins.py": "303f4341abb8688f9692390fcee8b70065bdd6294ec97c219e33c95055ed8343",
+      "model.py": "dd773d44ee0c36f0c5090a7cfecd982e82794a3ebd3476aca596a0e6e673be7f",
+      "compare_players.py": "a77f600996bcca2f1eb862ccce8db424940b0ccbf4b766592e886c6682471262",
+      "calibration_report.py": "f7323fa43db32bf8e24a0dbf2612bb59ba5bcf4f457e69105856483027a5d4a1"
+    },
+    "requirementsSha256": "1cb79c20f25c4881f6d925fdb28ee8997eb683dc408f9eddfd1bd818d65b3d3e"
+  }
+}

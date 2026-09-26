@@ -43,3 +43,15 @@ Training uses 2015–2022, with C selected on 2023 log loss. Saved feature rows 
 On the already-exposed 544 games in 2024–2025, log loss is 0.651206 versus the reference's 0.651701, but accuracy falls from 340/544 to 339/544. The candidate's 2025 log loss is worse than the reference. These exploratory differences do not establish improvement or profitability. Keep the existing primary model. This candidate is saved for offline research; it is not yet issuing live shadow forecasts. A new prospective protocol and an observation-time-aware live adapter are required before that step. The retrospective feature builder must not be used directly for live forecasts.
 
 Margin regression, timestamped odds/closing-line evaluation, optional zero-weight feature cleanup, and prospective validation remain outstanding.
+
+## Margin-regression experiment — September 26, 2026
+
+Registered `forecasting/margin-plan.json` before fitting. The new `margin-ridge-v1` model uses the exact existing team feature rows and predicts home-minus-away score margin with standardized Ridge regression. Training remains 2015–2022; 2023 log loss selects alpha from four declared values. Gaussian error scale is estimated from expanding-season predictions of 2017–2022, with each fold trained only on earlier seasons. Test/validation residuals never estimate the scale.
+
+The portable inference module converts the latent Gaussian margin into integer-score probabilities, including ties and pushes. A supplied home handicap of -3.5 requires a margin of at least 4 to cover; -3 pushes at margin 3. No sportsbook lines were collected or evaluated in this experiment. The Gaussian distribution does not model football key-number spikes and its spread probabilities are not validated against markets.
+
+Results on the already-exposed 544 games in 2024–2025: 342 correct winners (62.87%) versus the reference's 340 (62.50%), but worse log loss (0.672289 versus 0.651701) and Brier score (0.451642 versus 0.450083). Margin MAE is 10.378 points and RMSE 13.303. The probability-quality metrics do not support replacing the primary model. Do not interpret the two additional correct picks as a demonstrated betting advantage.
+
+Model, plan, checksums, out-of-fold residual evidence, historical predictions and calibration plots are saved in `forecasting/runs/margin-ridge-v1/`. This is offline only. Prospective registration and live shadow issuance remain separate work; the existing cloud collector and issued models are unchanged. Odds/CLV tracking and real prospective validation remain outstanding.
+
+A post-fit diagnostic shows mean predicted tie probability of 2.743% versus an observed tie rate of 0.184% (1/544) on the exploratory cohort. This is evidence of a distributional calibration problem; any change to the tie/error model must be a new registered version, not a rewrite of this result. All 94 Python tests pass, and all five artifact manifests verify. Tests cover handicap signs, integer pushes, probability normalization, expanding-fold chronology, saved prediction reproduction and error-scale reconstruction.
