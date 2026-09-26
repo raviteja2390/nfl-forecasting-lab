@@ -1,0 +1,19 @@
+name: Research safeguards verification
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - run: python -m pip install --disable-pip-version-check -r forecasting/requirements-training.txt
+      - name: Verify cutoff, DST, receipts and all research safeguards
+        run: python -m unittest discover -s forecasting -p 'test_*.py'

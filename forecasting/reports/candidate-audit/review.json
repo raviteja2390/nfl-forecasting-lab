@@ -1,0 +1,79 @@
+{
+  "sourceManifests": [
+    {
+      "path": "runs/margin-ridge-v1/artifacts.json",
+      "sha256": "3988b42a7d84980b9b294d8f9bc83ce69980f1e254d26895bd048fc0f8f8aa2d"
+    },
+    {
+      "path": "runs/opponent-adjusted-v1/artifacts.json",
+      "sha256": "381070a4c6fd4688a7956a2e997ce41bdeb892ea32514cfe4fc2923172cf2e8c"
+    },
+    {
+      "path": "runs/outcome-logit-v1/artifacts.json",
+      "sha256": "f9bfc669d4b5c3bef81752ac18611fd06452e9a9ff95543fa60b02d67263e436"
+    },
+    {
+      "path": "runs/outcome-logit-v1/holdout-2024-2025/artifacts.json",
+      "sha256": "082b4e46622a3be91e0338c816cee863b0d512872a881a5153f90d0cd542c720"
+    },
+    {
+      "path": "runs/player-comparison-v1/artifacts.json",
+      "sha256": "0fc8a7ce1c70e9498bf95564f2bec4fa490cd41869bd6aa9c3f99308febc95d3"
+    }
+  ],
+  "opponent": {
+    "games": 544,
+    "blocks": 36,
+    "bootstrapDraws": 2000,
+    "seed": 20260926,
+    "method": "paired whole season-week percentile; baseline minus candidate; positive favors candidate",
+    "metrics": {
+      "logLoss": {
+        "improvement": 0.0004954065539986088,
+        "interval95": [
+          -0.0026010782178838465,
+          0.003319543940632638
+        ]
+      },
+      "brier": {
+        "improvement": 0.00046431794014573395,
+        "interval95": [
+          -0.0023374111947083746,
+          0.003180681005199689
+        ]
+      }
+    },
+    "cohortDirection": "Mixed: log loss better in 2023 and 2024, worse in 2025",
+    "limitation": "Exploratory exposed cohort; intervals conditional on selected model, not selection-adjusted; direction alone does not establish significance."
+  },
+  "margin": {
+    "status": "shelved; no shadow or live issuance",
+    "cohorts": {
+      "2023": {
+        "games": 272,
+        "predictedTieProbability": 0.027478386903288073,
+        "observedTies": 0,
+        "observedTieRate": 0.0,
+        "logLossBaseline": 0.661379497268108,
+        "logLossCandidate": 0.6815195084555047
+      },
+      "2024": {
+        "games": 272,
+        "predictedTieProbability": 0.0274975219546759,
+        "observedTies": 0,
+        "observedTieRate": 0.0,
+        "logLossBaseline": 0.6492185377103868,
+        "logLossCandidate": 0.6728474983561001
+      },
+      "2025": {
+        "games": 272,
+        "predictedTieProbability": 0.027372152161997,
+        "observedTies": 1,
+        "observedTieRate": 0.003676470588235294,
+        "logLossBaseline": 0.65418427802735,
+        "logLossCandidate": 0.6717308420091483
+      }
+    },
+    "cohortDirection": "Log loss worse in all three cohorts; consistency alone does not prove statistical significance or a unique cause."
+  }
+}
