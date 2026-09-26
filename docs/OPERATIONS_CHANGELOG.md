@@ -28,4 +28,8 @@ The team model remains primary. No fitting, feature removal, recalibration, para
 
 Opponent-adjusted features and margin models are separate future experiments. They must preserve as-of feature timing and use new versioned artifacts. Odds capture and same-time market benchmarks remain a separate integration task; this operational update does not establish closing-line value or profitability.
 
-A local health checker cannot notify while the host or Codex is off. Independent off-device monitoring is still needed for that guarantee. Scheduled desktop runs consume normal Codex plan allowance. No external email or Slack destination is configured.
+A local health checker cannot notify while the host or Codex is off. The app permits one heartbeat per conversation, so the existing heartbeat combines due collection with follow-up health checks at :05 and :35 (hourly on game days, midnight only on off-days). A successful :05 collection is not repeated at :35. Missing/failed collections can be retried. This is not an independent scheduler: a hung agent may delay monitoring too. Independent off-device monitoring is still needed for that guarantee. Scheduled desktop runs consume normal Codex plan allowance. No external email or Slack destination is configured.
+
+## Cloud execution added following the user's Mac-availability requirement
+
+The desktop-only monitoring limitation led to a GitHub Actions deployment, with persisted private-branch archives and an independent daily watchdog workflow. The earlier combined desktop schedule is retained only as a fallback; it is paused once the cloud run is verified. See `CLOUD_OPERATIONS.md` for the current operating design. The same-host limitations above describe the local fallback, while the cloud jobs depend on GitHub availability and account Actions allowance instead.

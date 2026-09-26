@@ -46,3 +46,6 @@ next-env.d.ts
 /work/
 *.tsbuildinfo
 !.env.example
+
+# Separate runtime-state checkout used only by GitHub Actions.
+/.cloud-state/

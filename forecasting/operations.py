@@ -115,7 +115,9 @@ def check_health(store=LIVE, archive=snapshots.DEFAULT_STORE, at=None):
               "cadence": cadence,
               "latestRequiredRunAt": due.isoformat() if due else None,
               "graceMinutes": GRACE_MINUTES,
-              "limitation": "Local monitor cannot execute or notify while this computer or Codex is off."}
+              "limitation": ("GitHub schedules are best effort; a GitHub-wide outage can affect collection and its watchdog."
+                             if os.environ.get("GITHUB_ACTIONS") == "true" else
+                             "Local monitor cannot execute or notify while this computer or Codex is off.")}
     previous_path = store / "operations/health.json"
     try:
         previous = json.loads(previous_path.read_text()) if previous_path.exists() else None

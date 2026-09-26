@@ -97,4 +97,18 @@ class OperationsTests(unittest.TestCase):
         self.assertEqual(score_store(self.store,'2026-09-28T04:00:00Z')['models']['outcome-logit-v1']['games'],1)
 
 
+class ScheduledRunTests(unittest.TestCase):
+    def test_followup_does_not_collect_twice_after_success(self):
+        import scheduled_run
+        with tempfile.TemporaryDirectory() as temp:
+            store=Path(temp)
+            operations.atomic_json(store/'operations/status.json',{'state':'succeeded','lastSuccessAt':'2026-09-27T14:06:00Z'})
+            body=b'game_type,gameday\nREG,2026-09-27\n'
+            with patch.object(snapshots,'select_as_of',return_value={'found':True,'observation':{}}),patch.object(snapshots,'verified_body',return_value=body):
+                self.assertFalse(scheduled_run.collection_due(store,store,'2026-09-27T14:35:00Z'))
+                self.assertTrue(scheduled_run.collection_due(store,store,'2026-09-27T15:05:00Z'))
+                operations.atomic_json(store/'operations/status.json',{'state':'failed','lastSuccessAt':'2026-09-27T14:06:00Z'})
+                self.assertTrue(scheduled_run.collection_due(store,store,'2026-09-27T14:35:00Z'))
+
+
 if __name__=='__main__': unittest.main()
