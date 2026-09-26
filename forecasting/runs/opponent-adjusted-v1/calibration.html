@@ -1,0 +1,655 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NFL probability calibration</title><style>body{font:15px system-ui;max-width:1150px;margin:35px auto;padding:0 20px;color:#172b3a;background:#fff}h1{font-size:26px}h2{font-size:20px;margin-top:36px}small{color:#465866}.plots{display:flex;flex-wrap:wrap;gap:20px}figure{margin:0;width:340px}svg{width:100%;height:auto}table{border-collapse:collapse;font-size:12px;width:100%}th,td{text-align:right;padding:4px;border-bottom:1px solid #ddd}caption{text-align:left;margin:8px 0}p{line-height:1.5}</style>
+<h1>NFL probability calibration</h1><p>Source: saved, checksum-verified historical predictions. Generated 2026-09-26T15:57:14.238314Z. Each plot compares mean predicted probability with observed frequency; the diagonal represents perfect calibration.</p>
+<p>Corrected historical snapshot with assumed publication timing Opponent averages are a one-pass adjustment, not causal or recursively schedule-adjusted ratings No odds or betting-return evaluation Exposed 2024-2025 outcomes provide exploratory evidence only No prospective results exist for this candidate. No automatic promotion. Coverage count distinguishes unavailable opponent history from a zero residual.</p>
+<section><h2>outcome-logit-v1 / 2023 development</h2>
+<p>272 games · Log loss 0.661379 · Brier 0.464293</p><div class="plots">
+<figure><figcaption><strong>homeWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="homeWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="117.2414111785364" x2="117.2414111785364" y1="204.40365887491436" y2="102.2177092774366" stroke="#416f85"/><circle cx="117.2414111785364" cy="158.0" r="4" fill="#174e69"><title>n=15; predicted 0.249; observed 0.400</title></circle>
+<line x1="145.82097485115023" x2="145.82097485115023" y1="205.3518702572368" y2="126.3073137342649" stroke="#416f85"/><circle cx="145.82097485115023" cy="170.3846153846154" r="4" fill="#174e69"><title>n=26; predicted 0.355; observed 0.346</title></circle>
+<line x1="171.83285815905836" x2="171.83285815905836" y1="166.33341094729246" y2="107.57539764803607" stroke="#416f85"/><circle cx="171.83285815905836" cy="137.0909090909091" r="4" fill="#174e69"><title>n=55; predicted 0.451; observed 0.491</title></circle>
+<line x1="199.80068429443577" x2="199.80068429443577" y1="177.38348734922045" y2="121.43790918508878" stroke="#416f85"/><circle cx="199.80068429443577" cy="150.33333333333331" r="4" fill="#174e69"><title>n=60; predicted 0.555; observed 0.433</title></circle>
+<line x1="226.42224309439788" x2="226.42224309439788" y1="112.21444805430514" y2="63.63164671793345" stroke="#416f85"/><circle cx="226.42224309439788" cy="85.22388059701493" r="4" fill="#174e69"><title>n=67; predicted 0.653; observed 0.716</title></circle>
+<line x1="250.56938562687444" x2="250.56938562687444" y1="126.76888506054341" y2="62.70164430589563" stroke="#416f85"/><circle cx="250.56938562687444" cy="90.76923076923077" r="4" fill="#174e69"><title>n=39; predicted 0.743; observed 0.692</title></circle>
+<line x1="272.9223477121908" x2="272.9223477121908" y1="137.26263154657238" y2="33.03689483450631" stroke="#416f85"/><circle cx="272.9223477121908" cy="66.0" r="4" fill="#174e69"><title>n=10; predicted 0.826; observed 0.800</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>20%–30%</td><td>15</td><td>24.9%</td><td>40.0%</td></tr>
+<tr><td>30%–40%</td><td>26</td><td>35.5%</td><td>34.6%</td></tr>
+<tr><td>40%–50%</td><td>55</td><td>45.1%</td><td>49.1%</td></tr>
+<tr><td>50%–60%</td><td>60</td><td>55.5%</td><td>43.3%</td></tr>
+<tr><td>60%–70%</td><td>67</td><td>65.3%</td><td>71.6%</td></tr>
+<tr><td>70%–80%</td><td>39</td><td>74.3%</td><td>69.2%</td></tr>
+<tr><td>80%–90%</td><td>10</td><td>82.6%</td><td>80.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>awayWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="awayWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="96.42829520135561" x2="96.42829520135561" y1="236.96310516549372" y2="132.7373684534276" stroke="#416f85"/><circle cx="96.42829520135561" cy="204.0" r="4" fill="#174e69"><title>n=10; predicted 0.172; observed 0.200</title></circle>
+<line x1="119.15455484566712" x2="119.15455484566712" y1="205.00138803232628" y2="141.93634081800815" stroke="#416f85"/><circle cx="119.15455484566712" cy="177.0731707317073" r="4" fill="#174e69"><title>n=41; predicted 0.256; observed 0.317</title></circle>
+<line x1="143.6646425354696" x2="143.6646425354696" y1="204.88306664770192" y2="156.68566506068976" stroke="#416f85"/><circle cx="143.6646425354696" cy="183.33333333333331" r="4" fill="#174e69"><title>n=69; predicted 0.347; observed 0.290</title></circle>
+<line x1="170.03455741545582" x2="170.03455741545582" y1="150.46057825526754" y2="93.07720286952713" stroke="#416f85"/><circle cx="170.03455741545582" cy="120.87719298245614" r="4" fill="#174e69"><title>n=57; predicted 0.445; observed 0.561</title></circle>
+<line x1="197.8155655154885" x2="197.8155655154885" y1="154.34142224802554" y2="96.75699284111354" stroke="#416f85"/><circle cx="197.8155655154885" cy="124.91228070175438" r="4" fill="#174e69"><title>n=57; predicted 0.547; observed 0.544</title></circle>
+<line x1="224.12836611135674" x2="224.12836611135674" y1="156.19329849982205" y2="70.96253242269927" stroke="#416f85"/><circle cx="224.12836611135674" cy="110.0" r="4" fill="#174e69"><title>n=23; predicted 0.645; observed 0.609</title></circle>
+<line x1="251.0945077614875" x2="251.0945077614875" y1="167.7822907225634" y2="65.59634112508564" stroke="#416f85"/><circle cx="251.0945077614875" cy="112.0" r="4" fill="#174e69"><title>n=15; predicted 0.745; observed 0.600</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>10</td><td>17.2%</td><td>20.0%</td></tr>
+<tr><td>20%–30%</td><td>41</td><td>25.6%</td><td>31.7%</td></tr>
+<tr><td>30%–40%</td><td>69</td><td>34.7%</td><td>29.0%</td></tr>
+<tr><td>40%–50%</td><td>57</td><td>44.5%</td><td>56.1%</td></tr>
+<tr><td>50%–60%</td><td>57</td><td>54.7%</td><td>54.4%</td></tr>
+<tr><td>60%–70%</td><td>23</td><td>64.5%</td><td>60.9%</td></tr>
+<tr><td>70%–80%</td><td>15</td><td>74.5%</td><td>60.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>tie</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="tie: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="51.206464508096936" x2="51.206464508096936" y1="250" y2="246.7969444022772" stroke="#416f85"/><circle cx="51.206464508096936" cy="250.0" r="4" fill="#174e69"><title>n=272; predicted 0.004; observed 0.000</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>0%–10%</td><td>272</td><td>0.4%</td><td>0.0%</td></tr>
+</tbody></table></figure>
+</div></section>
+<section><h2>opponent-adjusted-v1 / 2023 development</h2>
+<p>272 games · Log loss 0.660352 · Brier 0.463108</p><div class="plots">
+<figure><figcaption><strong>homeWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="homeWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="103.4929196142713" x2="103.4929196142713" y1="250" y2="67.50634230676462" stroke="#416f85"/><circle cx="103.4929196142713" cy="250.0" r="4" fill="#174e69"><title>n=1; predicted 0.198; observed 0.000</title></circle>
+<line x1="114.77427481974968" x2="114.77427481974968" y1="215.11711648065457" y2="101.37427013680525" stroke="#416f85"/><circle cx="114.77427481974968" cy="166.36363636363637" r="4" fill="#174e69"><title>n=11; predicted 0.240; observed 0.364</title></circle>
+<line x1="143.88267963281248" x2="143.88267963281248" y1="195.79892095436693" y2="117.54080188217353" stroke="#416f85"/><circle cx="143.88267963281248" cy="159.64285714285714" r="4" fill="#174e69"><title>n=28; predicted 0.348; observed 0.393</title></circle>
+<line x1="171.96125418966304" x2="171.96125418966304" y1="166.33341094729246" y2="107.57539764803607" stroke="#416f85"/><circle cx="171.96125418966304" cy="137.0909090909091" r="4" fill="#174e69"><title>n=55; predicted 0.452; observed 0.491</title></circle>
+<line x1="199.24353969600827" x2="199.24353969600827" y1="186.56504382074584" y2="129.55682644097223" stroke="#416f85"/><circle cx="199.24353969600827" cy="159.64285714285714" r="4" fill="#174e69"><title>n=56; predicted 0.553; observed 0.393</title></circle>
+<line x1="225.91391099425226" x2="225.91391099425226" y1="113.61624810503636" y2="63.47734156872184" stroke="#416f85"/><circle cx="225.91391099425226" cy="85.71428571428572" r="4" fill="#174e69"><title>n=63; predicted 0.652; observed 0.714</title></circle>
+<line x1="250.26767596947053" x2="250.26767596947053" y1="123.0529868313376" y2="63.88363384636463" stroke="#416f85"/><circle cx="250.26767596947053" cy="90.0" r="4" fill="#174e69"><title>n=46; predicted 0.742; observed 0.696</title></circle>
+<line x1="274.03069040565646" x2="274.03069040565646" y1="123.04709831818388" y2="30.801982702286352" stroke="#416f85"/><circle cx="274.03069040565646" cy="58.333333333333314" r="4" fill="#174e69"><title>n=12; predicted 0.830; observed 0.833</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>1</td><td>19.8%</td><td>0.0%</td></tr>
+<tr><td>20%–30%</td><td>11</td><td>24.0%</td><td>36.4%</td></tr>
+<tr><td>30%–40%</td><td>28</td><td>34.8%</td><td>39.3%</td></tr>
+<tr><td>40%–50%</td><td>55</td><td>45.2%</td><td>49.1%</td></tr>
+<tr><td>50%–60%</td><td>56</td><td>55.3%</td><td>39.3%</td></tr>
+<tr><td>60%–70%</td><td>63</td><td>65.2%</td><td>71.4%</td></tr>
+<tr><td>70%–80%</td><td>46</td><td>74.2%</td><td>69.6%</td></tr>
+<tr><td>80%–90%</td><td>12</td><td>83.0%</td><td>83.3%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>awayWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="awayWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="95.40304538272018" x2="95.40304538272018" y1="239.19801729771362" y2="146.95290168181612" stroke="#416f85"/><circle cx="95.40304538272018" cy="211.66666666666669" r="4" fill="#174e69"><title>n=12; predicted 0.168; observed 0.167</title></circle>
+<line x1="119.15305162493655" x2="119.15305162493655" y1="207.10212383940888" y2="148.85134998619407" stroke="#416f85"/><circle cx="119.15305162493655" cy="181.48936170212767" r="4" fill="#174e69"><title>n=47; predicted 0.256; observed 0.298</title></circle>
+<line x1="143.60838430492453" x2="143.60838430492453" y1="201.1685469591913" y2="150.19762788367925" stroke="#416f85"/><circle cx="143.60838430492453" cy="178.125" r="4" fill="#174e69"><title>n=64; predicted 0.347; observed 0.312</title></circle>
+<line x1="170.20949846156822" x2="170.20949846156822" y1="146.42386140896926" y2="88.39686123307379" stroke="#416f85"/><circle cx="170.20949846156822" cy="116.18181818181819" r="4" fill="#174e69"><title>n=55; predicted 0.445; observed 0.582</title></circle>
+<line x1="196.8827030269161" x2="196.8827030269161" y1="160.6410895443077" y2="101.40613731720731" stroke="#416f85"/><circle cx="196.8827030269161" cy="130.74074074074076" r="4" fill="#174e69"><title>n=54; predicted 0.544; observed 0.519</title></circle>
+<line x1="224.52208676585363" x2="224.52208676585363" y1="152.45919811782647" y2="74.2010790456331" stroke="#416f85"/><circle cx="224.52208676585363" cy="110.35714285714286" r="4" fill="#174e69"><title>n=28; predicted 0.646; observed 0.607</title></circle>
+<line x1="254.4123953598818" x2="254.4123953598818" y1="160.1569195592561" y2="51.76762095097905" stroke="#416f85"/><circle cx="254.4123953598818" cy="96.66666666666669" r="4" fill="#174e69"><title>n=12; predicted 0.757; observed 0.667</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>12</td><td>16.8%</td><td>16.7%</td></tr>
+<tr><td>20%–30%</td><td>47</td><td>25.6%</td><td>29.8%</td></tr>
+<tr><td>30%–40%</td><td>64</td><td>34.7%</td><td>31.2%</td></tr>
+<tr><td>40%–50%</td><td>55</td><td>44.5%</td><td>58.2%</td></tr>
+<tr><td>50%–60%</td><td>54</td><td>54.4%</td><td>51.9%</td></tr>
+<tr><td>60%–70%</td><td>28</td><td>64.6%</td><td>60.7%</td></tr>
+<tr><td>70%–80%</td><td>12</td><td>75.7%</td><td>66.7%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>tie</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="tie: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="51.20510269506749" x2="51.20510269506749" y1="250" y2="246.7969444022772" stroke="#416f85"/><circle cx="51.20510269506749" cy="250.0" r="4" fill="#174e69"><title>n=272; predicted 0.004; observed 0.000</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>0%–10%</td><td>272</td><td>0.4%</td><td>0.0%</td></tr>
+</tbody></table></figure>
+</div></section>
+<section><h2>outcome-logit-v1 / 2024–2025 exploratory</h2>
+<p>544 games · Log loss 0.651701 · Brier 0.450083</p><div class="plots">
+<figure><figcaption><strong>homeWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="homeWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="98.6080681070669" x2="98.6080681070669" y1="239.51493001376886" y2="89.14762379395245" stroke="#416f85"/><circle cx="98.6080681070669" cy="192.5" r="4" fill="#174e69"><title>n=4; predicted 0.180; observed 0.250</title></circle>
+<line x1="120.85376720093116" x2="120.85376720093116" y1="214.9158090696611" y2="141.76363660341985" stroke="#416f85"/><circle cx="120.85376720093116" cy="184.28571428571428" r="4" fill="#174e69"><title>n=28; predicted 0.262; observed 0.286</title></circle>
+<line x1="146.00583262870708" x2="146.00583262870708" y1="191.34231967523988" y2="140.95330765208544" stroke="#416f85"/><circle cx="146.00583262870708" cy="167.85714285714286" r="4" fill="#174e69"><title>n=70; predicted 0.356; observed 0.357</title></circle>
+<line x1="172.87771780440454" x2="172.87771780440454" y1="171.04916486332596" y2="130.78047992872456" stroke="#416f85"/><circle cx="172.87771780440454" cy="151.42857142857144" r="4" fill="#174e69"><title>n=119; predicted 0.455; observed 0.429</title></circle>
+<line x1="197.6864396103004" x2="197.6864396103004" y1="153.66717358643658" y2="112.49442187037238" stroke="#416f85"/><circle cx="197.6864396103004" cy="133.01724137931035" r="4" fill="#174e69"><title>n=116; predicted 0.547; observed 0.509</title></circle>
+<line x1="224.23924269671048" x2="224.23924269671048" y1="122.92235800585578" y2="81.56951597990187" stroke="#416f85"/><circle cx="224.23924269671048" cy="101.04761904761904" r="4" fill="#174e69"><title>n=105; predicted 0.645; observed 0.648</title></circle>
+<line x1="250.80247773891404" x2="250.80247773891404" y1="101.98222429171747" y2="57.270268690519146" stroke="#416f85"/><circle cx="250.80247773891404" cy="76.7123287671233" r="4" fill="#174e69"><title>n=73; predicted 0.744; observed 0.753</title></circle>
+<line x1="273.4470319582231" x2="273.4470319582231" y1="99.46141174744903" y2="37.47507168164981" stroke="#416f85"/><circle cx="273.4470319582231" cy="59.65517241379311" r="4" fill="#174e69"><title>n=29; predicted 0.828; observed 0.828</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>4</td><td>18.0%</td><td>25.0%</td></tr>
+<tr><td>20%–30%</td><td>28</td><td>26.2%</td><td>28.6%</td></tr>
+<tr><td>30%–40%</td><td>70</td><td>35.6%</td><td>35.7%</td></tr>
+<tr><td>40%–50%</td><td>119</td><td>45.5%</td><td>42.9%</td></tr>
+<tr><td>50%–60%</td><td>116</td><td>54.7%</td><td>50.9%</td></tr>
+<tr><td>60%–70%</td><td>105</td><td>64.5%</td><td>64.8%</td></tr>
+<tr><td>70%–80%</td><td>73</td><td>74.4%</td><td>75.3%</td></tr>
+<tr><td>80%–90%</td><td>29</td><td>82.8%</td><td>82.8%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>awayWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="awayWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="96.16934762937258" x2="96.16934762937258" y1="233.12595254474834" y2="172.80199383524314" stroke="#416f85"/><circle cx="96.16934762937258" cy="211.66666666666669" r="4" fill="#174e69"><title>n=30; predicted 0.171; observed 0.167</title></circle>
+<line x1="118.77108908896486" x2="118.77108908896486" y1="210.67527321099845" y2="165.69477849978432" stroke="#416f85"/><circle cx="118.77108908896486" cy="190.94594594594594" r="4" fill="#174e69"><title>n=74; predicted 0.255; observed 0.257</title></circle>
+<line x1="145.75752329248527" x2="145.75752329248527" y1="187.56847090251557" y2="147.08284397208" stroke="#416f85"/><circle cx="145.75752329248527" cy="168.45454545454544" r="4" fill="#174e69"><title>n=110; predicted 0.355; observed 0.355</title></circle>
+<line x1="172.34111063395568" x2="172.34111063395568" y1="155.94179588670306" y2="114.05820411329694" stroke="#416f85"/><circle cx="172.34111063395568" cy="135.0" r="4" fill="#174e69"><title>n=112; predicted 0.453; observed 0.500</title></circle>
+<line x1="197.19246900292111" x2="197.19246900292111" y1="139.50454687175795" y2="100.14807864343848" stroke="#416f85"/><circle cx="197.19246900292111" cy="119.36000000000001" r="4" fill="#174e69"><title>n=125; predicted 0.545; observed 0.568</title></circle>
+<line x1="224.77474216137017" x2="224.77474216137017" y1="132.35796768648595" y2="79.14540358958402" stroke="#416f85"/><circle cx="224.77474216137017" cy="103.96825396825398" r="4" fill="#174e69"><title>n=63; predicted 0.647; observed 0.635</title></circle>
+<line x1="248.92714915816114" x2="248.92714915816114" y1="122.76071402347209" y2="50.291861492386545" stroke="#416f85"/><circle cx="248.92714915816114" cy="79.62962962962965" r="4" fill="#174e69"><title>n=27; predicted 0.737; observed 0.741</title></circle>
+<line x1="271.84662815849754" x2="271.84662815849754" y1="202.238291815529" y2="34.14314728569116" stroke="#416f85"/><circle cx="271.84662815849754" cy="96.66666666666669" r="4" fill="#174e69"><title>n=3; predicted 0.822; observed 0.667</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>30</td><td>17.1%</td><td>16.7%</td></tr>
+<tr><td>20%–30%</td><td>74</td><td>25.5%</td><td>25.7%</td></tr>
+<tr><td>30%–40%</td><td>110</td><td>35.5%</td><td>35.5%</td></tr>
+<tr><td>40%–50%</td><td>112</td><td>45.3%</td><td>50.0%</td></tr>
+<tr><td>50%–60%</td><td>125</td><td>54.5%</td><td>56.8%</td></tr>
+<tr><td>60%–70%</td><td>63</td><td>64.7%</td><td>63.5%</td></tr>
+<tr><td>70%–80%</td><td>27</td><td>73.7%</td><td>74.1%</td></tr>
+<tr><td>80%–90%</td><td>3</td><td>82.2%</td><td>66.7%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>tie</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="tie: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="51.171691168410085" x2="51.171691168410085" y1="249.925349497935" y2="247.62223382726316" stroke="#416f85"/><circle cx="51.171691168410085" cy="249.57720588235293" r="4" fill="#174e69"><title>n=544; predicted 0.004; observed 0.002</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>0%–10%</td><td>544</td><td>0.4%</td><td>0.2%</td></tr>
+</tbody></table></figure>
+</div></section>
+<section><h2>opponent-adjusted-v1 / 2024–2025 exploratory</h2>
+<p>544 games · Log loss 0.651206 · Brier 0.449619</p><div class="plots">
+<figure><figcaption><strong>homeWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="homeWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="99.48000078020442" x2="99.48000078020442" y1="227.7425754456705" y2="88.99846248183016" stroke="#416f85"/><circle cx="99.48000078020442" cy="173.33333333333334" r="4" fill="#174e69"><title>n=6; predicted 0.183; observed 0.333</title></circle>
+<line x1="122.22868353626376" x2="122.22868353626376" y1="207.29031889737388" y2="135.32432140859697" stroke="#416f85"/><circle cx="122.22868353626376" cy="175.80645161290323" r="4" fill="#174e69"><title>n=31; predicted 0.268; observed 0.323</title></circle>
+<line x1="146.16140898956783" x2="146.16140898956783" y1="200.3506206969048" y2="148.79187698841227" stroke="#416f85"/><circle cx="146.16140898956783" cy="176.984126984127" r="4" fill="#174e69"><title>n=63; predicted 0.356; observed 0.317</title></circle>
+<line x1="172.62333447380558" x2="172.62333447380558" y1="167.7526389447818" y2="126.99052477717056" stroke="#416f85"/><circle cx="172.62333447380558" cy="147.77777777777777" r="4" fill="#174e69"><title>n=117; predicted 0.454; observed 0.444</title></circle>
+<line x1="198.0952572707917" x2="198.0952572707917" y1="158.73742432435947" y2="118.57336187139552" stroke="#416f85"/><circle cx="198.0952572707917" cy="138.77049180327867" r="4" fill="#174e69"><title>n=122; predicted 0.549; observed 0.484</title></circle>
+<line x1="225.34770640257148" x2="225.34770640257148" y1="114.10282092632167" y2="73.32084181054194" stroke="#416f85"/><circle cx="225.34770640257148" cy="92.15686274509804" r="4" fill="#174e69"><title>n=102; predicted 0.649; observed 0.686</title></circle>
+<line x1="251.62967409664626" x2="251.62967409664626" y1="107.67805200239295" y2="62.744328822588784" stroke="#416f85"/><circle cx="251.62967409664626" cy="82.72727272727272" r="4" fill="#174e69"><title>n=77; predicted 0.747; observed 0.727</title></circle>
+<line x1="276.27276097003926" x2="276.27276097003926" y1="97.121758454891" y2="34.145077564230206" stroke="#416f85"/><circle cx="276.27276097003926" cy="55.38461538461539" r="4" fill="#174e69"><title>n=26; predicted 0.838; observed 0.846</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>6</td><td>18.3%</td><td>33.3%</td></tr>
+<tr><td>20%–30%</td><td>31</td><td>26.8%</td><td>32.3%</td></tr>
+<tr><td>30%–40%</td><td>63</td><td>35.6%</td><td>31.7%</td></tr>
+<tr><td>40%–50%</td><td>117</td><td>45.4%</td><td>44.4%</td></tr>
+<tr><td>50%–60%</td><td>122</td><td>54.9%</td><td>48.4%</td></tr>
+<tr><td>60%–70%</td><td>102</td><td>64.9%</td><td>68.6%</td></tr>
+<tr><td>70%–80%</td><td>77</td><td>74.7%</td><td>72.7%</td></tr>
+<tr><td>80%–90%</td><td>26</td><td>83.8%</td><td>84.6%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>awayWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="awayWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="93.94703553364042" x2="93.94703553364042" y1="236.8922877645764" y2="177.57345502389182" stroke="#416f85"/><circle cx="93.94703553364042" cy="217.14285714285714" r="4" fill="#174e69"><title>n=28; predicted 0.163; observed 0.143</title></circle>
+<line x1="118.61768484252374" x2="118.61768484252374" y1="206.48915846740636" y2="162.2686651256666" stroke="#416f85"/><circle cx="118.61768484252374" cy="186.75" r="4" fill="#174e69"><title>n=80; predicted 0.254; observed 0.275</title></circle>
+<line x1="144.93898526817372" x2="144.93898526817372" y1="192.64463597809112" y2="151.23945525734672" stroke="#416f85"/><circle cx="144.93898526817372" cy="173.33333333333334" r="4" fill="#174e69"><title>n=102; predicted 0.352; observed 0.333</title></circle>
+<line x1="172.2481533808797" x2="172.2481533808797" y1="154.7805898617072" y2="115.21941013829277" stroke="#416f85"/><circle cx="172.2481533808797" cy="135.0" r="4" fill="#174e69"><title>n=126; predicted 0.453; observed 0.500</title></circle>
+<line x1="197.39844616643916" x2="197.39844616643916" y1="138.76951947311335" y2="97.18354277329351" stroke="#416f85"/><circle cx="197.39844616643916" cy="117.38738738738738" r="4" fill="#174e69"><title>n=111; predicted 0.546; observed 0.577</title></circle>
+<line x1="223.97113542801614" x2="223.97113542801614" y1="130.81204359750808" y2="78.16332527033902" stroke="#416f85"/><circle cx="223.97113542801614" cy="102.65625" r="4" fill="#174e69"><title>n=64; predicted 0.644; observed 0.641</title></circle>
+<line x1="247.88051808434446" x2="247.88051808434446" y1="119.71804173369762" y2="49.15593831437465" stroke="#416f85"/><circle cx="247.88051808434446" cy="77.5" r="4" fill="#174e69"><title>n=28; predicted 0.733; observed 0.750</title></circle>
+<line x1="270.15368516782235" x2="270.15368516782235" y1="196.93341530651705" y2="47.052778073509046" stroke="#416f85"/><circle cx="270.15368516782235" cy="112.0" r="4" fill="#174e69"><title>n=5; predicted 0.815; observed 0.600</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>28</td><td>16.3%</td><td>14.3%</td></tr>
+<tr><td>20%–30%</td><td>80</td><td>25.4%</td><td>27.5%</td></tr>
+<tr><td>30%–40%</td><td>102</td><td>35.2%</td><td>33.3%</td></tr>
+<tr><td>40%–50%</td><td>126</td><td>45.3%</td><td>50.0%</td></tr>
+<tr><td>50%–60%</td><td>111</td><td>54.6%</td><td>57.7%</td></tr>
+<tr><td>60%–70%</td><td>64</td><td>64.4%</td><td>64.1%</td></tr>
+<tr><td>70%–80%</td><td>28</td><td>73.3%</td><td>75.0%</td></tr>
+<tr><td>80%–90%</td><td>5</td><td>81.5%</td><td>60.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>tie</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="tie: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="51.16450192168747" x2="51.16450192168747" y1="249.925349497935" y2="247.62223382726316" stroke="#416f85"/><circle cx="51.16450192168747" cy="249.57720588235293" r="4" fill="#174e69"><title>n=544; predicted 0.004; observed 0.002</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>0%–10%</td><td>544</td><td>0.4%</td><td>0.2%</td></tr>
+</tbody></table></figure>
+</div></section>
+<section><h2>outcome-logit-v1 / 2024 exploratory</h2>
+<p>272 games · Log loss 0.649219 · Brier 0.452676</p><div class="plots">
+<figure><figcaption><strong>homeWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="homeWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="95.82468430602627" x2="95.82468430602627" y1="228.25782268112692" y2="41.74217731887305" stroke="#416f85"/><circle cx="95.82468430602627" cy="135.0" r="4" fill="#174e69"><title>n=2; predicted 0.170; observed 0.500</title></circle>
+<line x1="121.36391308032368" x2="121.36391308032368" y1="200.50030569080815" y2="69.49969430919185" stroke="#416f85"/><circle cx="121.36391308032368" cy="135.0" r="4" fill="#174e69"><title>n=8; predicted 0.264; observed 0.500</title></circle>
+<line x1="146.4333216537076" x2="146.4333216537076" y1="215.5652711139643" y2="153.37965376882738" stroke="#416f85"/><circle cx="146.4333216537076" cy="189.47368421052633" r="4" fill="#174e69"><title>n=38; predicted 0.357; observed 0.263</title></circle>
+<line x1="172.49841969748525" x2="172.49841969748525" y1="177.787088612962" y2="123.18171482911858" stroke="#416f85"/><circle cx="172.49841969748525" cy="151.42857142857144" r="4" fill="#174e69"><title>n=63; predicted 0.454; observed 0.429</title></circle>
+<line x1="198.14424551181978" x2="198.14424551181978" y1="170.92084000014887" y2="111.2181869410245" stroke="#416f85"/><circle cx="198.14424551181978" cy="141.50943396226415" r="4" fill="#174e69"><title>n=53; predicted 0.549; observed 0.472</title></circle>
+<line x1="224.8566495666401" x2="224.8566495666401" y1="122.65339738644937" y2="70.49532849795295" stroke="#416f85"/><circle cx="224.8566495666401" cy="94.1935483870968" r="4" fill="#174e69"><title>n=62; predicted 0.648; observed 0.677</title></circle>
+<line x1="252.11224619206493" x2="252.11224619206493" y1="95.05901410522449" y2="36.313036219740184" stroke="#416f85"/><circle cx="252.11224619206493" cy="57.096774193548384" r="4" fill="#174e69"><title>n=31; predicted 0.749; observed 0.839</title></circle>
+<line x1="273.35118075500003" x2="273.35118075500003" y1="154.0588402014045" y2="54.9055462113439" stroke="#416f85"/><circle cx="273.35118075500003" cy="96.66666666666669" r="4" fill="#174e69"><title>n=15; predicted 0.827; observed 0.667</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>2</td><td>17.0%</td><td>50.0%</td></tr>
+<tr><td>20%–30%</td><td>8</td><td>26.4%</td><td>50.0%</td></tr>
+<tr><td>30%–40%</td><td>38</td><td>35.7%</td><td>26.3%</td></tr>
+<tr><td>40%–50%</td><td>63</td><td>45.4%</td><td>42.9%</td></tr>
+<tr><td>50%–60%</td><td>53</td><td>54.9%</td><td>47.2%</td></tr>
+<tr><td>60%–70%</td><td>62</td><td>64.8%</td><td>67.7%</td></tr>
+<tr><td>70%–80%</td><td>31</td><td>74.9%</td><td>83.9%</td></tr>
+<tr><td>80%–90%</td><td>15</td><td>82.7%</td><td>66.7%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>awayWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="awayWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="96.47246541275248" x2="96.47246541275248" y1="217.4213191340013" y2="122.13001841990355" stroke="#416f85"/><circle cx="96.47246541275248" cy="178.125" r="4" fill="#174e69"><title>n=16; predicted 0.172; observed 0.312</title></circle>
+<line x1="117.3817461601249" x2="117.3817461601249" y1="233.12595254474834" y2="172.80199383524314" stroke="#416f85"/><circle cx="117.3817461601249" cy="211.66666666666669" r="4" fill="#174e69"><title>n=30; predicted 0.250; observed 0.167</title></circle>
+<line x1="144.63422835249233" x2="144.63422835249233" y1="195.87294238217765" y2="144.28826690567774" stroke="#416f85"/><circle cx="144.63422835249233" cy="172.15384615384613" r="4" fill="#174e69"><title>n=65; predicted 0.350; observed 0.338</title></circle>
+<line x1="171.43535127989765" x2="171.43535127989765" y1="161.42298675289737" y2="100.03341115912949" stroke="#416f85"/><circle cx="171.43535127989765" cy="130.39999999999998" r="4" fill="#174e69"><title>n=50; predicted 0.450; observed 0.520</title></circle>
+<line x1="197.10407566943834" x2="197.10407566943834" y1="140.19494357343677" y2="87.59813339342884" stroke="#416f85"/><circle cx="197.10407566943834" cy="112.68656716417911" r="4" fill="#174e69"><title>n=67; predicted 0.545; observed 0.597</title></circle>
+<line x1="223.49214626401763" x2="223.49214626401763" y1="126.1884925278432" y2="58.71965054197156" stroke="#416f85"/><circle cx="223.49214626401763" cy="87.64705882352939" r="4" fill="#174e69"><title>n=34; predicted 0.643; observed 0.706</title></circle>
+<line x1="246.960346310292" x2="246.960346310292" y1="200.50030569080815" y2="69.49969430919185" stroke="#416f85"/><circle cx="246.960346310292" cy="135.0" r="4" fill="#174e69"><title>n=8; predicted 0.729; observed 0.500</title></circle>
+<line x1="273.17062957027264" x2="273.17062957027264" y1="228.25782268112692" y2="41.74217731887305" stroke="#416f85"/><circle cx="273.17062957027264" cy="135.0" r="4" fill="#174e69"><title>n=2; predicted 0.827; observed 0.500</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>16</td><td>17.2%</td><td>31.2%</td></tr>
+<tr><td>20%–30%</td><td>30</td><td>25.0%</td><td>16.7%</td></tr>
+<tr><td>30%–40%</td><td>65</td><td>35.0%</td><td>33.8%</td></tr>
+<tr><td>40%–50%</td><td>50</td><td>45.0%</td><td>52.0%</td></tr>
+<tr><td>50%–60%</td><td>67</td><td>54.5%</td><td>59.7%</td></tr>
+<tr><td>60%–70%</td><td>34</td><td>64.3%</td><td>70.6%</td></tr>
+<tr><td>70%–80%</td><td>8</td><td>72.9%</td><td>50.0%</td></tr>
+<tr><td>80%–90%</td><td>2</td><td>82.7%</td><td>50.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>tie</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="tie: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="51.18505045462953" x2="51.18505045462953" y1="250" y2="246.7969444022772" stroke="#416f85"/><circle cx="51.18505045462953" cy="250.0" r="4" fill="#174e69"><title>n=272; predicted 0.004; observed 0.000</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>0%–10%</td><td>272</td><td>0.4%</td><td>0.0%</td></tr>
+</tbody></table></figure>
+</div></section>
+<section><h2>opponent-adjusted-v1 / 2024 exploratory</h2>
+<p>272 games · Log loss 0.647191 · Brier 0.450643</p><div class="plots">
+<figure><figcaption><strong>homeWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="homeWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="97.55060472473525" x2="97.55060472473525" y1="235.85685271430887" y2="67.76170818447099" stroke="#416f85"/><circle cx="97.55060472473525" cy="173.33333333333334" r="4" fill="#174e69"><title>n=3; predicted 0.176; observed 0.333</title></circle>
+<line x1="122.78926603847084" x2="122.78926603847084" y1="179.67924924139572" y2="51.47418573942741" stroke="#416f85"/><circle cx="122.78926603847084" cy="106.25" r="4" fill="#174e69"><title>n=8; predicted 0.270; observed 0.625</title></circle>
+<line x1="146.0704639472049" x2="146.0704639472049" y1="215.34488596353253" y2="148.29961429339295" stroke="#416f85"/><circle cx="146.0704639472049" cy="187.27272727272728" r="4" fill="#174e69"><title>n=33; predicted 0.356; observed 0.273</title></circle>
+<line x1="171.89138916525047" x2="171.89138916525047" y1="184.44309886237505" y2="131.66132184090372" stroke="#416f85"/><circle cx="171.89138916525047" cy="159.39393939393938" r="4" fill="#174e69"><title>n=66; predicted 0.451; observed 0.394</title></circle>
+<line x1="198.21882538856116" x2="198.21882538856116" y1="175.78470733643974" y2="115.18482966584827" stroke="#416f85"/><circle cx="198.21882538856116" cy="146.27450980392155" r="4" fill="#174e69"><title>n=51; predicted 0.549; observed 0.451</title></circle>
+<line x1="225.99675606508836" x2="225.99675606508836" y1="113.61624810503636" y2="63.47734156872184" stroke="#416f85"/><circle cx="225.99675606508836" cy="85.71428571428572" r="4" fill="#174e69"><title>n=63; predicted 0.652; observed 0.714</title></circle>
+<line x1="252.27971500059996" x2="252.27971500059996" y1="116.8450856867623" y2="50.48052211257081" stroke="#416f85"/><circle cx="252.27971500059996" cy="77.5" r="4" fill="#174e69"><title>n=32; predicted 0.749; observed 0.750</title></circle>
+<line x1="275.82836405775276" x2="275.82836405775276" y1="133.8461280316702" y2="43.41875522979001" stroke="#416f85"/><circle cx="275.82836405775276" cy="77.5" r="4" fill="#174e69"><title>n=16; predicted 0.836; observed 0.750</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>3</td><td>17.6%</td><td>33.3%</td></tr>
+<tr><td>20%–30%</td><td>8</td><td>27.0%</td><td>62.5%</td></tr>
+<tr><td>30%–40%</td><td>33</td><td>35.6%</td><td>27.3%</td></tr>
+<tr><td>40%–50%</td><td>66</td><td>45.1%</td><td>39.4%</td></tr>
+<tr><td>50%–60%</td><td>51</td><td>54.9%</td><td>45.1%</td></tr>
+<tr><td>60%–70%</td><td>63</td><td>65.2%</td><td>71.4%</td></tr>
+<tr><td>70%–80%</td><td>32</td><td>74.9%</td><td>75.0%</td></tr>
+<tr><td>80%–90%</td><td>16</td><td>83.6%</td><td>75.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>awayWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="awayWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="94.23071954811698" x2="94.23071954811698" y1="228.02339805921574" y2="141.29786432500055" stroke="#416f85"/><circle cx="94.23071954811698" cy="195.88235294117646" r="4" fill="#174e69"><title>n=17; predicted 0.164; observed 0.235</title></circle>
+<line x1="118.72381293183183" x2="118.72381293183183" y1="217.42503774116096" y2="153.24059425916994" stroke="#416f85"/><circle cx="118.72381293183183" cy="190.85714285714286" r="4" fill="#174e69"><title>n=35; predicted 0.255; observed 0.257</title></circle>
+<line x1="144.2297308951795" x2="144.2297308951795" y1="201.84390460458488" y2="149.73970094982468" stroke="#416f85"/><circle cx="144.2297308951795" cy="178.36065573770492" r="4" fill="#174e69"><title>n=61; predicted 0.349; observed 0.311</title></circle>
+<line x1="172.12992898083542" x2="172.12992898083542" y1="158.78181305897553" y2="99.07915999985119" stroke="#416f85"/><circle cx="172.12992898083542" cy="128.49056603773585" r="4" fill="#174e69"><title>n=53; predicted 0.452; observed 0.528</title></circle>
+<line x1="197.7986275680706" x2="197.7986275680706" y1="136.015150125469" y2="82.37017747106336" stroke="#416f85"/><circle cx="197.7986275680706" cy="107.61904761904762" r="4" fill="#174e69"><title>n=63; predicted 0.547; observed 0.619</title></circle>
+<line x1="223.31870437711174" x2="223.31870437711174" y1="128.8777108353413" y2="59.96372227532325" stroke="#416f85"/><circle cx="223.31870437711174" cy="89.69696969696969" r="4" fill="#174e69"><title>n=33; predicted 0.642; observed 0.697</title></circle>
+<line x1="246.5087203940516" x2="246.5087203940516" y1="213.60943329216195" y2="77.60542384136116" stroke="#416f85"/><circle cx="246.5087203940516" cy="151.42857142857144" r="4" fill="#174e69"><title>n=7; predicted 0.728; observed 0.429</title></circle>
+<line x1="271.29554185913" x2="271.29554185913" y1="202.238291815529" y2="34.14314728569116" stroke="#416f85"/><circle cx="271.29554185913" cy="96.66666666666669" r="4" fill="#174e69"><title>n=3; predicted 0.820; observed 0.667</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>17</td><td>16.4%</td><td>23.5%</td></tr>
+<tr><td>20%–30%</td><td>35</td><td>25.5%</td><td>25.7%</td></tr>
+<tr><td>30%–40%</td><td>61</td><td>34.9%</td><td>31.1%</td></tr>
+<tr><td>40%–50%</td><td>53</td><td>45.2%</td><td>52.8%</td></tr>
+<tr><td>50%–60%</td><td>63</td><td>54.7%</td><td>61.9%</td></tr>
+<tr><td>60%–70%</td><td>33</td><td>64.2%</td><td>69.7%</td></tr>
+<tr><td>70%–80%</td><td>7</td><td>72.8%</td><td>42.9%</td></tr>
+<tr><td>80%–90%</td><td>3</td><td>82.0%</td><td>66.7%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>tie</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="tie: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="51.170156894860625" x2="51.170156894860625" y1="250" y2="246.7969444022772" stroke="#416f85"/><circle cx="51.170156894860625" cy="250.0" r="4" fill="#174e69"><title>n=272; predicted 0.004; observed 0.000</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>0%–10%</td><td>272</td><td>0.4%</td><td>0.0%</td></tr>
+</tbody></table></figure>
+</div></section>
+<section><h2>outcome-logit-v1 / 2025 exploratory</h2>
+<p>272 games · Log loss 0.654184 · Brier 0.447490</p><div class="plots">
+<figure><figcaption><strong>homeWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="homeWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="101.39145190810753" x2="101.39145190810753" y1="250" y2="98.74745232653021" stroke="#416f85"/><circle cx="101.39145190810753" cy="250.0" r="4" fill="#174e69"><title>n=2; predicted 0.190; observed 0.000</title></circle>
+<line x1="120.64970884917416" x2="120.64970884917416" y1="231.44873760664643" y2="154.31599058206444" stroke="#416f85"/><circle cx="120.64970884917416" cy="204.0" r="4" fill="#174e69"><title>n=20; predicted 0.262; observed 0.200</title></circle>
+<line x1="145.49818941151898" x2="145.49818941151898" y1="179.0004096514417" y2="103.83388937364168" stroke="#416f85"/><circle cx="145.49818941151898" cy="142.1875" r="4" fill="#174e69"><title>n=32; predicted 0.354; observed 0.469</title></circle>
+<line x1="173.30442817468875" x2="173.30442817468875" y1="179.23138582694205" y2="121.51652768087001" stroke="#416f85"/><circle cx="173.30442817468875" cy="151.42857142857144" r="4" fill="#174e69"><title>n=56; predicted 0.457; observed 0.429</title></circle>
+<line x1="197.30130131219678" x2="197.30130131219678" y1="153.88472067394065" y2="98.91038852490345" stroke="#416f85"/><circle cx="197.30130131219678" cy="125.87301587301587" r="4" fill="#174e69"><title>n=63; predicted 0.546; observed 0.540</title></circle>
+<line x1="223.3490281400678" x2="223.3490281400678" y1="145.16815495539004" y2="80.64022394408414" stroke="#416f85"/><circle cx="223.3490281400678" cy="110.93023255813955" r="4" fill="#174e69"><title>n=43; predicted 0.642; observed 0.605</title></circle>
+<line x1="249.83574388063596" x2="249.83574388063596" y1="125.8597860530049" y2="63.86353657522821" stroke="#416f85"/><circle cx="249.83574388063596" cy="91.1904761904762" r="4" fill="#174e69"><title>n=42; predicted 0.740; observed 0.690</title></circle>
+<line x1="273.5497296759621" x2="273.5497296759621" y1="69.52148462965621" y2="20" stroke="#416f85"/><circle cx="273.5497296759621" cy="20.0" r="4" fill="#174e69"><title>n=14; predicted 0.828; observed 1.000</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>2</td><td>19.0%</td><td>0.0%</td></tr>
+<tr><td>20%–30%</td><td>20</td><td>26.2%</td><td>20.0%</td></tr>
+<tr><td>30%–40%</td><td>32</td><td>35.4%</td><td>46.9%</td></tr>
+<tr><td>40%–50%</td><td>56</td><td>45.7%</td><td>42.9%</td></tr>
+<tr><td>50%–60%</td><td>63</td><td>54.6%</td><td>54.0%</td></tr>
+<tr><td>60%–70%</td><td>43</td><td>64.2%</td><td>60.5%</td></tr>
+<tr><td>70%–80%</td><td>42</td><td>74.0%</td><td>69.0%</td></tr>
+<tr><td>80%–90%</td><td>14</td><td>82.8%</td><td>100.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>awayWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="awayWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="95.82292730550984" x2="95.82292730550984" y1="250.0" y2="200.47851537034376" stroke="#416f85"/><circle cx="95.82292730550984" cy="250.0" r="4" fill="#174e69"><title>n=14; predicted 0.170; observed 0.000</title></circle>
+<line x1="119.71836835862848" x2="119.71836835862848" y1="204.00159226503712" y2="142.91913905698084" stroke="#416f85"/><circle cx="119.71836835862848" cy="176.8181818181818" r="4" fill="#174e69"><title>n=44; predicted 0.258; observed 0.318</title></circle>
+<line x1="147.38006042803065" x2="147.38006042803065" y1="192.25140525408278" y2="129.5488493060459" stroke="#416f85"/><circle cx="147.38006042803065" cy="163.11111111111111" r="4" fill="#174e69"><title>n=45; predicted 0.361; observed 0.378</title></circle>
+<line x1="173.07156172593798" x2="173.07156172593798" y1="166.2573223720348" y2="110.72915709301955" stroke="#416f85"/><circle cx="173.07156172593798" cy="138.70967741935482" r="4" fill="#174e69"><title>n=62; predicted 0.456; observed 0.484</title></circle>
+<line x1="197.29457854332364" x2="197.29457854332364" y1="156.15959739881103" y2="98.96365134815844" stroke="#416f85"/><circle cx="197.29457854332364" cy="127.0689655172414" r="4" fill="#174e69"><title>n=58; predicted 0.546; observed 0.534</title></circle>
+<line x1="226.27847528240417" x2="226.27847528240417" y1="163.6396846147669" y2="85.35028645298556" stroke="#416f85"/><circle cx="226.27847528240417" cy="123.10344827586206" r="4" fill="#174e69"><title>n=29; predicted 0.653; observed 0.552</title></circle>
+<line x1="249.7552766730534" x2="249.7552766730534" y1="106.40059312175686" y2="32.69708476862854" stroke="#416f85"/><circle cx="249.7552766730534" cy="56.31578947368422" r="4" fill="#174e69"><title>n=19; predicted 0.740; observed 0.842</title></circle>
+<line x1="269.1986253349473" x2="269.1986253349473" y1="202.49365769323538" y2="20" stroke="#416f85"/><circle cx="269.1986253349473" cy="20.0" r="4" fill="#174e69"><title>n=1; predicted 0.812; observed 1.000</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>14</td><td>17.0%</td><td>0.0%</td></tr>
+<tr><td>20%–30%</td><td>44</td><td>25.8%</td><td>31.8%</td></tr>
+<tr><td>30%–40%</td><td>45</td><td>36.1%</td><td>37.8%</td></tr>
+<tr><td>40%–50%</td><td>62</td><td>45.6%</td><td>48.4%</td></tr>
+<tr><td>50%–60%</td><td>58</td><td>54.6%</td><td>53.4%</td></tr>
+<tr><td>60%–70%</td><td>29</td><td>65.3%</td><td>55.2%</td></tr>
+<tr><td>70%–80%</td><td>19</td><td>74.0%</td><td>84.2%</td></tr>
+<tr><td>80%–90%</td><td>1</td><td>81.2%</td><td>100.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>tie</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="tie: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="51.15833188219064" x2="51.15833188219064" y1="249.85066504728482" y2="245.27865476379915" stroke="#416f85"/><circle cx="51.15833188219064" cy="249.15441176470588" r="4" fill="#174e69"><title>n=272; predicted 0.004; observed 0.004</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>0%–10%</td><td>272</td><td>0.4%</td><td>0.4%</td></tr>
+</tbody></table></figure>
+</div></section>
+<section><h2>opponent-adjusted-v1 / 2025 exploratory</h2>
+<p>272 games · Log loss 0.655221 · Brier 0.448595</p><div class="plots">
+<figure><figcaption><strong>homeWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="homeWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="101.40939683567359" x2="101.40939683567359" y1="235.85685271430887" y2="67.76170818447099" stroke="#416f85"/><circle cx="101.40939683567359" cy="173.33333333333334" r="4" fill="#174e69"><title>n=3; predicted 0.190; observed 0.333</title></circle>
+<line x1="122.03369831810478" x2="122.03369831810478" y1="227.77285053885174" y2="153.62198906259277" stroke="#416f85"/><circle cx="122.03369831810478" cy="200.0" r="4" fill="#174e69"><title>n=23; predicted 0.267; observed 0.217</title></circle>
+<line x1="146.26144853616705" x2="146.26144853616705" y1="199.68998214596837" y2="124.68119640602823" stroke="#416f85"/><circle cx="146.26144853616705" cy="165.66666666666669" r="4" fill="#174e69"><title>n=30; predicted 0.357; observed 0.367</title></circle>
+<line x1="173.5705578142887" x2="173.5705578142887" y1="163.3338750424897" y2="102.47221755705272" stroke="#416f85"/><circle cx="173.5705578142887" cy="132.7450980392157" r="4" fill="#174e69"><title>n=51; predicted 0.458; observed 0.510</title></circle>
+<line x1="198.00649707352073" x2="198.00649707352073" y1="159.51499085245382" y2="107.4118461757896" stroke="#416f85"/><circle cx="198.00649707352073" cy="133.38028169014086" r="4" fill="#174e69"><title>n=71; predicted 0.548; observed 0.507</title></circle>
+<line x1="224.29924156312111" x2="224.29924156312111" y1="138.63825831303836" y2="72.30679655568358" stroke="#416f85"/><circle cx="224.29924156312111" cy="102.56410256410254" r="4" fill="#174e69"><title>n=39; predicted 0.646; observed 0.641</title></circle>
+<line x1="251.16742278716802" x2="251.16742278716802" y1="119.74764332195159" y2="60.77918971055331" stroke="#416f85"/><circle cx="251.16742278716802" cy="86.44444444444443" r="4" fill="#174e69"><title>n=45; predicted 0.745; observed 0.711</title></circle>
+<line x1="276.9837960296977" x2="276.9837960296977" y1="83.83254396846453" y2="20.00000000000003" stroke="#416f85"/><circle cx="276.9837960296977" cy="20.0" r="4" fill="#174e69"><title>n=10; predicted 0.841; observed 1.000</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>3</td><td>19.0%</td><td>33.3%</td></tr>
+<tr><td>20%–30%</td><td>23</td><td>26.7%</td><td>21.7%</td></tr>
+<tr><td>30%–40%</td><td>30</td><td>35.7%</td><td>36.7%</td></tr>
+<tr><td>40%–50%</td><td>51</td><td>45.8%</td><td>51.0%</td></tr>
+<tr><td>50%–60%</td><td>71</td><td>54.8%</td><td>50.7%</td></tr>
+<tr><td>60%–70%</td><td>39</td><td>64.6%</td><td>64.1%</td></tr>
+<tr><td>70%–80%</td><td>45</td><td>74.5%</td><td>71.1%</td></tr>
+<tr><td>80%–90%</td><td>10</td><td>84.1%</td><td>100.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>awayWin</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="awayWin: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="93.50861478399483" x2="93.50861478399483" y1="250" y2="190.4684175973527" stroke="#416f85"/><circle cx="93.50861478399483" cy="250.0" r="4" fill="#174e69"><title>n=11; predicted 0.161; observed 0.000</title></circle>
+<line x1="118.5351407730619" x2="118.5351407730619" y1="209.2208102894467" y2="150.2523566780484" stroke="#416f85"/><circle cx="118.5351407730619" cy="183.55555555555554" r="4" fill="#174e69"><title>n=45; predicted 0.254; observed 0.289</title></circle>
+<line x1="145.9942173840919" x2="145.9942173840919" y1="195.74338865471427" y2="130.67761250219763" stroke="#416f85"/><circle cx="145.9942173840919" cy="165.85365853658539" r="4" fill="#174e69"><title>n=41; predicted 0.356; observed 0.366</title></circle>
+<line x1="172.33398753433653" x2="172.33398753433653" y1="165.18185474951213" y2="113.79767284652277" stroke="#416f85"/><circle cx="172.33398753433653" cy="139.72602739726028" r="4" fill="#174e69"><title>n=73; predicted 0.453; observed 0.479</title></circle>
+<line x1="196.87320807679785" x2="196.87320807679785" y1="161.84276570231154" y2="99.28402720698872" stroke="#416f85"/><circle cx="196.87320807679785" cy="130.20833333333331" r="4" fill="#174e69"><title>n=48; predicted 0.544; observed 0.521</title></circle>
+<line x1="224.6656588047854" x2="224.6656588047854" y1="156.23759626064964" y2="80.7557490548181" stroke="#416f85"/><circle cx="224.6656588047854" cy="116.4516129032258" r="4" fill="#174e69"><title>n=31; predicted 0.647; observed 0.581</title></circle>
+<line x1="248.33778398110871" x2="248.33778398110871" y1="99.66293864542817" y2="31.45632874936811" stroke="#416f85"/><circle cx="248.33778398110871" cy="52.85714285714286" r="4" fill="#174e69"><title>n=21; predicted 0.735; observed 0.857</title></circle>
+<line x1="268.44090013086094" x2="268.44090013086094" y1="228.25782268112692" y2="41.74217731887305" stroke="#416f85"/><circle cx="268.44090013086094" cy="135.0" r="4" fill="#174e69"><title>n=2; predicted 0.809; observed 0.500</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>10%–20%</td><td>11</td><td>16.1%</td><td>0.0%</td></tr>
+<tr><td>20%–30%</td><td>45</td><td>25.4%</td><td>28.9%</td></tr>
+<tr><td>30%–40%</td><td>41</td><td>35.6%</td><td>36.6%</td></tr>
+<tr><td>40%–50%</td><td>73</td><td>45.3%</td><td>47.9%</td></tr>
+<tr><td>50%–60%</td><td>48</td><td>54.4%</td><td>52.1%</td></tr>
+<tr><td>60%–70%</td><td>31</td><td>64.7%</td><td>58.1%</td></tr>
+<tr><td>70%–80%</td><td>21</td><td>73.5%</td><td>85.7%</td></tr>
+<tr><td>80%–90%</td><td>2</td><td>80.9%</td><td>50.0%</td></tr>
+</tbody></table></figure>
+<figure><figcaption><strong>tie</strong></figcaption><svg viewBox="0 0 340 300" role="img" aria-label="tie: mean predicted probability versus observed frequency, 0 to 100 percent">
+<path d="M50 20V250H320M50 250L320 20" fill="none" stroke="#aaa"/>
+<text x="50" y="269" text-anchor="middle" font-size="10">0%</text>
+<text x="43" y="254" text-anchor="end" font-size="10">0%</text>
+<text x="117.5" y="269" text-anchor="middle" font-size="10">25%</text>
+<text x="43" y="196.5" text-anchor="end" font-size="10">25%</text>
+<text x="185.0" y="269" text-anchor="middle" font-size="10">50%</text>
+<text x="43" y="139.0" text-anchor="end" font-size="10">50%</text>
+<text x="252.5" y="269" text-anchor="middle" font-size="10">75%</text>
+<text x="43" y="81.5" text-anchor="end" font-size="10">75%</text>
+<text x="320" y="269" text-anchor="middle" font-size="10">100%</text>
+<text x="43" y="24" text-anchor="end" font-size="10">100%</text>
+<text x="185" y="290" text-anchor="middle" font-size="11">Mean predicted probability (%)</text><text transform="translate(12 135) rotate(-90)" text-anchor="middle" font-size="11">Observed frequency (%)</text>
+<line x1="51.1588469485143" x2="51.1588469485143" y1="249.85066504728482" y2="245.27865476379915" stroke="#416f85"/><circle cx="51.1588469485143" cy="249.15441176470588" r="4" fill="#174e69"><title>n=272; predicted 0.004; observed 0.004</title></circle>
+</svg><table><caption>Nonempty bins; bars show descriptive 95% Wilson intervals.</caption><thead><tr><th>Bin</th><th>Games</th><th>Predicted</th><th>Observed</th></tr></thead><tbody>
+<tr><td>0%–10%</td><td>272</td><td>0.4%</td><td>0.4%</td></tr>
+</tbody></table></figure>
+</div></section>
+</html>

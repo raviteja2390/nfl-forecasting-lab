@@ -33,3 +33,13 @@ A local health checker cannot notify while the host or Codex is off. The app per
 ## Cloud execution added following the user's Mac-availability requirement
 
 The desktop-only monitoring limitation led to a GitHub Actions deployment, with persisted private-branch archives and an independent daily watchdog workflow. The earlier combined desktop schedule is retained only as a fallback; it is paused once the cloud run is verified. See `CLOUD_OPERATIONS.md` for the current operating design. The same-host limitations above describe the local fallback, while the cloud jobs depend on GitHub availability and account Actions allowance instead.
+
+## Opponent-adjusted experiment — September 26, 2026
+
+The separately committed `forecasting/opponent-plan.json` defined the experiment before fitting. `opponent-adjusted-v1` adds six inputs: each team's mean scoring and conceding residual relative to its previous opponents' pre-match scoring averages, plus usable-history counts. Both levels of history enforce the original 24-hour pregame cutoff, 48-hour assumed score-availability delay, no same-week outcomes, and an eight-game regular-season window.
+
+Training uses 2015–2022, with C selected on 2023 log loss. Saved feature rows include nested opponent-history evidence. Frozen model bytes, input manifests, code hashes, predictions, calibration plots and comparison results are in `forecasting/runs/opponent-adjusted-v1/`. The existing models and live scheduler are unchanged.
+
+On the already-exposed 544 games in 2024–2025, log loss is 0.651206 versus the reference's 0.651701, but accuracy falls from 340/544 to 339/544. The candidate's 2025 log loss is worse than the reference. These exploratory differences do not establish improvement or profitability. Keep the existing primary model. This candidate is saved for offline research; it is not yet issuing live shadow forecasts. A new prospective protocol and an observation-time-aware live adapter are required before that step. The retrospective feature builder must not be used directly for live forecasts.
+
+Margin regression, timestamped odds/closing-line evaluation, optional zero-weight feature cleanup, and prospective validation remain outstanding.

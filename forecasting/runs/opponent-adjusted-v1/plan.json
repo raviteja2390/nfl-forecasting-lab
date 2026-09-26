@@ -1,0 +1,16 @@
+{
+  "version": "opponent-adjusted-experiment-v1",
+  "modelVersion": "opponent-adjusted-v1",
+  "declaredBeforeFitting": true,
+  "trainingSeasons": [2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022],
+  "selectionSeason": 2023,
+  "exploratorySeasons": [2024, 2025],
+  "candidateC": [0.01, 0.1, 1.0, 10.0],
+  "selection": "Lowest 2023 log loss; exact ties choose smaller C",
+  "featureRule": "Keep all baseline inputs. For each team's last eight eligible games, subtract the opponent's pregame last-eight points-against average from points scored, and subtract the opponent's pregame last-eight points-for average from points conceded. Average residuals across games with an opponent history; include the usable-game count. Zero residual and zero count if no opponent history exists.",
+  "timingRule": "Target and nested opponent history both use kickoff minus 24 hours, assumed score availability kickoff plus 48 hours, and exclude same-week results. Nested history uses only games before the historical matchup, not later games available at the target cutoff.",
+  "history": "Regular season only; up to eight games carry across season boundaries; 2014 is warm-up",
+  "finalTestUntouched": false,
+  "role": "Offline research candidate only. No automatic primary replacement or live issuance. A separate prospective protocol must be registered before future shadow forecasts.",
+  "limitations": ["Corrected historical snapshot with assumed publication timing", "Opponent averages are a one-pass adjustment, not causal or recursively schedule-adjusted ratings", "No odds or betting-return evaluation", "Exposed 2024-2025 outcomes provide exploratory evidence only"]
+}
