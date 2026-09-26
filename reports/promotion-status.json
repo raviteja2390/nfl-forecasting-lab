@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-26T15:52:45.369217Z",
-  "evidenceCutoffAt": "2026-09-26T15:52:45.369217+00:00",
+  "generatedAt": "2026-09-26T16:24:55.789980Z",
+  "evidenceCutoffAt": "2026-09-26T16:24:55.789980+00:00",
   "reviewAt": "2027-02-08T12:00:00Z",
   "protocolSha256": "bd794c3fe46541a212226fd861adbff6261ac02e55db7fd36f059f09f9da25a7",
   "errors": [],
@@ -88,6 +88,16 @@
     }
   },
   "calibration": {},
+  "researchRegister": {
+    "counts": {
+      "2023": 26,
+      "2024": 5,
+      "2024-2025": 5,
+      "2025": 5
+    },
+    "errors": [],
+    "historicalPromotionAllowed": false
+  },
   "automaticPromotion": false,
   "interpretation": "Interim comparisons are descriptive; no profitability conclusion. Formal decisions use the fixed review cutoff."
 }
