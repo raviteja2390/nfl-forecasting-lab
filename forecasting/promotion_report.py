@@ -100,6 +100,9 @@ def evaluate(store=ROOT/'live', at=None, plan=None):
                               'excludedReferenceEvents':sorted(set(reference)-set(aligned)),
                               'reference':base,'challenger':challenger,'logLossImprovement':improvement,
                               'interval':interval,'confidenceLevel':plan['confidenceLevel'],'gates':gates}
+    from research_register import review as review_register
+    audit=review_register()
+    errors.extend('Research register: '+e for e in audit['errors'])
     for c in comparisons.values():
         c['gates']['integrity']=not errors
         c['status']=('awaiting-fixed-review' if snapshots.parse_time(at)<review else
@@ -107,6 +110,7 @@ def evaluate(store=ROOT/'live', at=None, plan=None):
     return {'generatedAt':at,'evidenceCutoffAt':cutoff.isoformat(),'reviewAt':plan['reviewAt'],
             'protocolSha256':plan['protocolSha256'],'errors':sorted(set(errors)), 'issued':dict(issued),
             'comparisons':comparisons,'calibration':{v:summarize(list(rows.values())) for v,rows in groups.items() if rows},
+            'researchRegister':{'counts':audit['counts'],'errors':audit['errors'],'historicalPromotionAllowed':False},
             'automaticPromotion':False,'interpretation':'Interim comparisons are descriptive; no profitability conclusion. Formal decisions use the fixed review cutoff.'}
 
 

@@ -1,0 +1,19 @@
+{
+  "backfilled": true,
+  "ciExcludesZero": true,
+  "ciFavorsCandidate": true,
+  "ciStatus": "reported-unadjusted",
+  "cohort": "2024-2025",
+  "id": "outcome-logit-v1--2024-2025--selected",
+  "interval95": [
+    0.022453337624290092,
+    0.08090927421779628
+  ],
+  "logLossImprovement": 0.052192586495458215,
+  "model": "outcome-logit-v1",
+  "reference": "training-frequency",
+  "source": "runs/outcome-logit-v1/holdout-2024-2025/report.json",
+  "sourceSha256": "6bac96e1fb2fb79ff6fde39de88398a7acbe4334085f6ef2647db289abd72a99",
+  "testedAt": "2026-09-26T14:11:36Z",
+  "variant": "selected"
+}

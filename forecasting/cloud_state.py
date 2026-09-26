@@ -82,7 +82,7 @@ def save(state,root=ROOT):
             target=state/'reports'/path.name; target.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(path,target)
     status=root/'forecasting/live/operations/status.json'
     if status.exists(): shutil.copyfile(status,state/'collector-status.json')
-    (state/'README.md').write_text('# NFL persistent research state\n\nThis private branch is maintained by the cloud collector. Raw payloads, original forecasts and receipts are compressed individually and checked by manifest SHA-256 hashes. Do not edit or force-push this branch.\n\nReadable current outputs are in [reports](reports). See [collector-status.json](collector-status.json) for the last successful collection. Code and operating instructions are on the main branch.\n\nThis is versioned storage, not immutable or independent of GitHub. The 250 MB working-tree guard does not cap accumulated Git history; monitor repository size and migrate storage before it becomes large.\n')
+    (state/'README.md').write_text('# NFL persistent research state\n\nThis state branch in the public repository is maintained by the cloud collector. Raw payloads, original forecasts and receipts are compressed individually and checked by manifest SHA-256 hashes. Do not edit or force-push this branch.\n\nReadable current outputs are in [reports](reports). See [collector-status.json](collector-status.json) for the last successful collection. Code and operating instructions are on the main branch.\n\nThis is versioned storage, not immutable or independent of GitHub. The 250 MB working-tree guard does not cap accumulated Git history; monitor repository size and migrate storage before it becomes large.\n')
     return {'files':len(files),'compressedBytes':packed_bytes}
 
 

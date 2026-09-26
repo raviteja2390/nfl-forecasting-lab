@@ -72,6 +72,8 @@ def _run_cycle(collect=True):
                            "statuses": {key: value["status"] for key, value in promotion["comparisons"].items()}}
     if promotion["errors"]:
         report["errors"].append({"stage": "promotion-integrity", "errors": promotion["errors"]})
+    from project_status import write_status
+    report["projectStatus"] = write_status()
     report["finishedAt"] = snapshots.now()
     path = live.LIVE / "cycles" / (report["startedAt"].replace(":", "-") + ".json")
     snapshots.immutable_write(path, live.encode(report))

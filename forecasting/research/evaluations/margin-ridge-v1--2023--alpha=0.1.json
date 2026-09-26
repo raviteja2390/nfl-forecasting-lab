@@ -1,0 +1,16 @@
+{
+  "backfilled": true,
+  "ciExcludesZero": null,
+  "ciFavorsCandidate": null,
+  "ciStatus": "not-computed",
+  "cohort": "2023",
+  "id": "margin-ridge-v1--2023--alpha=0.1",
+  "interval95": null,
+  "logLossImprovement": -0.020140011187396722,
+  "model": "margin-ridge-v1",
+  "reference": "outcome-logit-v1",
+  "source": "runs/margin-ridge-v1/report.json",
+  "sourceSha256": "333f265d1efc7cd49676aa13d89f40fd36bf8e0a06bc41dee843c3419ada0265",
+  "testedAt": "2026-09-26T16:01:26.784254Z",
+  "variant": "alpha=0.1"
+}

@@ -1,0 +1,16 @@
+{
+  "backfilled": true,
+  "ciExcludesZero": null,
+  "ciFavorsCandidate": null,
+  "ciStatus": "not-computed",
+  "cohort": "2023",
+  "id": "opponent-adjusted-v1--2023--C=10.0",
+  "interval95": null,
+  "logLossImprovement": -0.001431669934254698,
+  "model": "opponent-adjusted-v1",
+  "reference": "outcome-logit-v1",
+  "source": "runs/opponent-adjusted-v1/report.json",
+  "sourceSha256": "c91dd72582a35e5c8a4e01f6d0f27ca884c3a91e7c813c581cf84a2883e34898",
+  "testedAt": "2026-09-26T15:57:14.238314Z",
+  "variant": "C=10.0"
+}
