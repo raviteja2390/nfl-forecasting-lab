@@ -1,6 +1,6 @@
 # Prospective forecast tracking
 
-As of 2026-09-27T13:02:01.447294Z. Only forecasts saved before kickoff and independently confirmed final results are scored.
+As of 2026-09-27T17:44:35.158654Z. Only forecasts saved before kickoff and independently confirmed final results are scored.
 
 - **outcome-logit-v1:** 15 issued, 15 pending. No completed results to score yet.
 - **player-availability-v1:** 15 issued, 15 pending. No completed results to score yet.
