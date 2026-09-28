@@ -2,7 +2,7 @@
 
 2026 NFL Week 3
 
-Updated 2026-09-28T00:45:58.159772Z. 16 scheduled games; 15 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-09-28T01:57:31.281445Z. 16 scheduled games; 15 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
