@@ -1,89 +1,89 @@
 {
-  "asOf": "2026-09-27T21:20:59.261471Z",
+  "asOf": "2026-09-28T00:45:58.232416Z",
   "models": {
     "outcome-logit-v1": {
       "issued": 15,
-      "pending": 6,
+      "pending": 2,
       "disputed": 0,
-      "games": 9,
-      "brier": 0.5015750919885649,
-      "logLoss": 0.7009395927268356,
-      "accuracy": 0.4444444444444444,
-      "correct": 4,
-      "classified": 9,
+      "games": 13,
+      "brier": 0.4849306941919063,
+      "logLoss": 0.681768751318571,
+      "accuracy": 0.5384615384615384,
+      "correct": 7,
+      "classified": 13,
       "coverage": 1.0
     },
     "player-availability-v1": {
       "issued": 15,
-      "pending": 6,
+      "pending": 2,
       "disputed": 0,
-      "games": 9,
-      "brier": 0.49069604975727416,
-      "logLoss": 0.6912170966702719,
-      "accuracy": 0.6666666666666666,
-      "correct": 6,
-      "classified": 9,
+      "games": 13,
+      "brier": 0.4703292535655619,
+      "logLoss": 0.6687552596792852,
+      "accuracy": 0.6923076923076923,
+      "correct": 9,
+      "classified": 13,
       "coverage": 1.0
     },
     "player-form-v1": {
       "issued": 15,
-      "pending": 6,
+      "pending": 2,
       "disputed": 0,
-      "games": 9,
-      "brier": 0.5290894616513888,
-      "logLoss": 0.7321464031999181,
-      "accuracy": 0.5555555555555556,
-      "correct": 5,
-      "classified": 9,
+      "games": 13,
+      "brier": 0.4997701923335358,
+      "logLoss": 0.6998589396205506,
+      "accuracy": 0.6153846153846154,
+      "correct": 8,
+      "classified": 13,
       "coverage": 1.0
     }
   },
   "pairedComparisons": {
     "player-availability-v1": {
-      "sameGames": 9,
+      "sameGames": 13,
       "teamOnly": {
-        "games": 9,
-        "brier": 0.5015750919885649,
-        "logLoss": 0.7009395927268356,
-        "accuracy": 0.4444444444444444,
-        "correct": 4,
-        "classified": 9,
+        "games": 13,
+        "brier": 0.4849306941919063,
+        "logLoss": 0.681768751318571,
+        "accuracy": 0.5384615384615384,
+        "correct": 7,
+        "classified": 13,
         "coverage": 1.0
       },
       "challenger": {
-        "games": 9,
-        "brier": 0.49069604975727416,
-        "logLoss": 0.6912170966702719,
-        "accuracy": 0.6666666666666666,
-        "correct": 6,
-        "classified": 9,
+        "games": 13,
+        "brier": 0.4703292535655619,
+        "logLoss": 0.6687552596792852,
+        "accuracy": 0.6923076923076923,
+        "correct": 9,
+        "classified": 13,
         "coverage": 1.0
       },
-      "logLossImprovement": 0.009722496056563723,
-      "brierImprovement": 0.010879042231290714
+      "logLossImprovement": 0.013013491639285779,
+      "brierImprovement": 0.014601440626344442
     },
     "player-form-v1": {
-      "sameGames": 9,
+      "sameGames": 13,
       "teamOnly": {
-        "games": 9,
-        "brier": 0.5015750919885649,
-        "logLoss": 0.7009395927268356,
-        "accuracy": 0.4444444444444444,
-        "correct": 4,
-        "classified": 9,
+        "games": 13,
+        "brier": 0.4849306941919063,
+        "logLoss": 0.681768751318571,
+        "accuracy": 0.5384615384615384,
+        "correct": 7,
+        "classified": 13,
         "coverage": 1.0
       },
       "challenger": {
-        "games": 9,
-        "brier": 0.5290894616513888,
-        "logLoss": 0.7321464031999181,
-        "accuracy": 0.5555555555555556,
-        "correct": 5,
-        "classified": 9,
+        "games": 13,
+        "brier": 0.4997701923335358,
+        "logLoss": 0.6998589396205506,
+        "accuracy": 0.6153846153846154,
+        "correct": 8,
+        "classified": 13,
         "coverage": 1.0
       },
-      "logLossImprovement": -0.03120681047308249,
-      "brierImprovement": -0.027514369662823945
+      "logLossImprovement": -0.018090188301979615,
+      "brierImprovement": -0.014839498141629492
     }
   }
 }
