@@ -1,0 +1,54 @@
+name: NFL postgame research report
+on:
+  schedule:
+    - cron: '43 7 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: nfl-postgame-reports
+  cancel-in-progress: false
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Check out analysis code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Read existing public forecast state
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          ref: forecast-state
+          path: .postgame-input
+          persist-credentials: false
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97
+        with:
+          python-version: '3.12'
+      - name: Check report safeguards
+        run: python -m unittest discover -s forecasting -p 'test_postgame*.py'
+      - name: Generate isolated reports from checked evidence
+        run: python forecasting/postgame_cloud.py --state .postgame-input --output .postgame-output --state-commit "$(git -C .postgame-input rev-parse HEAD)"
+      - name: Preserve reports on their own branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh auth setup-git
+          if gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/postgame-reports" > /dev/null 2>&1; then
+            git clone --depth 1 --single-branch --branch postgame-reports "https://github.com/$GITHUB_REPOSITORY.git" .postgame-publish
+          else
+            mkdir .postgame-publish
+            git -C .postgame-publish init -b postgame-reports
+            git -C .postgame-publish remote add origin "https://github.com/$GITHUB_REPOSITORY.git"
+          fi
+          cp -R .postgame-output/. .postgame-publish/
+          git -C .postgame-publish config user.name 'github-actions[bot]'
+          git -C .postgame-publish config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C .postgame-publish add README.md '20*-week-*/REPORT.md' '20*-week-*/REPORT.json'
+          if ! git -C .postgame-publish diff --cached --quiet; then
+            git -C .postgame-publish commit -m "Update descriptive postgame reports for run $GITHUB_RUN_ID"
+            git -C .postgame-publish push origin HEAD:postgame-reports
+          fi
