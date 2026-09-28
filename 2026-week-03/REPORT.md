@@ -1,6 +1,6 @@
 # 2026 Week 3 postgame analysis — descriptive only
 
-Statistics observed: 2026-09-28T01:57:28.517043Z. Results snapshot: 2026-09-28T02:21:46.865210Z.
+Statistics observed: 2026-09-28T01:57:28.517043Z. Results snapshot: 2026-09-28T15:59:05.476170Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -226,6 +226,10 @@ These are statistical differences associated with the final result, not proven c
 - NO had lower passing EPA than LV (-3.63 versus 8.98).
 - NO had higher rushing EPA than LV (2.42 versus -4.62).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
+
+## LAR at DEN
+
+Verified final exists, but player-stat coverage is incomplete; analysis withheld.
 
 ## Coverage and next test
 
