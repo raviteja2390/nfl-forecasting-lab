@@ -55,3 +55,15 @@ Results on the already-exposed 544 games in 2024–2025: 342 correct winners (62
 Model, plan, checksums, out-of-fold residual evidence, historical predictions and calibration plots are saved in `forecasting/runs/margin-ridge-v1/`. This is offline only. Prospective registration and live shadow issuance remain separate work; the existing cloud collector and issued models are unchanged. Odds/CLV tracking and real prospective validation remain outstanding.
 
 A post-fit diagnostic shows mean predicted tie probability of 2.743% versus an observed tie rate of 0.184% (1/544) on the exploratory cohort. This is evidence of a distributional calibration problem; any change to the tie/error model must be a new registered version, not a rewrite of this result. All 94 Python tests pass, and all five artifact manifests verify. Tests cover handicap signs, integer pushes, probability normalization, expanding-fold chronology, saved prediction reproduction and error-scale reconstruction.
+
+
+## 2026-09-27 — watchdog catch-up recovery
+
+The September 27 watchdog correctly detected an overdue hourly collection;
+GitHub had delayed scheduled runs. The watchdog now calls the existing collector
+workflow, which checks the due slot, performs a normal catch-up when needed,
+persists receipts, checks health, and closes the prior operational alert on
+recovery. A failed recovery remains a failed run. The same collector concurrency
+group serializes scheduled, manual and watchdog invocations. No force flag,
+cutoff, DST rule, frozen model or issued forecast is changed. This is recovery,
+not a guarantee of on-time scheduling or reconstruction of missed observations.

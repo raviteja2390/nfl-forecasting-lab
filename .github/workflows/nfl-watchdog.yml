@@ -4,29 +4,13 @@ on:
     - cron: '47 12 * * *'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
   issues: write
 concurrency:
   group: nfl-cloud-watchdog
   cancel-in-progress: false
 jobs:
-  check:
-    runs-on: ubuntu-latest
-    timeout-minutes: 4
-    env:
-      GH_TOKEN: ${{ github.token }}
-      REPOSITORY: ${{ github.repository }}
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-        with:
-          ref: forecast-state
-          path: .cloud-state
-      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
-        with:
-          python-version: '3.12'
-      - run: python forecasting/cloud_state.py restore --state .cloud-state
-      - run: python forecasting/cloud_runner.py health
-      - name: Record a stale collector or monitoring failure
-        if: failure()
-        run: python forecasting/cloud_alert.py failure
+  recover-and-check:
+    # Reuse the normal due gate, collector lock, state persistence and health check.
+    # No force: healthy/current slots are skipped; overdue slots get one recovery.
+    uses: ./.github/workflows/nfl-collector.yml
