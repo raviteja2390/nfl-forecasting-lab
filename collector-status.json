@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-09-29T01:57:03.208370Z",
-  "lastSuccessAt": "2026-09-29T01:57:06.804045Z",
+  "lastAttemptAt": "2026-09-29T08:30:00.748234Z",
+  "lastSuccessAt": "2026-09-29T08:30:04.296071Z",
   "state": "succeeded",
-  "finishedAt": "2026-09-29T01:57:06.804045Z",
+  "finishedAt": "2026-09-29T08:30:04.296071Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-09-28",
+    "localDate": "2026-09-29",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_03_PHI_CHI",
-        "awayTeam": "PHI",
-        "homeTeam": "CHI",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "5f4e224b050d49368fce7d932b6816bf",
-    "observedAt": "2026-09-29T01:57:03.304485Z"
+    "observationId": "0dd0625db4f14925a5ba61685d09fa7f",
+    "observedAt": "2026-09-29T08:30:00.843373Z"
   }
 }
