@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-02T02:15:30.248502Z",
-  "lastSuccessAt": "2026-10-02T02:15:34.547117Z",
+  "lastAttemptAt": "2026-10-02T08:36:03.291623Z",
+  "lastSuccessAt": "2026-10-02T08:36:08.402467Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-02T02:15:34.547117Z",
+  "finishedAt": "2026-10-02T08:36:08.402467Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-01",
+    "localDate": "2026-10-02",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_04_PIT_CLE",
-        "awayTeam": "PIT",
-        "homeTeam": "CLE",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "3990f5ceeba44bfa97e95544521db886",
-    "observedAt": "2026-10-02T02:15:30.308679Z"
+    "observationId": "45290aa1ec584ee89bcbf32c8fe31a30",
+    "observedAt": "2026-10-02T08:36:03.519574Z"
   }
 }
