@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-02T08:36:08.294131Z",
+  "generatedAt": "2026-10-03T06:32:42.139116Z",
   "season": 2026,
   "week": 4,
   "scheduledGames": 16,
-  "fullyPairedGames": 1,
+  "fullyPairedGames": 15,
   "games": [
     {
       "eventId": "2026_04_PIT_CLE",
@@ -58,16 +58,43 @@
       "scheduledKickoff": "2026-10-04T13:30:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.5063724965626561,
+            "awayWin": 0.4865518468508376,
+            "tie": 0.007075656586506277
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T13:30:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.4192987914115172,
+            "awayWin": 0.5732886662484514,
+            "tie": 0.007412542340031283
+          },
+          "generatedAt": "2026-10-03T06:32:40.442172Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T13:30:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.3773331744408111,
+            "awayWin": 0.6157406323282444,
+            "tie": 0.006926193230944475
+          },
+          "generatedAt": "2026-10-03T06:32:40.468320Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T13:30:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -77,16 +104,43 @@
       "scheduledKickoff": "2026-10-04T17:00:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7117529247574655,
+            "awayWin": 0.2852250762754319,
+            "tie": 0.0030219989671024746
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6266506856646465,
+            "awayWin": 0.370493326231446,
+            "tie": 0.0028559881039074446
+          },
+          "generatedAt": "2026-10-03T06:32:40.431167Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6392873622973749,
+            "awayWin": 0.3578551652410897,
+            "tie": 0.00285747246153543
+          },
+          "generatedAt": "2026-10-03T06:32:40.459327Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -96,16 +150,43 @@
       "scheduledKickoff": "2026-10-04T17:00:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6449773971259181,
+            "awayWin": 0.351992112131952,
+            "tie": 0.0030304907421299554
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6092717205153574,
+            "awayWin": 0.38815760935338195,
+            "tie": 0.0025706701312606527
+          },
+          "generatedAt": "2026-10-03T06:32:40.434429Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6227444789888276,
+            "awayWin": 0.3749295564295816,
+            "tie": 0.002325964581590806
+          },
+          "generatedAt": "2026-10-03T06:32:40.461082Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -115,16 +196,43 @@
       "scheduledKickoff": "2026-10-04T17:00:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.544769775484709,
+            "awayWin": 0.45100442894348913,
+            "tie": 0.0042257955718019964
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.5446792683104879,
+            "awayWin": 0.45117498635346615,
+            "tie": 0.004145745336046081
+          },
+          "generatedAt": "2026-10-03T06:32:40.440285Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.46469831018923247,
+            "awayWin": 0.5323978472669189,
+            "tie": 0.002903842543848676
+          },
+          "generatedAt": "2026-10-03T06:32:40.466581Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -134,16 +242,43 @@
       "scheduledKickoff": "2026-10-04T17:00:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.3489548735396476,
+            "awayWin": 0.6468330233995311,
+            "tie": 0.004212103060821283
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.34582491296463913,
+            "awayWin": 0.6496552597431342,
+            "tie": 0.004519827292226683
+          },
+          "generatedAt": "2026-10-03T06:32:40.444097Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.32753489245640366,
+            "awayWin": 0.6679958335896938,
+            "tie": 0.00446927395390248
+          },
+          "generatedAt": "2026-10-03T06:32:40.470124Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -153,16 +288,43 @@
       "scheduledKickoff": "2026-10-04T17:00:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.4945897803286793,
+            "awayWin": 0.5016477214912209,
+            "tie": 0.003762498180099773
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.5070739997338312,
+            "awayWin": 0.48984347413867396,
+            "tie": 0.0030825261274949585
+          },
+          "generatedAt": "2026-10-03T06:32:40.449675Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.4552538324564207,
+            "awayWin": 0.54187795748416,
+            "tie": 0.0028682100594192954
+          },
+          "generatedAt": "2026-10-03T06:32:40.475655Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -172,16 +334,43 @@
       "scheduledKickoff": "2026-10-04T17:00:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6414251555561378,
+            "awayWin": 0.35511144737399786,
+            "tie": 0.0034633970698643404
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6399415118757351,
+            "awayWin": 0.3570399251074724,
+            "tie": 0.0030185630167925428
+          },
+          "generatedAt": "2026-10-03T06:32:40.453368Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6623128814857018,
+            "awayWin": 0.33495812575156003,
+            "tie": 0.0027289927627382545
+          },
+          "generatedAt": "2026-10-03T06:32:40.479299Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -191,16 +380,43 @@
       "scheduledKickoff": "2026-10-04T17:00:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.8026877122535727,
+            "awayWin": 0.19486127534296602,
+            "tie": 0.0024510124034613037
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7035266110191317,
+            "awayWin": 0.2937668163974312,
+            "tie": 0.0027065725834370764
+          },
+          "generatedAt": "2026-10-03T06:32:40.455310Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7342711522074714,
+            "awayWin": 0.2627280902462687,
+            "tie": 0.003000757546259895
+          },
+          "generatedAt": "2026-10-03T06:32:40.481189Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -210,16 +426,43 @@
       "scheduledKickoff": "2026-10-04T17:00:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7200254411231687,
+            "awayWin": 0.2769379245488837,
+            "tie": 0.0030366343279475965
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7258325823193982,
+            "awayWin": 0.27101137807383635,
+            "tie": 0.0031560396067653864
+          },
+          "generatedAt": "2026-10-03T06:32:40.457150Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7776156056664811,
+            "awayWin": 0.21903141310533386,
+            "tie": 0.0033529812281850096
+          },
+          "generatedAt": "2026-10-03T06:32:40.482966Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T17:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -229,16 +472,43 @@
       "scheduledKickoff": "2026-10-04T20:05:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.8580687305563856,
+            "awayWin": 0.13972026336826684,
+            "tie": 0.0022110060753475235
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:05:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.796704819169021,
+            "awayWin": 0.20078037340604166,
+            "tie": 0.002514807424937251
+          },
+          "generatedAt": "2026-10-03T06:32:40.451592Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:05:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.755948447410858,
+            "awayWin": 0.24165103933968807,
+            "tie": 0.0024005132494538894
+          },
+          "generatedAt": "2026-10-03T06:32:40.477509Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:05:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -248,16 +518,43 @@
       "scheduledKickoff": "2026-10-04T20:25:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.711565201658004,
+            "awayWin": 0.28527717463478514,
+            "tie": 0.003157623707210996
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7381842076875988,
+            "awayWin": 0.25925249891617574,
+            "tie": 0.002563293396225462
+          },
+          "generatedAt": "2026-10-03T06:32:40.436402Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7368818742629291,
+            "awayWin": 0.2608123882702606,
+            "tie": 0.0023057374668104262
+          },
+          "generatedAt": "2026-10-03T06:32:40.462891Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -267,16 +564,43 @@
       "scheduledKickoff": "2026-10-04T20:25:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6033772144035605,
+            "awayWin": 0.39212788603180077,
+            "tie": 0.004494899564638733
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.5283985432516763,
+            "awayWin": 0.46658832896175545,
+            "tie": 0.005013127786568259
+          },
+          "generatedAt": "2026-10-03T06:32:40.445996Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.5429484499939637,
+            "awayWin": 0.4511999989377949,
+            "tie": 0.005851551068241361
+          },
+          "generatedAt": "2026-10-03T06:32:40.471970Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -286,16 +610,43 @@
       "scheduledKickoff": "2026-10-04T20:25:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.8062916224146408,
+            "awayWin": 0.190829886381666,
+            "tie": 0.0028784912036932614
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7769164947280881,
+            "awayWin": 0.21990673589926746,
+            "tie": 0.003176769372644517
+          },
+          "generatedAt": "2026-10-03T06:32:40.447875Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7602986431074799,
+            "awayWin": 0.23700754489342832,
+            "tie": 0.0026938119990918604
+          },
+          "generatedAt": "2026-10-03T06:32:40.473852Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-04T20:25:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
@@ -305,16 +656,43 @@
       "scheduledKickoff": "2026-10-05T00:20:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.4617712475415442,
+            "awayWin": 0.5346071199978336,
+            "tie": 0.0036216324606221195
+          },
+          "generatedAt": "2026-10-03T06:32:38.463088Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-05T00:20:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.45277559472341766,
+            "awayWin": 0.5437742437829882,
+            "tie": 0.0034501614935941913
+          },
+          "generatedAt": "2026-10-03T06:32:40.438321Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-05T00:20:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.4755199584369122,
+            "awayWin": 0.5208249851940971,
+            "tie": 0.003655056368990602
+          },
+          "generatedAt": "2026-10-03T06:32:40.464676Z",
+          "featureCutoffAt": "2026-10-03T06:32:38.003404Z",
+          "kickoffAt": "2026-10-05T00:20:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {
