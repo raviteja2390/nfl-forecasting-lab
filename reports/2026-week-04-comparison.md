@@ -2,7 +2,7 @@
 
 2026 NFL Week 4
 
-Updated 2026-10-03T06:32:42.139116Z. 16 scheduled games; 15 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-04T09:47:00.886586Z. 16 scheduled games; 16 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -100,7 +100,6 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 
 ## ATL at NO — Mon Oct 05, 08:15 PM EDT
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** ATL 35.7% · NO 63.9% · tie 0.4%. Issued 2026-10-04T09:46:57.614023Z; cutoff 2026-10-04T09:46:57.247234Z.
+- **Player form (shadow):** ATL 34.4% · NO 65.1% · tie 0.5%. Issued 2026-10-04T09:46:59.377334Z; cutoff 2026-10-04T09:46:57.247234Z.
+- **Player availability (shadow):** ATL 37.1% · NO 62.4% · tie 0.5%. Issued 2026-10-04T09:46:59.381308Z; cutoff 2026-10-04T09:46:57.247234Z.

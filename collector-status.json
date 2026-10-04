@@ -1,20 +1,105 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-03T06:32:32.807750Z",
-  "lastSuccessAt": "2026-10-03T06:32:42.252087Z",
+  "lastAttemptAt": "2026-10-04T09:46:53.255731Z",
+  "lastSuccessAt": "2026-10-04T09:47:01.009775Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-03T06:32:42.252087Z",
+  "finishedAt": "2026-10-04T09:47:01.009775Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-03",
+    "localDate": "2026-10-04",
     "timeZone": "America/New_York",
-    "cadence": "daily",
-    "gamesToday": [],
-    "scheduledGameCount": 0,
+    "cadence": "hourly",
+    "gamesToday": [
+      {
+        "eventId": "2026_04_IND_WAS",
+        "awayTeam": "IND",
+        "homeTeam": "WAS",
+        "kickoffEastern": "09:30"
+      },
+      {
+        "eventId": "2026_04_ARI_NYG",
+        "awayTeam": "ARI",
+        "homeTeam": "NYG",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_04_DAL_HOU",
+        "awayTeam": "DAL",
+        "homeTeam": "HOU",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_04_GB_TB",
+        "awayTeam": "GB",
+        "homeTeam": "TB",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_04_JAX_CIN",
+        "awayTeam": "JAX",
+        "homeTeam": "CIN",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_04_LA_PHI",
+        "awayTeam": "LA",
+        "homeTeam": "PHI",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_04_NE_BUF",
+        "awayTeam": "NE",
+        "homeTeam": "BUF",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_04_NYJ_CHI",
+        "awayTeam": "NYJ",
+        "homeTeam": "CHI",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_04_TEN_BAL",
+        "awayTeam": "TEN",
+        "homeTeam": "BAL",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_04_MIA_MIN",
+        "awayTeam": "MIA",
+        "homeTeam": "MIN",
+        "kickoffEastern": "16:05"
+      },
+      {
+        "eventId": "2026_04_DEN_SF",
+        "awayTeam": "DEN",
+        "homeTeam": "SF",
+        "kickoffEastern": "16:25"
+      },
+      {
+        "eventId": "2026_04_KC_LV",
+        "awayTeam": "KC",
+        "homeTeam": "LV",
+        "kickoffEastern": "16:25"
+      },
+      {
+        "eventId": "2026_04_LAC_SEA",
+        "awayTeam": "LAC",
+        "homeTeam": "SEA",
+        "kickoffEastern": "16:25"
+      },
+      {
+        "eventId": "2026_04_DET_CAR",
+        "awayTeam": "DET",
+        "homeTeam": "CAR",
+        "kickoffEastern": "20:20"
+      }
+    ],
+    "scheduledGameCount": 14,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "9522066b4b7046e786a78aef83396e09",
-    "observedAt": "2026-10-03T06:32:32.978076Z"
+    "observationId": "d13b73c4ab8a4bfea020b7fd1e211281",
+    "observedAt": "2026-10-04T09:46:53.311083Z"
   }
 }
