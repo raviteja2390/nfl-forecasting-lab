@@ -1,20 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-09-29T14:22:00.164522+00:00",
+  "generatedAt": "2026-10-04T15:09:05.857659+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-09-28T01:57:28.517043Z",
-    "sha256": "11cbecd3da8e41c2e84f7858976599685c3dbfa1ce10e44b322464cc6d12706a",
-    "bytes": 1425071
+    "observedAt": "2026-10-04T09:46:56.484826Z",
+    "sha256": "88ec064c1b611ab91b494a5b81d37b980d832ec1f3009a39021e025e71b6f025",
+    "bytes": 1517457
   },
   "season": 2026,
   "week": 4,
-  "sourceStateCommit": "2ba4e15e658656932eddbd8a6474481731be2265",
+  "sourceStateCommit": "6e281b3533ed83a65c5448461fc6094151d2997e",
   "excluded": [
-    {
-      "eventId": "2026_04_PIT_CLE",
-      "reason": "no-verified-final"
-    },
     {
       "eventId": "2026_04_IND_WAS",
       "reason": "no-verified-final"
@@ -76,7 +72,55 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-09-29T14:21:59.311911Z",
-  "games": [],
+  "resultsAsOf": "2026-10-04T15:09:04.608132Z",
+  "games": [
+    {
+      "eventId": "2026_04_PIT_CLE",
+      "result": {
+        "eventId": "2026_04_PIT_CLE",
+        "homeScore": 27,
+        "awayScore": 24,
+        "finalizedAt": "2026-10-04T09:46:59.931157Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "d13b73c4ab8a4bfea020b7fd1e211281",
+        "espnObservationId": "e36729662f814b14afbb22527f2bd77f"
+      },
+      "teams": {
+        "PIT": {
+          "rows": 32,
+          "attempts": 40.0,
+          "passing_epa": 2.42329685487317,
+          "passing_interceptions": 2.0,
+          "sacks_suffered": 5.0,
+          "carries": 19.0,
+          "rushing_epa": 1.191344010294418,
+          "fg_att": 2.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": 0.05385104121940378,
+          "rushing_epa_per_carry": 0.06270231633128516
+        },
+        "CLE": {
+          "rows": 36,
+          "attempts": 33.0,
+          "passing_epa": 9.18304566547597,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 2.0,
+          "carries": 27.0,
+          "rushing_epa": -3.228507682359219,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": 0.26237273329931343,
+          "rushing_epa_per_carry": -0.11957435860589699
+        }
+      },
+      "loser": "PIT",
+      "notes": [
+        "PIT had lower passing EPA than CLE (2.42 versus 9.18).",
+        "PIT had higher rushing EPA than CLE (1.19 versus -3.23).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-04T09:46:59.931157Z"
+    }
+  ],
   "status": "descriptive-only; no model evaluated"
 }
