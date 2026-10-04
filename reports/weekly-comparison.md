@@ -2,7 +2,7 @@
 
 2026 NFL Week 4
 
-Updated 2026-10-04T22:32:53.017719Z. 16 scheduled games; 16 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-04T23:09:56.651422Z. 16 scheduled games; 16 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
