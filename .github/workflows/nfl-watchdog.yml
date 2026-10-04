@@ -1,7 +1,7 @@
-name: NFL daily cloud watchdog
+name: NFL hourly cloud watchdog
 on:
   schedule:
-    - cron: '47 12 * * *'
+    - cron: '47 * * * *'
   workflow_dispatch:
 permissions:
   contents: write

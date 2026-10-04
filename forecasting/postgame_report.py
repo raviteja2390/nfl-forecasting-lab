@@ -7,6 +7,8 @@ from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
+from build_features import team_id
+
 ROOT = Path(__file__).resolve().parent
 
 
@@ -56,6 +58,9 @@ def build(body, provenance, comparison, output_dir):
     for row in csv.DictReader(body.decode('utf-8-sig').splitlines()):
         if row['season'] != str(season) or row['week'] != str(week) or row['season_type'] != 'REG':
             continue
+        # Canonicalize team fields only; the source game ID stays unchanged.
+        row['team'] = team_id(row['team'])
+        row['opponent_team'] = team_id(row['opponent_team'])
         identity = (row['game_id'], row['team'], row['player_id'])
         if identity in seen:
             raise ValueError('Duplicate player/game/team')
@@ -72,12 +77,12 @@ def build(body, provenance, comparison, output_dir):
             continue
         if result['timingBasis'] != 'observed-final-in-two-sources':
             raise ValueError('Unverified final')
-        home, away = game['home'], game['away']
+        home, away = team_id(game['home']), team_id(game['away'])
         teams = {team: aggregate(grouped[(game['eventId'], team)]) for team in (away, home)}
         for team, stats in teams.items():
             # Missing team rows are reported below, never interpreted as zero.
             if any(r['opponent_team'] != (home if team == away else away) for r in grouped[(game['eventId'], team)]):
-                raise ValueError('Opponent mismatch')
+                raise ValueError(f"Opponent mismatch: {game['eventId']} team {team}")
         if not all(stats['rows'] for stats in teams.values()):
             lines += [f'## {away} at {home}', '', 'Verified final exists, but player-stat coverage is incomplete; analysis withheld.', '']
             continue
