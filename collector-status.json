@@ -1,20 +1,27 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-07T07:14:13.562516Z",
-  "lastSuccessAt": "2026-10-07T07:14:23.882727Z",
+  "lastAttemptAt": "2026-10-08T07:24:26.856923Z",
+  "lastSuccessAt": "2026-10-08T07:24:31.988881Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-07T07:14:23.882727Z",
+  "finishedAt": "2026-10-08T07:24:31.988881Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-07",
+    "localDate": "2026-10-08",
     "timeZone": "America/New_York",
-    "cadence": "daily",
-    "gamesToday": [],
-    "scheduledGameCount": 0,
+    "cadence": "hourly",
+    "gamesToday": [
+      {
+        "eventId": "2026_05_TB_DAL",
+        "awayTeam": "TB",
+        "homeTeam": "DAL",
+        "kickoffEastern": "20:15"
+      }
+    ],
+    "scheduledGameCount": 1,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "17c3b549716141a3a2add37e4f4f566d",
-    "observedAt": "2026-10-07T07:14:13.625597Z"
+    "observationId": "72d048d49f64487a92a10c41731be0e5",
+    "observedAt": "2026-10-08T07:24:27.248058Z"
   }
 }
