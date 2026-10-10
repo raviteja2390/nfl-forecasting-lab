@@ -1,20 +1,13 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-09T09:03:31.634029Z",
+  "lastAttemptAt": "2026-10-10T07:06:22.439682Z",
   "lastSuccessAt": "2026-10-09T09:03:38.383168Z",
-  "state": "succeeded",
-  "finishedAt": "2026-10-09T09:03:38.383168Z",
-  "errors": [],
-  "schedule": {
-    "localDate": "2026-10-09",
-    "timeZone": "America/New_York",
-    "cadence": "daily",
-    "gamesToday": [],
-    "scheduledGameCount": 0,
-    "lastScheduledDateInFeed": "2027-01-10",
-    "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
-    "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "8bd71fac15af44498a24f62416c85c22",
-    "observedAt": "2026-10-09T09:03:31.729490Z"
-  }
+  "state": "failed",
+  "finishedAt": "2026-10-10T07:06:28.971598Z",
+  "errors": [
+    {
+      "stage": "uncaught-cycle-error",
+      "error": "2026_05_PHI_JAX: venue classification mismatch"
+    }
+  ]
 }
