@@ -1,20 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-09T14:41:03.644753+00:00",
+  "generatedAt": "2026-10-10T13:58:34.197098+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-07T07:14:18.280585Z",
-    "sha256": "81c5bcc263d7b04289c3bfb19e1ae510c289d91fc626a3a33169c0f073aceb6f",
-    "bytes": 1981105
+    "observedAt": "2026-10-10T13:41:13.765607Z",
+    "sha256": "8304933b6ee2bc2ed132a8932cd579e479ebb5477deb677487544cc51bf67606",
+    "bytes": 2011144
   },
   "season": 2026,
   "week": 5,
-  "sourceStateCommit": "bacfddaca70a93c257963156727cb8f51d80216f",
+  "sourceStateCommit": "6fb3520d2c808692236580b407b30a43248ba075",
   "excluded": [
-    {
-      "eventId": "2026_05_TB_DAL",
-      "reason": "stats-snapshot-predates-kickoff"
-    },
     {
       "eventId": "2026_05_PHI_JAX",
       "reason": "no-verified-final"
@@ -72,7 +68,55 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-09T14:41:01.814804Z",
-  "games": [],
+  "resultsAsOf": "2026-10-10T13:58:32.683668Z",
+  "games": [
+    {
+      "eventId": "2026_05_TB_DAL",
+      "result": {
+        "eventId": "2026_05_TB_DAL",
+        "homeScore": 16,
+        "awayScore": 24,
+        "finalizedAt": "2026-10-09T09:03:37.612111Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "8bd71fac15af44498a24f62416c85c22",
+        "espnObservationId": "6046d311142d4acda0241c1d553db860"
+      },
+      "teams": {
+        "TB": {
+          "rows": 33,
+          "attempts": 25.0,
+          "passing_epa": 5.87206977419333,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 1.0,
+          "carries": 39.0,
+          "rushing_epa": 4.308134201390208,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": 0.22584883746897422,
+          "rushing_epa_per_carry": 0.11046497952282586
+        },
+        "DAL": {
+          "rows": 35,
+          "attempts": 42.0,
+          "passing_epa": -3.28676357530644,
+          "passing_interceptions": 2.0,
+          "sacks_suffered": 0.0,
+          "carries": 13.0,
+          "rushing_epa": 0.665882953966502,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": -0.07825627560253429,
+          "rushing_epa_per_carry": 0.05122176568973092
+        }
+      },
+      "loser": "DAL",
+      "notes": [
+        "DAL had lower passing EPA than TB (-3.29 versus 5.87).",
+        "DAL had lower rushing EPA than TB (0.67 versus 4.31).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-10T13:41:13.765607Z"
+    }
+  ],
   "status": "descriptive-only; no model evaluated"
 }
