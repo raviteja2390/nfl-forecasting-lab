@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-10T07:46:00.501666Z",
+  "lastAttemptAt": "2026-10-10T13:41:08.323568Z",
   "lastSuccessAt": "2026-10-09T09:03:38.383168Z",
   "state": "failed",
-  "finishedAt": "2026-10-10T07:46:08.705486Z",
+  "finishedAt": "2026-10-10T13:41:15.823607Z",
   "errors": [
     {
       "stage": "uncaught-cycle-error",
-      "error": "2026_05_PHI_JAX: venue classification mismatch"
+      "error": "2026_05_PHI_JAX: missed the at-least-24-hour issue deadline; refusing to backdate"
     }
   ]
 }
