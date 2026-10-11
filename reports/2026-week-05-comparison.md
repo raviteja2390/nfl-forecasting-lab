@@ -2,7 +2,7 @@
 
 2026 NFL Week 5
 
-Updated 2026-10-11T08:49:52.582351Z. 15 scheduled games; 2 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-11T09:20:06.665188Z. 15 scheduled games; 2 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
