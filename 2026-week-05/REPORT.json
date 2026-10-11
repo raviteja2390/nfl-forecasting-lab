@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-10T13:58:34.197098+00:00",
+  "generatedAt": "2026-10-11T14:22:57.593919+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-10T13:41:13.765607Z",
-    "sha256": "8304933b6ee2bc2ed132a8932cd579e479ebb5477deb677487544cc51bf67606",
-    "bytes": 2011144
+    "observedAt": "2026-10-11T09:20:03.233861Z",
+    "sha256": "bda143a5f21ce606cf62cbf1f2ba832392e9f2cde73a8f733d4bc5d04f1598ff",
+    "bytes": 2012053
   },
   "season": 2026,
   "week": 5,
-  "sourceStateCommit": "6fb3520d2c808692236580b407b30a43248ba075",
+  "sourceStateCommit": "b1437acfd520712945f27b3aae0e3f4dc77c6ec0",
   "excluded": [
     {
       "eventId": "2026_05_PHI_JAX",
@@ -68,7 +68,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-10T13:58:32.683668Z",
+  "resultsAsOf": "2026-10-11T14:22:56.084703Z",
   "games": [
     {
       "eventId": "2026_05_TB_DAL",
@@ -76,10 +76,10 @@
         "eventId": "2026_05_TB_DAL",
         "homeScore": 16,
         "awayScore": 24,
-        "finalizedAt": "2026-10-09T09:03:37.612111Z",
+        "finalizedAt": "2026-10-11T09:20:06.149357Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "8bd71fac15af44498a24f62416c85c22",
-        "espnObservationId": "6046d311142d4acda0241c1d553db860"
+        "nflverseObservationId": "ab0aac5c9e0549e197b4c105f6c1dcdc",
+        "espnObservationId": "f71217ef034c42b489da83d31493c08a"
       },
       "teams": {
         "TB": {
@@ -115,7 +115,7 @@
         "DAL had lower rushing EPA than TB (0.67 versus 4.31).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-10T13:41:13.765607Z"
+      "availableNoEarlierThan": "2026-10-11T09:20:06.149357Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
