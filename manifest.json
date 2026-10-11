@@ -644,6 +644,10 @@
       "bytes": 22842,
       "sha256": "89905e2fb8818a210da885e0139652ce02d92650a3394af174e6e11b50192ae4"
     },
+    "forecasting/data/feeds/blobs/89da64e1ef8b3f2f1292a4c41bde836a4d58f98b51fdc894be88b806be17e506": {
+      "bytes": 233825,
+      "sha256": "89da64e1ef8b3f2f1292a4c41bde836a4d58f98b51fdc894be88b806be17e506"
+    },
     "forecasting/data/feeds/blobs/8b5e4e2de15d6251a48c1d56c8f3e2bd204a2de34e2ac3914d77dc3e00dedc8e": {
       "bytes": 13319,
       "sha256": "8b5e4e2de15d6251a48c1d56c8f3e2bd204a2de34e2ac3914d77dc3e00dedc8e"
@@ -1824,6 +1828,10 @@
       "bytes": 591,
       "sha256": "976110902c7f49bfd63d8f9c9c57bd0774f4f32d83c43d029154f0aeecc7a91e"
     },
+    "forecasting/data/feeds/observations/55746b0fbe5147c89192dfa6248e9c03.json": {
+      "bytes": 591,
+      "sha256": "75c2dbcc5cc43eb412ae9fc5496e5d64b8332309abe9b618d1cab944f8b2b89c"
+    },
     "forecasting/data/feeds/observations/55cdd532bdad48b6a50f602e7f32248d.json": {
       "bytes": 591,
       "sha256": "adc849f4327811fae913e942995c97477f0d7c126e7fffea8ed2e064adc8630d"
@@ -2384,6 +2392,10 @@
       "bytes": 591,
       "sha256": "84e0e445ef4baad3160f1f36adb4700a73166c5d3ceaf548d7a0e62ed7052ae7"
     },
+    "forecasting/data/feeds/observations/9c6a7a43c790404a863ce2fb484997a4.json": {
+      "bytes": 956,
+      "sha256": "ff02a726ce08cf94e75ebab94bf4bd1e2497d85949c362917bb793fc7798103e"
+    },
     "forecasting/data/feeds/observations/9d2a5fb3222e4b3faec684d31a36166e.json": {
       "bytes": 589,
       "sha256": "09e4acca9994112dd16ef8b5ec5042d4f06d4375a2841cf13aeb999bedb6e361"
@@ -2824,6 +2836,10 @@
       "bytes": 589,
       "sha256": "af08ea0c91f9df670a20a461498f9cec6c481d5e0cc5d893c2f8cceac7e37a23"
     },
+    "forecasting/data/feeds/observations/d9a803aed4ea4b4f9ab7b50fb03024fb.json": {
+      "bytes": 4124,
+      "sha256": "11c893552249ae283ee2534b3ea307a32ed5d0ecee277ec6d04a8a673f32fe9f"
+    },
     "forecasting/data/feeds/observations/d9aa52fe87b843269c34fc865d052c39.json": {
       "bytes": 589,
       "sha256": "f7d55540c8223c41e259a511289e2febeee884fcce967464de17ed13fca38972"
@@ -3164,6 +3180,10 @@
       "bytes": 2180444,
       "sha256": "6ad35469bd034b1ffc66994ea4efe818813e293484a9ccf2d696d2edcb5bcba1"
     },
+    "forecasting/data/snapshots/blobs/6bdf396f9e7b24bd9dc0e18831a5b170ec67ff9ae367aa5c0198f4c0c6ef9d87.csv": {
+      "bytes": 2184003,
+      "sha256": "6bdf396f9e7b24bd9dc0e18831a5b170ec67ff9ae367aa5c0198f4c0c6ef9d87"
+    },
     "forecasting/data/snapshots/blobs/6f81f2db0f9d7fc5958650b1f2753ed88f0a1422a3fed47921c3ea81d91697ee.csv": {
       "bytes": 2181227,
       "sha256": "6f81f2db0f9d7fc5958650b1f2753ed88f0a1422a3fed47921c3ea81d91697ee"
@@ -3499,6 +3519,10 @@
     "forecasting/data/snapshots/observations/af96a8c835d24f34995e10e16eb4df76.json": {
       "bytes": 911,
       "sha256": "af1d104e8a74a1feef7292f802d2881966dcedba7a53d32e0d6546e4deacff39"
+    },
+    "forecasting/data/snapshots/observations/afd745fcafe64a2bb331d6698e3ec304.json": {
+      "bytes": 911,
+      "sha256": "9d03b79cd3fcfe39ed5711688e8f03d0a7935240d668fb4d41e47e902a6034ce"
     },
     "forecasting/data/snapshots/observations/bda8d9e775cf4100b70a7cd667d1511e.json": {
       "bytes": 911,
@@ -4532,13 +4556,17 @@
       "bytes": 362,
       "sha256": "643f21e94b4330e0d6f74c99c855980119068fa87bb292608bbc63ffb0958739"
     },
+    "forecasting/live/operations/failures/2026-10-11T01-53-05.167330Z.json": {
+      "bytes": 362,
+      "sha256": "8cdf666ba9c7d29bd0f47bb49ccef5df7368c61094c2403c36ea1948ce0df653"
+    },
     "forecasting/live/operations/health.json": {
       "bytes": 432,
-      "sha256": "6d0caa4dc8793d84a8d7118bda77dea2ca68022eda2655b6e5f7a349b64e058e"
+      "sha256": "ca1b0441a09fbe3e6afa03cc5003d709e91b915060d0ccae255b3b13ca8c2a97"
     },
     "forecasting/live/operations/status.json": {
       "bytes": 362,
-      "sha256": "643f21e94b4330e0d6f74c99c855980119068fa87bb292608bbc63ffb0958739"
+      "sha256": "8cdf666ba9c7d29bd0f47bb49ccef5df7368c61094c2403c36ea1948ce0df653"
     },
     "forecasting/live/rechecks/2026-09-27T06-36-34.497372Z.json": {
       "bytes": 514,
