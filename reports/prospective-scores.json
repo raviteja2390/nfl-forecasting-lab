@@ -1,9 +1,9 @@
 {
-  "asOf": "2026-10-09T09:03:38.304117Z",
+  "asOf": "2026-10-11T08:49:52.622883Z",
   "models": {
     "outcome-logit-v1": {
-      "issued": 32,
-      "pending": 0,
+      "issued": 33,
+      "pending": 1,
       "disputed": 0,
       "games": 32,
       "brier": 0.46096090085497887,
@@ -14,8 +14,8 @@
       "coverage": 1.0
     },
     "player-availability-v1": {
-      "issued": 32,
-      "pending": 0,
+      "issued": 33,
+      "pending": 1,
       "disputed": 0,
       "games": 32,
       "brier": 0.44462535025685984,
@@ -26,8 +26,8 @@
       "coverage": 1.0
     },
     "player-form-v1": {
-      "issued": 32,
-      "pending": 0,
+      "issued": 33,
+      "pending": 1,
       "disputed": 0,
       "games": 32,
       "brier": 0.4691727922323282,

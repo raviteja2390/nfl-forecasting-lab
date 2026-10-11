@@ -2,7 +2,7 @@
 
 2026 NFL Week 5
 
-Updated 2026-10-09T09:03:38.237451Z. 15 scheduled games; 1 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-11T08:49:52.582351Z. 15 scheduled games; 2 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -107,7 +107,6 @@ Comparison incomplete or cutoffs differ; do not treat this as a valid three-mode
 
 ## BUF at LAR — Mon Oct 12, 08:15 PM EDT
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** BUF 55.0% · LAR 44.6% · tie 0.4%. Issued 2026-10-11T08:49:50.297346Z; cutoff 2026-10-11T08:49:50.031323Z.
+- **Player form (shadow):** BUF 55.1% · LAR 44.5% · tie 0.4%. Issued 2026-10-11T08:49:51.804131Z; cutoff 2026-10-11T08:49:50.031323Z.
+- **Player availability (shadow):** BUF 51.8% · LAR 47.8% · tie 0.4%. Issued 2026-10-11T08:49:51.806780Z; cutoff 2026-10-11T08:49:50.031323Z.
