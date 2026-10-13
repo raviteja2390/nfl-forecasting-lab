@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-10-13T14:03:50.414711Z",
+  "trackingStartKickoff": "2026-09-27T17:00:00Z",
+  "missed": [
+    {
+      "eventId": "2026_05_BAL_ATL",
+      "deadline": "2026-10-11T00:20:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_CHI_GB",
+      "deadline": "2026-10-10T17:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_CIN_MIA",
+      "deadline": "2026-10-10T17:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_CLE_NYJ",
+      "deadline": "2026-10-10T17:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_DEN_LAC",
+      "deadline": "2026-10-10T20:05:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_DET_ARI",
+      "deadline": "2026-10-10T20:25:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_HOU_TEN",
+      "deadline": "2026-10-10T17:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_IND_PIT",
+      "deadline": "2026-10-10T17:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_LV_NE",
+      "deadline": "2026-10-10T17:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_MIN_NO",
+      "deadline": "2026-10-10T17:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_NYG_WAS",
+      "deadline": "2026-10-10T17:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_PHI_JAX",
+      "deadline": "2026-10-10T13:30:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    },
+    {
+      "eventId": "2026_05_SF_SEA",
+      "deadline": "2026-10-10T20:25:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
+    }
+  ],
+  "missedGames": 13,
+  "status": "GAPS"
+}
