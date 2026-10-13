@@ -1,6 +1,6 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-12T17:01:13.868205+00:00",
+  "generatedAt": "2026-10-13T15:16:52.617512+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
     "observedAt": "2026-10-11T23:43:10.573795Z",
@@ -9,7 +9,7 @@
   },
   "season": 2026,
   "week": 5,
-  "sourceStateCommit": "1cf9966e29f454caedbc29182e417b99b42b822a",
+  "sourceStateCommit": "e4b1fe3238078513abf21202aa4cd9311f70c512",
   "excluded": [
     {
       "eventId": "2026_05_PHI_JAX",
@@ -65,10 +65,10 @@
     },
     {
       "eventId": "2026_05_BUF_LA",
-      "reason": "no-verified-final"
+      "reason": "stats-snapshot-predates-kickoff"
     }
   ],
-  "resultsAsOf": "2026-10-12T17:01:12.100104Z",
+  "resultsAsOf": "2026-10-13T15:16:50.248945Z",
   "games": [
     {
       "eventId": "2026_05_TB_DAL",
@@ -76,10 +76,10 @@
         "eventId": "2026_05_TB_DAL",
         "homeScore": 16,
         "awayScore": 24,
-        "finalizedAt": "2026-10-12T16:10:41.592693Z",
+        "finalizedAt": "2026-10-13T14:03:49.142540Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "9b9606089abd48ed932b16e15b59c939",
-        "espnObservationId": "075773bf0ba6404b8fef04a9cd78731b"
+        "nflverseObservationId": "9968a52250704bbe8d2eb25f11582c79",
+        "espnObservationId": "45698cabc4414d9291fe44459486d5f6"
       },
       "teams": {
         "TB": {
@@ -115,7 +115,7 @@
         "DAL had lower rushing EPA than TB (0.67 versus 4.31).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-12T16:10:41.592693Z"
+      "availableNoEarlierThan": "2026-10-13T14:03:49.142540Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
