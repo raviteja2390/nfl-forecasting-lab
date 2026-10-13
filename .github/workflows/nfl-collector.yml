@@ -71,6 +71,12 @@ jobs:
             git -C .cloud-state commit -m "Archive NFL observations and forecast evidence for run $GITHUB_RUN_ID"
             git -C .cloud-state push origin HEAD:forecast-state
           fi
+      - name: Alert on missed forecast coverage independently of collection health
+        if: always() && steps.restore.outcome == 'success'
+        run: |
+          if [ -f forecasting/live/reports/forecast-coverage.json ]; then
+            python forecasting/cloud_alert.py coverage
+          fi
       - name: Fail the workflow for collection or health errors
         if: always() && (steps.cycle.outcome == 'failure' || steps.health.outcome == 'failure')
         run: exit 1

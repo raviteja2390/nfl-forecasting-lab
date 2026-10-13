@@ -12,6 +12,30 @@ from recheck_results import dates_to_recheck, settle_and_audit
 from score_live import score_store, write_matchup_comparison
 
 
+def issue_targets(targets, tomorrow, current_season, collect, report):
+    from isolated_issuance import publish_shadow_event
+    captured = set()
+    for game in targets:
+        event = game["eventId"]
+        try:
+            missing = not (live.LIVE / "forecasts/outcome-logit-v1" / f'{event}.json').exists()
+            if missing and collect:
+                for key in live.required_dates(tomorrow, snapshots.now(), event_id=event):
+                    if key not in captured:
+                        feeds.capture("scoreboard", key)
+                        captured.add(key)
+            report["forecastRuns"].append(live.publish(tomorrow, event_id=event))
+        except Exception as exc:
+            report["errors"].append({"stage": "team-issuance", "eventId": event, "error": str(exc)})
+            continue
+        try:
+            for kind in ("stats", "injuries"):
+                feeds.latest(kind, str(current_season), max_age_hours=24)
+            report["forecastRuns"].append(publish_shadow_event(tomorrow, event))
+        except Exception as exc:
+            report["errors"].append({"stage": "player-shadow", "eventId": event, "error": str(exc)})
+
+
 def _run_cycle(collect=True):
     at = snapshots.now()
     local = snapshots.parse_time(at).astimezone(live.features.EASTERN)
@@ -41,18 +65,7 @@ def _run_cycle(collect=True):
                         future.result()
                     except Exception as exc:
                         report["errors"].append({"stage": "player-capture", "feed": list(job), "error": str(exc)})
-        missing = [game for game in targets if not (live.LIVE / "forecasts/outcome-logit-v1" / f'{game["eventId"]}.json').exists()]
-        if missing and collect:
-            with ThreadPoolExecutor(max_workers=4) as pool:
-                list(pool.map(lambda key: feeds.capture("scoreboard", key), live.required_dates(tomorrow, snapshots.now())))
-        report["forecastRuns"].append(live.publish(tomorrow))
-        try:
-            for kind in ("stats", "injuries"):
-                feeds.latest(kind, str(current_season), max_age_hours=24)
-            from compare_players import publish_shadow
-            report["forecastRuns"].append(publish_shadow(tomorrow))
-        except Exception as exc:
-            report["errors"].append({"stage": "player-shadow", "error": str(exc)})
+        issue_targets(targets, tomorrow, current_season, collect, report)
         report["comparisonReport"] = write_matchup_comparison(tomorrow)
     # Pending games remain eligible without an age limit. Settled games are
     # rechecked on their game date and the following six Eastern dates.
@@ -74,6 +87,8 @@ def _run_cycle(collect=True):
         report["errors"].append({"stage": "promotion-integrity", "errors": promotion["errors"]})
     from weekly_comparison import write_report as write_weekly
     report["weeklyComparison"] = write_weekly(games)
+    from forecast_coverage import write_coverage
+    report["coverage"] = write_coverage(games, live.LIVE, snapshots.now())
     from project_status import write_status
     report["projectStatus"] = write_status()
     report["finishedAt"] = snapshots.now()

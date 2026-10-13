@@ -14,6 +14,11 @@ def write_status(store=live.LIVE,output=None):
            '**Primary:** outcome-logit-v1. Repository is public. Cloud collection runs on GitHub Actions.',
            '', '**Live status:** [latest cloud-generated page](https://github.com/raviteja2390/nfl-forecasting-lab/blob/forecast-state/reports/STATUS.md). The main-branch page is a dated snapshot.','',
            '[This week’s three-model comparison](https://github.com/raviteja2390/nfl-forecasting-lab/blob/forecast-state/reports/weekly-comparison.md)','', '## Prospective evidence','']
+    coverage = store/'reports/forecast-coverage.json'
+    if coverage.exists():
+        c = json.loads(coverage.read_text())
+        lines += [f"**Forecast coverage: {c['status']} — {c['missedGames']} games with missed issuance.** "
+                  '[Gap details](forecast-coverage.md). Successful collection does not repair historical gaps.', '']
     for version in ('outcome-logit-v1','player-form-v1','player-availability-v1'):
         m=scores['models'].get(version,{})
         loss=m.get('logLoss')

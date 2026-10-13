@@ -114,10 +114,11 @@ def current_games(at):
     return selected["observation"], parse_games(snapshots.verified_body(snapshots.DEFAULT_STORE, selected["observation"]))
 
 
-def required_dates(date, at):
+def required_dates(date, at, event_id=None):
     _, games = current_games(at)
     by_id = {game["eventId"]: game for game in games}
-    targets = [game for game in games if game["localDate"].isoformat() == date]
+    targets = [game for game in games if game["localDate"].isoformat() == date
+               and (event_id is None or game["eventId"] == event_id)]
     dates = {date.replace("-", "")}
     cutoff = snapshots.parse_time(at)
     for game in targets:
@@ -157,11 +158,12 @@ def verify_inputs(targets, rows, games, at):
     return observations
 
 
-def publish(date, store=LIVE):
+def publish(date, store=LIVE, event_id=None):
     issued_at = snapshots.now()
     at = snapshots.parse_time(issued_at)
     observation, games = current_games(issued_at)
-    targets = [game for game in games if game["localDate"].isoformat() == date]
+    targets = [game for game in games if game["localDate"].isoformat() == date
+               and (event_id is None or game["eventId"] == event_id)]
     if not targets:
         raise ValueError("No NFL regular-season games on requested date")
     artifact_bytes = MODEL_PATH.read_bytes()
@@ -206,7 +208,9 @@ def publish(date, store=LIVE):
                                  "Prior scores independently confirmed final; a conservative 48-hour lag is also retained."]}
         snapshots.immutable_write(store / "forecasts" / artifact["modelVersion"] / f'{game["eventId"]}.json', encode(saved))
         saved_rows.append(saved)
-    records = sorted(existing + saved_rows, key=lambda row: (row["kickoffAt"], row["eventId"]))
+    records = [json.loads(p.read_text()) for p in (store / "forecasts" / artifact["modelVersion"]).glob("*.json")
+               if json.loads(p.read_text())["dateEastern"] == date]
+    records = sorted(records, key=lambda row: (row["kickoffAt"], row["eventId"]))
     # Human-readable view may be regenerated; canonical forecasts are immutable.
     report_path = store / "reports" / f"{date}.md"
     report_path.parent.mkdir(parents=True, exist_ok=True)
