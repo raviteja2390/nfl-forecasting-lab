@@ -1,112 +1,107 @@
 # This week’s three-model comparison
 
-2026 NFL Week 5
+2026 NFL Week 6
 
-Updated 2026-10-13T03:34:08.962472Z. 15 scheduled games; 2 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-13T11:47:30.446560Z. 14 scheduled games; 0 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
 Week selection uses the observed NFL season/week, including its Monday games. Between weeks it shows the next scheduled week. Results and log-loss progress are in [STATUS.md](STATUS.md).
 
-## TB at DAL — Thu Oct 08, 08:15 PM EDT
-
-- **Team only (primary):** TB 36.3% · DAL 63.4% · tie 0.3%. Issued 2026-10-07T07:14:19.915774Z; cutoff 2026-10-07T07:14:19.535029Z.
-- **Player form (shadow):** TB 28.2% · DAL 71.4% · tie 0.4%. Issued 2026-10-07T07:14:22.163131Z; cutoff 2026-10-07T07:14:19.535029Z.
-- **Player availability (shadow):** TB 30.6% · DAL 68.9% · tie 0.4%. Issued 2026-10-07T07:14:22.167199Z; cutoff 2026-10-07T07:14:19.535029Z.
-
-## PHI at JAX — Sun Oct 11, 09:30 AM EDT
+## SEA at DEN — Thu Oct 15, 08:15 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## CHI at GB — Sun Oct 11, 01:00 PM EDT
+## HOU at JAX — Sun Oct 18, 09:30 AM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## CIN at MIA — Sun Oct 11, 01:00 PM EDT
+## BAL at CLE — Sun Oct 18, 01:00 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## CLE at NYJ — Sun Oct 11, 01:00 PM EDT
+## CAR at PHI — Sun Oct 18, 01:00 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## HOU at TEN — Sun Oct 11, 01:00 PM EDT
+## CHI at ATL — Sun Oct 18, 01:00 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## IND at PIT — Sun Oct 11, 01:00 PM EDT
+## NO at NYG — Sun Oct 18, 01:00 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## LV at NE — Sun Oct 11, 01:00 PM EDT
+## NYJ at NE — Sun Oct 18, 01:00 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## MIN at NO — Sun Oct 11, 01:00 PM EDT
+## PIT at TB — Sun Oct 18, 01:00 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## NYG at WAS — Sun Oct 11, 01:00 PM EDT
+## TEN at IND — Sun Oct 18, 01:00 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## DEN at LAC — Sun Oct 11, 04:05 PM EDT
+## ARI at LAR — Sun Oct 18, 04:05 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## DET at ARI — Sun Oct 11, 04:25 PM EDT
+## BUF at LV — Sun Oct 18, 04:25 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## SF at SEA — Sun Oct 11, 04:25 PM EDT
+## LAC at KC — Sun Oct 18, 04:25 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## BAL at ATL — Sun Oct 11, 08:20 PM EDT
+## DAL at GB — Sun Oct 18, 08:20 PM EDT
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
-## BUF at LAR — Mon Oct 12, 08:15 PM EDT
+## WAS at SF — Mon Oct 19, 08:15 PM EDT
 
-- **Team only (primary):** BUF 55.0% · LAR 44.6% · tie 0.4%. Issued 2026-10-11T08:49:50.297346Z; cutoff 2026-10-11T08:49:50.031323Z.
-- **Player form (shadow):** BUF 55.1% · LAR 44.5% · tie 0.4%. Issued 2026-10-11T08:49:51.804131Z; cutoff 2026-10-11T08:49:50.031323Z.
-- **Player availability (shadow):** BUF 51.8% · LAR 47.8% · tie 0.4%. Issued 2026-10-11T08:49:51.806780Z; cutoff 2026-10-11T08:49:50.031323Z.
+- **Team only (primary):** not issued as of this report.
+- **Player form (shadow):** not issued as of this report.
+- **Player availability (shadow):** not issued as of this report.
+Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.

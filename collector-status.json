@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-13T03:33:58.118423Z",
-  "lastSuccessAt": "2026-10-13T03:34:09.166002Z",
+  "lastAttemptAt": "2026-10-13T11:47:23.392768Z",
+  "lastSuccessAt": "2026-10-13T11:47:30.553358Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-13T03:34:09.166002Z",
+  "finishedAt": "2026-10-13T11:47:30.553358Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-12",
+    "localDate": "2026-10-13",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_05_BUF_LA",
-        "awayTeam": "BUF",
-        "homeTeam": "LA",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "6db67bf52ff94c0f9a3653c3b7fc5371",
-    "observedAt": "2026-10-13T03:33:58.176561Z"
+    "observationId": "951a734b3a2245e5af87e3dee94cc55c",
+    "observedAt": "2026-10-13T11:47:23.510928Z"
   }
 }
