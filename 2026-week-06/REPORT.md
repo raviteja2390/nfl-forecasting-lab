@@ -1,6 +1,6 @@
 # 2026 Week 6 postgame analysis — descriptive only
 
-Statistics observed: 2026-10-11T23:43:10.573795Z. Results snapshot: 2026-10-13T15:16:50.248945Z.
+Statistics observed: 2026-10-14T04:53:09.115983Z. Results snapshot: 2026-10-14T13:05:53.691218Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 

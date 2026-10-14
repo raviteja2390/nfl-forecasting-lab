@@ -1,6 +1,6 @@
 # 2026 Week 5 postgame analysis — descriptive only
 
-Statistics observed: 2026-10-11T23:43:10.573795Z. Results snapshot: 2026-10-13T15:16:50.248945Z.
+Statistics observed: 2026-10-14T04:53:09.115983Z. Results snapshot: 2026-10-14T13:05:53.691218Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -23,9 +23,26 @@ These are statistical differences associated with the final result, not proven c
 - DAL had lower rushing EPA than TB (0.67 versus 4.31).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
+## BUF 37 — LAR 34
+
+| Measure | BUF | LAR |
+|---|---:|---:|
+| Passing EPA | 8.38 | 18.49 |
+| Passing EPA / (attempts + sacks) | 0.419 | 0.336 |
+| Rushing EPA | 8.52 | -0.27 |
+| Rushing EPA / carry | 0.230 | -0.012 |
+| Interceptions thrown | 1 | 0 |
+| Sacks suffered | 1 | 1 |
+| Field goals made | 3 | 0 |
+| Field goals attempted | 3 | 2 |
+
+- LAR had higher passing EPA than BUF (18.49 versus 8.38).
+- LAR had lower rushing EPA than BUF (-0.27 versus 8.52).
+- The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
+
 ## Coverage and next test
 
-1 games have both a verified result and team player-stat rows. Other scheduled games are excluded, not treated as zero-stat games.
+2 games have both a verified result and team player-stat rows. Other scheduled games are excluded, not treated as zero-stat games.
 
 Passing EPA is aggregated only from passing records; receiving EPA is excluded to avoid counting the same passing plays twice. The passing denominator is attempts plus sacks, not all dropbacks (scrambles excluded from that denominator). Rushing totals can include kneels and scrambles. A missing kicker row is unknown, not proof of zero attempts. Player sums are not an exhaustive team play-by-play accounting.
 

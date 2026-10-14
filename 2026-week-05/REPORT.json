@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-13T15:16:52.617512+00:00",
+  "generatedAt": "2026-10-14T13:05:56.171833+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-11T23:43:10.573795Z",
-    "sha256": "3c8205e794e0741d574e787a08edce4f2ad66f44e14b670abf1d2d40a7f52940",
-    "bytes": 2292611
+    "observedAt": "2026-10-14T04:53:09.115983Z",
+    "sha256": "fae8bce9fa4c6dd47c8dfbf1db1e6497e634b051956fe8ce3d921535203741e2",
+    "bytes": 2452455
   },
   "season": 2026,
   "week": 5,
-  "sourceStateCommit": "e4b1fe3238078513abf21202aa4cd9311f70c512",
+  "sourceStateCommit": "1b8f5707cbde7d9e816e57f9b799f5bcbbb46e7e",
   "excluded": [
     {
       "eventId": "2026_05_PHI_JAX",
@@ -62,13 +62,9 @@
     {
       "eventId": "2026_05_BAL_ATL",
       "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_05_BUF_LA",
-      "reason": "stats-snapshot-predates-kickoff"
     }
   ],
-  "resultsAsOf": "2026-10-13T15:16:50.248945Z",
+  "resultsAsOf": "2026-10-14T13:05:53.691218Z",
   "games": [
     {
       "eventId": "2026_05_TB_DAL",
@@ -76,10 +72,10 @@
         "eventId": "2026_05_TB_DAL",
         "homeScore": 16,
         "awayScore": 24,
-        "finalizedAt": "2026-10-13T14:03:49.142540Z",
+        "finalizedAt": "2026-10-14T04:53:13.257540Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "9968a52250704bbe8d2eb25f11582c79",
-        "espnObservationId": "45698cabc4414d9291fe44459486d5f6"
+        "nflverseObservationId": "253310e3eb76428f97f5f7530d652cf8",
+        "espnObservationId": "68be12413c2c4e098e1ed64d6a59c436"
       },
       "teams": {
         "TB": {
@@ -115,7 +111,54 @@
         "DAL had lower rushing EPA than TB (0.67 versus 4.31).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-13T14:03:49.142540Z"
+      "availableNoEarlierThan": "2026-10-14T04:53:13.257540Z"
+    },
+    {
+      "eventId": "2026_05_BUF_LA",
+      "result": {
+        "eventId": "2026_05_BUF_LA",
+        "homeScore": 34,
+        "awayScore": 37,
+        "finalizedAt": "2026-10-14T04:53:13.690224Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "253310e3eb76428f97f5f7530d652cf8",
+        "espnObservationId": "a39cb1cee1c7447dbc021695f0f57484"
+      },
+      "teams": {
+        "BUF": {
+          "rows": 39,
+          "attempts": 19.0,
+          "passing_epa": 8.37715154572426,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 1.0,
+          "carries": 37.0,
+          "rushing_epa": 8.522043106442723,
+          "fg_att": 3.0,
+          "fg_made": 3.0,
+          "passing_epa_per_attempt_plus_sack": 0.418857577286213,
+          "rushing_epa_per_carry": 0.23032548936331684
+        },
+        "LAR": {
+          "rows": 37,
+          "attempts": 54.0,
+          "passing_epa": 18.4929008912782,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 1.0,
+          "carries": 23.0,
+          "rushing_epa": -0.272996931224477,
+          "fg_att": 2.0,
+          "fg_made": 0.0,
+          "passing_epa_per_attempt_plus_sack": 0.33623456165960364,
+          "rushing_epa_per_carry": -0.011869431792368565
+        }
+      },
+      "loser": "LAR",
+      "notes": [
+        "LAR had higher passing EPA than BUF (18.49 versus 8.38).",
+        "LAR had lower rushing EPA than BUF (-0.27 versus 8.52).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-14T04:53:13.690224Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
