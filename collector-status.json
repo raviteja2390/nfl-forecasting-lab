@@ -1,20 +1,27 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-14T04:53:02.042476Z",
-  "lastSuccessAt": "2026-10-14T04:53:14.516435Z",
+  "lastAttemptAt": "2026-10-15T06:30:32.055747Z",
+  "lastSuccessAt": "2026-10-15T06:30:40.414741Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-14T04:53:14.516435Z",
+  "finishedAt": "2026-10-15T06:30:40.414741Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-14",
+    "localDate": "2026-10-15",
     "timeZone": "America/New_York",
-    "cadence": "daily",
-    "gamesToday": [],
-    "scheduledGameCount": 0,
+    "cadence": "hourly",
+    "gamesToday": [
+      {
+        "eventId": "2026_06_SEA_DEN",
+        "awayTeam": "SEA",
+        "homeTeam": "DEN",
+        "kickoffEastern": "20:15"
+      }
+    ],
+    "scheduledGameCount": 1,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "253310e3eb76428f97f5f7530d652cf8",
-    "observedAt": "2026-10-14T04:53:02.132030Z"
+    "observationId": "6d85d17cde744df79c0340c45f617635",
+    "observedAt": "2026-10-15T06:30:32.110931Z"
   }
 }
