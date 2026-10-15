@@ -1,6 +1,6 @@
 # 2026 Week 3 postgame analysis — descriptive only
 
-Statistics observed: 2026-10-14T04:53:09.115983Z. Results snapshot: 2026-10-14T13:05:53.691218Z.
+Statistics observed: 2026-10-14T04:53:09.115983Z. Results snapshot: 2026-10-15T12:52:11.935736Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
