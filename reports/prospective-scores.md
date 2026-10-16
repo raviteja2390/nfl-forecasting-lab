@@ -1,11 +1,11 @@
 # Prospective forecast tracking
 
-As of 2026-10-16T01:42:04.309597Z. Only forecasts saved before kickoff and independently confirmed final results are scored.
+As of 2026-10-16T05:52:16.346706Z. Only forecasts saved before kickoff and independently confirmed final results are scored.
 
-- **outcome-logit-v1:** 33 scored, 1 pending; accuracy 54.5%, log loss 0.649481.
-- **player-availability-v1:** 33 scored, 1 pending; accuracy 66.7%, log loss 0.638545.
-- **player-form-v1:** 33 scored, 1 pending; accuracy 57.6%, log loss 0.661886.
-- **Paired comparison — player-availability-v1:** 33 shared games, log-loss improvement versus team-only 0.010937.
-- **Paired comparison — player-form-v1:** 33 shared games, log-loss improvement versus team-only -0.012404.
+- **outcome-logit-v1:** 34 scored, 0 pending; accuracy 52.9%, log loss 0.652347.
+- **player-availability-v1:** 34 scored, 0 pending; accuracy 64.7%, log loss 0.647400.
+- **player-form-v1:** 34 scored, 0 pending; accuracy 55.9%, log loss 0.663052.
+- **Paired comparison — player-availability-v1:** 34 shared games, log-loss improvement versus team-only 0.004948.
+- **Paired comparison — player-form-v1:** 34 shared games, log-loss improvement versus team-only -0.010705.
 
 Positive paired loss improvement favors the player challenger. These descriptive results need a substantial prospective sample; no automatic model promotion or profitability claim is made.
