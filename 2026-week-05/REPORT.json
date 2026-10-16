@@ -1,6 +1,6 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-15T12:52:14.268181+00:00",
+  "generatedAt": "2026-10-16T12:44:40.509706+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
     "observedAt": "2026-10-14T04:53:09.115983Z",
@@ -9,7 +9,7 @@
   },
   "season": 2026,
   "week": 5,
-  "sourceStateCommit": "634485e607133af383bb6db07906bb8f2b081fa7",
+  "sourceStateCommit": "c1ccd5ea304e34fa1304c64b69b7b20baab0f4f7",
   "excluded": [
     {
       "eventId": "2026_05_PHI_JAX",
@@ -64,7 +64,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-15T12:52:11.935736Z",
+  "resultsAsOf": "2026-10-16T12:44:38.238069Z",
   "games": [
     {
       "eventId": "2026_05_TB_DAL",
@@ -119,10 +119,10 @@
         "eventId": "2026_05_BUF_LA",
         "homeScore": 34,
         "awayScore": 37,
-        "finalizedAt": "2026-10-15T12:10:23.692287Z",
+        "finalizedAt": "2026-10-16T05:52:15.175244Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "a90368fae293432689a18419fcfbb98d",
-        "espnObservationId": "6e97958c56964ba39e0f03f54d07a542"
+        "nflverseObservationId": "cf82d5972ebf49d7830690e7bd42de0f",
+        "espnObservationId": "6c0ad9be21764494904f305ea41cd54d"
       },
       "teams": {
         "BUF": {
@@ -158,7 +158,7 @@
         "LAR had lower rushing EPA than BUF (-0.27 versus 8.52).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-15T12:10:23.692287Z"
+      "availableNoEarlierThan": "2026-10-16T05:52:15.175244Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
