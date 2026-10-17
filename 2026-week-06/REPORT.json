@@ -1,20 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-16T12:44:40.582382+00:00",
+  "generatedAt": "2026-10-17T11:45:46.442489+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-14T04:53:09.115983Z",
-    "sha256": "fae8bce9fa4c6dd47c8dfbf1db1e6497e634b051956fe8ce3d921535203741e2",
-    "bytes": 2452455
+    "observedAt": "2026-10-17T06:15:59.869234Z",
+    "sha256": "982d86fa324694c6934d0d57e1de94261fefb1de745f5985bc2e0b725dd6febb",
+    "bytes": 2482827
   },
   "season": 2026,
   "week": 6,
-  "sourceStateCommit": "c1ccd5ea304e34fa1304c64b69b7b20baab0f4f7",
+  "sourceStateCommit": "b2860b5b9f7f738859e7495cbc4f902fec240c6c",
   "excluded": [
-    {
-      "eventId": "2026_06_SEA_DEN",
-      "reason": "stats-snapshot-predates-kickoff"
-    },
     {
       "eventId": "2026_06_HOU_JAX",
       "reason": "no-verified-final"
@@ -68,7 +64,55 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-16T12:44:38.238069Z",
-  "games": [],
+  "resultsAsOf": "2026-10-17T11:45:44.795811Z",
+  "games": [
+    {
+      "eventId": "2026_06_SEA_DEN",
+      "result": {
+        "eventId": "2026_06_SEA_DEN",
+        "homeScore": 17,
+        "awayScore": 14,
+        "finalizedAt": "2026-10-17T06:16:19.314032Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "9eb5edb3b1084f22a773ecfcd3c0ecf4",
+        "espnObservationId": "82c80cb522e34dd8ae8b11ab8c61a38f"
+      },
+      "teams": {
+        "SEA": {
+          "rows": 34,
+          "attempts": 51.0,
+          "passing_epa": -6.74183260221959,
+          "passing_interceptions": 2.0,
+          "sacks_suffered": 5.0,
+          "carries": 26.0,
+          "rushing_epa": -0.3942350283614392,
+          "fg_att": 3.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": -0.1203898678967784,
+          "rushing_epa_per_carry": -0.0151628857062092
+        },
+        "DEN": {
+          "rows": 35,
+          "attempts": 27.0,
+          "passing_epa": -6.08101319154957,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 2.0,
+          "carries": 28.0,
+          "rushing_epa": -1.9708089934213797,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": -0.20969011005343346,
+          "rushing_epa_per_carry": -0.07038603547933499
+        }
+      },
+      "loser": "SEA",
+      "notes": [
+        "SEA had lower passing EPA than DEN (-6.74 versus -6.08).",
+        "SEA had higher rushing EPA than DEN (-0.39 versus -1.97).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-17T06:16:19.314032Z"
+    }
+  ],
   "status": "descriptive-only; no model evaluated"
 }
