@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-17T11:45:46.398721+00:00",
+  "generatedAt": "2026-10-18T12:11:44.021454+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-17T06:15:59.869234Z",
+    "observedAt": "2026-10-18T11:45:49.521809Z",
     "sha256": "982d86fa324694c6934d0d57e1de94261fefb1de745f5985bc2e0b725dd6febb",
     "bytes": 2482827
   },
   "season": 2026,
   "week": 5,
-  "sourceStateCommit": "b2860b5b9f7f738859e7495cbc4f902fec240c6c",
+  "sourceStateCommit": "77bd185fcb90e5768d151be5c0be3992f0404b63",
   "excluded": [
     {
       "eventId": "2026_05_PHI_JAX",
@@ -64,7 +64,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-17T11:45:44.795811Z",
+  "resultsAsOf": "2026-10-18T12:11:41.975529Z",
   "games": [
     {
       "eventId": "2026_05_TB_DAL",
@@ -111,7 +111,7 @@
         "DAL had lower rushing EPA than TB (0.67 versus 4.31).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-17T06:15:59.869234Z"
+      "availableNoEarlierThan": "2026-10-18T11:45:49.521809Z"
     },
     {
       "eventId": "2026_05_BUF_LA",
@@ -119,10 +119,10 @@
         "eventId": "2026_05_BUF_LA",
         "homeScore": 34,
         "awayScore": 37,
-        "finalizedAt": "2026-10-17T06:16:18.959255Z",
+        "finalizedAt": "2026-10-18T11:45:52.279093Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "9eb5edb3b1084f22a773ecfcd3c0ecf4",
-        "espnObservationId": "91d0633771c541b2bc5d67b5ab0b9b0c"
+        "nflverseObservationId": "d8c2511d461b4ba9a8c59860b2fe0405",
+        "espnObservationId": "0de6669d505a4548bd7282f197cea1b9"
       },
       "teams": {
         "BUF": {
@@ -158,7 +158,7 @@
         "LAR had lower rushing EPA than BUF (-0.27 versus 8.52).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-17T06:16:18.959255Z"
+      "availableNoEarlierThan": "2026-10-18T11:45:52.279093Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"

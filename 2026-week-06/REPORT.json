@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-17T11:45:46.442489+00:00",
+  "generatedAt": "2026-10-18T12:11:44.082009+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-17T06:15:59.869234Z",
+    "observedAt": "2026-10-18T11:45:49.521809Z",
     "sha256": "982d86fa324694c6934d0d57e1de94261fefb1de745f5985bc2e0b725dd6febb",
     "bytes": 2482827
   },
   "season": 2026,
   "week": 6,
-  "sourceStateCommit": "b2860b5b9f7f738859e7495cbc4f902fec240c6c",
+  "sourceStateCommit": "77bd185fcb90e5768d151be5c0be3992f0404b63",
   "excluded": [
     {
       "eventId": "2026_06_HOU_JAX",
@@ -64,7 +64,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-17T11:45:44.795811Z",
+  "resultsAsOf": "2026-10-18T12:11:41.975529Z",
   "games": [
     {
       "eventId": "2026_06_SEA_DEN",
@@ -72,10 +72,10 @@
         "eventId": "2026_06_SEA_DEN",
         "homeScore": 17,
         "awayScore": 14,
-        "finalizedAt": "2026-10-17T06:16:19.314032Z",
+        "finalizedAt": "2026-10-18T11:45:52.628326Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "9eb5edb3b1084f22a773ecfcd3c0ecf4",
-        "espnObservationId": "82c80cb522e34dd8ae8b11ab8c61a38f"
+        "nflverseObservationId": "d8c2511d461b4ba9a8c59860b2fe0405",
+        "espnObservationId": "8ad0fd11007f48daadaadf7519e5543f"
       },
       "teams": {
         "SEA": {
@@ -111,7 +111,7 @@
         "SEA had higher rushing EPA than DEN (-0.39 versus -1.97).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-17T06:16:19.314032Z"
+      "availableNoEarlierThan": "2026-10-18T11:45:52.628326Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
