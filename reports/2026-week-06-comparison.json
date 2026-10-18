@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-17T06:16:19.946497Z",
+  "generatedAt": "2026-10-18T04:32:49.228266Z",
   "season": 2026,
   "week": 6,
   "scheduledGames": 14,
-  "fullyPairedGames": 13,
+  "fullyPairedGames": 14,
   "games": [
     {
       "eventId": "2026_06_SEA_DEN",
@@ -610,16 +610,43 @@
       "scheduledKickoff": "2026-10-20T00:15:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.7743630822839227,
+            "awayWin": 0.22309593549711873,
+            "tie": 0.002540982218958569
+          },
+          "generatedAt": "2026-10-18T04:32:47.702066Z",
+          "featureCutoffAt": "2026-10-18T04:32:47.402528Z",
+          "kickoffAt": "2026-10-20T00:15:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.8186131547081451,
+            "awayWin": 0.17861919967298298,
+            "tie": 0.0027676456188719905
+          },
+          "generatedAt": "2026-10-18T04:32:48.054313Z",
+          "featureCutoffAt": "2026-10-18T04:32:47.402528Z",
+          "kickoffAt": "2026-10-20T00:15:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.8054754278560623,
+            "awayWin": 0.19155502585663375,
+            "tie": 0.0029695462873039072
+          },
+          "generatedAt": "2026-10-18T04:32:48.055856Z",
+          "featureCutoffAt": "2026-10-18T04:32:47.402528Z",
+          "kickoffAt": "2026-10-20T00:15:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     }
   ]

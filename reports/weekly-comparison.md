@@ -2,7 +2,7 @@
 
 2026 NFL Week 6
 
-Updated 2026-10-17T06:16:19.946497Z. 14 scheduled games; 13 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-18T04:32:49.228266Z. 14 scheduled games; 14 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -88,7 +88,6 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 
 ## WAS at SF — Mon Oct 19, 08:15 PM EDT
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** WAS 22.3% · SF 77.4% · tie 0.3%. Issued 2026-10-18T04:32:47.702066Z; cutoff 2026-10-18T04:32:47.402528Z.
+- **Player form (shadow):** WAS 17.9% · SF 81.9% · tie 0.3%. Issued 2026-10-18T04:32:48.054313Z; cutoff 2026-10-18T04:32:47.402528Z.
+- **Player availability (shadow):** WAS 19.2% · SF 80.5% · tie 0.3%. Issued 2026-10-18T04:32:48.055856Z; cutoff 2026-10-18T04:32:47.402528Z.
