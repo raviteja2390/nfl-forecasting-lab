@@ -1,70 +1,22 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-18T12:11:44.082009+00:00",
+  "generatedAt": "2026-10-19T14:59:13.421420+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-18T11:45:49.521809Z",
-    "sha256": "982d86fa324694c6934d0d57e1de94261fefb1de745f5985bc2e0b725dd6febb",
-    "bytes": 2482827
+    "observedAt": "2026-10-19T01:16:13.713258Z",
+    "sha256": "42237c51fac46a2dc99c089cdcc175a32dfacdb2dd81462748e8262ea7069373",
+    "bytes": 2826085
   },
   "season": 2026,
   "week": 6,
-  "sourceStateCommit": "77bd185fcb90e5768d151be5c0be3992f0404b63",
+  "sourceStateCommit": "e09cb2c480bf53c56dfa9ac0fd296c5ec8ceeab3",
   "excluded": [
-    {
-      "eventId": "2026_06_HOU_JAX",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_BAL_CLE",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_CAR_PHI",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_CHI_ATL",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_NO_NYG",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_NYJ_NE",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_PIT_TB",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_TEN_IND",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_ARI_LA",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_BUF_LV",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_LAC_KC",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_06_DAL_GB",
-      "reason": "no-verified-final"
-    },
     {
       "eventId": "2026_06_WAS_SF",
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-18T12:11:41.975529Z",
+  "resultsAsOf": "2026-10-19T14:59:10.258068Z",
   "games": [
     {
       "eventId": "2026_06_SEA_DEN",
@@ -72,10 +24,10 @@
         "eventId": "2026_06_SEA_DEN",
         "homeScore": 17,
         "awayScore": 14,
-        "finalizedAt": "2026-10-18T11:45:52.628326Z",
+        "finalizedAt": "2026-10-19T13:27:58.055896Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "d8c2511d461b4ba9a8c59860b2fe0405",
-        "espnObservationId": "8ad0fd11007f48daadaadf7519e5543f"
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "38a5f3345b724e50a24a717d0aa815b3"
       },
       "teams": {
         "SEA": {
@@ -111,7 +63,524 @@
         "SEA had higher rushing EPA than DEN (-0.39 versus -1.97).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-18T11:45:52.628326Z"
+      "availableNoEarlierThan": "2026-10-19T13:27:58.055896Z"
+    },
+    {
+      "eventId": "2026_06_HOU_JAX",
+      "result": {
+        "eventId": "2026_06_HOU_JAX",
+        "homeScore": 31,
+        "awayScore": 34,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "HOU": {
+          "rows": 37,
+          "attempts": 34.0,
+          "passing_epa": 13.872305968832,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 0.0,
+          "carries": 25.0,
+          "rushing_epa": -0.623667670110752,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": 0.40800899908329413,
+          "rushing_epa_per_carry": -0.024946706804430077
+        },
+        "JAX": {
+          "rows": 33,
+          "attempts": 41.0,
+          "passing_epa": 11.4016895168056,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 0.0,
+          "carries": 27.0,
+          "rushing_epa": 0.25331060137249306,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": 0.2780899882147707,
+          "rushing_epa_per_carry": 0.00938187412490715
+        }
+      },
+      "loser": "JAX",
+      "notes": [
+        "JAX had lower passing EPA than HOU (11.40 versus 13.87).",
+        "JAX had higher rushing EPA than HOU (0.25 versus -0.62).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_BAL_CLE",
+      "result": {
+        "eventId": "2026_06_BAL_CLE",
+        "homeScore": 13,
+        "awayScore": 10,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "BAL": {
+          "rows": 32,
+          "attempts": 31.0,
+          "passing_epa": 4.64718685486166,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 3.0,
+          "carries": 23.0,
+          "rushing_epa": -9.988934046181386,
+          "fg_att": 2.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": 0.13668196631946058,
+          "rushing_epa_per_carry": -0.4343014802687559
+        },
+        "CLE": {
+          "rows": 33,
+          "attempts": 26.0,
+          "passing_epa": -6.88190366288868,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 5.0,
+          "carries": 29.0,
+          "rushing_epa": -0.15803539613261694,
+          "fg_att": 3.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": -0.22199689235124775,
+          "rushing_epa_per_carry": -0.005449496418366101
+        }
+      },
+      "loser": "BAL",
+      "notes": [
+        "BAL had higher passing EPA than CLE (4.65 versus -6.88).",
+        "BAL had lower rushing EPA than CLE (-9.99 versus -0.16).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_CAR_PHI",
+      "result": {
+        "eventId": "2026_06_CAR_PHI",
+        "homeScore": 14,
+        "awayScore": 25,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "CAR": {
+          "rows": 37,
+          "attempts": 39.0,
+          "passing_epa": 3.99782134580271,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 2.0,
+          "carries": 33.0,
+          "rushing_epa": -0.8607087462035993,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": 0.09750783770250512,
+          "rushing_epa_per_carry": -0.026082083218290888
+        },
+        "PHI": {
+          "rows": 36,
+          "attempts": 45.0,
+          "passing_epa": -8.62929461430758,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 3.0,
+          "carries": 13.0,
+          "rushing_epa": -1.8128682023088931,
+          "fg_att": null,
+          "fg_made": null,
+          "passing_epa_per_attempt_plus_sack": -0.17977697113140792,
+          "rushing_epa_per_carry": -0.13945140017760715
+        }
+      },
+      "loser": "PHI",
+      "notes": [
+        "PHI had lower passing EPA than CAR (-8.63 versus 4.00).",
+        "PHI had lower rushing EPA than CAR (-1.81 versus -0.86).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_CHI_ATL",
+      "result": {
+        "eventId": "2026_06_CHI_ATL",
+        "homeScore": 23,
+        "awayScore": 31,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "CHI": {
+          "rows": 36,
+          "attempts": 36.0,
+          "passing_epa": 10.6343878396767,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 4.0,
+          "carries": 33.0,
+          "rushing_epa": -13.12553296145052,
+          "fg_att": 2.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": 0.2658596959919175,
+          "rushing_epa_per_carry": -0.3977434230742582
+        },
+        "ATL": {
+          "rows": 37,
+          "attempts": 33.0,
+          "passing_epa": -9.84062508147303,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 5.0,
+          "carries": 12.0,
+          "rushing_epa": -3.472523977921806,
+          "fg_att": null,
+          "fg_made": null,
+          "passing_epa_per_attempt_plus_sack": -0.2589638179335008,
+          "rushing_epa_per_carry": -0.2893769981601505
+        }
+      },
+      "loser": "ATL",
+      "notes": [
+        "ATL had lower passing EPA than CHI (-9.84 versus 10.63).",
+        "ATL had higher rushing EPA than CHI (-3.47 versus -13.13).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_NO_NYG",
+      "result": {
+        "eventId": "2026_06_NO_NYG",
+        "homeScore": 27,
+        "awayScore": 34,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "NO": {
+          "rows": 34,
+          "attempts": 30.0,
+          "passing_epa": -0.508819425678135,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 0.0,
+          "carries": 38.0,
+          "rushing_epa": -1.8048961142194362,
+          "fg_att": 3.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": -0.0169606475226045,
+          "rushing_epa_per_carry": -0.04749726616366937
+        },
+        "NYG": {
+          "rows": 37,
+          "attempts": 47.0,
+          "passing_epa": -7.0314249207156,
+          "passing_interceptions": 3.0,
+          "sacks_suffered": 5.0,
+          "carries": 20.0,
+          "rushing_epa": 1.4331214801932173,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": -0.13521971001376154,
+          "rushing_epa_per_carry": 0.07165607400966087
+        }
+      },
+      "loser": "NYG",
+      "notes": [
+        "NYG had lower passing EPA than NO (-7.03 versus -0.51).",
+        "NYG had higher rushing EPA than NO (1.43 versus -1.80).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_NYJ_NE",
+      "result": {
+        "eventId": "2026_06_NYJ_NE",
+        "homeScore": 26,
+        "awayScore": 19,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "NYJ": {
+          "rows": 31,
+          "attempts": 30.0,
+          "passing_epa": 5.8884055922431,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 3.0,
+          "carries": 27.0,
+          "rushing_epa": -8.063345421396667,
+          "fg_att": 4.0,
+          "fg_made": 4.0,
+          "passing_epa_per_attempt_plus_sack": 0.17843653309827576,
+          "rushing_epa_per_carry": -0.29864242301469135
+        },
+        "NE": {
+          "rows": 36,
+          "attempts": 32.0,
+          "passing_epa": 12.6009885142401,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 0.0,
+          "carries": 36.0,
+          "rushing_epa": -7.0352918865100955,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": 0.39378089107000314,
+          "rushing_epa_per_carry": -0.19542477462528043
+        }
+      },
+      "loser": "NYJ",
+      "notes": [
+        "NYJ had lower passing EPA than NE (5.89 versus 12.60).",
+        "NYJ had lower rushing EPA than NE (-8.06 versus -7.04).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_PIT_TB",
+      "result": {
+        "eventId": "2026_06_PIT_TB",
+        "homeScore": 19,
+        "awayScore": 26,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "PIT": {
+          "rows": 35,
+          "attempts": 49.0,
+          "passing_epa": -13.5251731320428,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 5.0,
+          "carries": 22.0,
+          "rushing_epa": -0.91474232642213,
+          "fg_att": 5.0,
+          "fg_made": 4.0,
+          "passing_epa_per_attempt_plus_sack": -0.2504661691119037,
+          "rushing_epa_per_carry": -0.04157919665555137
+        },
+        "TB": {
+          "rows": 34,
+          "attempts": 43.0,
+          "passing_epa": -21.773761942319,
+          "passing_interceptions": 2.0,
+          "sacks_suffered": 5.0,
+          "carries": 25.0,
+          "rushing_epa": -0.41785133845405964,
+          "fg_att": 4.0,
+          "fg_made": 4.0,
+          "passing_epa_per_attempt_plus_sack": -0.4536200404649791,
+          "rushing_epa_per_carry": -0.016714053538162386
+        }
+      },
+      "loser": "TB",
+      "notes": [
+        "TB had lower passing EPA than PIT (-21.77 versus -13.53).",
+        "TB had higher rushing EPA than PIT (-0.42 versus -0.91).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_TEN_IND",
+      "result": {
+        "eventId": "2026_06_TEN_IND",
+        "homeScore": 20,
+        "awayScore": 26,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "TEN": {
+          "rows": 34,
+          "attempts": 22.0,
+          "passing_epa": -3.55139061513453,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 0.0,
+          "carries": 23.0,
+          "rushing_epa": -2.9313942696696653,
+          "fg_att": 4.0,
+          "fg_made": 4.0,
+          "passing_epa_per_attempt_plus_sack": -0.16142684614247862,
+          "rushing_epa_per_carry": -0.12745192476824632
+        },
+        "IND": {
+          "rows": 34,
+          "attempts": 42.0,
+          "passing_epa": -4.20129631245679,
+          "passing_interceptions": 2.0,
+          "sacks_suffered": 6.0,
+          "carries": 30.0,
+          "rushing_epa": -4.0304932068849055,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": -0.08752700650951646,
+          "rushing_epa_per_carry": -0.13434977356283018
+        }
+      },
+      "loser": "IND",
+      "notes": [
+        "IND had lower passing EPA than TEN (-4.20 versus -3.55).",
+        "IND had lower rushing EPA than TEN (-4.03 versus -2.93).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_ARI_LA",
+      "result": {
+        "eventId": "2026_06_ARI_LA",
+        "homeScore": 16,
+        "awayScore": 18,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "ARI": {
+          "rows": 34,
+          "attempts": 35.0,
+          "passing_epa": 1.9861858414966,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 0.0,
+          "carries": 35.0,
+          "rushing_epa": -3.428463640731851,
+          "fg_att": 6.0,
+          "fg_made": 6.0,
+          "passing_epa_per_attempt_plus_sack": 0.056748166899902856,
+          "rushing_epa_per_carry": -0.09795610402091003
+        },
+        "LAR": {
+          "rows": 34,
+          "attempts": 33.0,
+          "passing_epa": -2.5693002410821,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 3.0,
+          "carries": 20.0,
+          "rushing_epa": -2.2203891223762198,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": -0.07136945114116945,
+          "rushing_epa_per_carry": -0.11101945611881099
+        }
+      },
+      "loser": "LAR",
+      "notes": [
+        "LAR had lower passing EPA than ARI (-2.57 versus 1.99).",
+        "LAR had higher rushing EPA than ARI (-2.22 versus -3.43).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_BUF_LV",
+      "result": {
+        "eventId": "2026_06_BUF_LV",
+        "homeScore": 30,
+        "awayScore": 33,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "BUF": {
+          "rows": 38,
+          "attempts": 33.0,
+          "passing_epa": 10.6711854961027,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 2.0,
+          "carries": 29.0,
+          "rushing_epa": -0.2412334005639421,
+          "fg_att": 4.0,
+          "fg_made": 4.0,
+          "passing_epa_per_attempt_plus_sack": 0.3048910141743629,
+          "rushing_epa_per_carry": -0.008318393122894556
+        },
+        "LV": {
+          "rows": 37,
+          "attempts": 41.0,
+          "passing_epa": 11.4950876201426,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 0.0,
+          "carries": 20.0,
+          "rushing_epa": -5.695894548087382,
+          "fg_att": 3.0,
+          "fg_made": 3.0,
+          "passing_epa_per_attempt_plus_sack": 0.28036799073518537,
+          "rushing_epa_per_carry": -0.28479472740436906
+        }
+      },
+      "loser": "LV",
+      "notes": [
+        "LV had higher passing EPA than BUF (11.50 versus 10.67).",
+        "LV had lower rushing EPA than BUF (-5.70 versus -0.24).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
+    },
+    {
+      "eventId": "2026_06_LAC_KC",
+      "result": {
+        "eventId": "2026_06_LAC_KC",
+        "homeScore": 22,
+        "awayScore": 6,
+        "finalizedAt": "2026-10-19T13:27:58.540376Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "825481f9def649fc8939d7c9f197fba3",
+        "espnObservationId": "0abfb941828744f1a2eae9a3cee1629c"
+      },
+      "teams": {
+        "LAC": {
+          "rows": 36,
+          "attempts": 37.0,
+          "passing_epa": -13.9612374626946,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 4.0,
+          "carries": 22.0,
+          "rushing_epa": -2.857313862536098,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": -0.34051798689499024,
+          "rushing_epa_per_carry": -0.1298779028425499
+        },
+        "KC": {
+          "rows": 36,
+          "attempts": 30.0,
+          "passing_epa": 2.77248290376078,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 0.0,
+          "carries": 27.0,
+          "rushing_epa": 1.6892402108351248,
+          "fg_att": 4.0,
+          "fg_made": 3.0,
+          "passing_epa_per_attempt_plus_sack": 0.092416096792026,
+          "rushing_epa_per_carry": 0.06256445225315277
+        }
+      },
+      "loser": "LAC",
+      "notes": [
+        "LAC had lower passing EPA than KC (-13.96 versus 2.77).",
+        "LAC had lower rushing EPA than KC (-2.86 versus 1.69).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-19T13:27:58.540376Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
