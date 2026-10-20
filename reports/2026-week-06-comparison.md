@@ -2,7 +2,7 @@
 
 2026 NFL Week 6
 
-Updated 2026-10-19T23:41:17.439097Z. 14 scheduled games; 14 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-20T00:43:18.991414Z. 14 scheduled games; 14 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
