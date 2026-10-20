@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-20T00:43:07.059182Z",
-  "lastSuccessAt": "2026-10-20T00:43:19.183297Z",
+  "lastAttemptAt": "2026-10-20T04:50:09.301238Z",
+  "lastSuccessAt": "2026-10-20T04:50:21.958239Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-20T00:43:19.183297Z",
+  "finishedAt": "2026-10-20T04:50:21.958239Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-19",
+    "localDate": "2026-10-20",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_06_WAS_SF",
-        "awayTeam": "WAS",
-        "homeTeam": "SF",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "51bad5fe9ac54c19901c8dc7ed69d1a1",
-    "observedAt": "2026-10-20T00:43:07.280658Z"
+    "observationId": "cf48ced4f7644c6b871d6be7fbeed597",
+    "observedAt": "2026-10-20T04:50:09.514597Z"
   }
 }
