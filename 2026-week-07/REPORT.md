@@ -1,6 +1,6 @@
 # 2026 Week 7 postgame analysis — descriptive only
 
-Statistics observed: 2026-10-19T01:16:13.713258Z. Results snapshot: 2026-10-20T13:00:33.955981Z.
+Statistics observed: 2026-10-21T06:37:16.959351Z. Results snapshot: 2026-10-21T13:15:04.147012Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 

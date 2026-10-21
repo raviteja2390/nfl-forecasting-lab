@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-20T13:00:37.334959+00:00",
+  "generatedAt": "2026-10-21T13:15:06.435670+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-19T01:16:13.713258Z",
-    "sha256": "42237c51fac46a2dc99c089cdcc175a32dfacdb2dd81462748e8262ea7069373",
-    "bytes": 2826085
+    "observedAt": "2026-10-21T06:37:16.959351Z",
+    "sha256": "0d29a199ddecacca64e6290cbb12f68823d05ef271de0f6a3aa768efd60fad76",
+    "bytes": 2888889
   },
   "season": 2026,
   "week": 7,
-  "sourceStateCommit": "f2d2323d95d7cbb18162ba2a81a24cfb8e88d48a",
+  "sourceStateCommit": "ede071ad978ea6244d8d66a5d50f25a74b679917",
   "excluded": [
     {
       "eventId": "2026_07_NE_CHI",
@@ -68,7 +68,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-20T13:00:33.955981Z",
+  "resultsAsOf": "2026-10-21T13:15:04.147012Z",
   "games": [],
   "status": "descriptive-only; no model evaluated"
 }

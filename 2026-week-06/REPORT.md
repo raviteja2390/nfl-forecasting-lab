@@ -1,6 +1,6 @@
 # 2026 Week 6 postgame analysis — descriptive only
 
-Statistics observed: 2026-10-19T01:16:13.713258Z. Results snapshot: 2026-10-20T13:00:33.955981Z.
+Statistics observed: 2026-10-21T06:37:16.959351Z. Results snapshot: 2026-10-21T13:15:04.147012Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -210,13 +210,43 @@ These are statistical differences associated with the final result, not proven c
 - LAC had lower rushing EPA than KC (-2.86 versus 1.69).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
-## DAL at GB
+## DAL 13 — GB 23
 
-Verified final exists, but player-stat coverage is incomplete; analysis withheld.
+| Measure | DAL | GB |
+|---|---:|---:|
+| Passing EPA | -8.36 | 6.08 |
+| Passing EPA / (attempts + sacks) | -0.152 | 0.138 |
+| Rushing EPA | -1.05 | -3.78 |
+| Rushing EPA / carry | -0.070 | -0.145 |
+| Interceptions thrown | 2 | 1 |
+| Sacks suffered | 1 | 3 |
+| Field goals made | unknown | 3 |
+| Field goals attempted | unknown | 3 |
+
+- DAL had lower passing EPA than GB (-8.36 versus 6.08).
+- DAL had higher rushing EPA than GB (-1.05 versus -3.78).
+- The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
+
+## WAS 17 — SF 23
+
+| Measure | WAS | SF |
+|---|---:|---:|
+| Passing EPA | 2.62 | 3.66 |
+| Passing EPA / (attempts + sacks) | 0.059 | 0.118 |
+| Rushing EPA | -3.24 | 14.02 |
+| Rushing EPA / carry | -0.191 | 0.483 |
+| Interceptions thrown | 0 | 0 |
+| Sacks suffered | 4 | 2 |
+| Field goals made | 1 | 1 |
+| Field goals attempted | 1 | 1 |
+
+- WAS had lower passing EPA than SF (2.62 versus 3.66).
+- WAS had lower rushing EPA than SF (-3.24 versus 14.02).
+- The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## Coverage and next test
 
-12 games have both a verified result and team player-stat rows. Other scheduled games are excluded, not treated as zero-stat games.
+14 games have both a verified result and team player-stat rows. Other scheduled games are excluded, not treated as zero-stat games.
 
 Passing EPA is aggregated only from passing records; receiving EPA is excluded to avoid counting the same passing plays twice. The passing denominator is attempts plus sacks, not all dropbacks (scrambles excluded from that denominator). Rushing totals can include kneels and scrambles. A missing kicker row is unknown, not proof of zero attempts. Player sums are not an exhaustive team play-by-play accounting.
 
