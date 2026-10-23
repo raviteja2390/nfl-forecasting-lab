@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-23T01:30:45.729244Z",
-  "lastSuccessAt": "2026-10-23T01:30:58.158360Z",
+  "lastAttemptAt": "2026-10-23T06:33:02.763404Z",
+  "lastSuccessAt": "2026-10-23T06:33:15.201170Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-23T01:30:58.158360Z",
+  "finishedAt": "2026-10-23T06:33:15.201170Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-22",
+    "localDate": "2026-10-23",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_07_NE_CHI",
-        "awayTeam": "NE",
-        "homeTeam": "CHI",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "47847ff2e30f44e4bdf9188d86e0d7c2",
-    "observedAt": "2026-10-23T01:30:45.781365Z"
+    "observationId": "f2e0db6215a54343bd236ddf667b2190",
+    "observedAt": "2026-10-23T06:33:02.802046Z"
   }
 }
