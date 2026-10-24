@@ -1,20 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-23T12:52:11.504799+00:00",
+  "generatedAt": "2026-10-24T12:13:57.514761+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-21T06:37:16.959351Z",
-    "sha256": "0d29a199ddecacca64e6290cbb12f68823d05ef271de0f6a3aa768efd60fad76",
-    "bytes": 2888889
+    "observedAt": "2026-10-24T05:53:04.755586Z",
+    "sha256": "6ccbb9b4c897e1e27452a6bbecb8a45b77757af6af9e1101ad4b1c5271437cb4",
+    "bytes": 2919609
   },
   "season": 2026,
   "week": 7,
-  "sourceStateCommit": "1c23cffb877f9e8daf64b5a6eb8b08749941bc1a",
+  "sourceStateCommit": "4e8980ae5d45b122120eaa659743a2c3f1366440",
   "excluded": [
-    {
-      "eventId": "2026_07_NE_CHI",
-      "reason": "stats-snapshot-predates-kickoff"
-    },
     {
       "eventId": "2026_07_PIT_NO",
       "reason": "no-verified-final"
@@ -68,7 +64,55 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-23T12:52:07.686855Z",
-  "games": [],
+  "resultsAsOf": "2026-10-24T12:13:54.749136Z",
+  "games": [
+    {
+      "eventId": "2026_07_NE_CHI",
+      "result": {
+        "eventId": "2026_07_NE_CHI",
+        "homeScore": 30,
+        "awayScore": 24,
+        "finalizedAt": "2026-10-24T05:53:26.996809Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "81828315646e448183dbffc9d7cfd796",
+        "espnObservationId": "4fdea2a14fc74d5a8af3cf712ca9791a"
+      },
+      "teams": {
+        "NE": {
+          "rows": 35,
+          "attempts": 31.0,
+          "passing_epa": 10.5695385592695,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 2.0,
+          "carries": 17.0,
+          "rushing_epa": -2.8053342782077397,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": 0.3202890472505909,
+          "rushing_epa_per_carry": -0.1650196634239847
+        },
+        "CHI": {
+          "rows": 35,
+          "attempts": 33.0,
+          "passing_epa": 13.5573939896146,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 3.0,
+          "carries": 30.0,
+          "rushing_epa": -2.22191251951153,
+          "fg_att": 4.0,
+          "fg_made": 3.0,
+          "passing_epa_per_attempt_plus_sack": 0.3765942774892944,
+          "rushing_epa_per_carry": -0.07406375065038433
+        }
+      },
+      "loser": "NE",
+      "notes": [
+        "NE had lower passing EPA than CHI (10.57 versus 13.56).",
+        "NE had lower rushing EPA than CHI (-2.81 versus -2.22).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-24T05:53:26.996809Z"
+    }
+  ],
   "status": "descriptive-only; no model evaluated"
 }
