@@ -1,10 +1,17 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-25T22:33:00.867422Z",
+  "lastAttemptAt": "2026-10-25T23:35:53.596934Z",
   "lastSuccessAt": "2026-10-25T22:33:18.427927Z",
-  "state": "succeeded",
-  "finishedAt": "2026-10-25T22:33:18.427927Z",
-  "errors": [],
+  "state": "failed",
+  "finishedAt": "2026-10-25T23:36:09.252638Z",
+  "errors": [
+    {
+      "stage": "result-source-disagreement",
+      "events": [
+        "2026_07_GB_DET"
+      ]
+    }
+  ],
   "schedule": {
     "localDate": "2026-10-25",
     "timeZone": "America/New_York",
@@ -87,7 +94,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "e8f78208b8ec4fd69b12929a34280e44",
-    "observedAt": "2026-10-25T22:33:00.903334Z"
+    "observationId": "3cc673804cf34280a050f33b80f592c0",
+    "observedAt": "2026-10-25T23:35:53.731800Z"
   }
 }
