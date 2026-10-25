@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-24T05:53:27.650951Z",
+  "generatedAt": "2026-10-25T05:22:52.822797Z",
   "season": 2026,
   "week": 7,
   "scheduledGames": 14,
-  "fullyPairedGames": 13,
+  "fullyPairedGames": 14,
   "games": [
     {
       "eventId": "2026_07_NE_CHI",
@@ -610,16 +610,43 @@
       "scheduledKickoff": "2026-10-27T00:15:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.48674457772285123,
+            "awayWin": 0.5089975108380844,
+            "tie": 0.004257911439064273
+          },
+          "generatedAt": "2026-10-25T05:22:49.889077Z",
+          "featureCutoffAt": "2026-10-25T05:22:49.271420Z",
+          "kickoffAt": "2026-10-27T00:15:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.3701758842784179,
+            "awayWin": 0.626304824435274,
+            "tie": 0.0035192912863080735
+          },
+          "generatedAt": "2026-10-25T05:22:50.607777Z",
+          "featureCutoffAt": "2026-10-25T05:22:49.271420Z",
+          "kickoffAt": "2026-10-27T00:15:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.37271077678716247,
+            "awayWin": 0.6236338513166011,
+            "tie": 0.0036553718962363435
+          },
+          "generatedAt": "2026-10-25T05:22:50.610267Z",
+          "featureCutoffAt": "2026-10-25T05:22:49.271420Z",
+          "kickoffAt": "2026-10-27T00:15:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     }
   ]

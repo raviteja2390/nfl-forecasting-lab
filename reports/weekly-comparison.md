@@ -2,7 +2,7 @@
 
 2026 NFL Week 7
 
-Updated 2026-10-24T05:53:27.650951Z. 14 scheduled games; 13 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-25T05:22:52.822797Z. 14 scheduled games; 14 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -88,7 +88,6 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 
 ## DAL at PHI — Mon Oct 26, 08:15 PM EDT
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** DAL 50.9% · PHI 48.7% · tie 0.4%. Issued 2026-10-25T05:22:49.889077Z; cutoff 2026-10-25T05:22:49.271420Z.
+- **Player form (shadow):** DAL 62.6% · PHI 37.0% · tie 0.4%. Issued 2026-10-25T05:22:50.607777Z; cutoff 2026-10-25T05:22:49.271420Z.
+- **Player availability (shadow):** DAL 62.4% · PHI 37.3% · tie 0.4%. Issued 2026-10-25T05:22:50.610267Z; cutoff 2026-10-25T05:22:49.271420Z.
