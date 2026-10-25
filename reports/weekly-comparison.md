@@ -2,7 +2,7 @@
 
 2026 NFL Week 7
 
-Updated 2026-10-25T11:27:34.510992Z. 14 scheduled games; 14 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-25T14:36:00.647447Z. 14 scheduled games; 14 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
