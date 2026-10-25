@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-24T12:13:57.514761+00:00",
+  "generatedAt": "2026-10-25T12:46:36.951075+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-24T05:53:04.755586Z",
+    "observedAt": "2026-10-25T11:27:30.118489Z",
     "sha256": "6ccbb9b4c897e1e27452a6bbecb8a45b77757af6af9e1101ad4b1c5271437cb4",
     "bytes": 2919609
   },
   "season": 2026,
   "week": 7,
-  "sourceStateCommit": "4e8980ae5d45b122120eaa659743a2c3f1366440",
+  "sourceStateCommit": "d9286c5df2245437a9c29ce073ea40fb4a0e717c",
   "excluded": [
     {
       "eventId": "2026_07_PIT_NO",
@@ -64,7 +64,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-24T12:13:54.749136Z",
+  "resultsAsOf": "2026-10-25T12:46:34.464219Z",
   "games": [
     {
       "eventId": "2026_07_NE_CHI",
@@ -72,10 +72,10 @@
         "eventId": "2026_07_NE_CHI",
         "homeScore": 30,
         "awayScore": 24,
-        "finalizedAt": "2026-10-24T05:53:26.996809Z",
+        "finalizedAt": "2026-10-25T11:27:33.280288Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "81828315646e448183dbffc9d7cfd796",
-        "espnObservationId": "4fdea2a14fc74d5a8af3cf712ca9791a"
+        "nflverseObservationId": "44e7126a6efa47518d775780d759cc79",
+        "espnObservationId": "96b478cdb11c41a0b8c46d37dd25b0ca"
       },
       "teams": {
         "NE": {
@@ -111,7 +111,7 @@
         "NE had lower rushing EPA than CHI (-2.81 versus -2.22).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.996809Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:33.280288Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"

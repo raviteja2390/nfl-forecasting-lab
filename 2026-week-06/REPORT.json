@@ -1,17 +1,17 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-24T12:13:57.441312+00:00",
+  "generatedAt": "2026-10-25T12:46:36.894943+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-24T05:53:04.755586Z",
+    "observedAt": "2026-10-25T11:27:30.118489Z",
     "sha256": "6ccbb9b4c897e1e27452a6bbecb8a45b77757af6af9e1101ad4b1c5271437cb4",
     "bytes": 2919609
   },
   "season": 2026,
   "week": 6,
-  "sourceStateCommit": "4e8980ae5d45b122120eaa659743a2c3f1366440",
+  "sourceStateCommit": "d9286c5df2245437a9c29ce073ea40fb4a0e717c",
   "excluded": [],
-  "resultsAsOf": "2026-10-24T12:13:54.749136Z",
+  "resultsAsOf": "2026-10-25T12:46:34.464219Z",
   "games": [
     {
       "eventId": "2026_06_SEA_DEN",
@@ -58,7 +58,7 @@
         "SEA had higher rushing EPA than DEN (-0.39 versus -1.97).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:04.755586Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_HOU_JAX",
@@ -105,7 +105,7 @@
         "JAX had higher rushing EPA than HOU (0.25 versus -0.62).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_BAL_CLE",
@@ -152,7 +152,7 @@
         "BAL had lower rushing EPA than CLE (-9.99 versus -0.16).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_CAR_PHI",
@@ -199,7 +199,7 @@
         "PHI had lower rushing EPA than CAR (-1.81 versus -0.86).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_CHI_ATL",
@@ -246,7 +246,7 @@
         "ATL had higher rushing EPA than CHI (-3.47 versus -13.13).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_NO_NYG",
@@ -293,7 +293,7 @@
         "NYG had higher rushing EPA than NO (1.43 versus -1.80).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_NYJ_NE",
@@ -340,7 +340,7 @@
         "NYJ had lower rushing EPA than NE (-8.06 versus -7.04).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_PIT_TB",
@@ -387,7 +387,7 @@
         "TB had higher rushing EPA than PIT (-0.42 versus -0.91).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_TEN_IND",
@@ -434,7 +434,7 @@
         "IND had lower rushing EPA than TEN (-4.03 versus -2.93).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_ARI_LA",
@@ -481,7 +481,7 @@
         "LAR had higher rushing EPA than ARI (-2.22 versus -3.43).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_BUF_LV",
@@ -528,7 +528,7 @@
         "LV had lower rushing EPA than BUF (-5.70 versus -0.24).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_LAC_KC",
@@ -575,7 +575,7 @@
         "LAC had lower rushing EPA than KC (-2.86 versus 1.69).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_DAL_GB",
@@ -622,7 +622,7 @@
         "DAL had higher rushing EPA than GB (-1.05 versus -3.78).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.212733Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:30.118489Z"
     },
     {
       "eventId": "2026_06_WAS_SF",
@@ -630,10 +630,10 @@
         "eventId": "2026_06_WAS_SF",
         "homeScore": 23,
         "awayScore": 17,
-        "finalizedAt": "2026-10-24T05:53:26.600342Z",
+        "finalizedAt": "2026-10-25T11:27:32.836574Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "81828315646e448183dbffc9d7cfd796",
-        "espnObservationId": "baf6e85d0ed34930aeb29ac7290f1ec7"
+        "nflverseObservationId": "44e7126a6efa47518d775780d759cc79",
+        "espnObservationId": "34423798a769491487fdf2b1a458c33b"
       },
       "teams": {
         "WAS": {
@@ -669,7 +669,7 @@
         "WAS had lower rushing EPA than SF (-3.24 versus 14.02).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-24T05:53:26.600342Z"
+      "availableNoEarlierThan": "2026-10-25T11:27:32.836574Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
