@@ -1,6 +1,6 @@
 # 2026 Week 4 postgame analysis — descriptive only
 
-Statistics observed: 2026-10-26T01:09:43.229287Z. Results snapshot: 2026-10-26T14:33:59.979532Z.
+Statistics observed: 2026-10-26T01:09:43.229287Z. Results snapshot: 2026-10-27T13:35:15.824861Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
