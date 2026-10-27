@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-27T00:06:40.111377Z",
-  "lastSuccessAt": "2026-10-27T00:06:54.579914Z",
+  "lastAttemptAt": "2026-10-27T05:03:14.592073Z",
+  "lastSuccessAt": "2026-10-27T05:03:29.868094Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-27T00:06:54.579914Z",
+  "finishedAt": "2026-10-27T05:03:29.868094Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-26",
+    "localDate": "2026-10-27",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_07_DAL_PHI",
-        "awayTeam": "DAL",
-        "homeTeam": "PHI",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "bd6b4101117d4a668adf61bc8fed60b2",
-    "observedAt": "2026-10-27T00:06:40.171982Z"
+    "observationId": "91ce3d62246348cebfe1d7c9815db6a4",
+    "observedAt": "2026-10-27T05:03:14.632908Z"
   }
 }
