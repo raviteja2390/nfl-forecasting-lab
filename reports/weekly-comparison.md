@@ -2,7 +2,7 @@
 
 2026 NFL Week 8
 
-Updated 2026-10-27T05:03:29.625192Z. 14 scheduled games; 0 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-10-28T06:22:29.591764Z. 14 scheduled games; 1 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -10,10 +10,9 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 
 ## CAR at GB — Thu Oct 29, 08:15 PM EDT
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** CAR 41.6% · GB 58.1% · tie 0.4%. Issued 2026-10-28T06:22:26.964579Z; cutoff 2026-10-28T06:22:26.521791Z.
+- **Player form (shadow):** CAR 38.5% · GB 61.2% · tie 0.3%. Issued 2026-10-28T06:22:27.551178Z; cutoff 2026-10-28T06:22:26.521791Z.
+- **Player availability (shadow):** CAR 40.3% · GB 59.4% · tie 0.3%. Issued 2026-10-28T06:22:27.553624Z; cutoff 2026-10-28T06:22:26.521791Z.
 
 ## ARI at DAL — Sun Nov 01, 01:00 PM EST
 
