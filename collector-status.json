@@ -1,20 +1,27 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-10-28T06:22:10.747169Z",
-  "lastSuccessAt": "2026-10-28T06:22:29.751159Z",
+  "lastAttemptAt": "2026-10-29T07:04:43.253962Z",
+  "lastSuccessAt": "2026-10-29T07:04:52.616489Z",
   "state": "succeeded",
-  "finishedAt": "2026-10-28T06:22:29.751159Z",
+  "finishedAt": "2026-10-29T07:04:52.616489Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-10-28",
+    "localDate": "2026-10-29",
     "timeZone": "America/New_York",
-    "cadence": "daily",
-    "gamesToday": [],
-    "scheduledGameCount": 0,
+    "cadence": "hourly",
+    "gamesToday": [
+      {
+        "eventId": "2026_08_CAR_GB",
+        "awayTeam": "CAR",
+        "homeTeam": "GB",
+        "kickoffEastern": "20:15"
+      }
+    ],
+    "scheduledGameCount": 1,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "f38d92c9ff344ac0b654864183a4c795",
-    "observedAt": "2026-10-28T06:22:10.839820Z"
+    "observationId": "5e2b2b721f39458d8a928d0cbb509100",
+    "observedAt": "2026-10-29T07:04:43.345462Z"
   }
 }
