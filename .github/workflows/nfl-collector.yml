@@ -1,10 +1,15 @@
 name: NFL cloud collector
+run-name: "NFL collector — ${{ inputs.trigger_source || github.event_name }}"
 on:
   workflow_call:
   schedule:
     - cron: '17 * * * *'
   workflow_dispatch:
     inputs:
+      trigger_source:
+        description: External trigger label for run provenance
+        type: string
+        default: manual
       force:
         description: 'Run one collection even if today/hour is already covered'
         type: boolean
