@@ -1,6 +1,6 @@
 # 2026 Week 8 postgame analysis — descriptive only
 
-Statistics observed: 2026-10-28T06:22:21.828134Z. Results snapshot: 2026-10-28T14:31:25.598415Z.
+Statistics observed: 2026-10-28T06:22:21.828134Z. Results snapshot: 2026-10-29T14:39:41.458312Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
