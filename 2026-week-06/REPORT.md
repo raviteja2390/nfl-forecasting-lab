@@ -1,6 +1,6 @@
 # 2026 Week 6 postgame analysis — descriptive only
 
-Statistics observed: 2026-10-28T06:22:21.828134Z. Results snapshot: 2026-10-30T14:31:37.225689Z.
+Statistics observed: 2026-10-31T04:07:51.708807Z. Results snapshot: 2026-10-31T13:53:56.056248Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -231,7 +231,7 @@ These are statistical differences associated with the final result, not proven c
 
 | Measure | WAS | SF |
 |---|---:|---:|
-| Passing EPA | 2.62 | 3.66 |
+| Passing EPA | 2.62 | 3.67 |
 | Passing EPA / (attempts + sacks) | 0.059 | 0.118 |
 | Rushing EPA | -3.24 | 14.02 |
 | Rushing EPA / carry | -0.191 | 0.483 |
@@ -240,7 +240,7 @@ These are statistical differences associated with the final result, not proven c
 | Field goals made | 1 | 1 |
 | Field goals attempted | 1 | 1 |
 
-- WAS had lower passing EPA than SF (2.62 versus 3.66).
+- WAS had lower passing EPA than SF (2.62 versus 3.67).
 - WAS had lower rushing EPA than SF (-3.24 versus 14.02).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 

@@ -1,20 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-30T14:31:41.503578+00:00",
+  "generatedAt": "2026-10-31T13:53:59.919754+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-28T06:22:21.828134Z",
-    "sha256": "c5b3b92a9e4258a48f84a78ade8b1d7f69b543367bba6bc0205e9d268ab11174",
-    "bytes": 3315437
+    "observedAt": "2026-10-31T04:07:51.708807Z",
+    "sha256": "918be44736b5d191b7efea8b6d916d5da457ae7ed4ed76060b166200f2aaec0a",
+    "bytes": 3347923
   },
   "season": 2026,
   "week": 8,
-  "sourceStateCommit": "823aef6e63e1d23a1480ef266e1f57e1bff116c2",
+  "sourceStateCommit": "77ecdd731153397d21b594f81d6586e460ab6124",
   "excluded": [
-    {
-      "eventId": "2026_08_CAR_GB",
-      "reason": "stats-snapshot-predates-kickoff"
-    },
     {
       "eventId": "2026_08_ARI_DAL",
       "reason": "no-verified-final"
@@ -68,7 +64,55 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-30T14:31:37.225689Z",
-  "games": [],
+  "resultsAsOf": "2026-10-31T13:53:56.056248Z",
+  "games": [
+    {
+      "eventId": "2026_08_CAR_GB",
+      "result": {
+        "eventId": "2026_08_CAR_GB",
+        "homeScore": 27,
+        "awayScore": 19,
+        "finalizedAt": "2026-10-31T04:08:18.039250Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "0166d3b5b98046dcaa86c55826533949",
+        "espnObservationId": "94690e79cbcc4a7f9a1bb33cc0dceb4f"
+      },
+      "teams": {
+        "CAR": {
+          "rows": 40,
+          "attempts": 41.0,
+          "passing_epa": -7.59871696664843,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 6.0,
+          "carries": 23.0,
+          "rushing_epa": -2.834004829754118,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": -0.16167482907762618,
+          "rushing_epa_per_carry": -0.1232176012936573
+        },
+        "GB": {
+          "rows": 34,
+          "attempts": 41.0,
+          "passing_epa": 11.7441842659027,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 0.0,
+          "carries": 26.0,
+          "rushing_epa": -3.400293556333052,
+          "fg_att": null,
+          "fg_made": null,
+          "passing_epa_per_attempt_plus_sack": 0.2864435186805536,
+          "rushing_epa_per_carry": -0.13078052139742508
+        }
+      },
+      "loser": "CAR",
+      "notes": [
+        "CAR had lower passing EPA than GB (-7.60 versus 11.74).",
+        "CAR had higher rushing EPA than GB (-2.83 versus -3.40).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-10-31T04:08:18.039250Z"
+    }
+  ],
   "status": "descriptive-only; no model evaluated"
 }
