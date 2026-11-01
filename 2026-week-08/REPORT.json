@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-10-31T13:53:59.919754+00:00",
+  "generatedAt": "2026-11-01T14:31:34.110707+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-10-31T04:07:51.708807Z",
-    "sha256": "918be44736b5d191b7efea8b6d916d5da457ae7ed4ed76060b166200f2aaec0a",
+    "observedAt": "2026-11-01T14:07:54.597453Z",
+    "sha256": "328fc4b494d77fb3741bf0b3ebd4b4d47efe1ce7fe65219bfc61344f6434a5b8",
     "bytes": 3347923
   },
   "season": 2026,
   "week": 8,
-  "sourceStateCommit": "77ecdd731153397d21b594f81d6586e460ab6124",
+  "sourceStateCommit": "0f7771be551e6b7fb864018f448ba6ef7ead10d5",
   "excluded": [
     {
       "eventId": "2026_08_ARI_DAL",
@@ -64,7 +64,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-10-31T13:53:56.056248Z",
+  "resultsAsOf": "2026-11-01T14:31:29.565072Z",
   "games": [
     {
       "eventId": "2026_08_CAR_GB",
@@ -72,10 +72,10 @@
         "eventId": "2026_08_CAR_GB",
         "homeScore": 27,
         "awayScore": 19,
-        "finalizedAt": "2026-10-31T04:08:18.039250Z",
+        "finalizedAt": "2026-11-01T14:07:57.728301Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "0166d3b5b98046dcaa86c55826533949",
-        "espnObservationId": "94690e79cbcc4a7f9a1bb33cc0dceb4f"
+        "nflverseObservationId": "cc038aef059f4b169bbef9649a9c5c95",
+        "espnObservationId": "7d3beb74ae064965817fc1c528af1d95"
       },
       "teams": {
         "CAR": {
@@ -111,7 +111,7 @@
         "CAR had higher rushing EPA than GB (-2.83 versus -3.40).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-10-31T04:08:18.039250Z"
+      "availableNoEarlierThan": "2026-11-01T14:07:57.728301Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
