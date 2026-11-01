@@ -1,17 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-01T21:07:38.658093Z",
+  "lastAttemptAt": "2026-11-01T21:22:54.681348Z",
   "lastSuccessAt": "2026-11-01T20:07:58.418304Z",
   "state": "failed",
-  "finishedAt": "2026-11-01T21:07:59.386101Z",
+  "finishedAt": "2026-11-01T21:23:16.177362Z",
   "errors": [
     {
       "stage": "result-source-disagreement",
       "events": [
-        "2026_08_CLE_PIT",
-        "2026_08_IND_JAX",
-        "2026_08_LV_NYJ",
-        "2026_08_MIN_DET"
+        "2026_08_BAL_BUF"
       ]
     }
   ],
@@ -97,7 +94,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "b9e38481bee14fddafd9f16e28f11b1f",
-    "observedAt": "2026-11-01T21:07:38.763600Z"
+    "observationId": "03670bccc39347e9b44c2ef753b9fcb8",
+    "observedAt": "2026-11-01T21:22:54.804940Z"
   }
 }
