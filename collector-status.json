@@ -1,17 +1,10 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-01T21:22:54.681348Z",
-  "lastSuccessAt": "2026-11-01T20:07:58.418304Z",
-  "state": "failed",
-  "finishedAt": "2026-11-01T21:23:16.177362Z",
-  "errors": [
-    {
-      "stage": "result-source-disagreement",
-      "events": [
-        "2026_08_BAL_BUF"
-      ]
-    }
-  ],
+  "lastAttemptAt": "2026-11-01T22:07:38.611281Z",
+  "lastSuccessAt": "2026-11-01T22:08:00.441582Z",
+  "state": "succeeded",
+  "finishedAt": "2026-11-01T22:08:00.441582Z",
+  "errors": [],
   "schedule": {
     "localDate": "2026-11-01",
     "timeZone": "America/New_York",
@@ -94,7 +87,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "03670bccc39347e9b44c2ef753b9fcb8",
-    "observedAt": "2026-11-01T21:22:54.804940Z"
+    "observationId": "103e1f5c99ba4b3e9fe9945af5af4108",
+    "observedAt": "2026-11-01T22:07:38.780680Z"
   }
 }
