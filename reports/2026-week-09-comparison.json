@@ -1,0 +1,294 @@
+{
+  "generatedAt": "2026-11-03T05:07:59.617216Z",
+  "season": 2026,
+  "week": 9,
+  "scheduledGames": 15,
+  "fullyPairedGames": 0,
+  "games": [
+    {
+      "eventId": "2026_09_JAX_BAL",
+      "away": "JAX",
+      "home": "BAL",
+      "scheduledKickoff": "2026-11-06T01:15:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_CIN_ATL",
+      "away": "CIN",
+      "home": "ATL",
+      "scheduledKickoff": "2026-11-08T14:30:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_CLE_NO",
+      "away": "CLE",
+      "home": "NO",
+      "scheduledKickoff": "2026-11-08T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_DAL_IND",
+      "away": "DAL",
+      "home": "IND",
+      "scheduledKickoff": "2026-11-08T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_DEN_CAR",
+      "away": "DEN",
+      "home": "CAR",
+      "scheduledKickoff": "2026-11-08T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_DET_MIA",
+      "away": "DET",
+      "home": "MIA",
+      "scheduledKickoff": "2026-11-08T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_LA_WAS",
+      "away": "LAR",
+      "home": "WAS",
+      "scheduledKickoff": "2026-11-08T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_NYG_PHI",
+      "away": "NYG",
+      "home": "PHI",
+      "scheduledKickoff": "2026-11-08T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_NYJ_KC",
+      "away": "NYJ",
+      "home": "KC",
+      "scheduledKickoff": "2026-11-08T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_HOU_LAC",
+      "away": "HOU",
+      "home": "LAC",
+      "scheduledKickoff": "2026-11-08T21:05:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_LV_SF",
+      "away": "LV",
+      "home": "SF",
+      "scheduledKickoff": "2026-11-08T21:05:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_ARI_SEA",
+      "away": "ARI",
+      "home": "SEA",
+      "scheduledKickoff": "2026-11-08T21:25:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_GB_NE",
+      "away": "GB",
+      "home": "NE",
+      "scheduledKickoff": "2026-11-08T21:25:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_TB_CHI",
+      "away": "TB",
+      "home": "CHI",
+      "scheduledKickoff": "2026-11-09T01:20:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_09_BUF_MIN",
+      "away": "BUF",
+      "home": "MIN",
+      "scheduledKickoff": "2026-11-10T01:15:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    }
+  ]
+}

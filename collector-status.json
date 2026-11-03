@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-03T04:07:38.376795Z",
-  "lastSuccessAt": "2026-11-03T04:07:58.999655Z",
+  "lastAttemptAt": "2026-11-03T05:07:39.096748Z",
+  "lastSuccessAt": "2026-11-03T05:07:59.918105Z",
   "state": "succeeded",
-  "finishedAt": "2026-11-03T04:07:58.999655Z",
+  "finishedAt": "2026-11-03T05:07:59.918105Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-11-02",
+    "localDate": "2026-11-03",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_08_CHI_SEA",
-        "awayTeam": "CHI",
-        "homeTeam": "SEA",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "9d1c94c66e59455d83bbe3d9b55f614f",
-    "observedAt": "2026-11-03T04:07:38.416139Z"
+    "observationId": "7846c29902454d71bf07ff30e4101d38",
+    "observedAt": "2026-11-03T05:07:39.166081Z"
   }
 }
