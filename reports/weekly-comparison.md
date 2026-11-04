@@ -2,7 +2,7 @@
 
 2026 NFL Week 9
 
-Updated 2026-11-03T05:07:59.617216Z. 15 scheduled games; 0 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-04T05:07:47.101533Z. 15 scheduled games; 1 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -10,10 +10,9 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 
 ## JAX at BAL — Thu Nov 05, 08:15 PM EST
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** JAX 63.1% · BAL 36.5% · tie 0.4%. Issued 2026-11-04T05:07:45.178575Z; cutoff 2026-11-04T05:07:44.821076Z.
+- **Player form (shadow):** JAX 73.6% · BAL 26.0% · tie 0.4%. Issued 2026-11-04T05:07:45.626834Z; cutoff 2026-11-04T05:07:44.821076Z.
+- **Player availability (shadow):** JAX 80.4% · BAL 19.3% · tie 0.3%. Issued 2026-11-04T05:07:45.628614Z; cutoff 2026-11-04T05:07:44.821076Z.
 
 ## CIN at ATL — Sun Nov 08, 09:30 AM EST
 
