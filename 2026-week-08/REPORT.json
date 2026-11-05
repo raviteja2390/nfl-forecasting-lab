@@ -1,6 +1,6 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-04T15:46:54.857766+00:00",
+  "generatedAt": "2026-11-05T15:49:03.740386+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
     "observedAt": "2026-11-04T05:07:42.542398Z",
@@ -9,9 +9,9 @@
   },
   "season": 2026,
   "week": 8,
-  "sourceStateCommit": "c15b4deca774ff8ba33ce1a89749841160866110",
+  "sourceStateCommit": "278f5c66dcf716bdbdd1d5c3a9997648bbff7332",
   "excluded": [],
-  "resultsAsOf": "2026-11-04T15:46:51.000792Z",
+  "resultsAsOf": "2026-11-05T15:48:58.820734Z",
   "games": [
     {
       "eventId": "2026_08_CAR_GB",
@@ -66,10 +66,10 @@
         "eventId": "2026_08_ARI_DAL",
         "homeScore": 30,
         "awayScore": 33,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "ARI": {
@@ -105,7 +105,7 @@
         "DAL had lower rushing EPA than ARI (-6.98 versus 5.61).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_ATL_TB",
@@ -113,10 +113,10 @@
         "eventId": "2026_08_ATL_TB",
         "homeScore": 16,
         "awayScore": 0,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "ATL": {
@@ -152,7 +152,7 @@
         "ATL had higher rushing EPA than TB (-3.06 versus -5.53).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_BAL_BUF",
@@ -160,10 +160,10 @@
         "eventId": "2026_08_BAL_BUF",
         "homeScore": 36,
         "awayScore": 10,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "BAL": {
@@ -199,7 +199,7 @@
         "BAL had lower rushing EPA than BUF (-3.62 versus -2.40).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_CLE_PIT",
@@ -207,10 +207,10 @@
         "eventId": "2026_08_CLE_PIT",
         "homeScore": 27,
         "awayScore": 6,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "CLE": {
@@ -246,7 +246,7 @@
         "CLE had lower rushing EPA than PIT (-6.91 versus 11.24).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_IND_JAX",
@@ -254,10 +254,10 @@
         "eventId": "2026_08_IND_JAX",
         "homeScore": 42,
         "awayScore": 7,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "IND": {
@@ -293,7 +293,7 @@
         "IND had lower rushing EPA than JAX (-6.86 versus 6.09).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_LV_NYJ",
@@ -301,10 +301,10 @@
         "eventId": "2026_08_LV_NYJ",
         "homeScore": 33,
         "awayScore": 38,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "LV": {
@@ -340,7 +340,7 @@
         "NYJ had higher rushing EPA than LV (3.49 versus -4.12).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_MIN_DET",
@@ -348,10 +348,10 @@
         "eventId": "2026_08_MIN_DET",
         "homeScore": 19,
         "awayScore": 15,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "MIN": {
@@ -387,7 +387,7 @@
         "MIN had lower rushing EPA than DET (-2.96 versus -0.27).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_TEN_CIN",
@@ -395,10 +395,10 @@
         "eventId": "2026_08_TEN_CIN",
         "homeScore": 43,
         "awayScore": 36,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "TEN": {
@@ -434,7 +434,7 @@
         "TEN had higher rushing EPA than CIN (6.31 versus -6.49).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_LAC_LA",
@@ -442,10 +442,10 @@
         "eventId": "2026_08_LAC_LA",
         "homeScore": 24,
         "awayScore": 9,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "LAC": {
@@ -481,7 +481,7 @@
         "LAC had lower rushing EPA than LAR (-10.08 versus 1.13).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_KC_DEN",
@@ -489,10 +489,10 @@
         "eventId": "2026_08_KC_DEN",
         "homeScore": 28,
         "awayScore": 24,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "KC": {
@@ -528,7 +528,7 @@
         "KC had higher rushing EPA than DEN (0.16 versus -1.09).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_NE_MIA",
@@ -536,10 +536,10 @@
         "eventId": "2026_08_NE_MIA",
         "homeScore": 19,
         "awayScore": 24,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "NE": {
@@ -575,7 +575,7 @@
         "MIA had lower rushing EPA than NE (-6.98 versus 0.02).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_PHI_WAS",
@@ -583,10 +583,10 @@
         "eventId": "2026_08_PHI_WAS",
         "homeScore": 27,
         "awayScore": 10,
-        "finalizedAt": "2026-11-04T05:07:46.141554Z",
+        "finalizedAt": "2026-11-05T15:08:02.904070Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "bf88276422e14b998dab9d05946103d2"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "4fd38a037ad5495c8ebd33adc51209e0"
       },
       "teams": {
         "PHI": {
@@ -622,7 +622,7 @@
         "PHI had lower rushing EPA than WAS (-2.36 versus 3.45).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.141554Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:02.904070Z"
     },
     {
       "eventId": "2026_08_CHI_SEA",
@@ -630,10 +630,10 @@
         "eventId": "2026_08_CHI_SEA",
         "homeScore": 17,
         "awayScore": 34,
-        "finalizedAt": "2026-11-04T05:07:46.544136Z",
+        "finalizedAt": "2026-11-05T15:08:03.521296Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "6e9a526aa1314409bdf7b44c77d7d433",
-        "espnObservationId": "8383d5bd543f4754af2d3e7853054535"
+        "nflverseObservationId": "758724242f2946e286e81474ca0f4c1a",
+        "espnObservationId": "6b16f8ea3f6b496292263e308e00174a"
       },
       "teams": {
         "CHI": {
@@ -669,7 +669,7 @@
         "SEA had lower rushing EPA than CHI (-2.76 versus 6.71).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-04T05:07:46.544136Z"
+      "availableNoEarlierThan": "2026-11-05T15:08:03.521296Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
