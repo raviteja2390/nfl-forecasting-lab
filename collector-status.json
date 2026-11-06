@@ -1,34 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-06T04:07:37.773547Z",
-  "lastSuccessAt": "2026-11-06T03:07:44.693817Z",
-  "state": "failed",
-  "finishedAt": "2026-11-06T04:07:58.215757Z",
-  "errors": [
-    {
-      "stage": "result-source-disagreement",
-      "events": [
-        "2026_09_JAX_BAL"
-      ]
-    }
-  ],
+  "lastAttemptAt": "2026-11-06T05:07:35.514290Z",
+  "lastSuccessAt": "2026-11-06T05:07:54.123281Z",
+  "state": "succeeded",
+  "finishedAt": "2026-11-06T05:07:54.123281Z",
+  "errors": [],
   "schedule": {
-    "localDate": "2026-11-05",
+    "localDate": "2026-11-06",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_09_JAX_BAL",
-        "awayTeam": "JAX",
-        "homeTeam": "BAL",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "7bd908229f7e4460aa0c2aa47dd75d57",
-    "observedAt": "2026-11-06T04:07:37.943852Z"
+    "observationId": "50d7c529aef441b5ae951b485a63036f",
+    "observedAt": "2026-11-06T05:07:35.558455Z"
   }
 }
