@@ -1,6 +1,6 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-05T15:49:03.835626+00:00",
+  "generatedAt": "2026-11-06T15:24:21.411164+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
     "observedAt": "2026-11-04T05:07:42.542398Z",
@@ -9,11 +9,11 @@
   },
   "season": 2026,
   "week": 9,
-  "sourceStateCommit": "278f5c66dcf716bdbdd1d5c3a9997648bbff7332",
+  "sourceStateCommit": "8817f3a6d55a8fa70ff81bf16258d3a7c313b4ca",
   "excluded": [
     {
       "eventId": "2026_09_JAX_BAL",
-      "reason": "no-verified-final"
+      "reason": "stats-snapshot-predates-kickoff"
     },
     {
       "eventId": "2026_09_CIN_ATL",
@@ -72,7 +72,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-05T15:48:58.820734Z",
+  "resultsAsOf": "2026-11-06T15:24:14.687271Z",
   "games": [],
   "status": "descriptive-only; no model evaluated"
 }
