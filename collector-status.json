@@ -1,10 +1,17 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-06T03:07:31.601523Z",
+  "lastAttemptAt": "2026-11-06T04:07:37.773547Z",
   "lastSuccessAt": "2026-11-06T03:07:44.693817Z",
-  "state": "succeeded",
-  "finishedAt": "2026-11-06T03:07:44.693817Z",
-  "errors": [],
+  "state": "failed",
+  "finishedAt": "2026-11-06T04:07:58.215757Z",
+  "errors": [
+    {
+      "stage": "result-source-disagreement",
+      "events": [
+        "2026_09_JAX_BAL"
+      ]
+    }
+  ],
   "schedule": {
     "localDate": "2026-11-05",
     "timeZone": "America/New_York",
@@ -21,7 +28,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "7f03b0855e244ec59a8356fbceb1c5b1",
-    "observedAt": "2026-11-06T03:07:31.752788Z"
+    "observationId": "7bd908229f7e4460aa0c2aa47dd75d57",
+    "observedAt": "2026-11-06T04:07:37.943852Z"
   }
 }
