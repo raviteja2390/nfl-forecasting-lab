@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-07T15:08:19.885903Z",
+  "generatedAt": "2026-11-07T15:26:48.802085Z",
   "season": 2026,
   "week": 9,
   "scheduledGames": 15,
-  "fullyPairedGames": 13,
+  "fullyPairedGames": 14,
   "games": [
     {
       "eventId": "2026_09_JAX_BAL",
@@ -472,16 +472,43 @@
       "scheduledKickoff": "2026-11-08T21:05:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6312112972783788,
+            "awayWin": 0.36521438267037365,
+            "tie": 0.0035743200512476556
+          },
+          "generatedAt": "2026-11-07T15:26:44.554142Z",
+          "featureCutoffAt": "2026-11-07T15:26:43.913872Z",
+          "kickoffAt": "2026-11-08T21:05:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6400607718031172,
+            "awayWin": 0.3568074395926823,
+            "tie": 0.003131788604200602
+          },
+          "generatedAt": "2026-11-07T15:26:45.214715Z",
+          "featureCutoffAt": "2026-11-07T15:26:43.913872Z",
+          "kickoffAt": "2026-11-08T21:05:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.5483841893088246,
+            "awayWin": 0.44847114434072965,
+            "tie": 0.003144666350445793
+          },
+          "generatedAt": "2026-11-07T15:26:45.216783Z",
+          "featureCutoffAt": "2026-11-07T15:26:43.913872Z",
+          "kickoffAt": "2026-11-08T21:05:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     },
     {

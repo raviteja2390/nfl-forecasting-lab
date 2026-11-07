@@ -2,7 +2,7 @@
 
 2026 NFL Week 9
 
-Updated 2026-11-07T15:08:19.885903Z. 15 scheduled games; 13 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-07T15:26:48.802085Z. 15 scheduled games; 14 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -70,10 +70,9 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 
 ## LV at SF — Sun Nov 08, 04:05 PM EST
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** LV 36.5% · SF 63.1% · tie 0.4%. Issued 2026-11-07T15:26:44.554142Z; cutoff 2026-11-07T15:26:43.913872Z.
+- **Player form (shadow):** LV 35.7% · SF 64.0% · tie 0.3%. Issued 2026-11-07T15:26:45.214715Z; cutoff 2026-11-07T15:26:43.913872Z.
+- **Player availability (shadow):** LV 44.8% · SF 54.8% · tie 0.3%. Issued 2026-11-07T15:26:45.216783Z; cutoff 2026-11-07T15:26:43.913872Z.
 
 ## ARI at SEA — Sun Nov 08, 04:25 PM EST
 

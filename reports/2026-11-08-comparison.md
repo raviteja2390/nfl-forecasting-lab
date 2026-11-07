@@ -56,6 +56,12 @@ Outcome probabilities issued before kickoff. Times are Eastern. Team-only is the
 - **player-availability-v1:** HOU 74.1%; LAC 25.5%; tie 0.5%.
 - **player-form-v1:** HOU 73.5%; LAC 26.1%; tie 0.5%.
 
+## LV at SF — 4:05 PM
+
+- **outcome-logit-v1:** LV 36.5%; SF 63.1%; tie 0.4%.
+- **player-availability-v1:** LV 44.8%; SF 54.8%; tie 0.3%.
+- **player-form-v1:** LV 35.7%; SF 64.0%; tie 0.3%.
+
 ## ARI at SEA — 4:25 PM
 
 - **outcome-logit-v1:** ARI 35.0%; SEA 64.6%; tie 0.3%.
