@@ -5,3 +5,5 @@ The existing nflverse feed retains 2026_09_LV_SF at November 8 21:05 UTC. ESPN e
 The validator accepts only this exact event, team pair, ESPN ID and pair of times. All other kickoff disagreements, live-game states and venue mismatches remain rejected. The original earlier kickoff remains in the forecast and feature row, so the at-least-24-hour deadline stays November 7 21:05 UTC. This is deliberately conservative, not a claim that the two feeds agree. A reviewedScheduleCorrections entry in the saved scoreboard provenance records the confirmed actual time and review source. No raw snapshot is edited, and no model weights, features, inference implementation or existing forecast is changed. Once both sources agree, ordinary validation applies. This exception cannot authorize late issuance or backdating.
 
 Validation: exact-match acceptance and provenance, rejection of wrong event ID, changed times, live status and venue mismatch; existing deadline and feature-parity tests.
+
+Superseded for future issuance by KICKOFF_TOLERANCE.md. The original LV-SF forecasts retain their original reviewed provenance.

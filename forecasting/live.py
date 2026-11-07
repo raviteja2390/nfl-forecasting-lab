@@ -52,6 +52,7 @@ def parse_games(body):
         if missing[0] != missing[1]:
             raise ValueError("Incomplete score pair")
         games.append({"eventId": event_id, "season": season, "week": week, "kickoff": kickoff,
+                      "espnEventId": row.get("espn", "").strip(),
                       "localDate": local.date(), "assumedAvailableAt": kickoff + timedelta(hours=48),
                       "homeTeamId": canonical(row["home_team"]), "awayTeamId": canonical(row["away_team"]),
                       "sourceHomeTeam": row["home_team"], "sourceAwayTeam": row["away_team"],
@@ -131,18 +132,21 @@ def required_dates(date, at, event_id=None):
     return sorted(dates)
 
 
-def reviewed_kickoff_correction(game, other):
-    """One manually verified source lag; never move the forecast cutoff later."""
-    if (game["eventId"] == "2026_09_LV_SF"
-            and game["kickoff"] == snapshots.parse_time("2026-11-08T21:05:00Z")
-            and other["kickoff"] == snapshots.parse_time("2026-11-08T21:25:00Z")
-            and other["sourceEventId"] == "401873047"
-            and game["awayTeamId"] == "LV" and game["homeTeamId"] == "SF"):
-        return {"reason": "Reviewed nflverse schedule lag; retain earlier kickoff for all cutoffs",
-                "nflverseKickoff": "2026-11-08T21:05:00Z",
-                "confirmedKickoff": "2026-11-08T21:25:00Z",
-                "reviewedOn": "2026-11-07",
-                "officialSource": "https://www.49ers.com/schedule/"}
+def bounded_kickoff_difference(game, other):
+    """Accept a small later source time without extending any issue deadline."""
+    delta = other["kickoff"] - game["kickoff"]
+    expected_id = game.get("espnEventId", "")
+    if (expected_id.isdigit() and expected_id == other["sourceEventId"]
+            and timedelta(0) < delta <= timedelta(minutes=30)
+            and other["kickoff"].astimezone(features.EASTERN).date() == game["localDate"]
+            and other["state"] == "pre"
+            and isinstance(other["neutral"], bool) and other["neutral"] == game["neutral"]):
+        return {"policy": "later-kickoff-tolerance-v1", "maxMinutes": 30,
+                "differenceMinutes": delta.total_seconds() / 60,
+                "nflverseKickoff": features.iso(game["kickoff"]),
+                "espnKickoff": features.iso(other["kickoff"]),
+                "deadlineBasis": "earlier-nflverse-kickoff-minus-24-hours",
+                "sourceEventId": expected_id}
     return None
 
 
@@ -162,10 +166,10 @@ def verify_inputs(targets, rows, games, at):
         if not other or other["state"] != "pre":
             raise ValueError(f'{game["eventId"]}: schedule absent or already started')
         if other["kickoff"] != game["kickoff"]:
-            correction = reviewed_kickoff_correction(game, other)
+            correction = bounded_kickoff_difference(game, other)
             if correction is None:
                 raise ValueError(f'{game["eventId"]}: kickoff mismatch: nflverse={game["kickoff"].isoformat()}, ESPN={other["kickoff"].isoformat()}')
-            observations[game["localDate"].strftime("%Y%m%d")].setdefault("reviewedScheduleCorrections", {})[game["eventId"]] = correction
+            observations[game["localDate"].strftime("%Y%m%d")].setdefault("scheduleDiscrepancies", {})[game["eventId"]] = correction
         if other["neutral"] is not None and other["neutral"] != game["neutral"]:
             raise ValueError(f'{game["eventId"]}: venue classification mismatch')
     for row in rows:
