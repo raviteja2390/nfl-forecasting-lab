@@ -1,20 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-06T15:24:21.411164+00:00",
+  "generatedAt": "2026-11-07T14:21:12.164153+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-04T05:07:42.542398Z",
-    "sha256": "1d3a256f5e3545b3c6dd1ad5ab1c788b3242587204c7e77a3c60c6b79f8cbe93",
-    "bytes": 3749992
+    "observedAt": "2026-11-07T14:07:55.282526Z",
+    "sha256": "bbb261be576e15e62c3cdfa57ea7d606e12993233ee53a1f9d464b733e379d45",
+    "bytes": 3781814
   },
   "season": 2026,
   "week": 9,
-  "sourceStateCommit": "8817f3a6d55a8fa70ff81bf16258d3a7c313b4ca",
+  "sourceStateCommit": "634166cccdb770022322af7b95a042b6cb67a921",
   "excluded": [
-    {
-      "eventId": "2026_09_JAX_BAL",
-      "reason": "stats-snapshot-predates-kickoff"
-    },
     {
       "eventId": "2026_09_CIN_ATL",
       "reason": "no-verified-final"
@@ -72,7 +68,55 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-06T15:24:14.687271Z",
-  "games": [],
+  "resultsAsOf": "2026-11-07T14:21:04.831935Z",
+  "games": [
+    {
+      "eventId": "2026_09_JAX_BAL",
+      "result": {
+        "eventId": "2026_09_JAX_BAL",
+        "homeScore": 10,
+        "awayScore": 33,
+        "finalizedAt": "2026-11-07T14:08:09.769505Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "8dae12e582ca4041be08279d102ba82d",
+        "espnObservationId": "e2bbdeb0371247a0abec8ba0ccf39ce7"
+      },
+      "teams": {
+        "JAX": {
+          "rows": 37,
+          "attempts": 26.0,
+          "passing_epa": 12.3874869062777,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 0.0,
+          "carries": 30.0,
+          "rushing_epa": -4.952237565925359,
+          "fg_att": 4.0,
+          "fg_made": 4.0,
+          "passing_epa_per_attempt_plus_sack": 0.4764418040876039,
+          "rushing_epa_per_carry": -0.1650745855308453
+        },
+        "BAL": {
+          "rows": 35,
+          "attempts": 19.0,
+          "passing_epa": -16.71986290294011,
+          "passing_interceptions": 2.0,
+          "sacks_suffered": 1.0,
+          "carries": 34.0,
+          "rushing_epa": -1.9404293710249496,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": -0.8359931451470055,
+          "rushing_epa_per_carry": -0.057071452088969105
+        }
+      },
+      "loser": "BAL",
+      "notes": [
+        "BAL had lower passing EPA than JAX (-16.72 versus 12.39).",
+        "BAL had higher rushing EPA than JAX (-1.94 versus -4.95).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-11-07T14:08:09.769505Z"
+    }
+  ],
   "status": "descriptive-only; no model evaluated"
 }
