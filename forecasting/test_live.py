@@ -12,6 +12,26 @@ import snapshots
 
 
 class LiveTests(unittest.TestCase):
+    def test_reviewed_schedule_lag_is_exact_and_audited(self):
+        kickoff = snapshots.parse_time("2026-11-08T21:05:00Z")
+        game = {"eventId": "2026_09_LV_SF", "kickoff": kickoff,
+                "localDate": kickoff.astimezone(live.features.EASTERN).date(),
+                "awayTeamId": "LV", "homeTeamId": "SF", "neutral": False}
+        other = {"kickoff": kickoff + timedelta(minutes=20), "state": "pre",
+                 "sourceEventId": "401873047", "neutral": False}
+        receipt = dict(id="test", sourceUrl="test", observedAt="2026-11-07T15:00:00Z", sha256="test")
+        def verify(candidate):
+            with patch.object(feeds, "latest", return_value=(receipt, b"test")), patch.object(live, "espn_games", return_value={live.game_key(game): candidate}):
+                return live.verify_inputs([game], [], [game], "2026-11-07T15:00:00Z")
+        evidence = verify(other)
+        self.assertIn(game["eventId"], evidence["20261108"]["reviewedScheduleCorrections"])
+        self.assertEqual(game["kickoff"], kickoff)
+        for change in ({"sourceEventId": "different"}, {"kickoff": kickoff - timedelta(minutes=20)},
+                       {"kickoff": kickoff + timedelta(minutes=25)}, {"state": "in"}, {"neutral": True}):
+            with self.subTest(change=change), self.assertRaises(ValueError):
+                verify(dict(other, **change))
+        self.assertIsNone(live.reviewed_kickoff_correction(dict(game, eventId="another"), other))
+
     def test_live_features_match_historical_builder_without_current_outcomes(self):
         games = live.parse_games((live.ROOT / "data/raw/nflverse-games.csv").read_bytes())
         by_id = {g["eventId"]: g for g in games}

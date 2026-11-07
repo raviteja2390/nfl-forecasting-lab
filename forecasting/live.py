@@ -131,6 +131,21 @@ def required_dates(date, at, event_id=None):
     return sorted(dates)
 
 
+def reviewed_kickoff_correction(game, other):
+    """One manually verified source lag; never move the forecast cutoff later."""
+    if (game["eventId"] == "2026_09_LV_SF"
+            and game["kickoff"] == snapshots.parse_time("2026-11-08T21:05:00Z")
+            and other["kickoff"] == snapshots.parse_time("2026-11-08T21:25:00Z")
+            and other["sourceEventId"] == "401873047"
+            and game["awayTeamId"] == "LV" and game["homeTeamId"] == "SF"):
+        return {"reason": "Reviewed nflverse schedule lag; retain earlier kickoff for all cutoffs",
+                "nflverseKickoff": "2026-11-08T21:05:00Z",
+                "confirmedKickoff": "2026-11-08T21:25:00Z",
+                "reviewedOn": "2026-11-07",
+                "officialSource": "https://www.49ers.com/schedule/"}
+    return None
+
+
 def verify_inputs(targets, rows, games, at):
     by_id = {game["eventId"]: game for game in games}
     boards, observations = {}, {}
@@ -144,8 +159,13 @@ def verify_inputs(targets, rows, games, at):
         observations[date] = {key: receipt[key] for key in ("id", "sourceUrl", "observedAt", "sha256")}
     for game in targets:
         other = boards.get(game_key(game))
-        if not other or other["kickoff"] != game["kickoff"] or other["state"] != "pre":
-            raise ValueError(f'{game["eventId"]}: schedule mismatch, absent, or already started')
+        if not other or other["state"] != "pre":
+            raise ValueError(f'{game["eventId"]}: schedule absent or already started')
+        if other["kickoff"] != game["kickoff"]:
+            correction = reviewed_kickoff_correction(game, other)
+            if correction is None:
+                raise ValueError(f'{game["eventId"]}: kickoff mismatch: nflverse={game["kickoff"].isoformat()}, ESPN={other["kickoff"].isoformat()}')
+            observations[game["localDate"].strftime("%Y%m%d")].setdefault("reviewedScheduleCorrections", {})[game["eventId"]] = correction
         if other["neutral"] is not None and other["neutral"] != game["neutral"]:
             raise ValueError(f'{game["eventId"]}: venue classification mismatch')
     for row in rows:
