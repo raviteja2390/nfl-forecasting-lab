@@ -1,12 +1,18 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-06T05:07:35.514290Z",
+  "lastAttemptAt": "2026-11-07T05:07:36.322489Z",
   "lastSuccessAt": "2026-11-06T05:07:54.123281Z",
-  "state": "succeeded",
-  "finishedAt": "2026-11-06T05:07:54.123281Z",
-  "errors": [],
+  "state": "failed",
+  "finishedAt": "2026-11-07T05:08:16.155516Z",
+  "errors": [
+    {
+      "stage": "team-issuance",
+      "eventId": "2026_09_LV_SF",
+      "error": "2026_09_LV_SF: schedule mismatch, absent, or already started"
+    }
+  ],
   "schedule": {
-    "localDate": "2026-11-06",
+    "localDate": "2026-11-07",
     "timeZone": "America/New_York",
     "cadence": "daily",
     "gamesToday": [],
@@ -14,7 +20,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "50d7c529aef441b5ae951b485a63036f",
-    "observedAt": "2026-11-06T05:07:35.558455Z"
+    "observationId": "fe0c1dfe2aee4f7a964c816b0087cc7f",
+    "observedAt": "2026-11-07T05:07:36.391750Z"
   }
 }
