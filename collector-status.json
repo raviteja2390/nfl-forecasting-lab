@@ -1,18 +1,10 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-08T10:07:39.169694Z",
+  "lastAttemptAt": "2026-11-08T10:20:50.252435Z",
   "lastSuccessAt": "2026-11-08T08:08:04.449764Z",
   "state": "failed",
-  "finishedAt": "2026-11-08T10:08:11.920399Z",
+  "finishedAt": "2026-11-08T10:21:19.285642Z",
   "errors": [
-    {
-      "stage": "player-capture",
-      "feed": [
-        "stats",
-        "2026"
-      ],
-      "error": "stats/2026: curl: (22) The requested URL returned error: 504"
-    },
     {
       "stage": "player-capture",
       "feed": [
@@ -110,7 +102,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "925b5e18b22d43a0be305ee4189b81c5",
-    "observedAt": "2026-11-08T10:07:39.203577Z"
+    "observationId": "80d35321467d426c9f9afb7788edcab5",
+    "observedAt": "2026-11-08T10:20:50.507782Z"
   }
 }
