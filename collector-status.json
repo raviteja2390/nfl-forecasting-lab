@@ -1,19 +1,10 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-08T10:20:50.252435Z",
-  "lastSuccessAt": "2026-11-08T08:08:04.449764Z",
-  "state": "failed",
-  "finishedAt": "2026-11-08T10:21:19.285642Z",
-  "errors": [
-    {
-      "stage": "player-capture",
-      "feed": [
-        "injuries",
-        "2026"
-      ],
-      "error": "injuries/2026: curl: (22) The requested URL returned error: 504"
-    }
-  ],
+  "lastAttemptAt": "2026-11-08T11:07:32.944104Z",
+  "lastSuccessAt": "2026-11-08T11:07:49.342422Z",
+  "state": "succeeded",
+  "finishedAt": "2026-11-08T11:07:49.342422Z",
+  "errors": [],
   "schedule": {
     "localDate": "2026-11-08",
     "timeZone": "America/New_York",
@@ -102,7 +93,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "80d35321467d426c9f9afb7788edcab5",
-    "observedAt": "2026-11-08T10:20:50.507782Z"
+    "observationId": "56e905fb04534018834c32167aa6dcde",
+    "observedAt": "2026-11-08T11:07:33.076037Z"
   }
 }
