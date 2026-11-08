@@ -1,17 +1,10 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-08T21:10:48.241659Z",
-  "lastSuccessAt": "2026-11-08T20:07:46.787601Z",
-  "state": "failed",
-  "finishedAt": "2026-11-08T21:11:16.874731Z",
-  "errors": [
-    {
-      "stage": "result-source-disagreement",
-      "events": [
-        "2026_09_NYJ_KC"
-      ]
-    }
-  ],
+  "lastAttemptAt": "2026-11-08T22:07:33.721791Z",
+  "lastSuccessAt": "2026-11-08T22:07:54.046809Z",
+  "state": "succeeded",
+  "finishedAt": "2026-11-08T22:07:54.046809Z",
+  "errors": [],
   "schedule": {
     "localDate": "2026-11-08",
     "timeZone": "America/New_York",
@@ -100,7 +93,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "3a047770eed84b158c1e623ce9c46196",
-    "observedAt": "2026-11-08T21:10:48.279179Z"
+    "observationId": "ff3bc48213fd41c9a2542e0b534c34b8",
+    "observedAt": "2026-11-08T22:07:33.831107Z"
   }
 }
