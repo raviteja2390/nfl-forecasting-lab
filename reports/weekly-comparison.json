@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-11-07T15:26:48.802085Z",
+  "generatedAt": "2026-11-08T05:08:08.866705Z",
   "season": 2026,
   "week": 9,
   "scheduledGames": 15,
-  "fullyPairedGames": 14,
+  "fullyPairedGames": 15,
   "games": [
     {
       "eventId": "2026_09_JAX_BAL",
@@ -656,16 +656,43 @@
       "scheduledKickoff": "2026-11-10T01:15:00Z",
       "models": {
         "outcome-logit-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.4789295559571453,
+            "awayWin": 0.5169954905361503,
+            "tie": 0.004074953506704424
+          },
+          "generatedAt": "2026-11-08T05:08:05.321290Z",
+          "featureCutoffAt": "2026-11-08T05:08:04.415803Z",
+          "kickoffAt": "2026-11-10T01:15:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
         },
         "player-form-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.4639094499815601,
+            "awayWin": 0.5316190915407013,
+            "tie": 0.004471458477738574
+          },
+          "generatedAt": "2026-11-08T05:08:06.237267Z",
+          "featureCutoffAt": "2026-11-08T05:08:04.415803Z",
+          "kickoffAt": "2026-11-10T01:15:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
         },
         "player-availability-v1": {
-          "status": "not-issued"
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.4554806122866182,
+            "awayWin": 0.5398792864171814,
+            "tie": 0.004640101296200411
+          },
+          "generatedAt": "2026-11-08T05:08:06.240815Z",
+          "featureCutoffAt": "2026-11-08T05:08:04.415803Z",
+          "kickoffAt": "2026-11-10T01:15:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
         }
       },
-      "paired": false,
+      "paired": true,
       "scheduleChanged": false
     }
   ]
