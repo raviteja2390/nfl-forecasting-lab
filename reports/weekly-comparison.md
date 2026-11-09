@@ -2,7 +2,7 @@
 
 2026 NFL Week 9
 
-Updated 2026-11-09T15:07:52.289281Z. 15 scheduled games; 15 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-09T16:08:04.946810Z. 15 scheduled games; 15 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
