@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-09T04:07:53.769482Z",
-  "evidenceCutoffAt": "2026-11-09T04:07:53.769482+00:00",
+  "generatedAt": "2026-11-09T05:08:10.359490Z",
+  "evidenceCutoffAt": "2026-11-09T05:08:10.359490+00:00",
   "reviewAt": "2027-02-08T12:00:00Z",
   "protocolSha256": "bd794c3fe46541a212226fd861adbff6261ac02e55db7fd36f059f09f9da25a7",
   "errors": [],
@@ -11,33 +11,33 @@
   },
   "comparisons": {
     "player-form-v1": {
-      "sameGames": 88,
+      "sameGames": 89,
       "weeks": 7,
-      "referenceFinalized": 88,
+      "referenceFinalized": 89,
       "coverage": 1.0,
       "excludedReferenceEvents": [],
       "reference": {
-        "games": 88,
-        "brier": 0.4335887558924897,
-        "logLoss": 0.6241766042403613,
-        "accuracy": 0.625,
-        "correct": 55,
-        "classified": 88,
+        "games": 89,
+        "brier": 0.43078953444810764,
+        "logLoss": 0.621257707159006,
+        "accuracy": 0.6292134831460674,
+        "correct": 56,
+        "classified": 89,
         "coverage": 1.0
       },
       "challenger": {
-        "games": 88,
-        "brier": 0.4407700595347649,
-        "logLoss": 0.6332383375245421,
-        "accuracy": 0.6363636363636364,
-        "correct": 56,
-        "classified": 88,
+        "games": 89,
+        "brier": 0.4377766901508356,
+        "logLoss": 0.630081932205731,
+        "accuracy": 0.6404494382022472,
+        "correct": 57,
+        "classified": 89,
         "coverage": 1.0
       },
-      "logLossImprovement": -0.009061733284180806,
+      "logLossImprovement": -0.008824225046725087,
       "interval": [
         -0.02653789560002958,
-        0.005421722946964702
+        0.005617411473295853
       ],
       "confidenceLevel": 0.975,
       "gates": {
@@ -52,33 +52,33 @@
       "status": "awaiting-fixed-review"
     },
     "player-availability-v1": {
-      "sameGames": 88,
+      "sameGames": 89,
       "weeks": 7,
-      "referenceFinalized": 88,
+      "referenceFinalized": 89,
       "coverage": 1.0,
       "excludedReferenceEvents": [],
       "reference": {
-        "games": 88,
-        "brier": 0.4335887558924897,
-        "logLoss": 0.6241766042403613,
-        "accuracy": 0.625,
-        "correct": 55,
-        "classified": 88,
+        "games": 89,
+        "brier": 0.43078953444810764,
+        "logLoss": 0.621257707159006,
+        "accuracy": 0.6292134831460674,
+        "correct": 56,
+        "classified": 89,
         "coverage": 1.0
       },
       "challenger": {
-        "games": 88,
-        "brier": 0.43378127506389214,
-        "logLoss": 0.6257650896868846,
-        "accuracy": 0.6704545454545454,
-        "correct": 59,
-        "classified": 88,
+        "games": 89,
+        "brier": 0.4310120580886713,
+        "logLoss": 0.6228677224900206,
+        "accuracy": 0.6741573033707865,
+        "correct": 60,
+        "classified": 89,
         "coverage": 1.0
       },
-      "logLossImprovement": -0.0015884854465233467,
+      "logLossImprovement": -0.0016100153310146803,
       "interval": [
         -0.023390460359664345,
-        0.016540211370748143
+        0.01597798213397281
       ],
       "confidenceLevel": 0.975,
       "gates": {
@@ -96,12 +96,12 @@
   "calibration": {
     "outcome-logit-v1": {
       "metrics": {
-        "games": 88,
-        "brier": 0.4335887558924897,
-        "logLoss": 0.6241766042403613,
-        "accuracy": 0.625,
-        "correct": 55,
-        "classified": 88,
+        "games": 89,
+        "brier": 0.43078953444810764,
+        "logLoss": 0.621257707159006,
+        "accuracy": 0.6292134831460674,
+        "correct": 56,
+        "classified": 89,
         "coverage": 1.0
       },
       "classes": {
@@ -176,12 +176,12 @@
             "lower": 0.6,
             "upper": 0.7,
             "upperInclusive": false,
-            "count": 23,
-            "meanProbability": 0.6475695303702396,
-            "observedRate": 0.5217391304347826,
+            "count": 24,
+            "meanProbability": 0.6495298387237215,
+            "observedRate": 0.5416666666666666,
             "observedRateInterval95": [
-              0.32962737336427406,
-              0.7076284258335335
+              0.3507486535891948,
+              0.72108666268789
             ]
           },
           {
@@ -256,12 +256,12 @@
             "lower": 0.3,
             "upper": 0.4,
             "upperInclusive": false,
-            "count": 23,
-            "meanProbability": 0.3528598296189691,
-            "observedRate": 0.5217391304347826,
+            "count": 24,
+            "meanProbability": 0.35073953857051565,
+            "observedRate": 0.5,
             "observedRateInterval95": [
-              0.32962737336427406,
-              0.7076284258335335
+              0.3142742581957335,
+              0.6857257418042665
             ]
           },
           {
@@ -336,12 +336,12 @@
             "lower": 0.0,
             "upper": 0.1,
             "upperInclusive": false,
-            "count": 88,
-            "meanProbability": 0.004099346853502616,
+            "count": 89,
+            "meanProbability": 0.004091603907846484,
             "observedRate": 0.0,
             "observedRateInterval95": [
-              0,
-              0.0418270666648922
+              3.469446951953614e-18,
+              0.04137654523625252
             ]
           },
           {
@@ -430,12 +430,12 @@
     },
     "player-availability-v1": {
       "metrics": {
-        "games": 88,
-        "brier": 0.43378127506389214,
-        "logLoss": 0.6257650896868846,
-        "accuracy": 0.6704545454545454,
-        "correct": 59,
-        "classified": 88,
+        "games": 89,
+        "brier": 0.4310120580886713,
+        "logLoss": 0.6228677224900206,
+        "accuracy": 0.6741573033707865,
+        "correct": 60,
+        "classified": 89,
         "coverage": 1.0
       },
       "classes": {
@@ -513,12 +513,12 @@
             "lower": 0.6,
             "upper": 0.7,
             "upperInclusive": false,
-            "count": 18,
-            "meanProbability": 0.6534075823746126,
-            "observedRate": 0.3333333333333333,
+            "count": 19,
+            "meanProbability": 0.6554485941356848,
+            "observedRate": 0.3684210526315789,
             "observedRateInterval95": [
-              0.1627877475083369,
-              0.5625053270405489
+              0.19149512745135072,
+              0.5896046683519693
             ]
           },
           {
@@ -593,12 +593,12 @@
             "lower": 0.3,
             "upper": 0.4,
             "upperInclusive": false,
-            "count": 17,
-            "meanProbability": 0.3451602908049039,
-            "observedRate": 0.6470588235294118,
+            "count": 18,
+            "meanProbability": 0.3428866878429287,
+            "observedRate": 0.6111111111111112,
             "observedRateInterval95": [
-              0.41300363485218694,
-              0.8269027960275627
+              0.3861904160223791,
+              0.7969475342783638
             ]
           },
           {
@@ -676,12 +676,12 @@
             "lower": 0.0,
             "upper": 0.1,
             "upperInclusive": false,
-            "count": 88,
-            "meanProbability": 0.004083317796862763,
+            "count": 89,
+            "meanProbability": 0.004077637334826863,
             "observedRate": 0.0,
             "observedRateInterval95": [
-              0,
-              0.0418270666648922
+              3.469446951953614e-18,
+              0.04137654523625252
             ]
           },
           {
@@ -770,12 +770,12 @@
     },
     "player-form-v1": {
       "metrics": {
-        "games": 88,
-        "brier": 0.4407700595347649,
-        "logLoss": 0.6332383375245421,
-        "accuracy": 0.6363636363636364,
-        "correct": 56,
-        "classified": 88,
+        "games": 89,
+        "brier": 0.4377766901508356,
+        "logLoss": 0.630081932205731,
+        "accuracy": 0.6404494382022472,
+        "correct": 57,
+        "classified": 89,
         "coverage": 1.0
       },
       "classes": {
@@ -862,12 +862,12 @@
             "lower": 0.7,
             "upper": 0.8,
             "upperInclusive": false,
-            "count": 16,
-            "meanProbability": 0.7460797498910304,
-            "observedRate": 0.6875,
+            "count": 17,
+            "meanProbability": 0.7435489604115829,
+            "observedRate": 0.7058823529411765,
             "observedRateInterval95": [
-              0.44404355834740666,
-              0.8583535614521796
+              0.4686688993346016,
+              0.8672001038970478
             ]
           },
           {
@@ -918,12 +918,12 @@
             "lower": 0.2,
             "upper": 0.3,
             "upperInclusive": false,
-            "count": 16,
-            "meanProbability": 0.25073963198850735,
-            "observedRate": 0.3125,
+            "count": 17,
+            "meanProbability": 0.2532580431013685,
+            "observedRate": 0.29411764705882354,
             "observedRateInterval95": [
-              0.14164643854782039,
-              0.5559564416525933
+              0.1327998961029523,
+              0.5313311006653985
             ]
           },
           {
@@ -1010,12 +1010,12 @@
             "lower": 0.0,
             "upper": 0.1,
             "upperInclusive": false,
-            "count": 88,
-            "meanProbability": 0.004109657774925326,
+            "count": 89,
+            "meanProbability": 0.004101583534223122,
             "observedRate": 0.0,
             "observedRateInterval95": [
-              0,
-              0.0418270666648922
+              3.469446951953614e-18,
+              0.04137654523625252
             ]
           },
           {
