@@ -1,6 +1,6 @@
 # Prospective forecast tracking
 
-As of 2026-11-08T23:08:02.086206Z. Only forecasts saved before kickoff and independently confirmed final results are scored.
+As of 2026-11-09T00:07:52.340489Z. Only forecasts saved before kickoff and independently confirmed final results are scored.
 
 - **outcome-logit-v1:** 84 scored, 6 pending; accuracy 61.9%, log loss 0.628055.
 - **player-availability-v1:** 84 scored, 6 pending; accuracy 66.7%, log loss 0.628578.
