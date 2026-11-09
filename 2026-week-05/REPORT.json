@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-08T14:32:33.618677+00:00",
+  "generatedAt": "2026-11-09T17:49:47.625162+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-08T14:08:00.600648Z",
-    "sha256": "bbb261be576e15e62c3cdfa57ea7d606e12993233ee53a1f9d464b733e379d45",
-    "bytes": 3781814
+    "observedAt": "2026-11-09T04:07:50.341050Z",
+    "sha256": "37cc6b22fb14bf93b66da623cd996da298486b06f0431a0bd2478ee69842e2b6",
+    "bytes": 4146192
   },
   "season": 2026,
   "week": 5,
-  "sourceStateCommit": "3084d85bed2747e148f341a5ec451524eb858462",
+  "sourceStateCommit": "7fbe50113fd61bd6704ee944c07d64ccbb1994a2",
   "excluded": [
     {
       "eventId": "2026_05_PHI_JAX",
@@ -64,7 +64,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-08T14:32:26.827574Z",
+  "resultsAsOf": "2026-11-09T17:49:40.050317Z",
   "games": [
     {
       "eventId": "2026_05_TB_DAL",
@@ -111,7 +111,7 @@
         "DAL had lower rushing EPA than TB (0.67 versus 4.31).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-08T14:08:00.600648Z"
+      "availableNoEarlierThan": "2026-11-09T04:07:50.341050Z"
     },
     {
       "eventId": "2026_05_BUF_LA",
@@ -158,7 +158,7 @@
         "LAR had lower rushing EPA than BUF (-0.27 versus 8.52).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-08T14:08:00.600648Z"
+      "availableNoEarlierThan": "2026-11-09T04:07:50.341050Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
