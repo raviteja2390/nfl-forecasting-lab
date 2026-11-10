@@ -4,5 +4,5 @@ Interim comparisons are descriptive; no profitability conclusion. Formal decisio
 
 Fixed review: 2027-02-08T12:00:00Z.
 
-- player-form-v1: awaiting-fixed-review; 89 paired scored games across 7 weeks.
-- player-availability-v1: awaiting-fixed-review; 89 paired scored games across 7 weeks.
+- player-form-v1: awaiting-fixed-review; 90 paired scored games across 7 weeks.
+- player-availability-v1: awaiting-fixed-review; 90 paired scored games across 7 weeks.
