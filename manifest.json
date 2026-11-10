@@ -1876,6 +1876,10 @@
       "bytes": 115194,
       "sha256": "9b8b359a41a21dfe5b1abb84342447a01c56ceb0af75c77b0825559e3b6b68f2"
     },
+    "forecasting/data/feeds/blobs/9bb302380381a119735e0cd91ddf725cf6c8315d6605fb53833a1f431e7c5cdb": {
+      "bytes": 14869,
+      "sha256": "9bb302380381a119735e0cd91ddf725cf6c8315d6605fb53833a1f431e7c5cdb"
+    },
     "forecasting/data/feeds/blobs/9bb5556244eead8e0332957c6a880ae4bd17fd68ad00c7e8b69893357b9ae1f3": {
       "bytes": 232246,
       "sha256": "9bb5556244eead8e0332957c6a880ae4bd17fd68ad00c7e8b69893357b9ae1f3"
@@ -8016,6 +8020,10 @@
       "bytes": 589,
       "sha256": "0e6e21bcd1c178115dc0d7416c096d34639faccec55043d1ffa0a2ff76dea2b0"
     },
+    "forecasting/data/feeds/observations/aa917c03b7d84090a89112fb7fb804fa.json": {
+      "bytes": 591,
+      "sha256": "a60a0e40fd6afac21e88bdffd3ec3bc215d537e9a4c0b5d5f26796726c888638"
+    },
     "forecasting/data/feeds/observations/aac96df5c36c4378bd4572731b8e6e1d.json": {
       "bytes": 589,
       "sha256": "12cb5ab661903ddc15cf5804852c8ca142248604203e2b032a028b87509a4d77"
@@ -8103,6 +8111,10 @@
     "forecasting/data/feeds/observations/adfd62c8783c4f0084c11a8ac4b5945e.json": {
       "bytes": 589,
       "sha256": "ef49bbce979348c5721df83826ec7cdac826f2d25fa7d1bf620eae7a62a87161"
+    },
+    "forecasting/data/feeds/observations/ae0f73a689ff4e57be7d8226e52e4b7d.json": {
+      "bytes": 589,
+      "sha256": "1e750d1e4aab4026eeaa325b3fe23b37a597d5ce3ffc0247d987ea6578b744de"
     },
     "forecasting/data/feeds/observations/ae5d0fd73d364b4bbcde2bd54ec92718.json": {
       "bytes": 589,
@@ -9415,6 +9427,10 @@
     "forecasting/data/feeds/observations/e0d56e4fc6524c6eb15bfd07b8adc179.json": {
       "bytes": 591,
       "sha256": "6e6c294bc2e8e958b78117a5dc26ffe0770d4aa6ed14ab9adbc511205b2276d9"
+    },
+    "forecasting/data/feeds/observations/e0e772615d884ebea501e6cd984099d1.json": {
+      "bytes": 589,
+      "sha256": "0b0ed0f28ea4c6843a100ff86414e896f1dd5533080b0f37598566e927429f62"
     },
     "forecasting/data/feeds/observations/e14ea53f6c944048ab4c66eb01a73db6.json": {
       "bytes": 591,
@@ -11140,6 +11156,10 @@
       "bytes": 2187361,
       "sha256": "c6f695b3fff71585844fa02ce4bf03968eb9e73b05017e279ab5c384451eb3c0"
     },
+    "forecasting/data/snapshots/blobs/c71b7f0251e1168ef80506c6b6fa88bd3bba0e11888413311383af9cceaf232b.csv": {
+      "bytes": 2189035,
+      "sha256": "c71b7f0251e1168ef80506c6b6fa88bd3bba0e11888413311383af9cceaf232b"
+    },
     "forecasting/data/snapshots/blobs/c7953f22b3c019ac78ddf6c33d6c622d8d6ca0480b6c404f5445aead07d35cf0.csv": {
       "bytes": 2183213,
       "sha256": "c7953f22b3c019ac78ddf6c33d6c622d8d6ca0480b6c404f5445aead07d35cf0"
@@ -12387,6 +12407,10 @@
     "forecasting/data/snapshots/observations/cf8dd30395c54a248b4ed285dba87a5b.json": {
       "bytes": 911,
       "sha256": "e57aba4861fac0aa0de9d983f802dc6cae3f9bd51836637fd18b91f70d4787d1"
+    },
+    "forecasting/data/snapshots/observations/cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 911,
+      "sha256": "eacda9e9dafa0e177a2ddde1a457df6087c1754692ae42ec11194746fc2d22d2"
     },
     "forecasting/data/snapshots/observations/d13b73c4ab8a4bfea020b7fd1e211281.json": {
       "bytes": 911,
@@ -13707,6 +13731,10 @@
     "forecasting/live/cycles/2026-11-10T01-07-42.815146Z.json": {
       "bytes": 7915,
       "sha256": "52b9c15584ad725711707d8476dc9c124cbb2a4d5ba164f90d377fbdbbee99e2"
+    },
+    "forecasting/live/cycles/2026-11-10T02-07-38.092692Z.json": {
+      "bytes": 7915,
+      "sha256": "5105b127afd067988bc306bda79895383ceeba983f28e23eddaf9f474f98d91d"
     },
     "forecasting/live/forecasts/outcome-logit-v1/2026_03_ARI_SF.json": {
       "bytes": 12402,
@@ -15966,11 +15994,11 @@
     },
     "forecasting/live/operations/health.json": {
       "bytes": 317,
-      "sha256": "420a8b9249ffda2a067c718e1c2d42ae454e0c4e37ebacf1341e7096824b39af"
+      "sha256": "848d46f4c03a4ea595b31ee67c4037894f6186c938214770e11fc9ea6269f169"
     },
     "forecasting/live/operations/status.json": {
       "bytes": 877,
-      "sha256": "c88cb8bf4fbbfd0100378cf25ab6416585e2e7d6f379cd376e888ae554dd8bee"
+      "sha256": "1f57c73e1192b8ac0d63c778c236398ac65455c1d06a2af3e79c889447ed05d4"
     },
     "forecasting/live/rechecks/2026-09-27T06-36-34.497372Z.json": {
       "bytes": 514,
@@ -19180,6 +19208,18 @@
       "bytes": 222,
       "sha256": "c4ac01ee327a4b6dd6b71e5c01320713a6c0bf1e55131e030cbbd230e4cfe9f3"
     },
+    "forecasting/live/rechecks/2026-11-10T02-07-59.348489Z.json": {
+      "bytes": 197,
+      "sha256": "fd8bfe096c849def23e91d025b247073b88c706eadbbaae0a4ccf89a0a6a4f21"
+    },
+    "forecasting/live/rechecks/2026-11-10T02-08-00.215035Z.json": {
+      "bytes": 198,
+      "sha256": "e348e1adc7e5bbf394778ca4f35b2f2f21130bfd2bfcf34e1cee967ecde8fe94"
+    },
+    "forecasting/live/rechecks/2026-11-10T02-08-01.001161Z.json": {
+      "bytes": 222,
+      "sha256": "1cc0ad53b07ee1e88b7ca4508c775fa62d260f46677ebec4c0af3a40e78f4d0d"
+    },
     "forecasting/live/reports/2026-09-27-comparison.md": {
       "bytes": 3182,
       "sha256": "dc8dc20d53dc3566f3a94084d158729a8886d1540c616890af11e84c63bc5d78"
@@ -19382,27 +19422,27 @@
     },
     "forecasting/live/reports/2026-week-09-comparison.json": {
       "bytes": 25749,
-      "sha256": "d98af40748fd91c614943404534b6aa5921559093c540ce1804d39bce24822ca"
+      "sha256": "a7c9aef180734d9f274a7afee85520e791874682397a9b146cc178273c9b0b2c"
     },
     "forecasting/live/reports/2026-week-09-comparison.md": {
       "bytes": 7507,
-      "sha256": "8e4ae5360fdec318c45e072e3750ff9603ae9f2018faeb336cd4fcc85f43545a"
+      "sha256": "28c65bd9d518cb3e472cfda2a62565412195b817ba0090f50d18168a0e8863c9"
     },
     "forecasting/live/reports/STATUS.md": {
       "bytes": 3542,
-      "sha256": "642dead8d9dd2a19ed3e4ee3ef9b8136694896491e6831382c10249a86f4041b"
+      "sha256": "11d61d00057870d770a3ee99e68c9669eb4293d8bb75bd78e5dc41a19b227df8"
     },
     "forecasting/live/reports/forecast-coverage.json": {
       "bytes": 2961,
-      "sha256": "f3f58ef8f57bc6639ed2fc2d94cbf306caf3c26a43add4ae3c27e4fa7808ae71"
+      "sha256": "2a00579e5a6e39e058c939940d4edc4bda80df6ca14382d785e72c50942aec8d"
     },
     "forecasting/live/reports/forecast-coverage.md": {
       "bytes": 1795,
-      "sha256": "f608dc8190b95ac79f469763f4996c682cf7e489b2c48b3f51bf4611bf8f264e"
+      "sha256": "1ee84a3f645296cd0d56ef4c5deab135ec2ddcae89349d98ee070810957f8418"
     },
     "forecasting/live/reports/promotion-status.json": {
       "bytes": 31333,
-      "sha256": "b40167c841156ba4c71e0d60feaa4aebe7a2b34be5450b3d9e027120b5504700"
+      "sha256": "3100f938edc04f0499f345adf4a1fcce2977260d48f915c96a535b3935354471"
     },
     "forecasting/live/reports/promotion-status.md": {
       "bytes": 350,
@@ -19410,19 +19450,19 @@
     },
     "forecasting/live/reports/prospective-scores.json": {
       "bytes": 2240,
-      "sha256": "fb573a6d010a518550cb39c2265a3413b5b27ce77b0e02e915924325672adba1"
+      "sha256": "21c3b79ee03659381f52cf3102322108461e02979f7b11c4097f8be616418947"
     },
     "forecasting/live/reports/prospective-scores.md": {
       "bytes": 824,
-      "sha256": "36d956fed756a88a088db4739c48283673870f2b2716fb0add7edf917a7145d9"
+      "sha256": "ad1fe7da0e1c7056e24965804a388c68f3e55a43a51eb866ef48c73c748d6a02"
     },
     "forecasting/live/reports/weekly-comparison.json": {
       "bytes": 25749,
-      "sha256": "d98af40748fd91c614943404534b6aa5921559093c540ce1804d39bce24822ca"
+      "sha256": "a7c9aef180734d9f274a7afee85520e791874682397a9b146cc178273c9b0b2c"
     },
     "forecasting/live/reports/weekly-comparison.md": {
       "bytes": 7507,
-      "sha256": "8e4ae5360fdec318c45e072e3750ff9603ae9f2018faeb336cd4fcc85f43545a"
+      "sha256": "28c65bd9d518cb3e472cfda2a62565412195b817ba0090f50d18168a0e8863c9"
     },
     "forecasting/live/results/2026_03_ARI_SF/2254f56f3fdb49d29530ac3165ae72cc-3bd784bde7fa45cabd1774fdd92a243b.json": {
       "bytes": 292,
@@ -28912,6 +28952,10 @@
       "bytes": 292,
       "sha256": "556505ebfc968bff56156e2acb7e27c85c5fcb3c7d7f8b56c37b6d72010f6890"
     },
+    "forecasting/live/results/2026_09_ARI_SEA/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 292,
+      "sha256": "8133c360a648770afe09e374e5f5102dae9a1f9bab606ff14a8d79f50352b8bf"
+    },
     "forecasting/live/results/2026_09_ARI_SEA/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 292,
       "sha256": "d1b233d41d38f6feff06772f847f3908a054ed923f2f2f650cf98c0150b1298e"
@@ -29036,6 +29080,10 @@
       "bytes": 293,
       "sha256": "5047ead6bde490405c70e6fa5affb0b80317bd2042530d0bd43b25de408f02d7"
     },
+    "forecasting/live/results/2026_09_CIN_ATL/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 293,
+      "sha256": "a76c08a40c2f47e33b87c573ad78e99a1412456386b30be2ef4c8972bc00718f"
+    },
     "forecasting/live/results/2026_09_CIN_ATL/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 293,
       "sha256": "48cdd8c227978b28fe4bdee565e0198671f998059c6ee081658bdfab0e46026a"
@@ -29152,6 +29200,10 @@
       "bytes": 292,
       "sha256": "1658f5ff80f80a4bfb03c846205314e34a416741c5898c629a0f44312ff0b210"
     },
+    "forecasting/live/results/2026_09_CLE_NO/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 292,
+      "sha256": "bcd8327cc8858fbe9852782a00793921bf09d52d4b3e73eea9b0e253ba492984"
+    },
     "forecasting/live/results/2026_09_CLE_NO/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 292,
       "sha256": "a1aa0bf0f99eb1ffa912465dac04c0e23d0feb395f7d8eef4a6ef9626ebe0ada"
@@ -29264,6 +29316,10 @@
       "bytes": 293,
       "sha256": "1bea1c4749cdc2111bff38e5fb896d34cfa6ef858bbcc3848c6f53eb09e8d575"
     },
+    "forecasting/live/results/2026_09_DAL_IND/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 293,
+      "sha256": "72fd66783601fd2de74e37a9447b4ee0eb18c387bc3570ed3e19c72ca70567d7"
+    },
     "forecasting/live/results/2026_09_DAL_IND/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 293,
       "sha256": "a2418af8f16d7ead49b73b8a578c3206d97e349f4d5fbfa2454097f57eb59761"
@@ -29375,6 +29431,10 @@
     "forecasting/live/results/2026_09_DEN_CAR/a99e0b7f946f4522a5fd4a34b17778fe-252732dcf0be423295e1fe2b5cbde6cd.json": {
       "bytes": 293,
       "sha256": "0aade87e7f99383dc6ffb0d5a7f5b80bca7f3c97a1ef045ef4f61895a36e27fd"
+    },
+    "forecasting/live/results/2026_09_DEN_CAR/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 293,
+      "sha256": "81876ced5440a3a4531e4081c3a79b206d2c80b542e36e34e4b2a0cf0633a10d"
     },
     "forecasting/live/results/2026_09_DEN_CAR/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 293,
@@ -29492,6 +29552,10 @@
       "bytes": 292,
       "sha256": "86c79ca9b24d17930b087d2296bd58b859719a84a4f539ef7078883fef293087"
     },
+    "forecasting/live/results/2026_09_DET_MIA/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 292,
+      "sha256": "3b5f264e8bf34435bf61edc1b1c143c1779ef26a4bc29eb2d051db5117d39ded"
+    },
     "forecasting/live/results/2026_09_DET_MIA/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 292,
       "sha256": "62e5284e23f7d5fea6aad2d346f3aeedb5d8354596e9b98e260d01af9524094d"
@@ -29600,6 +29664,10 @@
       "bytes": 291,
       "sha256": "73f514e0dbf1def5d3c13c14b47a80edb6172d98bc5a259efbcc394fa4c79316"
     },
+    "forecasting/live/results/2026_09_GB_NE/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 291,
+      "sha256": "9bac4c9a42b4f4f6132207badbd17c677cfd28656a433a310160e7fe57304bfa"
+    },
     "forecasting/live/results/2026_09_GB_NE/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 291,
       "sha256": "4c7ca8323e766b7cf296212550e0437e1bf653cab58b7823c6fa0b5300958bc5"
@@ -29699,6 +29767,10 @@
     "forecasting/live/results/2026_09_HOU_LAC/9814c6757d784208bff773b3645d9d8c-98030de42e7043b4b434c5dab814cf44.json": {
       "bytes": 293,
       "sha256": "89b2a0245cc0ef29c2294d60dbcd02cf7ccefcf23d6b93490c81acd15aff654a"
+    },
+    "forecasting/live/results/2026_09_HOU_LAC/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 293,
+      "sha256": "66dd0e76c0aa6552fb4fd70fb19b1135d1dcd54a7a63c48953ce790bf10c49a6"
     },
     "forecasting/live/results/2026_09_HOU_LAC/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 293,
@@ -29964,6 +30036,10 @@
       "bytes": 293,
       "sha256": "cca4892e1c65aedc3e727b2cb45e555023e8c9161d1addd4c3491a79d950d5ab"
     },
+    "forecasting/live/results/2026_09_JAX_BAL/e0e772615d884ebea501e6cd984099d1-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 293,
+      "sha256": "7f51f44adb4b6aab113ee4129aa117fdc5e63e6a13f1e58add92109219c9389d"
+    },
     "forecasting/live/results/2026_09_JAX_BAL/e2bbdeb0371247a0abec8ba0ccf39ce7-8dae12e582ca4041be08279d102ba82d.json": {
       "bytes": 293,
       "sha256": "0cdb87f910d9b93b7cc794f184c5f6c6efa770f55934cd477b1f47a1d3f4e42b"
@@ -30059,6 +30135,10 @@
     "forecasting/live/results/2026_09_LA_WAS/a99e0b7f946f4522a5fd4a34b17778fe-252732dcf0be423295e1fe2b5cbde6cd.json": {
       "bytes": 292,
       "sha256": "22f450201310823bf8ba095a0420c545145eb66ec38f25d211e5fe5294864a8c"
+    },
+    "forecasting/live/results/2026_09_LA_WAS/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 292,
+      "sha256": "c99c9dca98a43833ea2ebe9dcc38d4942314a6f1e79de74119669a807d22e08c"
     },
     "forecasting/live/results/2026_09_LA_WAS/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 292,
@@ -30163,6 +30243,10 @@
     "forecasting/live/results/2026_09_LV_SF/9814c6757d784208bff773b3645d9d8c-98030de42e7043b4b434c5dab814cf44.json": {
       "bytes": 291,
       "sha256": "cfca3f65d545dab8c197a5da11171901f3cdd3ff698510aef6f0bd7262b2b49b"
+    },
+    "forecasting/live/results/2026_09_LV_SF/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 291,
+      "sha256": "191cf5cfcff1e933526cc79d3f409762d03935488380d615d1c54f944aa7c70c"
     },
     "forecasting/live/results/2026_09_LV_SF/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 291,
@@ -30271,6 +30355,10 @@
     "forecasting/live/results/2026_09_NYG_PHI/a99e0b7f946f4522a5fd4a34b17778fe-252732dcf0be423295e1fe2b5cbde6cd.json": {
       "bytes": 293,
       "sha256": "58b15c59a209816016fe76745cef99933053b28254dc52083619ae2019203843"
+    },
+    "forecasting/live/results/2026_09_NYG_PHI/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 293,
+      "sha256": "23d4fc3fd09a689b5e7192e0fc550160abcf8369788898c78cfa94b461a5daf9"
     },
     "forecasting/live/results/2026_09_NYG_PHI/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 293,
@@ -30384,6 +30472,10 @@
       "bytes": 292,
       "sha256": "b47b943908ad7754dd3c0dfaef5e2c4e87b86cd71493e1699a3a44896e98104a"
     },
+    "forecasting/live/results/2026_09_NYJ_KC/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 292,
+      "sha256": "06097155f58d02d92c0cac5f1cb91c00fa83c6247979c45cf2f0cdbbac38e8e8"
+    },
     "forecasting/live/results/2026_09_NYJ_KC/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 292,
       "sha256": "8c9ae92ff758c68e53f75d34c2bc65c67bc11e347ababe7db15c35738344ed19"
@@ -30475,6 +30567,10 @@
     "forecasting/live/results/2026_09_TB_CHI/9814c6757d784208bff773b3645d9d8c-98030de42e7043b4b434c5dab814cf44.json": {
       "bytes": 292,
       "sha256": "c5a1a3414d139bd365827165c4b2eca683dfa525310d57cb60c4d6438ca15d90"
+    },
+    "forecasting/live/results/2026_09_TB_CHI/aa917c03b7d84090a89112fb7fb804fa-cfe2bcef2c3b45359a95848af18169f0.json": {
+      "bytes": 292,
+      "sha256": "06be1b233bf9a6caad71f4fa630be603621869ff3b3254b2aa29341557eb9c28"
     },
     "forecasting/live/results/2026_09_TB_CHI/bb3c22d2c0584ccaa12a2de981766471-162565d923d2497181df07f70f50c348.json": {
       "bytes": 292,
