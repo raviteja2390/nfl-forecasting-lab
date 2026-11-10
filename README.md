@@ -1,6 +1,6 @@
 # NFL postgame research reports
 
-Generated 2026-11-09T17:49:40.050317Z. Source forecast-state commit: `7fbe50113fd61bd6704ee944c07d64ccbb1994a2`.
+Generated 2026-11-10T15:47:36.257078Z. Source forecast-state commit: `4418af72926146013c610a2e1499ba22bfb4ed58`.
 
 Descriptive statistics only; no model training, causal claims or changes to frozen forecasts. Raw inputs remain in their existing stores; this branch contains derived reports only.
 
@@ -15,3 +15,4 @@ Report generation uses the latest available archived statistics, which can still
 - [2026-week-07](2026-week-07/REPORT.md): 14 games analyzed; 0 withheld before statistical coverage checks.
 - [2026-week-08](2026-week-08/REPORT.md): 14 games analyzed; 0 withheld before statistical coverage checks.
 - [2026-week-09](2026-week-09/REPORT.md): 13 games analyzed; 1 withheld before statistical coverage checks.
+- [2026-week-10](2026-week-10/REPORT.md): 0 games analyzed; 14 withheld before statistical coverage checks.
