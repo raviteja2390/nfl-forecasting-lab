@@ -1,6 +1,6 @@
 # 2026 Week 9 postgame analysis — descriptive only
 
-Statistics observed: 2026-11-09T04:07:50.341050Z. Results snapshot: 2026-11-10T15:47:36.257078Z.
+Statistics observed: 2026-11-11T05:08:03.738076Z. Results snapshot: 2026-11-11T15:37:41.877544Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -227,13 +227,43 @@ These are statistical differences associated with the final result, not proven c
 - NE had higher rushing EPA than GB (2.10 versus -3.76).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
-## TB at CHI
+## TB 24 — CHI 27
 
-Verified final exists, but player-stat coverage is incomplete; analysis withheld.
+| Measure | TB | CHI |
+|---|---:|---:|
+| Passing EPA | -12.59 | -7.92 |
+| Passing EPA / (attempts + sacks) | -0.350 | -0.208 |
+| Rushing EPA | -0.75 | -2.81 |
+| Rushing EPA / carry | -0.027 | -0.128 |
+| Interceptions thrown | 2 | 4 |
+| Sacks suffered | 4 | 1 |
+| Field goals made | 3 | 2 |
+| Field goals attempted | 3 | 2 |
+
+- TB had lower passing EPA than CHI (-12.59 versus -7.92).
+- TB had higher rushing EPA than CHI (-0.75 versus -2.81).
+- The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
+
+## BUF 23 — MIN 6
+
+| Measure | BUF | MIN |
+|---|---:|---:|
+| Passing EPA | -0.12 | -26.26 |
+| Passing EPA / (attempts + sacks) | -0.003 | -0.772 |
+| Rushing EPA | -3.23 | -7.60 |
+| Rushing EPA / carry | -0.073 | -0.633 |
+| Interceptions thrown | 1 | 2 |
+| Sacks suffered | 4 | 2 |
+| Field goals made | 3 | 2 |
+| Field goals attempted | 3 | 2 |
+
+- MIN had lower passing EPA than BUF (-26.26 versus -0.12).
+- MIN had lower rushing EPA than BUF (-7.60 versus -3.23).
+- The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## Coverage and next test
 
-13 games have both a verified result and team player-stat rows. Other scheduled games are excluded, not treated as zero-stat games.
+15 games have both a verified result and team player-stat rows. Other scheduled games are excluded, not treated as zero-stat games.
 
 Passing EPA is aggregated only from passing records; receiving EPA is excluded to avoid counting the same passing plays twice. The passing denominator is attempts plus sacks, not all dropbacks (scrambles excluded from that denominator). Rushing totals can include kneels and scrambles. A missing kicker row is unknown, not proof of zero attempts. Player sums are not an exhaustive team play-by-play accounting.
 
