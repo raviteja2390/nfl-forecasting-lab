@@ -1,20 +1,27 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-11T05:07:38.415645Z",
-  "lastSuccessAt": "2026-11-11T05:08:11.404535Z",
+  "lastAttemptAt": "2026-11-12T05:07:43.931730Z",
+  "lastSuccessAt": "2026-11-12T05:08:07.427282Z",
   "state": "succeeded",
-  "finishedAt": "2026-11-11T05:08:11.404535Z",
+  "finishedAt": "2026-11-12T05:08:07.427282Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-11-11",
+    "localDate": "2026-11-12",
     "timeZone": "America/New_York",
-    "cadence": "daily",
-    "gamesToday": [],
-    "scheduledGameCount": 0,
+    "cadence": "hourly",
+    "gamesToday": [
+      {
+        "eventId": "2026_10_WAS_NYG",
+        "awayTeam": "WAS",
+        "homeTeam": "NYG",
+        "kickoffEastern": "20:15"
+      }
+    ],
+    "scheduledGameCount": 1,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "54b5698c16284909b1c72675ba667427",
-    "observedAt": "2026-11-11T05:07:38.455941Z"
+    "observationId": "8295eec0561e4a9cb77210d59624a0ee",
+    "observedAt": "2026-11-12T05:07:44.099584Z"
   }
 }
