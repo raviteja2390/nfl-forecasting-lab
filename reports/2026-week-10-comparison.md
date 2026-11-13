@@ -2,7 +2,7 @@
 
 2026 NFL Week 10
 
-Updated 2026-11-13T04:08:00.911711Z. 14 scheduled games; 1 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-13T05:08:02.254565Z. 14 scheduled games; 1 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
