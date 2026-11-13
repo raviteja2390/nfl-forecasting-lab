@@ -1,6 +1,6 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-12T16:17:43.528394+00:00",
+  "generatedAt": "2026-11-13T15:41:43.357300+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
     "observedAt": "2026-11-11T05:08:03.738076Z",
@@ -9,11 +9,11 @@
   },
   "season": 2026,
   "week": 10,
-  "sourceStateCommit": "37c39814bf766b7bd7e3ba311e5061710364e083",
+  "sourceStateCommit": "b92a9135947a5528bb530006bf9f2aecb45408ef",
   "excluded": [
     {
       "eventId": "2026_10_WAS_NYG",
-      "reason": "no-verified-final"
+      "reason": "stats-snapshot-predates-kickoff"
     },
     {
       "eventId": "2026_10_NE_DET",
@@ -68,7 +68,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-12T16:17:34.631750Z",
+  "resultsAsOf": "2026-11-13T15:41:37.868107Z",
   "games": [],
   "status": "descriptive-only; no model evaluated"
 }
