@@ -1,6 +1,6 @@
 # 2026 Week 9 postgame analysis — descriptive only
 
-Statistics observed: 2026-11-11T05:08:03.738076Z. Results snapshot: 2026-11-13T15:41:37.868107Z.
+Statistics observed: 2026-11-14T05:08:01.426843Z. Results snapshot: 2026-11-14T14:31:06.408393Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -112,8 +112,8 @@ These are statistical differences associated with the final result, not proven c
 
 | Measure | LAR | WAS |
 |---|---:|---:|
-| Passing EPA | 2.44 | -3.91 |
-| Passing EPA / (attempts + sacks) | 0.055 | -0.100 |
+| Passing EPA | 2.44 | -3.87 |
+| Passing EPA / (attempts + sacks) | 0.055 | -0.099 |
 | Rushing EPA | 0.92 | -4.24 |
 | Rushing EPA / carry | 0.032 | -0.223 |
 | Interceptions thrown | 1 | 0 |
@@ -121,7 +121,7 @@ These are statistical differences associated with the final result, not proven c
 | Field goals made | 2 | 2 |
 | Field goals attempted | 2 | 2 |
 
-- WAS had lower passing EPA than LAR (-3.91 versus 2.44).
+- WAS had lower passing EPA than LAR (-3.87 versus 2.44).
 - WAS had lower rushing EPA than LAR (-4.24 versus 0.92).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
