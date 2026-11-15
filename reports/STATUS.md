@@ -1,6 +1,6 @@
 # NFL research status
 
-Generated 2026-11-15T13:07:52.066277Z. Log loss is the primary metric. No demonstrated profitability.
+Generated 2026-11-15T14:07:55.665077Z. Log loss is the primary metric. No demonstrated profitability.
 
 **Primary:** outcome-logit-v1. Repository is public. Cloud collection runs on GitHub Actions.
 
@@ -20,8 +20,8 @@ Unique games are shared across models; do not count each model forecast as an in
 
 ## Candidate and confidence status
 
-- player-form-v1: awaiting-fixed-review; paired log-loss improvement -0.009444328523004142; prospective interval [-0.02856838658413242, 0.004784870424464208] at 97.5%. Evidence as of 2026-11-15T13:07:51.521909Z.
-- player-availability-v1: awaiting-fixed-review; paired log-loss improvement 0.0009736490030330947; prospective interval [-0.02038345777463337, 0.020463794532224067] at 97.5%. Evidence as of 2026-11-15T13:07:51.521909Z.
+- player-form-v1: awaiting-fixed-review; paired log-loss improvement -0.009444328523004142; prospective interval [-0.02856838658413242, 0.004784870424464208] at 97.5%. Evidence as of 2026-11-15T14:07:54.708338Z.
+- player-availability-v1: awaiting-fixed-review; paired log-loss improvement 0.0009736490030330947; prospective interval [-0.02038345777463337, 0.020463794532224067] at 97.5%. Evidence as of 2026-11-15T14:07:54.708338Z.
 - Opponent-adjusted-v1: offline; protocol approved; shadow issuance disabled pending tested integration. Log loss mixed across 2023/2024/2025. Exploratory unadjusted 95% interval [-0.002601, 0.003320] includes zero.
 - Its Bonferroni sensitivity interval (99.0%, family size 5): [-0.003394, 0.004356]; includes zero.
 - Margin-ridge-v1: SHELVED; log loss worse in all three cohorts; bootstrap not computed. Tie overprediction quantified. No shadow/live use.
