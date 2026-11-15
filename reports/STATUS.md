@@ -1,6 +1,6 @@
 # NFL research status
 
-Generated 2026-11-15T17:08:07.617544Z. Log loss is the primary metric. No demonstrated profitability.
+Generated 2026-11-15T18:07:55.915504Z. Log loss is the primary metric. No demonstrated profitability.
 
 **Primary:** outcome-logit-v1. Repository is public. Cloud collection runs on GitHub Actions.
 
@@ -12,16 +12,16 @@ Generated 2026-11-15T17:08:07.617544Z. Log loss is the primary metric. No demons
 
 **Forecast coverage: GAPS — 13 games with missed issuance.** [Gap details](forecast-coverage.md). Successful collection does not repair historical gaps.
 
-- outcome-logit-v1: log loss 0.627607407688813; 91 scored, 13 pending, 104 issued.
-- player-form-v1: log loss 0.6370517362118171; 91 scored, 13 pending, 104 issued.
-- player-availability-v1: log loss 0.6266337586857799; 91 scored, 13 pending, 104 issued.
+- outcome-logit-v1: log loss 0.6274551405100266; 92 scored, 12 pending, 104 issued.
+- player-form-v1: log loss 0.636663634554057; 92 scored, 12 pending, 104 issued.
+- player-availability-v1: log loss 0.6257399722192815; 92 scored, 12 pending, 104 issued.
 
 Unique games are shared across models; do not count each model forecast as an independent game. The two player challengers remain in their fixed prospective protocol (review February 8, 2027; >=200 paired games and >=12 weeks). No new candidate is being added while evidence accumulates.
 
 ## Candidate and confidence status
 
-- player-form-v1: awaiting-fixed-review; paired log-loss improvement -0.009444328523004142; prospective interval [-0.02856838658413242, 0.004784870424464208] at 97.5%. Evidence as of 2026-11-15T17:08:06.840822Z.
-- player-availability-v1: awaiting-fixed-review; paired log-loss improvement 0.0009736490030330947; prospective interval [-0.02038345777463337, 0.020463794532224067] at 97.5%. Evidence as of 2026-11-15T17:08:06.840822Z.
+- player-form-v1: awaiting-fixed-review; paired log-loss improvement -0.009208494044030346; prospective interval [-0.027299306425063823, 0.0048283793341968705] at 97.5%. Evidence as of 2026-11-15T18:07:55.324009Z.
+- player-availability-v1: awaiting-fixed-review; paired log-loss improvement 0.0017151682907451393; prospective interval [-0.019488303444933946, 0.02182279763593895] at 97.5%. Evidence as of 2026-11-15T18:07:55.324009Z.
 - Opponent-adjusted-v1: offline; protocol approved; shadow issuance disabled pending tested integration. Log loss mixed across 2023/2024/2025. Exploratory unadjusted 95% interval [-0.002601, 0.003320] includes zero.
 - Its Bonferroni sensitivity interval (99.0%, family size 5): [-0.003394, 0.004356]; includes zero.
 - Margin-ridge-v1: SHELVED; log loss worse in all three cohorts; bootstrap not computed. Tie overprediction quantified. No shadow/live use.
