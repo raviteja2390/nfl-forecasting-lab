@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-14T14:31:15.653774+00:00",
+  "generatedAt": "2026-11-15T14:58:44.629890+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-14T05:08:01.426843Z",
+    "observedAt": "2026-11-15T14:07:51.458627Z",
     "sha256": "a7f51400624ae41f38db1395122115ff653231789ed0a840a3a7fae9e3bc977a",
     "bytes": 4241495
   },
   "season": 2026,
   "week": 10,
-  "sourceStateCommit": "6d3a5800f71743581ecba5aba8973710f04f072c",
+  "sourceStateCommit": "40571fda33a9a93628350e504c6063cbd118385e",
   "excluded": [
     {
       "eventId": "2026_10_NE_DET",
@@ -64,7 +64,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-14T14:31:06.408393Z",
+  "resultsAsOf": "2026-11-15T14:58:37.272588Z",
   "games": [
     {
       "eventId": "2026_10_WAS_NYG",
@@ -72,10 +72,10 @@
         "eventId": "2026_10_WAS_NYG",
         "homeScore": 21,
         "awayScore": 24,
-        "finalizedAt": "2026-11-14T05:08:32.057608Z",
+        "finalizedAt": "2026-11-15T14:07:53.712909Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "130dd606986647aea30c2731dccb109c",
-        "espnObservationId": "40bea729e5294fb481aaef1ee1f234f2"
+        "nflverseObservationId": "c2dc71691ce74f2bbaa1e68781fbdf4a",
+        "espnObservationId": "043e8cc67e3e416992584791e1d0fb95"
       },
       "teams": {
         "WAS": {
@@ -111,7 +111,7 @@
         "NYG had higher rushing EPA than WAS (2.71 versus -0.86).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-14T05:08:32.057608Z"
+      "availableNoEarlierThan": "2026-11-15T14:07:53.712909Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
