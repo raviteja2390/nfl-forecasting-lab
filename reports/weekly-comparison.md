@@ -2,7 +2,7 @@
 
 2026 NFL Week 10
 
-Updated 2026-11-14T05:08:33.233019Z. 14 scheduled games; 13 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-15T05:08:15.972473Z. 14 scheduled games; 14 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -88,7 +88,6 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 
 ## LAC at BAL — Mon Nov 16, 08:15 PM EST
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** LAC 31.9% · BAL 67.7% · tie 0.4%. Issued 2026-11-15T05:08:12.333373Z; cutoff 2026-11-15T05:08:11.381703Z.
+- **Player form (shadow):** LAC 30.9% · BAL 68.7% · tie 0.3%. Issued 2026-11-15T05:08:12.811031Z; cutoff 2026-11-15T05:08:11.381703Z.
+- **Player availability (shadow):** LAC 32.5% · BAL 67.2% · tie 0.4%. Issued 2026-11-15T05:08:12.813451Z; cutoff 2026-11-15T05:08:11.381703Z.
