@@ -1,17 +1,17 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-15T14:58:44.374273+00:00",
+  "generatedAt": "2026-11-16T17:28:29.654962+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-15T14:07:51.458627Z",
-    "sha256": "a7f51400624ae41f38db1395122115ff653231789ed0a840a3a7fae9e3bc977a",
-    "bytes": 4241495
+    "observedAt": "2026-11-16T04:07:51.281630Z",
+    "sha256": "9a404180616279079e781f474b783c686fc3227e6070662871376c4c477babfe",
+    "bytes": 4586113
   },
   "season": 2026,
   "week": 8,
-  "sourceStateCommit": "40571fda33a9a93628350e504c6063cbd118385e",
+  "sourceStateCommit": "57f9b6bf6e0e112c0abadc9fd84624aa4eef507f",
   "excluded": [],
-  "resultsAsOf": "2026-11-15T14:58:37.272588Z",
+  "resultsAsOf": "2026-11-16T17:28:21.446927Z",
   "games": [
     {
       "eventId": "2026_08_CAR_GB",
@@ -58,7 +58,7 @@
         "CAR had higher rushing EPA than GB (-2.83 versus -3.40).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_ARI_DAL",
@@ -105,7 +105,7 @@
         "DAL had lower rushing EPA than ARI (-6.98 versus 5.61).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_ATL_TB",
@@ -152,7 +152,7 @@
         "ATL had higher rushing EPA than TB (-3.06 versus -5.53).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_BAL_BUF",
@@ -199,7 +199,7 @@
         "BAL had lower rushing EPA than BUF (-3.62 versus -2.40).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_CLE_PIT",
@@ -246,7 +246,7 @@
         "CLE had lower rushing EPA than PIT (-6.91 versus 11.24).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_IND_JAX",
@@ -293,7 +293,7 @@
         "IND had lower rushing EPA than JAX (-6.86 versus 6.09).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_LV_NYJ",
@@ -340,7 +340,7 @@
         "NYJ had higher rushing EPA than LV (3.49 versus -4.12).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_MIN_DET",
@@ -357,14 +357,14 @@
         "MIN": {
           "rows": 35,
           "attempts": 29.0,
-          "passing_epa": -1.65046615518496,
+          "passing_epa": -1.65046615518495,
           "passing_interceptions": 1.0,
           "sacks_suffered": 3.0,
           "carries": 18.0,
           "rushing_epa": -2.963619777117854,
           "fg_att": 1.0,
           "fg_made": 0.0,
-          "passing_epa_per_attempt_plus_sack": -0.05157706734953,
+          "passing_epa_per_attempt_plus_sack": -0.05157706734952969,
           "rushing_epa_per_carry": -0.16464554317321412
         },
         "DET": {
@@ -387,7 +387,7 @@
         "MIN had lower rushing EPA than DET (-2.96 versus -0.27).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_TEN_CIN",
@@ -434,7 +434,7 @@
         "TEN had higher rushing EPA than CIN (6.31 versus -6.49).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_LAC_LA",
@@ -481,7 +481,7 @@
         "LAC had lower rushing EPA than LAR (-10.08 versus 1.13).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_KC_DEN",
@@ -528,7 +528,7 @@
         "KC had higher rushing EPA than DEN (0.16 versus -1.09).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_NE_MIA",
@@ -575,7 +575,7 @@
         "MIA had lower rushing EPA than NE (-6.98 versus 0.02).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_PHI_WAS",
@@ -622,7 +622,7 @@
         "PHI had lower rushing EPA than WAS (-2.36 versus 3.45).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     },
     {
       "eventId": "2026_08_CHI_SEA",
@@ -669,7 +669,7 @@
         "SEA had lower rushing EPA than CHI (-2.76 versus 6.71).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-15T14:07:51.458627Z"
+      "availableNoEarlierThan": "2026-11-16T04:07:51.281630Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
