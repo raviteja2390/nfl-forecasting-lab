@@ -1,0 +1,70 @@
+{
+  "study": "postgame-research-v1",
+  "generatedAt": "2026-11-17T17:05:22.202064+00:00",
+  "statsProvenance": {
+    "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+    "observedAt": "2026-11-16T04:07:51.281630Z",
+    "sha256": "9a404180616279079e781f474b783c686fc3227e6070662871376c4c477babfe",
+    "bytes": 4586113
+  },
+  "season": 2026,
+  "week": 11,
+  "sourceStateCommit": "90d403fca1bf921b922c3190c63b57af93223c91",
+  "excluded": [
+    {
+      "eventId": "2026_11_IND_HOU",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_ARI_KC",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_BAL_CAR",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_JAX_NYG",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_MIA_BUF",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_NO_CHI",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_TB_DET",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_TEN_DAL",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_NYJ_LAC",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_LV_DEN",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_PIT_PHI",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_MIN_SF",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_11_CIN_WAS",
+      "reason": "no-verified-final"
+    }
+  ],
+  "resultsAsOf": "2026-11-17T17:05:15.518232Z",
+  "games": [],
+  "status": "descriptive-only; no model evaluated"
+}

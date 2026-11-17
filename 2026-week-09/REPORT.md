@@ -1,6 +1,6 @@
 # 2026 Week 9 postgame analysis — descriptive only
 
-Statistics observed: 2026-11-16T04:07:51.281630Z. Results snapshot: 2026-11-16T17:28:21.446927Z.
+Statistics observed: 2026-11-16T04:07:51.281630Z. Results snapshot: 2026-11-17T17:05:15.518232Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
