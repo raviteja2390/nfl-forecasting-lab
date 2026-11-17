@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-17T04:07:39.807073Z",
-  "lastSuccessAt": "2026-11-17T04:08:07.844957Z",
+  "lastAttemptAt": "2026-11-17T05:07:43.090954Z",
+  "lastSuccessAt": "2026-11-17T05:08:18.250428Z",
   "state": "succeeded",
-  "finishedAt": "2026-11-17T04:08:07.844957Z",
+  "finishedAt": "2026-11-17T05:08:18.250428Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-11-16",
+    "localDate": "2026-11-17",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_10_LAC_BAL",
-        "awayTeam": "LAC",
-        "homeTeam": "BAL",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "95a3d9a89f344456977cfa323e4b5582",
-    "observedAt": "2026-11-17T04:07:39.872216Z"
+    "observationId": "cb8ae2f754554e3dbc53d4dce15a788a",
+    "observedAt": "2026-11-17T05:07:43.169308Z"
   }
 }
