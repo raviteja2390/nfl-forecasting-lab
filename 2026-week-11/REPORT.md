@@ -1,6 +1,6 @@
 # 2026 Week 11 postgame analysis — descriptive only
 
-Statistics observed: 2026-11-16T04:07:51.281630Z. Results snapshot: 2026-11-17T17:05:15.518232Z.
+Statistics observed: 2026-11-18T05:08:09.081199Z. Results snapshot: 2026-11-18T16:43:25.062175Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 

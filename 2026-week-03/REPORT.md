@@ -1,6 +1,6 @@
 # 2026 Week 3 postgame analysis — descriptive only
 
-Statistics observed: 2026-11-16T04:07:51.281630Z. Results snapshot: 2026-11-17T17:05:15.518232Z.
+Statistics observed: 2026-11-18T05:08:09.081199Z. Results snapshot: 2026-11-18T16:43:25.062175Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -10,255 +10,255 @@ These are statistical differences associated with the final result, not proven c
 
 | Measure | CAR | CLE |
 |---|---:|---:|
-| Passing EPA | -5.91 | 2.14 |
-| Passing EPA / (attempts + sacks) | -0.116 | 0.065 |
-| Rushing EPA | -3.54 | -3.50 |
-| Rushing EPA / carry | -0.154 | -0.117 |
+| Passing EPA | -5.28 | 2.75 |
+| Passing EPA / (attempts + sacks) | -0.104 | 0.083 |
+| Rushing EPA | -3.32 | -3.46 |
+| Rushing EPA / carry | -0.144 | -0.115 |
 | Interceptions thrown | 1 | 0 |
 | Sacks suffered | 3 | 2 |
 | Field goals made | 4 | 2 |
 | Field goals attempted | 4 | 2 |
 
-- CAR had lower passing EPA than CLE (-5.91 versus 2.14).
-- CAR had lower rushing EPA than CLE (-3.54 versus -3.50).
+- CAR had lower passing EPA than CLE (-5.28 versus 2.75).
+- CAR had higher rushing EPA than CLE (-3.32 versus -3.46).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## CIN 27 — PIT 30
 
 | Measure | CIN | PIT |
 |---|---:|---:|
-| Passing EPA | 14.65 | 8.53 |
-| Passing EPA / (attempts + sacks) | 0.386 | 0.237 |
-| Rushing EPA | 1.07 | 1.03 |
-| Rushing EPA / carry | 0.059 | 0.045 |
+| Passing EPA | 12.66 | 6.74 |
+| Passing EPA / (attempts + sacks) | 0.333 | 0.187 |
+| Rushing EPA | 0.81 | 0.48 |
+| Rushing EPA / carry | 0.045 | 0.021 |
 | Interceptions thrown | 0 | 1 |
 | Sacks suffered | 1 | 2 |
 | Field goals made | 2 | 3 |
 | Field goals attempted | 2 | 3 |
 
-- CIN had higher passing EPA than PIT (14.65 versus 8.53).
-- CIN had higher rushing EPA than PIT (1.07 versus 1.03).
+- CIN had higher passing EPA than PIT (12.66 versus 6.74).
+- CIN had higher rushing EPA than PIT (0.81 versus 0.48).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## HOU 17 — IND 19
 
 | Measure | HOU | IND |
 |---|---:|---:|
-| Passing EPA | -3.09 | -6.87 |
-| Passing EPA / (attempts + sacks) | -0.103 | -0.172 |
-| Rushing EPA | -1.61 | -1.20 |
-| Rushing EPA / carry | -0.077 | -0.039 |
+| Passing EPA | -2.47 | -5.16 |
+| Passing EPA / (attempts + sacks) | -0.082 | -0.129 |
+| Rushing EPA | -1.02 | -1.06 |
+| Rushing EPA / carry | -0.048 | -0.034 |
 | Interceptions thrown | 0 | 1 |
 | Sacks suffered | 3 | 4 |
 | Field goals made | 1 | 4 |
 | Field goals attempted | 1 | 4 |
 
-- HOU had higher passing EPA than IND (-3.09 versus -6.87).
-- HOU had lower rushing EPA than IND (-1.61 versus -1.20).
+- HOU had higher passing EPA than IND (-2.47 versus -5.16).
+- HOU had higher rushing EPA than IND (-1.02 versus -1.06).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## KC 24 — MIA 10
 
 | Measure | KC | MIA |
 |---|---:|---:|
-| Passing EPA | 12.92 | -4.05 |
-| Passing EPA / (attempts + sacks) | 0.538 | -0.112 |
-| Rushing EPA | -6.16 | -6.08 |
-| Rushing EPA / carry | -0.246 | -0.196 |
+| Passing EPA | 10.65 | -3.76 |
+| Passing EPA / (attempts + sacks) | 0.444 | -0.104 |
+| Rushing EPA | -5.03 | -4.84 |
+| Rushing EPA / carry | -0.201 | -0.156 |
 | Interceptions thrown | 1 | 1 |
 | Sacks suffered | 0 | 0 |
 | Field goals made | 1 | 1 |
 | Field goals attempted | 2 | 1 |
 
-- MIA had lower passing EPA than KC (-4.05 versus 12.92).
-- MIA had higher rushing EPA than KC (-6.08 versus -6.16).
+- MIA had lower passing EPA than KC (-3.76 versus 10.65).
+- MIA had higher rushing EPA than KC (-4.84 versus -5.03).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## LAC 16 — BUF 24
 
 | Measure | LAC | BUF |
 |---|---:|---:|
-| Passing EPA | -6.37 | -0.42 |
-| Passing EPA / (attempts + sacks) | -0.177 | -0.014 |
-| Rushing EPA | 1.80 | 2.11 |
-| Rushing EPA / carry | 0.064 | 0.064 |
+| Passing EPA | -5.71 | 0.60 |
+| Passing EPA / (attempts + sacks) | -0.159 | 0.020 |
+| Rushing EPA | 1.09 | 2.06 |
+| Rushing EPA / carry | 0.039 | 0.062 |
 | Interceptions thrown | 1 | 2 |
 | Sacks suffered | 2 | 4 |
 | Field goals made | 3 | 1 |
 | Field goals attempted | 4 | 1 |
 
-- LAC had lower passing EPA than BUF (-6.37 versus -0.42).
-- LAC had lower rushing EPA than BUF (1.80 versus 2.11).
+- LAC had lower passing EPA than BUF (-5.71 versus 0.60).
+- LAC had lower rushing EPA than BUF (1.09 versus 2.06).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## NE 6 — JAX 35
 
 | Measure | NE | JAX |
 |---|---:|---:|
-| Passing EPA | -13.91 | 7.56 |
-| Passing EPA / (attempts + sacks) | -0.409 | 0.252 |
-| Rushing EPA | -1.25 | 6.12 |
-| Rushing EPA / carry | -0.048 | 0.204 |
+| Passing EPA | -12.49 | 7.19 |
+| Passing EPA / (attempts + sacks) | -0.367 | 0.240 |
+| Rushing EPA | -1.07 | 5.25 |
+| Rushing EPA / carry | -0.041 | 0.175 |
 | Interceptions thrown | 2 | 1 |
 | Sacks suffered | 3 | 1 |
 | Field goals made | 2 | 0 |
 | Field goals attempted | 3 | 1 |
 
-- NE had lower passing EPA than JAX (-13.91 versus 7.56).
-- NE had lower rushing EPA than JAX (-1.25 versus 6.12).
+- NE had lower passing EPA than JAX (-12.49 versus 7.19).
+- NE had lower rushing EPA than JAX (-1.07 versus 5.25).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## NYJ 24 — DET 31
 
 | Measure | NYJ | DET |
 |---|---:|---:|
-| Passing EPA | 10.88 | 12.14 |
-| Passing EPA / (attempts + sacks) | 0.259 | 0.357 |
-| Rushing EPA | -4.90 | -1.85 |
-| Rushing EPA / carry | -0.258 | -0.062 |
+| Passing EPA | 9.05 | 9.87 |
+| Passing EPA / (attempts + sacks) | 0.215 | 0.290 |
+| Rushing EPA | -4.10 | -1.47 |
+| Rushing EPA / carry | -0.216 | -0.049 |
 | Interceptions thrown | 0 | 0 |
 | Sacks suffered | 5 | 2 |
 | Field goals made | 1 | 1 |
 | Field goals attempted | 1 | 1 |
 
-- NYJ had lower passing EPA than DET (10.88 versus 12.14).
-- NYJ had lower rushing EPA than DET (-4.90 versus -1.85).
+- NYJ had lower passing EPA than DET (9.05 versus 9.87).
+- NYJ had lower rushing EPA than DET (-4.10 versus -1.47).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## SEA 31 — WAS 33
 
 | Measure | SEA | WAS |
 |---|---:|---:|
-| Passing EPA | 5.01 | 3.85 |
-| Passing EPA / (attempts + sacks) | 0.109 | 0.117 |
-| Rushing EPA | -7.98 | -10.48 |
-| Rushing EPA / carry | -0.443 | -0.328 |
+| Passing EPA | 5.07 | 4.06 |
+| Passing EPA / (attempts + sacks) | 0.110 | 0.123 |
+| Rushing EPA | -6.37 | -8.35 |
+| Rushing EPA / carry | -0.354 | -0.261 |
 | Interceptions thrown | 2 | 0 |
 | Sacks suffered | 0 | 2 |
 | Field goals made | 1 | 2 |
 | Field goals attempted | 1 | 2 |
 
-- SEA had higher passing EPA than WAS (5.01 versus 3.85).
-- SEA had higher rushing EPA than WAS (-7.98 versus -10.48).
+- SEA had higher passing EPA than WAS (5.07 versus 4.06).
+- SEA had higher rushing EPA than WAS (-6.37 versus -8.35).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## TEN 7 — NYG 12
 
 | Measure | TEN | NYG |
 |---|---:|---:|
-| Passing EPA | -6.49 | -6.11 |
-| Passing EPA / (attempts + sacks) | -0.180 | -0.245 |
-| Rushing EPA | -1.87 | -0.50 |
-| Rushing EPA / carry | -0.089 | -0.015 |
+| Passing EPA | -4.70 | -5.19 |
+| Passing EPA / (attempts + sacks) | -0.130 | -0.208 |
+| Rushing EPA | -1.37 | -0.40 |
+| Rushing EPA / carry | -0.065 | -0.012 |
 | Interceptions thrown | 1 | 0 |
 | Sacks suffered | 0 | 3 |
 | Field goals made | 0 | 4 |
 | Field goals attempted | 1 | 4 |
 
-- TEN had lower passing EPA than NYG (-6.49 versus -6.11).
-- TEN had lower rushing EPA than NYG (-1.87 versus -0.50).
+- TEN had higher passing EPA than NYG (-4.70 versus -5.19).
+- TEN had lower rushing EPA than NYG (-1.37 versus -0.40).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## ARI 30 — SF 36
 
 | Measure | ARI | SF |
 |---|---:|---:|
-| Passing EPA | 10.07 | 22.93 |
-| Passing EPA / (attempts + sacks) | 0.187 | 0.849 |
-| Rushing EPA | 2.34 | -0.36 |
-| Rushing EPA / carry | 0.087 | -0.016 |
+| Passing EPA | 8.96 | 20.07 |
+| Passing EPA / (attempts + sacks) | 0.166 | 0.743 |
+| Rushing EPA | 1.63 | -0.24 |
+| Rushing EPA / carry | 0.060 | -0.010 |
 | Interceptions thrown | 0 | 0 |
 | Sacks suffered | 2 | 0 |
 | Field goals made | 3 | 1 |
 | Field goals attempted | 3 | 1 |
 
-- ARI had lower passing EPA than SF (10.07 versus 22.93).
-- ARI had higher rushing EPA than SF (2.34 versus -0.36).
+- ARI had lower passing EPA than SF (8.96 versus 20.07).
+- ARI had higher rushing EPA than SF (1.63 versus -0.24).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## MIN 23 — TB 16
 
 | Measure | MIN | TB |
 |---|---:|---:|
-| Passing EPA | -12.09 | -11.33 |
-| Passing EPA / (attempts + sacks) | -0.378 | -0.264 |
-| Rushing EPA | -2.41 | -4.40 |
-| Rushing EPA / carry | -0.105 | -0.210 |
+| Passing EPA | -9.24 | -9.03 |
+| Passing EPA / (attempts + sacks) | -0.289 | -0.210 |
+| Rushing EPA | -1.83 | -3.51 |
+| Rushing EPA / carry | -0.080 | -0.167 |
 | Interceptions thrown | 1 | 2 |
 | Sacks suffered | 3 | 6 |
 | Field goals made | 3 | 3 |
 | Field goals attempted | 3 | 3 |
 
-- TB had higher passing EPA than MIN (-11.33 versus -12.09).
-- TB had lower rushing EPA than MIN (-4.40 versus -2.41).
+- TB had higher passing EPA than MIN (-9.03 versus -9.24).
+- TB had lower rushing EPA than MIN (-3.51 versus -1.83).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## BAL 34 — DAL 31
 
 | Measure | BAL | DAL |
 |---|---:|---:|
-| Passing EPA | 11.93 | 13.32 |
-| Passing EPA / (attempts + sacks) | 0.596 | 0.325 |
-| Rushing EPA | -4.17 | -0.94 |
-| Rushing EPA / carry | -0.110 | -0.031 |
+| Passing EPA | 10.28 | 10.49 |
+| Passing EPA / (attempts + sacks) | 0.514 | 0.256 |
+| Rushing EPA | -2.96 | 0.16 |
+| Rushing EPA / carry | -0.078 | 0.005 |
 | Interceptions thrown | 0 | 0 |
 | Sacks suffered | 0 | 1 |
 | Field goals made | 2 | 3 |
 | Field goals attempted | 2 | 4 |
 
-- DAL had higher passing EPA than BAL (13.32 versus 11.93).
-- DAL had higher rushing EPA than BAL (-0.94 versus -4.17).
+- DAL had higher passing EPA than BAL (10.49 versus 10.28).
+- DAL had higher rushing EPA than BAL (0.16 versus -2.96).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## LV 35 — NO 27
 
 | Measure | LV | NO |
 |---|---:|---:|
-| Passing EPA | 8.98 | -3.63 |
-| Passing EPA / (attempts + sacks) | 0.249 | -0.082 |
-| Rushing EPA | -4.62 | 2.42 |
-| Rushing EPA / carry | -0.171 | 0.087 |
+| Passing EPA | 6.85 | -1.19 |
+| Passing EPA / (attempts + sacks) | 0.190 | -0.027 |
+| Rushing EPA | -3.77 | 1.52 |
+| Rushing EPA / carry | -0.140 | 0.054 |
 | Interceptions thrown | 0 | 1 |
 | Sacks suffered | 3 | 2 |
 | Field goals made | 3 | unknown |
 | Field goals attempted | 3 | unknown |
 
-- NO had lower passing EPA than LV (-3.63 versus 8.98).
-- NO had higher rushing EPA than LV (2.42 versus -4.62).
+- NO had lower passing EPA than LV (-1.19 versus 6.85).
+- NO had higher rushing EPA than LV (1.52 versus -3.77).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## LAR 26 — DEN 30
 
 | Measure | LAR | DEN |
 |---|---:|---:|
-| Passing EPA | -0.69 | -1.07 |
-| Passing EPA / (attempts + sacks) | -0.012 | -0.031 |
-| Rushing EPA | 2.26 | 0.64 |
-| Rushing EPA / carry | 0.098 | 0.026 |
+| Passing EPA | -0.46 | -0.04 |
+| Passing EPA / (attempts + sacks) | -0.008 | -0.001 |
+| Rushing EPA | 2.09 | 0.83 |
+| Rushing EPA / carry | 0.091 | 0.033 |
 | Interceptions thrown | 2 | 1 |
 | Sacks suffered | 4 | 1 |
 | Field goals made | 4 | 0 |
 | Field goals attempted | 4 | 1 |
 
-- LAR had higher passing EPA than DEN (-0.69 versus -1.07).
-- LAR had higher rushing EPA than DEN (2.26 versus 0.64).
+- LAR had lower passing EPA than DEN (-0.46 versus -0.04).
+- LAR had higher rushing EPA than DEN (2.09 versus 0.83).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## PHI 7 — CHI 27
 
 | Measure | PHI | CHI |
 |---|---:|---:|
-| Passing EPA | -16.52 | 7.25 |
-| Passing EPA / (attempts + sacks) | -0.590 | 0.213 |
-| Rushing EPA | 5.83 | -5.38 |
-| Rushing EPA / carry | 0.307 | -0.154 |
+| Passing EPA | -12.35 | 6.65 |
+| Passing EPA / (attempts + sacks) | -0.441 | 0.195 |
+| Rushing EPA | 5.50 | -4.94 |
+| Rushing EPA / carry | 0.289 | -0.141 |
 | Interceptions thrown | 2 | 0 |
 | Sacks suffered | 2 | 0 |
 | Field goals made | unknown | 2 |
 | Field goals attempted | unknown | 2 |
 
-- PHI had lower passing EPA than CHI (-16.52 versus 7.25).
-- PHI had higher rushing EPA than CHI (5.83 versus -5.38).
+- PHI had lower passing EPA than CHI (-12.35 versus 6.65).
+- PHI had higher rushing EPA than CHI (5.50 versus -4.94).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## Coverage and next test

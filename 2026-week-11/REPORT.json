@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-17T17:05:22.202064+00:00",
+  "generatedAt": "2026-11-18T16:43:33.388027+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-16T04:07:51.281630Z",
-    "sha256": "9a404180616279079e781f474b783c686fc3227e6070662871376c4c477babfe",
-    "bytes": 4586113
+    "observedAt": "2026-11-18T05:08:09.081199Z",
+    "sha256": "d8ec7281296fc9c1e396f7781714505ea8cfcd949e7240301e423af30c582ac9",
+    "bytes": 4648944
   },
   "season": 2026,
   "week": 11,
-  "sourceStateCommit": "90d403fca1bf921b922c3190c63b57af93223c91",
+  "sourceStateCommit": "420d0b25cea07a477688620b1952a9be30cf2df7",
   "excluded": [
     {
       "eventId": "2026_11_IND_HOU",
@@ -64,7 +64,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-17T17:05:15.518232Z",
+  "resultsAsOf": "2026-11-18T16:43:25.062175Z",
   "games": [],
   "status": "descriptive-only; no model evaluated"
 }
