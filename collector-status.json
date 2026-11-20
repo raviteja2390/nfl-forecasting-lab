@@ -1,34 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-20T04:07:50.318895Z",
-  "lastSuccessAt": "2026-11-20T03:08:11.633147Z",
-  "state": "failed",
-  "finishedAt": "2026-11-20T04:08:16.094488Z",
-  "errors": [
-    {
-      "stage": "result-source-disagreement",
-      "events": [
-        "2026_11_IND_HOU"
-      ]
-    }
-  ],
+  "lastAttemptAt": "2026-11-20T05:07:36.917469Z",
+  "lastSuccessAt": "2026-11-20T05:08:00.300164Z",
+  "state": "succeeded",
+  "finishedAt": "2026-11-20T05:08:00.300164Z",
+  "errors": [],
   "schedule": {
-    "localDate": "2026-11-19",
+    "localDate": "2026-11-20",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_11_IND_HOU",
-        "awayTeam": "IND",
-        "homeTeam": "HOU",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "00658091dcee4aecb82bd85d4f6c8fc1",
-    "observedAt": "2026-11-20T04:07:50.454140Z"
+    "observationId": "ff3899c7cc7b4f39917b7d6204ca09ec",
+    "observedAt": "2026-11-20T05:07:37.053751Z"
   }
 }
