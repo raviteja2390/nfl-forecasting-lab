@@ -1,10 +1,10 @@
 {
-  "asOf": "2026-11-20T03:08:11.277989Z",
+  "asOf": "2026-11-20T04:08:15.900337Z",
   "models": {
     "outcome-logit-v1": {
       "issued": 105,
       "pending": 1,
-      "disputed": 0,
+      "disputed": 1,
       "games": 104,
       "brier": 0.43239705992918714,
       "logLoss": 0.6235529068388269,
@@ -16,7 +16,7 @@
     "player-availability-v1": {
       "issued": 105,
       "pending": 1,
-      "disputed": 0,
+      "disputed": 1,
       "games": 104,
       "brier": 0.43500587751314196,
       "logLoss": 0.6278676878786299,
@@ -28,7 +28,7 @@
     "player-form-v1": {
       "issued": 105,
       "pending": 1,
-      "disputed": 0,
+      "disputed": 1,
       "games": 104,
       "brier": 0.44619952775999444,
       "logLoss": 0.6402496169149375,
