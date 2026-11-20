@@ -1,6 +1,6 @@
 # 2026 Week 10 postgame analysis — descriptive only
 
-Statistics observed: 2026-11-18T05:08:09.081199Z. Results snapshot: 2026-11-19T16:48:47.784197Z.
+Statistics observed: 2026-11-18T05:08:09.081199Z. Results snapshot: 2026-11-20T16:22:59.557957Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
