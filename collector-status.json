@@ -1,12 +1,23 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-20T05:07:36.917469Z",
+  "lastAttemptAt": "2026-11-21T05:07:45.291894Z",
   "lastSuccessAt": "2026-11-20T05:08:00.300164Z",
-  "state": "succeeded",
-  "finishedAt": "2026-11-20T05:08:00.300164Z",
-  "errors": [],
+  "state": "failed",
+  "finishedAt": "2026-11-21T05:08:45.938388Z",
+  "errors": [
+    {
+      "stage": "team-issuance",
+      "eventId": "2026_11_JAX_NYG",
+      "error": "2026_11_JAX_NYG: kickoff mismatch: nflverse=2026-11-22T18:00:00+00:00, ESPN=2026-11-22T21:25:00+00:00"
+    },
+    {
+      "stage": "team-issuance",
+      "eventId": "2026_11_PIT_PHI",
+      "error": "2026_11_PIT_PHI: kickoff mismatch: nflverse=2026-11-22T21:25:00+00:00, ESPN=2026-11-22T18:00:00+00:00"
+    }
+  ],
   "schedule": {
-    "localDate": "2026-11-20",
+    "localDate": "2026-11-21",
     "timeZone": "America/New_York",
     "cadence": "daily",
     "gamesToday": [],
@@ -14,7 +25,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "ff3899c7cc7b4f39917b7d6204ca09ec",
-    "observedAt": "2026-11-20T05:07:37.053751Z"
+    "observationId": "637a976c0d2b40b584f5792b778b3d0d",
+    "observedAt": "2026-11-21T05:07:45.328985Z"
   }
 }
