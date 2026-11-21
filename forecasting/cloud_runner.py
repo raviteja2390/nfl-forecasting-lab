@@ -22,12 +22,13 @@ def run():
     before=operations.check_health()
     report=cycle.run_cycle()
     health=operations.check_health()
-    output={'errors':report['errors'],'healthBefore':before,'health':health,'schedule':report['schedule'],
+    output={'issuanceGaps':report.get('issuanceGaps', []),'errors':report['errors'],'healthBefore':before,'health':health,'schedule':report['schedule'],
             'forecastRuns':report['forecastRuns'],'resultRuns':report['resultRuns'],'scores':report['scores']}
     summary=os.environ.get('GITHUB_STEP_SUMMARY')
     if summary:
         with open(summary,'a') as handle:
             handle.write('## NFL collection\n\n'+f"Cadence: {report['schedule']['cadence']}. Errors: {len(report['errors'])}.\n\n")
+            handle.write(f"Expired issuance gaps skipped: {len(report.get('issuanceGaps', []))}. See the persistent forecast coverage report.\n\n")
             if not before['healthy']:
                 handle.write('Collection needed attention before this run: '+ '; '.join(before['reasons'])+'\n\n')
             for version,metrics in report['scores']['models'].items():

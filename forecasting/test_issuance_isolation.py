@@ -18,7 +18,7 @@ class IsolationTests(unittest.TestCase):
             if event_id == 'bad': raise ValueError('venue classification mismatch')
             return {'event': event_id}
         with patch.object(live, 'publish', side_effect=publish), patch.object(cycle.feeds, 'latest'), patch.object(isolated_issuance, 'publish_shadow_event', return_value={}) as shadow:
-            cycle.issue_targets([{'eventId':'bad'}, {'eventId':'good'}], '2026-10-11', 2026, False, report)
+            cycle.issue_targets([{'eventId': e, 'kickoff': snapshots.parse_time(snapshots.now()) + timedelta(days=2)} for e in ('bad', 'good')], '2026-10-11', 2026, False, report)
         self.assertEqual(report['errors'][0]['eventId'], 'bad')
         self.assertEqual(report['forecastRuns'][0], {'event':'good'})
         shadow.assert_called_once_with('2026-10-11', 'good')
@@ -26,9 +26,46 @@ class IsolationTests(unittest.TestCase):
     def test_capture_failure_is_isolated(self):
         report = {'errors': [], 'forecastRuns': []}
         with tempfile.TemporaryDirectory() as t, patch.object(live, 'LIVE', Path(t)), patch.object(live, 'required_dates', side_effect=lambda d,a,event_id:[event_id]), patch.object(cycle.feeds,'capture',side_effect=[ValueError('down'),None]), patch.object(cycle.feeds,'latest'), patch.object(live,'publish',return_value={}) as publish, patch.object(isolated_issuance,'publish_shadow_event',return_value={}):
-            cycle.issue_targets([{'eventId':'bad'}, {'eventId':'good'}], '2026-10-11',2026,True,report)
+            cycle.issue_targets([{'eventId': e, 'kickoff': snapshots.parse_time(snapshots.now()) + timedelta(days=2)} for e in ('bad', 'good')], '2026-10-11',2026,True,report)
         publish.assert_called_once_with('2026-10-11',event_id='good')
         self.assertEqual(report['errors'][0]['eventId'],'bad')
+
+    def test_expired_missing_forecasts_are_gaps_without_capture_or_issuance(self):
+        at = '2026-11-21T18:00:01Z'
+        game = {'eventId': '2026_11_JAX_NYG', 'kickoff': snapshots.parse_time('2026-11-22T18:00:00Z')}
+        report = {'errors': [], 'forecastRuns': []}
+        with tempfile.TemporaryDirectory() as t, patch.object(live, 'LIVE', Path(t)), patch.object(snapshots, 'now', return_value=at), patch.object(cycle.feeds, 'capture') as capture, patch.object(live, 'publish') as publish, patch.object(isolated_issuance, 'publish_shadow_event') as shadow:
+            cycle.issue_targets([game], '2026-11-22', 2026, True, report)
+            capture.assert_not_called()
+            publish.assert_not_called()
+            shadow.assert_not_called()
+            self.assertFalse(list(Path(t).rglob('*.json')))
+        self.assertEqual(report['errors'], [])
+        self.assertEqual(len(report['issuanceGaps'][0]['missingModels']), 3)
+
+    def test_exact_deadline_still_attempts_and_keeps_real_errors(self):
+        at = '2026-11-21T18:00:00Z'
+        game = {'eventId': 'game', 'kickoff': snapshots.parse_time('2026-11-22T18:00:00Z')}
+        report = {'errors': [], 'forecastRuns': []}
+        with tempfile.TemporaryDirectory() as t, patch.object(live, 'LIVE', Path(t)), patch.object(snapshots, 'now', return_value=at), patch.object(live, 'publish', side_effect=ValueError('kickoff mismatch')) as publish:
+            cycle.issue_targets([game], '2026-11-22', 2026, False, report)
+            publish.assert_called_once()
+        self.assertEqual(report['errors'][0]['error'], 'kickoff mismatch')
+        self.assertNotIn('issuanceGaps', report)
+
+    def test_missing_shadows_keep_original_reference_deadline(self):
+        report = {'errors': [], 'forecastRuns': []}
+        game = {'eventId': 'game', 'kickoff': snapshots.parse_time('2026-11-22T21:25:00Z')}
+        with tempfile.TemporaryDirectory() as t, patch.object(live, 'LIVE', Path(t)), patch.object(snapshots, 'now', return_value='2026-11-21T18:00:01Z'), patch.object(live, 'publish') as publish:
+            p = Path(t)/'forecasts/outcome-logit-v1/game.json'
+            p.parent.mkdir(parents=True)
+            original = json.dumps({'kickoffAt': '2026-11-22T18:00:00Z'})
+            p.write_text(original)
+            cycle.issue_targets([game], '2026-11-22', 2026, False, report)
+            publish.assert_not_called()
+            self.assertEqual(p.read_text(), original)
+        self.assertEqual(report['issuanceGaps'][0]['missingModels'], ['player-form-v1', 'player-availability-v1'])
+        self.assertEqual(report['errors'], [])
 
     def test_scoped_publish_keeps_venue_guard_and_deadline(self):
         games = live.parse_games((live.ROOT/'data/raw/nflverse-games.csv').read_bytes())

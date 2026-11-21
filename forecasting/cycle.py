@@ -8,6 +8,7 @@ import feeds
 import live
 import snapshots
 import operations
+from forecast_coverage import VERSIONS
 from recheck_results import dates_to_recheck, settle_and_audit
 from score_live import score_store, write_matchup_comparison
 
@@ -17,6 +18,21 @@ def issue_targets(targets, tomorrow, current_season, collect, report):
     captured = set()
     for game in targets:
         event = game["eventId"]
+        # Expired issuance is a permanent coverage gap, not a broken collector.
+        # Inspect stored reference time too: a later schedule must never reopen
+        # a shadow forecast's original deadline.
+        missing_versions = [v for v in VERSIONS
+                            if not (live.LIVE / "forecasts" / v / f"{event}.json").exists()]
+        deadline = game["kickoff"] - timedelta(hours=24)
+        reference = live.LIVE / "forecasts/outcome-logit-v1" / f"{event}.json"
+        if reference.exists():
+            saved = json.loads(reference.read_text())
+            deadline = min(deadline, snapshots.parse_time(saved["kickoffAt"]) - timedelta(hours=24))
+        if missing_versions and snapshots.parse_time(snapshots.now()) > deadline:
+            report.setdefault("issuanceGaps", []).append({
+                "eventId": event, "deadline": deadline.isoformat(),
+                "missingModels": missing_versions, "reason": "expired-24-hour-cutoff"})
+            continue
         try:
             missing = not (live.LIVE / "forecasts/outcome-logit-v1" / f'{event}.json').exists()
             if missing and collect:
