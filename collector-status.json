@@ -1,16 +1,10 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-21T21:07:48.480104Z",
-  "lastSuccessAt": "2026-11-20T05:08:00.300164Z",
-  "state": "failed",
-  "finishedAt": "2026-11-21T21:08:49.284225Z",
-  "errors": [
-    {
-      "stage": "team-issuance",
-      "eventId": "2026_11_PIT_PHI",
-      "error": "2026_11_PIT_PHI: kickoff mismatch: nflverse=2026-11-22T21:25:00+00:00, ESPN=2026-11-22T18:00:00+00:00"
-    }
-  ],
+  "lastAttemptAt": "2026-11-21T22:07:43.865986Z",
+  "lastSuccessAt": "2026-11-21T22:08:25.680317Z",
+  "state": "succeeded",
+  "finishedAt": "2026-11-21T22:08:25.680317Z",
+  "errors": [],
   "schedule": {
     "localDate": "2026-11-21",
     "timeZone": "America/New_York",
@@ -20,7 +14,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "cd7cef824e094affbe4b0ce7636e9594",
-    "observedAt": "2026-11-21T21:07:48.542174Z"
+    "observationId": "c9619d6fa9094b62af1e6fe242fec008",
+    "observedAt": "2026-11-21T22:07:43.980303Z"
   }
 }

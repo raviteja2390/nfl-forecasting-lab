@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T21:08:48.610850Z",
+  "checkedAt": "2026-11-21T22:08:25.331640Z",
   "trackingStartKickoff": "2026-09-27T17:00:00Z",
   "missed": [
     {
@@ -127,8 +127,17 @@
         "player-form-v1",
         "player-availability-v1"
       ]
+    },
+    {
+      "eventId": "2026_11_PIT_PHI",
+      "deadline": "2026-11-21T21:25:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
     }
   ],
-  "missedGames": 14,
+  "missedGames": 15,
   "status": "GAPS"
 }
