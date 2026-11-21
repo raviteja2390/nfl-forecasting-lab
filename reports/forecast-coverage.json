@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-21T17:31:31.623937Z",
+  "checkedAt": "2026-11-21T18:08:35.674131Z",
   "trackingStartKickoff": "2026-09-27T17:00:00Z",
   "missed": [
     {
@@ -118,8 +118,17 @@
         "player-form-v1",
         "player-availability-v1"
       ]
+    },
+    {
+      "eventId": "2026_11_JAX_NYG",
+      "deadline": "2026-11-21T18:00:00+00:00",
+      "missingModels": [
+        "outcome-logit-v1",
+        "player-form-v1",
+        "player-availability-v1"
+      ]
     }
   ],
-  "missedGames": 13,
+  "missedGames": 14,
   "status": "GAPS"
 }

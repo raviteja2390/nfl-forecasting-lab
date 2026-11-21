@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-21T17:30:39.157832Z",
+  "lastAttemptAt": "2026-11-21T18:07:44.208046Z",
   "lastSuccessAt": "2026-11-20T05:08:00.300164Z",
   "state": "failed",
-  "finishedAt": "2026-11-21T17:31:32.199875Z",
+  "finishedAt": "2026-11-21T18:08:36.278198Z",
   "errors": [
     {
       "stage": "team-issuance",
       "eventId": "2026_11_JAX_NYG",
-      "error": "2026_11_JAX_NYG: kickoff mismatch: nflverse=2026-11-22T18:00:00+00:00, ESPN=2026-11-22T21:25:00+00:00"
+      "error": "2026_11_JAX_NYG: missed the at-least-24-hour issue deadline; refusing to backdate"
     },
     {
       "stage": "team-issuance",
@@ -25,7 +25,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "4a34b55c186c4799bfcca8bb3bfc2ed5",
-    "observedAt": "2026-11-21T17:30:39.194522Z"
+    "observationId": "cb3ee3037bb241eeaf2822e5fd2c5677",
+    "observedAt": "2026-11-21T18:07:44.269227Z"
   }
 }
