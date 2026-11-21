@@ -1,20 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-20T16:23:11.049471+00:00",
+  "generatedAt": "2026-11-21T15:37:57.806057+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-18T05:08:09.081199Z",
-    "sha256": "d8ec7281296fc9c1e396f7781714505ea8cfcd949e7240301e423af30c582ac9",
-    "bytes": 4648944
+    "observedAt": "2026-11-21T15:08:11.127032Z",
+    "sha256": "6ad084db894b587d203a06fa0e9aa6a1f5e50f9c7a6012ff5d551ac284e1107a",
+    "bytes": 4679045
   },
   "season": 2026,
   "week": 11,
-  "sourceStateCommit": "16fa031001e65249a2fdff6ebc728161c3a638d9",
+  "sourceStateCommit": "d9540e3b9d26b60c70689dee3826b4e1eaa2e6f0",
   "excluded": [
-    {
-      "eventId": "2026_11_IND_HOU",
-      "reason": "stats-snapshot-predates-kickoff"
-    },
     {
       "eventId": "2026_11_ARI_KC",
       "reason": "no-verified-final"
@@ -64,7 +60,55 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-20T16:22:59.557957Z",
-  "games": [],
+  "resultsAsOf": "2026-11-21T15:37:46.040975Z",
+  "games": [
+    {
+      "eventId": "2026_11_IND_HOU",
+      "result": {
+        "eventId": "2026_11_IND_HOU",
+        "homeScore": 26,
+        "awayScore": 3,
+        "finalizedAt": "2026-11-21T14:08:21.669133Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "f2242ba1e1ab43cbb11e2273a93e68eb",
+        "espnObservationId": "fe08adb911f04ec8a6cc8d2da54ae9fc"
+      },
+      "teams": {
+        "IND": {
+          "rows": 34,
+          "attempts": 29.0,
+          "passing_epa": -9.86718480181636,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 2.0,
+          "carries": 17.0,
+          "rushing_epa": -5.08614637320842,
+          "fg_att": 3.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": -0.31829628392956005,
+          "rushing_epa_per_carry": -0.2991850807769659
+        },
+        "HOU": {
+          "rows": 33,
+          "attempts": 27.0,
+          "passing_epa": 7.45673169413025,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 1.0,
+          "carries": 37.0,
+          "rushing_epa": -6.3585900176287895,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": 0.2663118462189375,
+          "rushing_epa_per_carry": -0.17185378426023756
+        }
+      },
+      "loser": "IND",
+      "notes": [
+        "IND had lower passing EPA than HOU (-9.87 versus 7.46).",
+        "IND had higher rushing EPA than HOU (-5.09 versus -6.36).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-11-21T15:08:11.127032Z"
+    }
+  ],
   "status": "descriptive-only; no model evaluated"
 }
