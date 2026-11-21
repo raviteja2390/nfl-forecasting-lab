@@ -1,15 +1,10 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-21T18:07:44.208046Z",
+  "lastAttemptAt": "2026-11-21T18:38:00.911279Z",
   "lastSuccessAt": "2026-11-20T05:08:00.300164Z",
   "state": "failed",
-  "finishedAt": "2026-11-21T18:08:36.278198Z",
+  "finishedAt": "2026-11-21T18:38:37.896579Z",
   "errors": [
-    {
-      "stage": "team-issuance",
-      "eventId": "2026_11_JAX_NYG",
-      "error": "2026_11_JAX_NYG: missed the at-least-24-hour issue deadline; refusing to backdate"
-    },
     {
       "stage": "team-issuance",
       "eventId": "2026_11_PIT_PHI",
@@ -25,7 +20,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "cb3ee3037bb241eeaf2822e5fd2c5677",
-    "observedAt": "2026-11-21T18:07:44.269227Z"
+    "observationId": "30faa87ec24f42fca5714f88f722971d",
+    "observedAt": "2026-11-21T18:38:00.989357Z"
   }
 }
