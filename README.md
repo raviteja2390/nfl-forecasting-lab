@@ -1,6 +1,6 @@
 # NFL postgame research reports
 
-Generated 2026-11-21T15:37:46.040975Z. Source forecast-state commit: `d9540e3b9d26b60c70689dee3826b4e1eaa2e6f0`.
+Generated 2026-11-22T15:41:00.144424Z. Source forecast-state commit: `9d879f9dd790f7a20695f79aa9458d9d1ad0e4ee`.
 
 Descriptive statistics only; no model training, causal claims or changes to frozen forecasts. Raw inputs remain in their existing stores; this branch contains derived reports only.
 

@@ -1,15 +1,15 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-21T15:37:57.806057+00:00",
+  "generatedAt": "2026-11-22T15:41:09.334590+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-21T15:08:11.127032Z",
+    "observedAt": "2026-11-22T10:08:17.402338Z",
     "sha256": "6ad084db894b587d203a06fa0e9aa6a1f5e50f9c7a6012ff5d551ac284e1107a",
     "bytes": 4679045
   },
   "season": 2026,
   "week": 11,
-  "sourceStateCommit": "d9540e3b9d26b60c70689dee3826b4e1eaa2e6f0",
+  "sourceStateCommit": "9d879f9dd790f7a20695f79aa9458d9d1ad0e4ee",
   "excluded": [
     {
       "eventId": "2026_11_ARI_KC",
@@ -60,7 +60,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-21T15:37:46.040975Z",
+  "resultsAsOf": "2026-11-22T15:41:00.144424Z",
   "games": [
     {
       "eventId": "2026_11_IND_HOU",
@@ -68,10 +68,10 @@
         "eventId": "2026_11_IND_HOU",
         "homeScore": 26,
         "awayScore": 3,
-        "finalizedAt": "2026-11-21T14:08:21.669133Z",
+        "finalizedAt": "2026-11-22T10:08:21.150971Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "f2242ba1e1ab43cbb11e2273a93e68eb",
-        "espnObservationId": "fe08adb911f04ec8a6cc8d2da54ae9fc"
+        "nflverseObservationId": "abaf874d28b84ad0b0d914f82c5326b9",
+        "espnObservationId": "db3948e1e8b9469cb8808e42e6452c4f"
       },
       "teams": {
         "IND": {
@@ -107,7 +107,7 @@
         "IND had higher rushing EPA than HOU (-5.09 versus -6.36).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-21T15:08:11.127032Z"
+      "availableNoEarlierThan": "2026-11-22T10:08:21.150971Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
