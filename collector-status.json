@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-22T17:30:11.297477Z",
-  "lastSuccessAt": "2026-11-22T17:30:36.424769Z",
+  "lastAttemptAt": "2026-11-22T18:07:46.971655Z",
+  "lastSuccessAt": "2026-11-22T18:08:29.479100Z",
   "state": "succeeded",
-  "finishedAt": "2026-11-22T17:30:36.424769Z",
+  "finishedAt": "2026-11-22T18:08:29.479100Z",
   "errors": [],
   "schedule": {
     "localDate": "2026-11-22",
@@ -23,12 +23,6 @@
         "kickoffEastern": "13:00"
       },
       {
-        "eventId": "2026_11_JAX_NYG",
-        "awayTeam": "JAX",
-        "homeTeam": "NYG",
-        "kickoffEastern": "13:00"
-      },
-      {
         "eventId": "2026_11_MIA_BUF",
         "awayTeam": "MIA",
         "homeTeam": "BUF",
@@ -38,6 +32,12 @@
         "eventId": "2026_11_NO_CHI",
         "awayTeam": "NO",
         "homeTeam": "CHI",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_11_PIT_PHI",
+        "awayTeam": "PIT",
+        "homeTeam": "PHI",
         "kickoffEastern": "13:00"
       },
       {
@@ -59,15 +59,15 @@
         "kickoffEastern": "16:05"
       },
       {
-        "eventId": "2026_11_LV_DEN",
-        "awayTeam": "LV",
-        "homeTeam": "DEN",
+        "eventId": "2026_11_JAX_NYG",
+        "awayTeam": "JAX",
+        "homeTeam": "NYG",
         "kickoffEastern": "16:25"
       },
       {
-        "eventId": "2026_11_PIT_PHI",
-        "awayTeam": "PIT",
-        "homeTeam": "PHI",
+        "eventId": "2026_11_LV_DEN",
+        "awayTeam": "LV",
+        "homeTeam": "DEN",
         "kickoffEastern": "16:25"
       },
       {
@@ -81,7 +81,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "ed6243568f754ae49b2e1c5d9b6c72c8",
-    "observedAt": "2026-11-22T17:30:11.428694Z"
+    "observationId": "e49aec9ab32b477b8ea4dad0ebee3c4e",
+    "observedAt": "2026-11-22T18:07:47.107369Z"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-22T17:30:36.082752Z",
+  "generatedAt": "2026-11-22T18:08:28.872084Z",
   "season": 2026,
   "week": 11,
   "scheduledGames": 13,
@@ -144,25 +144,6 @@
       "scheduleChanged": false
     },
     {
-      "eventId": "2026_11_JAX_NYG",
-      "away": "JAX",
-      "home": "NYG",
-      "scheduledKickoff": "2026-11-22T18:00:00Z",
-      "models": {
-        "outcome-logit-v1": {
-          "status": "not-issued"
-        },
-        "player-form-v1": {
-          "status": "not-issued"
-        },
-        "player-availability-v1": {
-          "status": "not-issued"
-        }
-      },
-      "paired": false,
-      "scheduleChanged": false
-    },
-    {
       "eventId": "2026_11_MIA_BUF",
       "away": "MIA",
       "home": "BUF",
@@ -252,6 +233,25 @@
         }
       },
       "paired": true,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_11_PIT_PHI",
+      "away": "PIT",
+      "home": "PHI",
+      "scheduledKickoff": "2026-11-22T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
       "scheduleChanged": false
     },
     {
@@ -393,6 +393,25 @@
       "scheduleChanged": false
     },
     {
+      "eventId": "2026_11_JAX_NYG",
+      "away": "JAX",
+      "home": "NYG",
+      "scheduledKickoff": "2026-11-22T21:25:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
       "eventId": "2026_11_LV_DEN",
       "away": "LV",
       "home": "DEN",
@@ -436,25 +455,6 @@
         }
       },
       "paired": true,
-      "scheduleChanged": false
-    },
-    {
-      "eventId": "2026_11_PIT_PHI",
-      "away": "PIT",
-      "home": "PHI",
-      "scheduledKickoff": "2026-11-22T21:25:00Z",
-      "models": {
-        "outcome-logit-v1": {
-          "status": "not-issued"
-        },
-        "player-form-v1": {
-          "status": "not-issued"
-        },
-        "player-availability-v1": {
-          "status": "not-issued"
-        }
-      },
-      "paired": false,
       "scheduleChanged": false
     },
     {

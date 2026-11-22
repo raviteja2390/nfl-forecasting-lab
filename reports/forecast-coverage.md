@@ -1,6 +1,6 @@
 # Forecast issuance coverage
 
-Checked 2026-11-22T17:30:36.089838Z.
+Checked 2026-11-22T18:08:28.882229Z.
 
 15 games have missed model issuance. Collection success does not resolve these gaps.
 
@@ -19,5 +19,5 @@ Pre-launch games are excluded. No retrospective forecast may fill a prospective 
 - 2026_05_NYG_WAS: missing outcome-logit-v1, player-form-v1, player-availability-v1; deadline 2026-10-10T17:00:00+00:00
 - 2026_05_PHI_JAX: missing outcome-logit-v1, player-form-v1, player-availability-v1; deadline 2026-10-10T13:30:00+00:00
 - 2026_05_SF_SEA: missing outcome-logit-v1, player-form-v1, player-availability-v1; deadline 2026-10-10T20:25:00+00:00
-- 2026_11_JAX_NYG: missing outcome-logit-v1, player-form-v1, player-availability-v1; deadline 2026-11-21T18:00:00+00:00
-- 2026_11_PIT_PHI: missing outcome-logit-v1, player-form-v1, player-availability-v1; deadline 2026-11-21T21:25:00+00:00
+- 2026_11_JAX_NYG: missing outcome-logit-v1, player-form-v1, player-availability-v1; deadline 2026-11-21T21:25:00+00:00
+- 2026_11_PIT_PHI: missing outcome-logit-v1, player-form-v1, player-availability-v1; deadline 2026-11-21T18:00:00+00:00

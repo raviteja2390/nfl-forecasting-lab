@@ -2,7 +2,7 @@
 
 2026 NFL Week 11
 
-Updated 2026-11-22T17:30:36.082752Z. 13 scheduled games; 11 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-22T18:08:28.872084Z. 13 scheduled games; 11 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -26,13 +26,6 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 - **Player form (shadow):** BAL 30.2% · CAR 69.4% · tie 0.4%. Issued 2026-11-21T05:08:24.263065Z; cutoff 2026-11-21T05:08:22.584282Z.
 - **Player availability (shadow):** BAL 32.7% · CAR 66.9% · tie 0.5%. Issued 2026-11-21T05:08:24.265395Z; cutoff 2026-11-21T05:08:22.584282Z.
 
-## JAX at NYG — Sun Nov 22, 01:00 PM EST
-
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
-
 ## MIA at BUF — Sun Nov 22, 01:00 PM EST
 
 - **Team only (primary):** MIA 15.1% · BUF 84.7% · tie 0.2%. Issued 2026-11-21T05:08:27.818587Z; cutoff 2026-11-21T05:08:26.627317Z.
@@ -44,6 +37,13 @@ Comparison incomplete or cutoffs differ; do not treat this as a valid three-mode
 - **Team only (primary):** NO 28.6% · CHI 71.0% · tie 0.4%. Issued 2026-11-21T05:08:30.100049Z; cutoff 2026-11-21T05:08:28.928428Z.
 - **Player form (shadow):** NO 25.1% · CHI 74.6% · tie 0.3%. Issued 2026-11-21T05:08:30.603256Z; cutoff 2026-11-21T05:08:28.928428Z.
 - **Player availability (shadow):** NO 26.5% · CHI 73.2% · tie 0.3%. Issued 2026-11-21T05:08:30.605681Z; cutoff 2026-11-21T05:08:28.928428Z.
+
+## PIT at PHI — Sun Nov 22, 01:00 PM EST
+
+- **Team only (primary):** not issued as of this report.
+- **Player form (shadow):** not issued as of this report.
+- **Player availability (shadow):** not issued as of this report.
+Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
 
 ## TB at DET — Sun Nov 22, 01:00 PM EST
 
@@ -63,18 +63,18 @@ Comparison incomplete or cutoffs differ; do not treat this as a valid three-mode
 - **Player form (shadow):** NYJ 53.2% · LAC 46.5% · tie 0.4%. Issued 2026-11-21T05:08:36.440907Z; cutoff 2026-11-21T05:08:34.894664Z.
 - **Player availability (shadow):** NYJ 54.3% · LAC 45.3% · tie 0.4%. Issued 2026-11-21T05:08:36.443253Z; cutoff 2026-11-21T05:08:34.894664Z.
 
-## LV at DEN — Sun Nov 22, 04:25 PM EST
-
-- **Team only (primary):** LV 26.2% · DEN 73.5% · tie 0.3%. Issued 2026-11-21T05:08:37.845857Z; cutoff 2026-11-21T05:08:36.798161Z.
-- **Player form (shadow):** LV 22.6% · DEN 77.1% · tie 0.3%. Issued 2026-11-21T05:08:38.374350Z; cutoff 2026-11-21T05:08:36.798161Z.
-- **Player availability (shadow):** LV 24.5% · DEN 75.2% · tie 0.4%. Issued 2026-11-21T05:08:38.376649Z; cutoff 2026-11-21T05:08:36.798161Z.
-
-## PIT at PHI — Sun Nov 22, 04:25 PM EST
+## JAX at NYG — Sun Nov 22, 04:25 PM EST
 
 - **Team only (primary):** not issued as of this report.
 - **Player form (shadow):** not issued as of this report.
 - **Player availability (shadow):** not issued as of this report.
 Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+
+## LV at DEN — Sun Nov 22, 04:25 PM EST
+
+- **Team only (primary):** LV 26.2% · DEN 73.5% · tie 0.3%. Issued 2026-11-21T05:08:37.845857Z; cutoff 2026-11-21T05:08:36.798161Z.
+- **Player form (shadow):** LV 22.6% · DEN 77.1% · tie 0.3%. Issued 2026-11-21T05:08:38.374350Z; cutoff 2026-11-21T05:08:36.798161Z.
+- **Player availability (shadow):** LV 24.5% · DEN 75.2% · tie 0.4%. Issued 2026-11-21T05:08:38.376649Z; cutoff 2026-11-21T05:08:36.798161Z.
 
 ## MIN at SF — Sun Nov 22, 08:20 PM EST
 
