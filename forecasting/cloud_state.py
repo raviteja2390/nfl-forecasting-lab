@@ -1,4 +1,4 @@
-"""Transfer checked, compressed research state to a dedicated private Git branch."""
+"""Transfer checked, compressed research state to a dedicated Git branch."""
 import argparse
 import gzip
 import hashlib
@@ -9,7 +9,8 @@ import shutil
 ROOT=Path(__file__).resolve().parent.parent
 PREFIXES=('forecasting/data/feeds/','forecasting/data/snapshots/','forecasting/live/')
 MAX_FILE_BYTES=30_000_000
-MAX_COMPRESSED_BYTES=250_000_000
+MAX_COMPRESSED_BYTES=500_000_000
+WARN_COMPRESSED_BYTES=400_000_000
 
 
 def safe_path(name):
@@ -75,14 +76,31 @@ def save(state,root=ROOT):
                 target.write_bytes(gzip.compress(body,compresslevel=6,mtime=0))
             packed_bytes+=target.stat().st_size
     if not set(previous).issubset(files): raise ValueError('Refusing to discard previously archived files')
-    if packed_bytes>MAX_COMPRESSED_BYTES: raise ValueError('Cloud state exceeded 250 MB; migrate storage before continuing. Nothing may be pruned silently.')
+    if packed_bytes>MAX_COMPRESSED_BYTES:
+        raise ValueError(f'Cloud state exceeded {MAX_COMPRESSED_BYTES} compressed bytes; migrate storage before continuing. Nothing may be pruned silently.')
     (state/'manifest.json').write_text(json.dumps({'schemaVersion':1,'files':files},sort_keys=True,indent=2)+'\n')
     for path in (root/'forecasting/live/reports').glob('*'):
         if path.is_file() and path.suffix in ('.md','.json'):
             target=state/'reports'/path.name; target.parent.mkdir(parents=True,exist_ok=True); shutil.copyfile(path,target)
     status=root/'forecasting/live/operations/status.json'
     if status.exists(): shutil.copyfile(status,state/'collector-status.json')
-    (state/'README.md').write_text('# NFL persistent research state\n\nThis state branch in the public repository is maintained by the cloud collector. Raw payloads, original forecasts and receipts are compressed individually and checked by manifest SHA-256 hashes. Do not edit or force-push this branch.\n\nReadable current outputs are in [reports](reports). See [collector-status.json](collector-status.json) for the last successful collection. Code and operating instructions are on the main branch.\n\nThis is versioned storage, not immutable or independent of GitHub. The 250 MB working-tree guard does not cap accumulated Git history; monitor repository size and migrate storage before it becomes large.\n')
+    storage={'compressedBytes':packed_bytes, 'fileCount':len(files),
+             'warningBytes':WARN_COMPRESSED_BYTES, 'limitBytes':MAX_COMPRESSED_BYTES,
+             'remainingBytes':MAX_COMPRESSED_BYTES-packed_bytes,
+             'status':'warning' if packed_bytes>=WARN_COMPRESSED_BYTES else 'ok',
+             'scope':'Current compressed working tree only; excludes accumulated Git history.'}
+    reports=state/'reports'; reports.mkdir(parents=True,exist_ok=True)
+    (reports/'storage-health.json').write_text(json.dumps(storage,sort_keys=True,indent=2)+'\n')
+    (reports/'storage-health.md').write_text(
+        '# Archive storage capacity\n\n'
+        f'Compressed working tree: {packed_bytes:,} bytes across {len(files):,} files.\n\n'
+        f'Warning at {WARN_COMPRESSED_BYTES:,}; hard limit {MAX_COMPRESSED_BYTES:,} bytes. '
+        f'Remaining: {MAX_COMPRESSED_BYTES-packed_bytes:,} bytes. Status: {storage["status"]}.\n\n'
+        'This excludes accumulated Git history. No historical evidence is pruned. '
+        'Plan storage migration before reaching the warning threshold.\n')
+    if storage['status']=='warning':
+        print(f'::warning::Archive storage uses {packed_bytes} of {MAX_COMPRESSED_BYTES} bytes; plan migration now.')
+    (state/'README.md').write_text('# NFL persistent research state\n\nThis state branch in the public repository is maintained by the cloud collector. Raw payloads, original forecasts and receipts are compressed individually and checked by manifest SHA-256 hashes. Do not edit or force-push this branch.\n\nReadable current outputs are in [reports](reports). See [collector-status.json](collector-status.json) for the last successful collection. Code and operating instructions are on the main branch.\n\nThis is versioned storage, not immutable or independent of GitHub. The 500 MB working-tree guard does not cap accumulated Git history. Capacity warnings begin at 400 MB; see reports/storage-health.json. This bounded capacity increase is not a storage migration. Monitor repository size and migrate before it becomes large.\n')
     return {'files':len(files),'compressedBytes':packed_bytes}
 
 

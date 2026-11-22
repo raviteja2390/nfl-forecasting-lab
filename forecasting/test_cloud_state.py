@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import cloud_state
 
@@ -20,6 +21,27 @@ class CloudStateTests(unittest.TestCase):
         cloud_state.save(self.state,self.root); self.assertEqual(packed.read_bytes(),first)
         destination=self.base/'restored'; cloud_state.restore(self.state,destination)
         self.assertEqual((destination/self.name).read_bytes(),b'original bytes')
+
+    def test_capacity_warning_preserves_roundtrip_and_reports_headroom(self):
+        with patch.object(cloud_state, 'WARN_COMPRESSED_BYTES', 1):
+            result=cloud_state.save(self.state,self.root)
+        health=json.loads((self.state/'reports/storage-health.json').read_text())
+        self.assertEqual(health['status'],'warning')
+        self.assertEqual(health['compressedBytes'],result['compressedBytes'])
+        self.assertEqual(health['remainingBytes'],cloud_state.MAX_COMPRESSED_BYTES-result['compressedBytes'])
+        cloud_state.restore(self.state,self.base/'restored')
+        self.assertEqual((self.base/'restored'/self.name).read_bytes(),self.source.read_bytes())
+
+    def test_hard_limit_still_fails_without_advancing_manifest(self):
+        cloud_state.save(self.state,self.root)
+        before=(self.state/'manifest.json').read_bytes()
+        extra=self.source.parent/'new'; extra.write_bytes(b'new evidence')
+        with patch.object(cloud_state,'MAX_COMPRESSED_BYTES',1):
+            with self.assertRaisesRegex(ValueError,'Nothing may be pruned'):
+                cloud_state.save(self.state,self.root)
+        self.assertEqual((self.state/'manifest.json').read_bytes(),before)
+        self.assertTrue(self.source.exists())
+        cloud_state.restore(self.state,self.base/'restored')
 
     def test_archive_corruption_is_rejected(self):
         cloud_state.save(self.state,self.root)
