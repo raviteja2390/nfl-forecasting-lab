@@ -1,10 +1,19 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-22T20:07:43.400017Z",
+  "lastAttemptAt": "2026-11-22T21:07:39.253069Z",
   "lastSuccessAt": "2026-11-22T20:08:17.638956Z",
-  "state": "succeeded",
-  "finishedAt": "2026-11-22T20:08:17.638956Z",
-  "errors": [],
+  "state": "failed",
+  "finishedAt": "2026-11-22T21:08:06.063489Z",
+  "errors": [
+    {
+      "stage": "result-source-disagreement",
+      "events": [
+        "2026_11_MIA_BUF",
+        "2026_11_NO_CHI",
+        "2026_11_TEN_DAL"
+      ]
+    }
+  ],
   "schedule": {
     "localDate": "2026-11-22",
     "timeZone": "America/New_York",
@@ -81,7 +90,7 @@
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "8db6d707251049fe8df3533eb66d88b3",
-    "observedAt": "2026-11-22T20:07:43.485109Z"
+    "observationId": "f41ace7536904afbb55409436455b7d6",
+    "observedAt": "2026-11-22T21:07:39.394216Z"
   }
 }
