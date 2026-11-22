@@ -2,7 +2,7 @@
 
 2026 NFL Week 11
 
-Updated 2026-11-21T22:08:25.324360Z. 13 scheduled games; 10 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-22T05:08:18.108029Z. 13 scheduled games; 11 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -84,7 +84,6 @@ Comparison incomplete or cutoffs differ; do not treat this as a valid three-mode
 
 ## CIN at WAS — Mon Nov 23, 08:15 PM EST
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** CIN 64.8% · WAS 34.7% · tie 0.5%. Issued 2026-11-22T05:08:14.780576Z; cutoff 2026-11-22T05:08:13.913192Z.
+- **Player form (shadow):** CIN 66.7% · WAS 33.0% · tie 0.4%. Issued 2026-11-22T05:08:15.200519Z; cutoff 2026-11-22T05:08:13.913192Z.
+- **Player availability (shadow):** CIN 67.6% · WAS 32.0% · tie 0.4%. Issued 2026-11-22T05:08:15.202463Z; cutoff 2026-11-22T05:08:13.913192Z.
