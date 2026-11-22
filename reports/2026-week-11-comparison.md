@@ -2,7 +2,7 @@
 
 2026 NFL Week 11
 
-Updated 2026-11-22T07:08:26.110058Z. 13 scheduled games; 11 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-22T08:08:27.221126Z. 13 scheduled games; 11 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
