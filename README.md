@@ -4,4 +4,4 @@ This state branch in the public repository is maintained by the cloud collector.
 
 Readable current outputs are in [reports](reports). See [collector-status.json](collector-status.json) for the last successful collection. Code and operating instructions are on the main branch.
 
-This is versioned storage, not immutable or independent of GitHub. The 250 MB working-tree guard does not cap accumulated Git history; monitor repository size and migrate storage before it becomes large.
+This is versioned storage, not immutable or independent of GitHub. The 500 MB working-tree guard does not cap accumulated Git history. Capacity warnings begin at 400 MB; see reports/storage-health.json. This bounded capacity increase is not a storage migration. Monitor repository size and migrate before it becomes large.
