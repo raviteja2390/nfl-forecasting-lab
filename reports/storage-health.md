@@ -1,7 +1,7 @@
 # Archive storage capacity
 
-Compressed working tree: 261,345,695 bytes across 11,743 files.
+Compressed working tree: 261,871,958 bytes across 11,763 files.
 
-Warning at 400,000,000; hard limit 500,000,000 bytes. Remaining: 238,654,305 bytes. Status: ok.
+Warning at 400,000,000; hard limit 500,000,000 bytes. Remaining: 238,128,042 bytes. Status: ok.
 
 This excludes accumulated Git history. No historical evidence is pruned. Plan storage migration before reaching the warning threshold.
