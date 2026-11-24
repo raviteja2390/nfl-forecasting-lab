@@ -1,0 +1,340 @@
+{
+  "generatedAt": "2026-11-24T05:08:35.398226Z",
+  "season": 2026,
+  "week": 12,
+  "scheduledGames": 16,
+  "fullyPairedGames": 1,
+  "games": [
+    {
+      "eventId": "2026_12_GB_LA",
+      "away": "GB",
+      "home": "LAR",
+      "scheduledKickoff": "2026-11-26T01:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6165212829269834,
+            "awayWin": 0.37926694150312507,
+            "tie": 0.0042117755698916105
+          },
+          "generatedAt": "2026-11-24T05:08:30.771357Z",
+          "featureCutoffAt": "2026-11-24T05:08:29.379527Z",
+          "kickoffAt": "2026-11-26T01:00:00Z",
+          "modelSha256": "c67dd15b7f6c45db1f62d386783f9158b3994675240bb63b83aa10a0a50c34f0"
+        },
+        "player-form-v1": {
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.6386016694088776,
+            "awayWin": 0.3580577244930798,
+            "tie": 0.003340606098042604
+          },
+          "generatedAt": "2026-11-24T05:08:31.414283Z",
+          "featureCutoffAt": "2026-11-24T05:08:29.379527Z",
+          "kickoffAt": "2026-11-26T01:00:00Z",
+          "modelSha256": "da7dd9e9849f33e6a2e585763bf46ba30a274d6e77856fdccb337aa639b174da"
+        },
+        "player-availability-v1": {
+          "status": "issued",
+          "probabilities": {
+            "homeWin": 0.5373259791023417,
+            "awayWin": 0.4599968133255574,
+            "tie": 0.0026772075721009226
+          },
+          "generatedAt": "2026-11-24T05:08:31.416921Z",
+          "featureCutoffAt": "2026-11-24T05:08:29.379527Z",
+          "kickoffAt": "2026-11-26T01:00:00Z",
+          "modelSha256": "b88831b3ab010fc416b269f1bbc1cc5e42757e234737e59332325bc9646a4a84"
+        }
+      },
+      "paired": true,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_CHI_DET",
+      "away": "CHI",
+      "home": "DET",
+      "scheduledKickoff": "2026-11-26T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_PHI_DAL",
+      "away": "PHI",
+      "home": "DAL",
+      "scheduledKickoff": "2026-11-26T21:30:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_KC_BUF",
+      "away": "KC",
+      "home": "BUF",
+      "scheduledKickoff": "2026-11-27T01:20:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_DEN_PIT",
+      "away": "DEN",
+      "home": "PIT",
+      "scheduledKickoff": "2026-11-27T20:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_ATL_MIN",
+      "away": "ATL",
+      "home": "MIN",
+      "scheduledKickoff": "2026-11-29T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_BAL_HOU",
+      "away": "BAL",
+      "home": "HOU",
+      "scheduledKickoff": "2026-11-29T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_NO_CIN",
+      "away": "NO",
+      "home": "CIN",
+      "scheduledKickoff": "2026-11-29T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_NYG_IND",
+      "away": "NYG",
+      "home": "IND",
+      "scheduledKickoff": "2026-11-29T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_NYJ_MIA",
+      "away": "NYJ",
+      "home": "MIA",
+      "scheduledKickoff": "2026-11-29T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_TEN_JAX",
+      "away": "TEN",
+      "home": "JAX",
+      "scheduledKickoff": "2026-11-29T18:00:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_NE_LAC",
+      "away": "NE",
+      "home": "LAC",
+      "scheduledKickoff": "2026-11-29T21:05:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_SEA_SF",
+      "away": "SEA",
+      "home": "SF",
+      "scheduledKickoff": "2026-11-29T21:25:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_WAS_ARI",
+      "away": "WAS",
+      "home": "ARI",
+      "scheduledKickoff": "2026-11-29T21:25:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_LV_CLE",
+      "away": "LV",
+      "home": "CLE",
+      "scheduledKickoff": "2026-11-30T01:20:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    },
+    {
+      "eventId": "2026_12_CAR_TB",
+      "away": "CAR",
+      "home": "TB",
+      "scheduledKickoff": "2026-12-01T01:15:00Z",
+      "models": {
+        "outcome-logit-v1": {
+          "status": "not-issued"
+        },
+        "player-form-v1": {
+          "status": "not-issued"
+        },
+        "player-availability-v1": {
+          "status": "not-issued"
+        }
+      },
+      "paired": false,
+      "scheduleChanged": false
+    }
+  ]
+}

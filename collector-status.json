@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-24T04:07:47.130802Z",
-  "lastSuccessAt": "2026-11-24T04:08:31.841787Z",
+  "lastAttemptAt": "2026-11-24T05:07:46.334528Z",
+  "lastSuccessAt": "2026-11-24T05:08:36.050172Z",
   "state": "succeeded",
-  "finishedAt": "2026-11-24T04:08:31.841787Z",
+  "finishedAt": "2026-11-24T05:08:36.050172Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-11-23",
+    "localDate": "2026-11-24",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_11_CIN_WAS",
-        "awayTeam": "CIN",
-        "homeTeam": "WAS",
-        "kickoffEastern": "20:15"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "e60bd328b3f247d9a1290bc3a071371d",
-    "observedAt": "2026-11-24T04:07:47.180416Z"
+    "observationId": "7cb855229f3f4ba992cb622cee64fef5",
+    "observedAt": "2026-11-24T05:07:46.379166Z"
   }
 }

@@ -1,6 +1,6 @@
 # Forecast issuance coverage
 
-Checked 2026-11-24T04:08:31.206808Z.
+Checked 2026-11-24T05:08:35.405283Z.
 
 15 games have missed model issuance. Collection success does not resolve these gaps.
 
