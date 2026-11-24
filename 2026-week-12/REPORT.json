@@ -1,0 +1,82 @@
+{
+  "study": "postgame-research-v1",
+  "generatedAt": "2026-11-24T19:06:11.018852+00:00",
+  "statsProvenance": {
+    "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
+    "observedAt": "2026-11-24T05:08:26.467399Z",
+    "sha256": "b25c97e67723a8b3e798e9d3dde8133be4d700b3b7527394ed08be39c50f73bf",
+    "bytes": 5017156
+  },
+  "season": 2026,
+  "week": 12,
+  "sourceStateCommit": "2bf488bfdfcc7673914f9d9c569d2fb5e228107c",
+  "excluded": [
+    {
+      "eventId": "2026_12_GB_LA",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_CHI_DET",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_PHI_DAL",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_KC_BUF",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_DEN_PIT",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_ATL_MIN",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_BAL_HOU",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_NO_CIN",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_NYG_IND",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_NYJ_MIA",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_TEN_JAX",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_NE_LAC",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_SEA_SF",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_WAS_ARI",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_LV_CLE",
+      "reason": "no-verified-final"
+    },
+    {
+      "eventId": "2026_12_CAR_TB",
+      "reason": "no-verified-final"
+    }
+  ],
+  "resultsAsOf": "2026-11-24T19:05:57.493262Z",
+  "games": [],
+  "status": "descriptive-only; no model evaluated"
+}

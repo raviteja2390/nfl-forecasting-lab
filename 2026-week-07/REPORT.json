@@ -1,17 +1,17 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-23T19:30:01.129212+00:00",
+  "generatedAt": "2026-11-24T19:06:09.958842+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-23T04:08:25.063994Z",
-    "sha256": "97fe953e697f03ab1769f5944aec016f3927e15f789225e9d7a9a94b2f3ec26e",
-    "bytes": 4984698
+    "observedAt": "2026-11-24T05:08:26.467399Z",
+    "sha256": "b25c97e67723a8b3e798e9d3dde8133be4d700b3b7527394ed08be39c50f73bf",
+    "bytes": 5017156
   },
   "season": 2026,
   "week": 7,
-  "sourceStateCommit": "4935594f3cdebcc05aa75f2afbd8d34bc9d42a7f",
+  "sourceStateCommit": "2bf488bfdfcc7673914f9d9c569d2fb5e228107c",
   "excluded": [],
-  "resultsAsOf": "2026-11-23T19:29:53.632957Z",
+  "resultsAsOf": "2026-11-24T19:05:57.493262Z",
   "games": [
     {
       "eventId": "2026_07_NE_CHI",
@@ -28,37 +28,37 @@
         "NE": {
           "rows": 35,
           "attempts": 31.0,
-          "passing_epa": 10.0249459048467,
+          "passing_epa": 9.6572599762902,
           "passing_interceptions": 1.0,
           "sacks_suffered": 2.0,
           "carries": 17.0,
-          "rushing_epa": -1.728956475005578,
+          "rushing_epa": -1.1308717779232662,
           "fg_att": 1.0,
           "fg_made": 1.0,
-          "passing_epa_per_attempt_plus_sack": 0.3037862395408091,
-          "rushing_epa_per_carry": -0.10170332205915164
+          "passing_epa_per_attempt_plus_sack": 0.29264424170576364,
+          "rushing_epa_per_carry": -0.0665218692896039
         },
         "CHI": {
           "rows": 35,
           "attempts": 33.0,
-          "passing_epa": 10.9285030789738,
+          "passing_epa": 10.1086283065543,
           "passing_interceptions": 0.0,
           "sacks_suffered": 3.0,
           "carries": 30.0,
-          "rushing_epa": -1.6779635210661912,
+          "rushing_epa": -1.286410350312097,
           "fg_att": 4.0,
           "fg_made": 3.0,
-          "passing_epa_per_attempt_plus_sack": 0.30356952997149445,
-          "rushing_epa_per_carry": -0.05593211736887304
+          "passing_epa_per_attempt_plus_sack": 0.2807952307376194,
+          "rushing_epa_per_carry": -0.042880345010403234
         }
       },
       "loser": "NE",
       "notes": [
-        "NE had lower passing EPA than CHI (10.02 versus 10.93).",
-        "NE had lower rushing EPA than CHI (-1.73 versus -1.68).",
+        "NE had lower passing EPA than CHI (9.66 versus 10.11).",
+        "NE had higher rushing EPA than CHI (-1.13 versus -1.29).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_PIT_NO",
@@ -75,37 +75,37 @@
         "PIT": {
           "rows": 35,
           "attempts": 30.0,
-          "passing_epa": 1.87186900479575,
+          "passing_epa": 3.00283307218034,
           "passing_interceptions": 0.0,
           "sacks_suffered": 3.0,
           "carries": 30.0,
-          "rushing_epa": 0.5290535188140798,
+          "rushing_epa": 0.6391581867666779,
           "fg_att": 3.0,
           "fg_made": 3.0,
-          "passing_epa_per_attempt_plus_sack": 0.05672330317562879,
-          "rushing_epa_per_carry": 0.01763511729380266
+          "passing_epa_per_attempt_plus_sack": 0.09099494158122241,
+          "rushing_epa_per_carry": 0.021305272892222598
         },
         "NO": {
           "rows": 35,
           "attempts": 38.0,
-          "passing_epa": 8.32330658315618,
+          "passing_epa": 8.54052052606921,
           "passing_interceptions": 1.0,
           "sacks_suffered": 2.0,
           "carries": 17.0,
-          "rushing_epa": -5.946448591896922,
+          "rushing_epa": -5.3459009597864915,
           "fg_att": 2.0,
           "fg_made": 1.0,
-          "passing_epa_per_attempt_plus_sack": 0.2080826645789045,
-          "rushing_epa_per_carry": -0.3497910936409954
+          "passing_epa_per_attempt_plus_sack": 0.21351301315173027,
+          "rushing_epa_per_carry": -0.31446476234038184
         }
       },
       "loser": "NO",
       "notes": [
-        "NO had higher passing EPA than PIT (8.32 versus 1.87).",
-        "NO had lower rushing EPA than PIT (-5.95 versus 0.53).",
+        "NO had higher passing EPA than PIT (8.54 versus 3.00).",
+        "NO had lower rushing EPA than PIT (-5.35 versus 0.64).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_CIN_BAL",
@@ -122,37 +122,37 @@
         "CIN": {
           "rows": 35,
           "attempts": 30.0,
-          "passing_epa": 15.5400645331517,
+          "passing_epa": 15.196819380108,
           "passing_interceptions": 0.0,
           "sacks_suffered": 1.0,
           "carries": 20.0,
-          "rushing_epa": -0.9480594193163389,
+          "rushing_epa": -0.06052253842622494,
           "fg_att": null,
           "fg_made": null,
-          "passing_epa_per_attempt_plus_sack": 0.5012924042952162,
-          "rushing_epa_per_carry": -0.04740297096581694
+          "passing_epa_per_attempt_plus_sack": 0.4902199800034839,
+          "rushing_epa_per_carry": -0.003026126921311247
         },
         "BAL": {
           "rows": 38,
           "attempts": 34.0,
-          "passing_epa": 3.37589143481103,
+          "passing_epa": 2.20782217191602,
           "passing_interceptions": 1.0,
           "sacks_suffered": 4.0,
           "carries": 27.0,
-          "rushing_epa": -7.705866174144407,
+          "rushing_epa": -5.9202961546168655,
           "fg_att": 2.0,
           "fg_made": 2.0,
-          "passing_epa_per_attempt_plus_sack": 0.0888392482845008,
-          "rushing_epa_per_carry": -0.28540245089423727
+          "passing_epa_per_attempt_plus_sack": 0.058100583471474204,
+          "rushing_epa_per_carry": -0.2192702279487728
         }
       },
       "loser": "BAL",
       "notes": [
-        "BAL had lower passing EPA than CIN (3.38 versus 15.54).",
-        "BAL had lower rushing EPA than CIN (-7.71 versus -0.95).",
+        "BAL had lower passing EPA than CIN (2.21 versus 15.20).",
+        "BAL had lower rushing EPA than CIN (-5.92 versus -0.06).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_CLE_TEN",
@@ -169,37 +169,37 @@
         "CLE": {
           "rows": 31,
           "attempts": 36.0,
-          "passing_epa": 4.59642541027817,
+          "passing_epa": 3.85854367258029,
           "passing_interceptions": 1.0,
           "sacks_suffered": 1.0,
           "carries": 29.0,
-          "rushing_epa": 6.593518330312831,
+          "rushing_epa": 7.768246109063612,
           "fg_att": 3.0,
           "fg_made": 2.0,
-          "passing_epa_per_attempt_plus_sack": 0.12422771379130189,
-          "rushing_epa_per_carry": 0.22736270104527004
+          "passing_epa_per_attempt_plus_sack": 0.10428496412379162,
+          "rushing_epa_per_carry": 0.26787055548495214
         },
         "TEN": {
           "rows": 34,
           "attempts": 31.0,
-          "passing_epa": 5.38167193630514,
+          "passing_epa": 4.53553372238102,
           "passing_interceptions": 1.0,
           "sacks_suffered": 1.0,
           "carries": 30.0,
-          "rushing_epa": -3.1963803000892472,
+          "rushing_epa": -2.152559389871075,
           "fg_att": 1.0,
           "fg_made": 1.0,
-          "passing_epa_per_attempt_plus_sack": 0.16817724800953562,
-          "rushing_epa_per_carry": -0.10654601000297491
+          "passing_epa_per_attempt_plus_sack": 0.14173542882440687,
+          "rushing_epa_per_carry": -0.07175197966236917
         }
       },
       "loser": "TEN",
       "notes": [
-        "TEN had higher passing EPA than CLE (5.38 versus 4.60).",
-        "TEN had lower rushing EPA than CLE (-3.20 versus 6.59).",
+        "TEN had higher passing EPA than CLE (4.54 versus 3.86).",
+        "TEN had lower rushing EPA than CLE (-2.15 versus 7.77).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_IND_MIN",
@@ -216,37 +216,37 @@
         "IND": {
           "rows": 35,
           "attempts": 22.0,
-          "passing_epa": -5.71384114439559,
+          "passing_epa": -5.44015206322249,
           "passing_interceptions": 1.0,
           "sacks_suffered": 4.0,
           "carries": 33.0,
-          "rushing_epa": 1.3021997375783159,
+          "rushing_epa": 2.5449058403487297,
           "fg_att": 3.0,
           "fg_made": 1.0,
-          "passing_epa_per_attempt_plus_sack": -0.21976312093829192,
-          "rushing_epa_per_carry": 0.03946059810843382
+          "passing_epa_per_attempt_plus_sack": -0.2092366178162496,
+          "rushing_epa_per_carry": 0.07711835879844635
         },
         "MIN": {
           "rows": 33,
           "attempts": 24.0,
-          "passing_epa": -0.690676471761677,
+          "passing_epa": -0.731098870229127,
           "passing_interceptions": 0.0,
           "sacks_suffered": 3.0,
           "carries": 29.0,
-          "rushing_epa": -5.666900505247166,
+          "rushing_epa": -4.8570842692823035,
           "fg_att": 4.0,
           "fg_made": 3.0,
-          "passing_epa_per_attempt_plus_sack": -0.025580610065247297,
-          "rushing_epa_per_carry": -0.19541036224990227
+          "passing_epa_per_attempt_plus_sack": -0.027077735934412112,
+          "rushing_epa_per_carry": -0.16748566445801047
         }
       },
       "loser": "IND",
       "notes": [
-        "IND had lower passing EPA than MIN (-5.71 versus -0.69).",
-        "IND had higher rushing EPA than MIN (1.30 versus -5.67).",
+        "IND had lower passing EPA than MIN (-5.44 versus -0.73).",
+        "IND had higher rushing EPA than MIN (2.54 versus -4.86).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_MIA_NYJ",
@@ -263,37 +263,37 @@
         "MIA": {
           "rows": 29,
           "attempts": 21.0,
-          "passing_epa": 10.4525712790288,
+          "passing_epa": 10.0725292865818,
           "passing_interceptions": 0.0,
           "sacks_suffered": 2.0,
           "carries": 41.0,
-          "rushing_epa": 4.485152527672395,
+          "rushing_epa": 4.337173418711773,
           "fg_att": null,
           "fg_made": null,
-          "passing_epa_per_attempt_plus_sack": 0.45445962082733915,
-          "rushing_epa_per_carry": 0.10939396408957061
+          "passing_epa_per_attempt_plus_sack": 0.4379360559383391,
+          "rushing_epa_per_carry": 0.10578471752955543
         },
         "NYJ": {
           "rows": 36,
           "attempts": 30.0,
-          "passing_epa": 10.3432867529895,
+          "passing_epa": 9.54480086826519,
           "passing_interceptions": 1.0,
           "sacks_suffered": 2.0,
           "carries": 21.0,
-          "rushing_epa": 1.418738451819753,
+          "rushing_epa": 1.544469740639756,
           "fg_att": 2.0,
           "fg_made": 1.0,
-          "passing_epa_per_attempt_plus_sack": 0.32322771103092185,
-          "rushing_epa_per_carry": 0.06755897389617871
+          "passing_epa_per_attempt_plus_sack": 0.2982750271332872,
+          "rushing_epa_per_carry": 0.07354617812570267
         }
       },
       "loser": "NYJ",
       "notes": [
-        "NYJ had lower passing EPA than MIA (10.34 versus 10.45).",
-        "NYJ had lower rushing EPA than MIA (1.42 versus 4.49).",
+        "NYJ had lower passing EPA than MIA (9.54 versus 10.07).",
+        "NYJ had lower rushing EPA than MIA (1.54 versus 4.34).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_NYG_HOU",
@@ -310,37 +310,37 @@
         "NYG": {
           "rows": 32,
           "attempts": 28.0,
-          "passing_epa": 5.14578330087115,
+          "passing_epa": 5.13510562796796,
           "passing_interceptions": 0.0,
           "sacks_suffered": 3.0,
           "carries": 34.0,
-          "rushing_epa": 8.829470053370427,
+          "rushing_epa": 8.676111086296524,
           "fg_att": 2.0,
           "fg_made": 0.0,
-          "passing_epa_per_attempt_plus_sack": 0.16599300970552097,
-          "rushing_epa_per_carry": 0.2596902956873655
+          "passing_epa_per_attempt_plus_sack": 0.16564856864412772,
+          "rushing_epa_per_carry": 0.25517973783225073
         },
         "HOU": {
           "rows": 38,
           "attempts": 28.0,
-          "passing_epa": 1.08111696168225,
+          "passing_epa": 1.21073800050936,
           "passing_interceptions": 0.0,
           "sacks_suffered": 1.0,
           "carries": 25.0,
-          "rushing_epa": -2.109393593180327,
+          "rushing_epa": -1.6352293285943464,
           "fg_att": 2.0,
           "fg_made": 2.0,
-          "passing_epa_per_attempt_plus_sack": 0.03727989523042242,
-          "rushing_epa_per_carry": -0.08437574372721307
+          "passing_epa_per_attempt_plus_sack": 0.04174958622446069,
+          "rushing_epa_per_carry": -0.06540917314377385
         }
       },
       "loser": "HOU",
       "notes": [
-        "HOU had lower passing EPA than NYG (1.08 versus 5.15).",
-        "HOU had lower rushing EPA than NYG (-2.11 versus 8.83).",
+        "HOU had lower passing EPA than NYG (1.21 versus 5.14).",
+        "HOU had lower rushing EPA than NYG (-1.64 versus 8.68).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_SF_ATL",
@@ -357,37 +357,37 @@
         "SF": {
           "rows": 29,
           "attempts": 40.0,
-          "passing_epa": 2.52139472606019,
+          "passing_epa": 1.68012914822338,
           "passing_interceptions": 2.0,
           "sacks_suffered": 2.0,
           "carries": 23.0,
-          "rushing_epa": 2.396616847619017,
+          "rushing_epa": 3.4461837258082912,
           "fg_att": null,
           "fg_made": null,
-          "passing_epa_per_attempt_plus_sack": 0.060033207763337856,
-          "rushing_epa_per_carry": 0.10420073250517466
+          "passing_epa_per_attempt_plus_sack": 0.04000307495769952,
+          "rushing_epa_per_carry": 0.1498340750351431
         },
         "ATL": {
           "rows": 36,
           "attempts": 34.0,
-          "passing_epa": 8.38411297758491,
+          "passing_epa": 7.78122894976812,
           "passing_interceptions": 0.0,
           "sacks_suffered": 0.0,
           "carries": 29.0,
-          "rushing_epa": -5.472795517818149,
+          "rushing_epa": -4.521907773609948,
           "fg_att": 3.0,
           "fg_made": 3.0,
-          "passing_epa_per_attempt_plus_sack": 0.2465915581642621,
-          "rushing_epa_per_carry": -0.18871708682131547
+          "passing_epa_per_attempt_plus_sack": 0.22885967499318,
+          "rushing_epa_per_carry": -0.155927854262412
         }
       },
       "loser": "SF",
       "notes": [
-        "SF had lower passing EPA than ATL (2.52 versus 8.38).",
-        "SF had higher rushing EPA than ATL (2.40 versus -5.47).",
+        "SF had lower passing EPA than ATL (1.68 versus 7.78).",
+        "SF had higher rushing EPA than ATL (3.45 versus -4.52).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_TB_CAR",
@@ -404,37 +404,37 @@
         "TB": {
           "rows": 36,
           "attempts": 11.0,
-          "passing_epa": 4.63249334678568,
+          "passing_epa": 4.55929833463063,
           "passing_interceptions": 0.0,
           "sacks_suffered": 0.0,
           "carries": 49.0,
-          "rushing_epa": 6.617350566623139,
+          "rushing_epa": 6.839857003863755,
           "fg_att": 2.0,
           "fg_made": 2.0,
-          "passing_epa_per_attempt_plus_sack": 0.4211357587986982,
-          "rushing_epa_per_carry": 0.13504797074741098
+          "passing_epa_per_attempt_plus_sack": 0.41448166678460274,
+          "rushing_epa_per_carry": 0.13958891844619908
         },
         "CAR": {
           "rows": 35,
           "attempts": 31.0,
-          "passing_epa": -14.04916246801163,
+          "passing_epa": -14.374434971819388,
           "passing_interceptions": 2.0,
           "sacks_suffered": 5.0,
           "carries": 18.0,
-          "rushing_epa": 3.099543453221559,
+          "rushing_epa": 3.913064091024798,
           "fg_att": null,
           "fg_made": null,
-          "passing_epa_per_attempt_plus_sack": -0.39025451300032304,
-          "rushing_epa_per_carry": 0.17219685851230884
+          "passing_epa_per_attempt_plus_sack": -0.39928986032831637,
+          "rushing_epa_per_carry": 0.21739244950137765
         }
       },
       "loser": "CAR",
       "notes": [
-        "CAR had lower passing EPA than TB (-14.05 versus 4.63).",
-        "CAR had lower rushing EPA than TB (3.10 versus 6.62).",
+        "CAR had lower passing EPA than TB (-14.37 versus 4.56).",
+        "CAR had lower rushing EPA than TB (3.91 versus 6.84).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_DEN_ARI",
@@ -451,37 +451,37 @@
         "DEN": {
           "rows": 38,
           "attempts": 29.0,
-          "passing_epa": 2.949548829423,
+          "passing_epa": 3.59846528358182,
           "passing_interceptions": 0.0,
           "sacks_suffered": 1.0,
           "carries": 26.0,
-          "rushing_epa": 5.087652081979875,
+          "rushing_epa": 5.2919940814452415,
           "fg_att": 3.0,
           "fg_made": 3.0,
-          "passing_epa_per_attempt_plus_sack": 0.09831829431410001,
-          "rushing_epa_per_carry": 0.1956789262299952
+          "passing_epa_per_attempt_plus_sack": 0.11994884278606066,
+          "rushing_epa_per_carry": 0.20353823390174006
         },
         "ARI": {
           "rows": 33,
           "attempts": 48.0,
-          "passing_epa": -6.50241962350786,
+          "passing_epa": -5.96228817707198,
           "passing_interceptions": 0.0,
           "sacks_suffered": 3.0,
           "carries": 24.0,
-          "rushing_epa": -1.1414015991002149,
+          "rushing_epa": -0.7689480234083109,
           "fg_att": 3.0,
           "fg_made": 3.0,
-          "passing_epa_per_attempt_plus_sack": -0.1274984239903502,
-          "rushing_epa_per_carry": -0.047558399962508956
+          "passing_epa_per_attempt_plus_sack": -0.11690761131513687,
+          "rushing_epa_per_carry": -0.03203950097534629
         }
       },
       "loser": "ARI",
       "notes": [
-        "ARI had lower passing EPA than DEN (-6.50 versus 2.95).",
-        "ARI had lower rushing EPA than DEN (-1.14 versus 5.09).",
+        "ARI had lower passing EPA than DEN (-5.96 versus 3.60).",
+        "ARI had lower rushing EPA than DEN (-0.77 versus 5.29).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_GB_DET",
@@ -498,37 +498,37 @@
         "GB": {
           "rows": 33,
           "attempts": 45.0,
-          "passing_epa": 5.20599713032666,
+          "passing_epa": 5.38124593022129,
           "passing_interceptions": 1.0,
           "sacks_suffered": 1.0,
           "carries": 19.0,
-          "rushing_epa": -3.905124899804587,
+          "rushing_epa": -2.954186664276633,
           "fg_att": 3.0,
           "fg_made": 1.0,
-          "passing_epa_per_attempt_plus_sack": 0.11317385065927521,
-          "rushing_epa_per_carry": -0.20553288946339932
+          "passing_epa_per_attempt_plus_sack": 0.11698360717872369,
+          "rushing_epa_per_carry": -0.15548350864613858
         },
         "DET": {
           "rows": 34,
           "attempts": 32.0,
-          "passing_epa": 8.01944048987934,
+          "passing_epa": 8.09929338838616,
           "passing_interceptions": 0.0,
           "sacks_suffered": 1.0,
           "carries": 33.0,
-          "rushing_epa": -11.977550579688582,
+          "rushing_epa": -11.042405403873195,
           "fg_att": 2.0,
           "fg_made": 2.0,
-          "passing_epa_per_attempt_plus_sack": 0.2430133481781618,
-          "rushing_epa_per_carry": -0.3629560781723813
+          "passing_epa_per_attempt_plus_sack": 0.2454331329813988,
+          "rushing_epa_per_carry": -0.334618345571915
         }
       },
       "loser": "GB",
       "notes": [
-        "GB had lower passing EPA than DET (5.21 versus 8.02).",
-        "GB had higher rushing EPA than DET (-3.91 versus -11.98).",
+        "GB had lower passing EPA than DET (5.38 versus 8.10).",
+        "GB had higher rushing EPA than DET (-2.95 versus -11.04).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_LA_LV",
@@ -545,37 +545,37 @@
         "LAR": {
           "rows": 32,
           "attempts": 29.0,
-          "passing_epa": 5.14520955660701,
+          "passing_epa": 5.83391746478161,
           "passing_interceptions": 1.0,
           "sacks_suffered": 1.0,
           "carries": 38.0,
-          "rushing_epa": 3.2374034378604137,
+          "rushing_epa": 5.532241617244818,
           "fg_att": null,
           "fg_made": null,
-          "passing_epa_per_attempt_plus_sack": 0.17150698522023367,
-          "rushing_epa_per_carry": 0.08519482731211615
+          "passing_epa_per_attempt_plus_sack": 0.19446391549272032,
+          "rushing_epa_per_carry": 0.1455853057169689
         },
         "LV": {
           "rows": 34,
           "attempts": 45.0,
-          "passing_epa": -2.70846378275681,
+          "passing_epa": -1.7973154555922397,
           "passing_interceptions": 0.0,
           "sacks_suffered": 2.0,
           "carries": 17.0,
-          "rushing_epa": -5.931138465971799,
+          "rushing_epa": -4.6478884420681155,
           "fg_att": 4.0,
           "fg_made": 3.0,
-          "passing_epa_per_attempt_plus_sack": -0.057626888994825744,
-          "rushing_epa_per_carry": -0.3488904979983411
+          "passing_epa_per_attempt_plus_sack": -0.03824075437430297,
+          "rushing_epa_per_carry": -0.27340520247459504
         }
       },
       "loser": "LV",
       "notes": [
-        "LV had lower passing EPA than LAR (-2.71 versus 5.15).",
-        "LV had lower rushing EPA than LAR (-5.93 versus 3.24).",
+        "LV had lower passing EPA than LAR (-1.80 versus 5.83).",
+        "LV had lower rushing EPA than LAR (-4.65 versus 5.53).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_KC_SEA",
@@ -592,37 +592,37 @@
         "KC": {
           "rows": 31,
           "attempts": 33.0,
-          "passing_epa": -5.15053162517751,
+          "passing_epa": -5.828984256596,
           "passing_interceptions": 1.0,
           "sacks_suffered": 1.0,
           "carries": 16.0,
-          "rushing_epa": 0.915994955090152,
+          "rushing_epa": 0.9110981784410119,
           "fg_att": 3.0,
           "fg_made": 1.0,
-          "passing_epa_per_attempt_plus_sack": -0.15148622426992675,
-          "rushing_epa_per_carry": 0.0572496846931345
+          "passing_epa_per_attempt_plus_sack": -0.17144071342929412,
+          "rushing_epa_per_carry": 0.056943636152563246
         },
         "SEA": {
           "rows": 37,
           "attempts": 28.0,
-          "passing_epa": 9.56468148793701,
+          "passing_epa": 7.56007088343364,
           "passing_interceptions": 1.0,
           "sacks_suffered": 0.0,
           "carries": 41.0,
-          "rushing_epa": -1.0600584789196041,
+          "rushing_epa": -0.5427828867550859,
           "fg_att": 2.0,
           "fg_made": 2.0,
-          "passing_epa_per_attempt_plus_sack": 0.3415957674263218,
-          "rushing_epa_per_carry": -0.02585508485169766
+          "passing_epa_per_attempt_plus_sack": 0.2700025315512014,
+          "rushing_epa_per_carry": -0.013238606994026486
         }
       },
       "loser": "KC",
       "notes": [
-        "KC had lower passing EPA than SEA (-5.15 versus 9.56).",
-        "KC had higher rushing EPA than SEA (0.92 versus -1.06).",
+        "KC had lower passing EPA than SEA (-5.83 versus 7.56).",
+        "KC had higher rushing EPA than SEA (0.91 versus -0.54).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     },
     {
       "eventId": "2026_07_DAL_PHI",
@@ -639,37 +639,37 @@
         "DAL": {
           "rows": 36,
           "attempts": 27.0,
-          "passing_epa": 11.0245418416139,
+          "passing_epa": 10.6443646219314,
           "passing_interceptions": 0.0,
           "sacks_suffered": 0.0,
           "carries": 38.0,
-          "rushing_epa": 7.185218548753339,
+          "rushing_epa": 7.517363103240517,
           "fg_att": 3.0,
           "fg_made": 3.0,
-          "passing_epa_per_attempt_plus_sack": 0.4083163645042185,
-          "rushing_epa_per_carry": 0.18908469865140365
+          "passing_epa_per_attempt_plus_sack": 0.3942357267382,
+          "rushing_epa_per_carry": 0.19782534482211886
         },
         "PHI": {
           "rows": 34,
           "attempts": 35.0,
-          "passing_epa": -2.26507233116268,
+          "passing_epa": -3.21374900961456,
           "passing_interceptions": 1.0,
           "sacks_suffered": 2.0,
           "carries": 25.0,
-          "rushing_epa": 1.9811671567379912,
+          "rushing_epa": 2.0081324658469537,
           "fg_att": null,
           "fg_made": null,
-          "passing_epa_per_attempt_plus_sack": -0.06121817111250486,
-          "rushing_epa_per_carry": 0.07924668626951964
+          "passing_epa_per_attempt_plus_sack": -0.08685808134093405,
+          "rushing_epa_per_carry": 0.08032529863387815
         }
       },
       "loser": "PHI",
       "notes": [
-        "PHI had lower passing EPA than DAL (-2.27 versus 11.02).",
-        "PHI had lower rushing EPA than DAL (1.98 versus 7.19).",
+        "PHI had lower passing EPA than DAL (-3.21 versus 10.64).",
+        "PHI had lower rushing EPA than DAL (2.01 versus 7.52).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-23T04:08:25.063994Z"
+      "availableNoEarlierThan": "2026-11-24T05:08:26.467399Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"

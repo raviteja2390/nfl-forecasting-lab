@@ -1,6 +1,6 @@
 # 2026 Week 5 postgame analysis — descriptive only
 
-Statistics observed: 2026-11-23T04:08:25.063994Z. Results snapshot: 2026-11-23T19:29:53.632957Z.
+Statistics observed: 2026-11-24T05:08:26.467399Z. Results snapshot: 2026-11-24T19:05:57.493262Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -10,34 +10,34 @@ These are statistical differences associated with the final result, not proven c
 
 | Measure | TB | DAL |
 |---|---:|---:|
-| Passing EPA | 4.84 | -1.96 |
-| Passing EPA / (attempts + sacks) | 0.186 | -0.047 |
-| Rushing EPA | 3.63 | 0.52 |
-| Rushing EPA / carry | 0.093 | 0.040 |
+| Passing EPA | 4.07 | -3.18 |
+| Passing EPA / (attempts + sacks) | 0.157 | -0.076 |
+| Rushing EPA | 4.06 | 1.21 |
+| Rushing EPA / carry | 0.104 | 0.093 |
 | Interceptions thrown | 0 | 2 |
 | Sacks suffered | 1 | 0 |
 | Field goals made | 1 | 1 |
 | Field goals attempted | 1 | 1 |
 
-- DAL had lower passing EPA than TB (-1.96 versus 4.84).
-- DAL had lower rushing EPA than TB (0.52 versus 3.63).
+- DAL had lower passing EPA than TB (-3.18 versus 4.07).
+- DAL had lower rushing EPA than TB (1.21 versus 4.06).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## BUF 37 — LAR 34
 
 | Measure | BUF | LAR |
 |---|---:|---:|
-| Passing EPA | 6.36 | 15.97 |
-| Passing EPA / (attempts + sacks) | 0.318 | 0.290 |
-| Rushing EPA | 8.14 | 0.13 |
-| Rushing EPA / carry | 0.220 | 0.006 |
+| Passing EPA | 6.95 | 15.66 |
+| Passing EPA / (attempts + sacks) | 0.347 | 0.285 |
+| Rushing EPA | 9.18 | 0.73 |
+| Rushing EPA / carry | 0.248 | 0.032 |
 | Interceptions thrown | 1 | 0 |
 | Sacks suffered | 1 | 1 |
 | Field goals made | 3 | 0 |
 | Field goals attempted | 3 | 2 |
 
-- LAR had higher passing EPA than BUF (15.97 versus 6.36).
-- LAR had lower rushing EPA than BUF (0.13 versus 8.14).
+- LAR had higher passing EPA than BUF (15.66 versus 6.95).
+- LAR had lower rushing EPA than BUF (0.73 versus 9.18).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## Coverage and next test
