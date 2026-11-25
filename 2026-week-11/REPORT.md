@@ -1,6 +1,6 @@
 # 2026 Week 11 postgame analysis — descriptive only
 
-Statistics observed: 2026-11-24T05:08:26.467399Z. Results snapshot: 2026-11-24T19:05:57.493262Z.
+Statistics observed: 2026-11-25T18:08:23.994351Z. Results snapshot: 2026-11-25T18:11:47.232305Z.
 
 Source: nflverse contributors; existing archived player-stat feed. No new source, training or live model change.
 
@@ -176,13 +176,26 @@ These are statistical differences associated with the final result, not proven c
 - MIN had higher rushing EPA than SF (1.05 versus -0.45).
 - The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
-## CIN at WAS
+## CIN 20 — WAS 22
 
-Verified final exists, but player-stat coverage is incomplete; analysis withheld.
+| Measure | CIN | WAS |
+|---|---:|---:|
+| Passing EPA | 8.17 | 0.90 |
+| Passing EPA / (attempts + sacks) | 0.190 | 0.024 |
+| Rushing EPA | -6.05 | 2.97 |
+| Rushing EPA / carry | -0.432 | 0.114 |
+| Interceptions thrown | 0 | 0 |
+| Sacks suffered | 3 | 3 |
+| Field goals made | 2 | 5 |
+| Field goals attempted | 2 | 5 |
+
+- CIN had higher passing EPA than WAS (8.17 versus 0.90).
+- CIN had lower rushing EPA than WAS (-6.05 versus 2.97).
+- The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree.
 
 ## Coverage and next test
 
-10 games have both a verified result and team player-stat rows. Other scheduled games are excluded, not treated as zero-stat games.
+11 games have both a verified result and team player-stat rows. Other scheduled games are excluded, not treated as zero-stat games.
 
 Passing EPA is aggregated only from passing records; receiving EPA is excluded to avoid counting the same passing plays twice. The passing denominator is attempts plus sacks, not all dropbacks (scrambles excluded from that denominator). Rushing totals can include kneels and scrambles. A missing kicker row is unknown, not proof of zero attempts. Player sums are not an exhaustive team play-by-play accounting.
 
