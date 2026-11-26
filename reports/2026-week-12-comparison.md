@@ -2,7 +2,7 @@
 
 2026 NFL Week 12
 
-Updated 2026-11-26T07:08:39.194065Z. 16 scheduled games; 5 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-26T08:08:25.665699Z. 16 scheduled games; 5 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
