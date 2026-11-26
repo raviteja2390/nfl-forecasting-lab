@@ -1,27 +1,39 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-26T04:07:41.856385Z",
-  "lastSuccessAt": "2026-11-26T04:08:12.148255Z",
+  "lastAttemptAt": "2026-11-26T05:07:45.918708Z",
+  "lastSuccessAt": "2026-11-26T05:08:32.308311Z",
   "state": "succeeded",
-  "finishedAt": "2026-11-26T04:08:12.148255Z",
+  "finishedAt": "2026-11-26T05:08:32.308311Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-11-25",
+    "localDate": "2026-11-26",
     "timeZone": "America/New_York",
     "cadence": "hourly",
     "gamesToday": [
       {
-        "eventId": "2026_12_GB_LA",
-        "awayTeam": "GB",
-        "homeTeam": "LA",
-        "kickoffEastern": "20:00"
+        "eventId": "2026_12_CHI_DET",
+        "awayTeam": "CHI",
+        "homeTeam": "DET",
+        "kickoffEastern": "13:00"
+      },
+      {
+        "eventId": "2026_12_PHI_DAL",
+        "awayTeam": "PHI",
+        "homeTeam": "DAL",
+        "kickoffEastern": "16:30"
+      },
+      {
+        "eventId": "2026_12_KC_BUF",
+        "awayTeam": "KC",
+        "homeTeam": "BUF",
+        "kickoffEastern": "20:20"
       }
     ],
-    "scheduledGameCount": 1,
+    "scheduledGameCount": 3,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "407138fd1bf0410abdb0a11de15ef36e",
-    "observedAt": "2026-11-26T04:07:42.197030Z"
+    "observationId": "4292ac7b707f43afa0e7557df353b067",
+    "observedAt": "2026-11-26T05:07:46.042981Z"
   }
 }

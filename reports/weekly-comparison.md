@@ -2,7 +2,7 @@
 
 2026 NFL Week 12
 
-Updated 2026-11-26T04:08:11.726977Z. 16 scheduled games; 4 have all three forecasts with matching cutoffs and kickoff times.
+Updated 2026-11-26T05:08:31.875436Z. 16 scheduled games; 5 have all three forecasts with matching cutoffs and kickoff times.
 
 All kickoff times Eastern. Probabilities are original issued forecasts, not live updates. Players are included only in the two shadow models; none has established a betting edge. No missing forecast is backfilled. Rounded percentages may not sum to exactly 100%.
 
@@ -34,10 +34,9 @@ Week selection uses the observed NFL season/week, including its Monday games. Be
 
 ## DEN at PIT — Fri Nov 27, 03:00 PM EST
 
-- **Team only (primary):** not issued as of this report.
-- **Player form (shadow):** not issued as of this report.
-- **Player availability (shadow):** not issued as of this report.
-Comparison incomplete or cutoffs differ; do not treat this as a valid three-model paired observation.
+- **Team only (primary):** DEN 49.5% · PIT 50.1% · tie 0.4%. Issued 2026-11-26T05:08:28.020687Z; cutoff 2026-11-26T05:08:27.084004Z.
+- **Player form (shadow):** DEN 50.9% · PIT 48.8% · tie 0.3%. Issued 2026-11-26T05:08:28.483243Z; cutoff 2026-11-26T05:08:27.084004Z.
+- **Player availability (shadow):** DEN 52.5% · PIT 47.1% · tie 0.4%. Issued 2026-11-26T05:08:28.486021Z; cutoff 2026-11-26T05:08:27.084004Z.
 
 ## ATL at MIN — Sun Nov 29, 01:00 PM EST
 
