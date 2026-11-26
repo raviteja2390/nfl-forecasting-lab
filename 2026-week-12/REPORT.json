@@ -1,20 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-25T18:11:55.789003+00:00",
+  "generatedAt": "2026-11-26T17:54:24.134692+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-25T18:08:23.994351Z",
-    "sha256": "1f3127432e987b860326e7ac0d734e2963bc91ff4fdcaae669e212649b673f9b",
-    "bytes": 5048215
+    "observedAt": "2026-11-26T17:08:02.960666Z",
+    "sha256": "ed946e27dfdcb512cad7bfe847262046247e6a9d5c7240a4afbe1e26eb43a38b",
+    "bytes": 5077091
   },
   "season": 2026,
   "week": 12,
-  "sourceStateCommit": "9f0db21f7e12c30a3bfcdbb5b2335d8795b7b890",
+  "sourceStateCommit": "359a8fb58841fabe06adb73469c4440911a1c803",
   "excluded": [
-    {
-      "eventId": "2026_12_GB_LA",
-      "reason": "no-verified-final"
-    },
     {
       "eventId": "2026_12_CHI_DET",
       "reason": "no-verified-final"
@@ -76,7 +72,55 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-25T18:11:47.232305Z",
-  "games": [],
+  "resultsAsOf": "2026-11-26T17:54:15.316243Z",
+  "games": [
+    {
+      "eventId": "2026_12_GB_LA",
+      "result": {
+        "eventId": "2026_12_GB_LA",
+        "homeScore": 26,
+        "awayScore": 13,
+        "finalizedAt": "2026-11-26T17:08:05.970133Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "42756e5d0591406ebd28da8e20ea925e",
+        "espnObservationId": "99407f9133504442b7c71f8d01c08e00"
+      },
+      "teams": {
+        "GB": {
+          "rows": 33,
+          "attempts": 29.0,
+          "passing_epa": -2.79065209768101,
+          "passing_interceptions": 2.0,
+          "sacks_suffered": 1.0,
+          "carries": 14.0,
+          "rushing_epa": -0.42267019814655926,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": -0.09302173658936701,
+          "rushing_epa_per_carry": -0.030190728439039947
+        },
+        "LAR": {
+          "rows": 32,
+          "attempts": 23.0,
+          "passing_epa": -1.9643205759332,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 1.0,
+          "carries": 47.0,
+          "rushing_epa": 2.18642801313634,
+          "fg_att": 4.0,
+          "fg_made": 4.0,
+          "passing_epa_per_attempt_plus_sack": -0.08184669066388334,
+          "rushing_epa_per_carry": 0.04651974496034766
+        }
+      },
+      "loser": "GB",
+      "notes": [
+        "GB had lower passing EPA than LAR (-2.79 versus -1.96).",
+        "GB had lower rushing EPA than LAR (-0.42 versus 2.19).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-11-26T17:08:05.970133Z"
+    }
+  ],
   "status": "descriptive-only; no model evaluated"
 }
