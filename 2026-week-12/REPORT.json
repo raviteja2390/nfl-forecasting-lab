@@ -1,28 +1,16 @@
 {
   "study": "postgame-research-v1",
-  "generatedAt": "2026-11-26T17:54:24.134692+00:00",
+  "generatedAt": "2026-11-27T17:39:29.496609+00:00",
   "statsProvenance": {
     "sourceUrl": "https://github.com/nflverse/nflverse-data/releases/download/stats_player/stats_player_week_2026.csv",
-    "observedAt": "2026-11-26T17:08:02.960666Z",
-    "sha256": "ed946e27dfdcb512cad7bfe847262046247e6a9d5c7240a4afbe1e26eb43a38b",
-    "bytes": 5077091
+    "observedAt": "2026-11-27T04:08:34.721966Z",
+    "sha256": "c5256b203f3c4de37222b95ec61a19b1e21b34f2496c8c5cd590146258f3fd36",
+    "bytes": 5108140
   },
   "season": 2026,
   "week": 12,
-  "sourceStateCommit": "359a8fb58841fabe06adb73469c4440911a1c803",
+  "sourceStateCommit": "a8a5f5ad9f2d2beaa0618cb77d32c0b8ead31cbd",
   "excluded": [
-    {
-      "eventId": "2026_12_CHI_DET",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_12_PHI_DAL",
-      "reason": "no-verified-final"
-    },
-    {
-      "eventId": "2026_12_KC_BUF",
-      "reason": "no-verified-final"
-    },
     {
       "eventId": "2026_12_DEN_PIT",
       "reason": "no-verified-final"
@@ -72,7 +60,7 @@
       "reason": "no-verified-final"
     }
   ],
-  "resultsAsOf": "2026-11-26T17:54:15.316243Z",
+  "resultsAsOf": "2026-11-27T17:39:17.432566Z",
   "games": [
     {
       "eventId": "2026_12_GB_LA",
@@ -80,10 +68,10 @@
         "eventId": "2026_12_GB_LA",
         "homeScore": 26,
         "awayScore": 13,
-        "finalizedAt": "2026-11-26T17:08:05.970133Z",
+        "finalizedAt": "2026-11-27T17:08:21.002946Z",
         "timingBasis": "observed-final-in-two-sources",
-        "nflverseObservationId": "42756e5d0591406ebd28da8e20ea925e",
-        "espnObservationId": "99407f9133504442b7c71f8d01c08e00"
+        "nflverseObservationId": "c5655d1d3107493287acda784b153b97",
+        "espnObservationId": "42337b8bb2bb437199ec9c2ecaf64c88"
       },
       "teams": {
         "GB": {
@@ -119,7 +107,54 @@
         "GB had lower rushing EPA than LAR (-0.42 versus 2.19).",
         "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
       ],
-      "availableNoEarlierThan": "2026-11-26T17:08:05.970133Z"
+      "availableNoEarlierThan": "2026-11-27T17:08:21.002946Z"
+    },
+    {
+      "eventId": "2026_12_CHI_DET",
+      "result": {
+        "eventId": "2026_12_CHI_DET",
+        "homeScore": 35,
+        "awayScore": 39,
+        "finalizedAt": "2026-11-27T17:08:21.663294Z",
+        "timingBasis": "observed-final-in-two-sources",
+        "nflverseObservationId": "c5655d1d3107493287acda784b153b97",
+        "espnObservationId": "1fc9aed2ee8546819133ce09f8debeba"
+      },
+      "teams": {
+        "CHI": {
+          "rows": 33,
+          "attempts": 44.0,
+          "passing_epa": 8.65336708103524,
+          "passing_interceptions": 0.0,
+          "sacks_suffered": 4.0,
+          "carries": 24.0,
+          "rushing_epa": 8.92300014292659,
+          "fg_att": 1.0,
+          "fg_made": 1.0,
+          "passing_epa_per_attempt_plus_sack": 0.18027848085490084,
+          "rushing_epa_per_carry": 0.37179167262194124
+        },
+        "DET": {
+          "rows": 36,
+          "attempts": 36.0,
+          "passing_epa": 0.476978337946156,
+          "passing_interceptions": 1.0,
+          "sacks_suffered": 1.0,
+          "carries": 31.0,
+          "rushing_epa": 8.631121555231669,
+          "fg_att": 2.0,
+          "fg_made": 2.0,
+          "passing_epa_per_attempt_plus_sack": 0.01289130643097719,
+          "rushing_epa_per_carry": 0.2784232759752151
+        }
+      },
+      "loser": "DET",
+      "notes": [
+        "DET had lower passing EPA than CHI (0.48 versus 8.65).",
+        "DET had lower rushing EPA than CHI (8.63 versus 8.92).",
+        "The score and these components do not establish the cause of defeat; efficiency, game state and unmeasured phases can disagree."
+      ],
+      "availableNoEarlierThan": "2026-11-27T17:08:21.663294Z"
     }
   ],
   "status": "descriptive-only; no model evaluated"
