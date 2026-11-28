@@ -1,27 +1,20 @@
 {
   "schemaVersion": 1,
-  "lastAttemptAt": "2026-11-28T04:07:39.273229Z",
-  "lastSuccessAt": "2026-11-28T04:08:08.115936Z",
+  "lastAttemptAt": "2026-11-28T05:07:45.393158Z",
+  "lastSuccessAt": "2026-11-28T05:08:52.758843Z",
   "state": "succeeded",
-  "finishedAt": "2026-11-28T04:08:08.115936Z",
+  "finishedAt": "2026-11-28T05:08:52.758843Z",
   "errors": [],
   "schedule": {
-    "localDate": "2026-11-27",
+    "localDate": "2026-11-28",
     "timeZone": "America/New_York",
-    "cadence": "hourly",
-    "gamesToday": [
-      {
-        "eventId": "2026_12_DEN_PIT",
-        "awayTeam": "DEN",
-        "homeTeam": "PIT",
-        "kickoffEastern": "15:00"
-      }
-    ],
-    "scheduledGameCount": 1,
+    "cadence": "daily",
+    "gamesToday": [],
+    "scheduledGameCount": 0,
     "lastScheduledDateInFeed": "2027-01-10",
     "policy": "Hourly at five minutes past each hour on scheduled game dates; otherwise daily at 00:05 Eastern.",
     "coverage": "Regular season and postseason only. Does not infer preseason coverage.",
-    "observationId": "af3fafcf0c174758948337dad54ffc66",
-    "observedAt": "2026-11-28T04:07:39.350082Z"
+    "observationId": "1534d2bc9a7c40a7802cddeead665c2e",
+    "observedAt": "2026-11-28T05:07:45.501607Z"
   }
 }
